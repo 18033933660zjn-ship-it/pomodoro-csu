@@ -1,0 +1,273 @@
+{
+  "version": "2.0.0",
+  "exportTime": "2026-11-03T06:18:00.000Z",
+  "categories": [
+    {
+      "id": "cat-ielts-research",
+      "name": "任务一: 雅思备考 & AI科研推进",
+      "icon": "GraduationCap",
+      "color": "#8b5cf6",
+      "dimension": "language",
+      "dailyTargetMinutes": 180,
+      "weeklyTargetMinutes": 1260,
+      "description": "每天3小时雅思强化学习，并同步利用大模型AI工具推进前沿学术科研"
+    },
+    {
+      "id": "cat-politics-innovation",
+      "name": "任务二: 习概与双创导论",
+      "icon": "BookOpen",
+      "color": "#f59e0b",
+      "dimension": "academic",
+      "dailyTargetMinutes": 90,
+      "weeklyTargetMinutes": 540,
+      "description": "每天深入学习习近平新时代思想概论与创新创业导论核心理论"
+    },
+    {
+      "id": "cat-major-courses",
+      "name": "任务三: 体育专业课三科",
+      "icon": "Code",
+      "color": "#3b82f6",
+      "dimension": "skill",
+      "dailyTargetMinutes": 60,
+      "weeklyTargetMinutes": 300,
+      "description": "运动生物力学(20m) + 体育科学研究方法(20m) + 运动竞赛学(20m)"
+    },
+    {
+      "id": "cat-fitness-workout",
+      "name": "周末专项: 健身房高强度锻炼",
+      "icon": "Dumbbell",
+      "color": "#10b981",
+      "dimension": "fitness",
+      "dailyTargetMinutes": 150,
+      "weeklyTargetMinutes": 300,
+      "description": "周末10:00-12:30 健身房力量抗阻、专项爆发力与心肺体能雕刻"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "task-fit-tue-01",
+      "categoryId": "cat-fitness-workout",
+      "title": "健身房大重量下肢与核心拉练（深蹲顶峰140kg + RDL + 髋内收 + 悬垂举腿/山羊挺身）",
+      "completed": true,
+      "estimatedPomodoros": 4,
+      "completedPomodoros": 4,
+      "notes": "10:30-12:30 严格执行2小时。深蹲冲击140kg成功；大容量后侧链RDL与多角度核心轰炸",
+      "createdAt": "2026-11-03T02:30:00.000Z",
+      "completedAt": "2026-11-03T04:30:00.000Z"
+    },
+    {
+      "id": "task-ielts-1",
+      "categoryId": "cat-ielts-research",
+      "title": "剑雅18 Test 3 阅读长难句精析 + AI辅助生成学术综述论点",
+      "completed": false,
+      "estimatedPomodoros": 4,
+      "completedPomodoros": 3,
+      "notes": "利用 AI 梳理中英文语义逻辑对照，精析判断题同义替换 (周二早晨已完成90m，进度 3/4)",
+      "createdAt": "2026-11-03T00:00:00.000Z"
+    },
+    {
+      "id": "task-ielts-2",
+      "categoryId": "cat-ielts-research",
+      "title": "雅思学术写作 Task 2 范文仿写 + AI多轮批改语法与衔接",
+      "completed": false,
+      "estimatedPomodoros": 3,
+      "completedPomodoros": 0,
+      "notes": "聚焦科技与健康伦理话题论证框架",
+      "createdAt": "2026-11-01T10:04:50.858Z"
+    },
+    {
+      "id": "task-pol-1",
+      "categoryId": "cat-politics-innovation",
+      "title": "习概核心专题知识点背诵与双创商业模式画布推演",
+      "completed": false,
+      "estimatedPomodoros": 3,
+      "completedPomodoros": 0,
+      "notes": "结合体育产业创新案例推演双创商业计划书草案",
+      "createdAt": "2026-11-03T00:00:00.000Z"
+    },
+    {
+      "id": "task-major-1",
+      "categoryId": "cat-major-courses",
+      "title": "专业课三科突破: 运动生物力学(20m) + 体育科研方法(20m) + 运动竞赛学(20m)",
+      "completed": false,
+      "estimatedPomodoros": 2,
+      "completedPomodoros": 0,
+      "notes": "梳理运动环节受力平衡方程与实验抽样方法",
+      "createdAt": "2026-11-03T00:00:00.000Z"
+    },
+    {
+      "id": "task-fit-1",
+      "categoryId": "cat-fitness-workout",
+      "title": "周末健身房胸肩抗阻力训练 + 40分钟高强度心肺体能",
+      "completed": false,
+      "estimatedPomodoros": 4,
+      "completedPomodoros": 0,
+      "notes": "10:00-12:30严格执行2.5小时，深蹲与卧推递增组",
+      "createdAt": "2026-11-02T10:04:50.858Z"
+    }
+  ],
+  "timeLogs": [
+    {
+      "id": "log-20261103-workout",
+      "taskId": "task-fit-tue-01",
+      "taskTitle": "健身房大重量下肢力量突破与核心专项",
+      "categoryId": "cat-fitness-workout",
+      "categoryName": "周末专项: 健身房高强度锻炼",
+      "categoryColor": "#10b981",
+      "categoryIcon": "Dumbbell",
+      "startTime": "2026-11-03T10:30:00.000+08:00",
+      "endTime": "2026-11-03T12:30:00.000+08:00",
+      "durationMinutes": 120,
+      "mode": "extra",
+      "isExtra": true,
+      "notes": "【下肢主项】深蹲：60kg×5, 80kg×5, 100kg×5, 110kg×5, 120kg×3, 140kg×1（顶峰单次突破）；罗马尼亚硬拉(RDL)：60kg×6 (3组), 80kg×4 (2组)；坐姿髋内收：47kg×10 (2组), 54kg×8 (2组), 64kg×6 (2组)。【核心体能】悬垂举腿：10次×5组；山羊凳侧压腿：10kg负重×10次 (5组)；反向山羊挺身：5kg负重×10次 (5组)；反向山羊俄罗斯转体：5kg负重×10次 (5组)；平板支撑：60秒×3组。"
+    },
+    {
+      "id": "log-20261103-01",
+      "taskId": "task-ielts-1",
+      "taskTitle": "剑雅18 Test 3 阅读长难句精析 + AI辅助生成学术综述论点",
+      "categoryId": "cat-ielts-research",
+      "categoryName": "任务一: 雅思备考 & AI科研推进",
+      "categoryColor": "#8b5cf6",
+      "categoryIcon": "GraduationCap",
+      "startTime": "2026-11-03T08:15:00.000+08:00",
+      "endTime": "2026-11-03T09:45:00.000+08:00",
+      "durationMinutes": 90,
+      "mode": "pomodoro",
+      "isExtra": false,
+      "notes": "周二早间自习室连续90分钟高强度专注：雅思长难句精析 + AI前沿论文综述论点推进"
+    },
+    {
+      "id": "log-20261102-01",
+      "taskId": "task-pol-1",
+      "taskTitle": "习概核心专题知识点背诵与双创商业模式画布推演",
+      "categoryId": "cat-politics-innovation",
+      "categoryName": "任务二: 习概与双创导论",
+      "categoryColor": "#f59e0b",
+      "categoryIcon": "BookOpen",
+      "startTime": "2026-11-02T08:00:00.000+08:00",
+      "endTime": "2026-11-02T09:30:00.000+08:00",
+      "durationMinutes": 90,
+      "mode": "pomodoro",
+      "isExtra": false,
+      "notes": "早八自习室沉浸专注90分钟，深入攻关习概与双创理论"
+    },
+    {
+      "id": "log-20261102-02",
+      "taskId": "task-ielts-1",
+      "taskTitle": "剑雅18 Test 3 阅读长难句精析 + AI辅助生成学术综述论点",
+      "categoryId": "cat-ielts-research",
+      "categoryName": "任务一: 雅思备考 & AI科研推进",
+      "categoryColor": "#8b5cf6",
+      "categoryIcon": "GraduationCap",
+      "startTime": "2026-11-02T14:00:00.000+08:00",
+      "endTime": "2026-11-02T17:00:00.000+08:00",
+      "durationMinutes": 180,
+      "mode": "pomodoro",
+      "isExtra": false,
+      "notes": "下午连续3小时深度沉浸，雅思阅读长难句精析 + AI前沿论文综述推进"
+    },
+    {
+      "id": "log-20261102-03",
+      "taskId": "task-major-1",
+      "taskTitle": "专业课三科突破: 运动生物力学(20m) + 体育科研方法(20m) + 运动竞赛学(20m)",
+      "categoryId": "cat-major-courses",
+      "categoryName": "任务三: 体育专业课三科",
+      "categoryColor": "#3b82f6",
+      "categoryIcon": "Code",
+      "startTime": "2026-11-02T17:00:00.000+08:00",
+      "endTime": "2026-11-02T18:00:00.000+08:00",
+      "durationMinutes": 60,
+      "mode": "pomodoro",
+      "isExtra": false,
+      "notes": "运动生物力学(20m) + 体育科学研究方法(20m) + 运动竞赛学(20m) 各20分钟全面覆盖达标"
+    }
+  ],
+  "reflections": {
+    "2026-11-02": {
+      "date": "2026-11-02",
+      "score": 5,
+      "mood": "🔥 完美开局",
+      "summary": "新学期第一天（周一）全勤大满贯！早八与下午自习室均按时准点打卡，雅思与AI科研3小时+习概双创90分钟+专业课三科60分钟全部圆满达成！专注总时长达 5.5 小时，新学期开门红！",
+      "achievements": [
+        "自习室打卡 2/2 准时达成 (08:00 & 14:00)",
+        "任务一：雅思剑雅18长难句精析与AI学术论文框架推进 (180m)",
+        "任务二：习概核心理论梳理与双创商业模式推演 (90m)",
+        "任务三：运动生物力学 + 体育科研方法 + 运动竞赛学全覆盖 (60m)"
+      ]
+    }
+  },
+  "settings": {
+    "pomodoroMinutes": 240,
+    "shortBreakMinutes": 5,
+    "longBreakMinutes": 15,
+    "longBreakInterval": 4,
+    "autoStartBreaks": false,
+    "autoStartPomodoros": false,
+    "soundEnabled": true,
+    "soundVolume": 0.8,
+    "ambientSound": "none"
+  },
+  "checkIns": [
+    {
+      "id": "chk-1793685429346",
+      "checkpointId": "cp-tue-2",
+      "date": "2026-11-03",
+      "scheduledTime": "14:00",
+      "checkInTime": "2026-11-03T05:57:09.346Z",
+      "status": "on_time",
+      "diffMinutes": -2,
+      "target": "自习室",
+      "taskName": "任务1前半部分: 雅思与AI科研 (90分钟)",
+      "notes": "准时在 14:00 前到达自习室打卡！"
+    },
+    {
+      "id": "chk-20261103-gym",
+      "checkpointId": "extra-gym-20261103",
+      "date": "2026-11-03",
+      "scheduledTime": "10:30",
+      "checkInTime": "2026-11-03T10:30:00.000+08:00",
+      "status": "on_time",
+      "diffMinutes": 0,
+      "target": "健身房",
+      "taskName": "[自主加练] 健身房下肢力量与核心专项 (120分钟)",
+      "notes": "周二上午课余自主加练打卡：深蹲冲击140kg成功，完成大容量RDL与核心体能拉练"
+    },
+    {
+      "id": "chk-20261103-01",
+      "checkpointId": "cp-tue-1",
+      "date": "2026-11-03",
+      "scheduledTime": "08:00",
+      "checkInTime": "2026-11-03T07:56:04.000+08:00",
+      "status": "on_time",
+      "diffMinutes": -4,
+      "target": "自习室",
+      "taskName": "任务2 (习概双创 90m) + 任务3 (专业课 60m)",
+      "notes": "手机端 07:56:04 准时打卡就位！上午无课，专注攻坚任务二（习概双创 90m）+ 任务三（专业课 60m）"
+    },
+    {
+      "id": "chk-20261102-01",
+      "checkpointId": "cp-mon-1",
+      "date": "2026-11-02",
+      "scheduledTime": "08:00",
+      "checkInTime": "2026-11-02T07:55:00.000+08:00",
+      "status": "on_time",
+      "diffMinutes": -5,
+      "target": "自习室",
+      "taskName": "任务2: 习概与创新创业导论 (90分钟)",
+      "notes": "早八自习室准时到达！深入背诵习概核心论述与双创商业模式分析 (90分钟全额达标)"
+    },
+    {
+      "id": "chk-20261102-02",
+      "checkpointId": "cp-mon-2",
+      "date": "2026-11-02",
+      "scheduledTime": "14:00",
+      "checkInTime": "2026-11-02T13:54:00.000+08:00",
+      "status": "on_time",
+      "diffMinutes": -6,
+      "target": "自习室",
+      "taskName": "任务1 (雅思与AI科研 180m) + 任务3 (专业课三科 60m)",
+      "notes": "下午连续专注攻坚4小时！雅思阅读长难句精析+AI科研综述推进+专业课三门全面扎实达标！"
+    }
+  ]
+}

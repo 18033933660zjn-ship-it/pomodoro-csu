@@ -1,0 +1,18 @@
+{
+  "name": "番茄ToDo Pro - 时间统筹与自习打卡",
+  "short_name": "番茄ToDo",
+  "description": "专为中南大学2026-2027-1学期打造的日程统筹、严格自习打卡与沉浸番茄钟",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#0f172a",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/tomato-icon.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

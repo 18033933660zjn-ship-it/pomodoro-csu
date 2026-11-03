@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <linearGradient id="tomato" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff6b6b"/>
+      <stop offset="50%" stop-color="#ef4444"/>
+      <stop offset="100%" stop-color="#b91c1c"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="url(#bg)"/>
+  <circle cx="256" cy="275" r="165" fill="url(#tomato)"/>
+  <!-- Leaves -->
+  <path d="M256,125 C256,80 275,65 300,55 C290,78 275,100 265,125 Z" fill="#22c55e"/>
+  <path d="M256,125 C220,105 180,100 150,115 C185,125 220,132 256,125 Z" fill="#16a34a"/>
+  <path d="M256,125 C292,105 332,100 362,115 C327,125 292,132 256,125 Z" fill="#16a34a"/>
+  <!-- Highlight -->
+  <ellipse cx="205" cy="210" rx="42" ry="22" transform="rotate(-35, 205, 210)" fill="white" opacity="0.32"/>
+</svg>
