@@ -160,8 +160,18 @@
                 <span>直连专注 ({{ cp.durationMinutes }}m)</span>
               </button>
 
+              <!-- Direct Fill Actual Study Time Button (实际学习时间免等直接填报) -->
+              <button
+                @click="openQuickTimeEntry(cp)"
+                class="px-3 py-2 rounded-xl bg-amber-500/15 hover:bg-amber-500/25 text-amber-300 hover:text-amber-200 text-xs font-bold border border-amber-500/30 transition-all flex items-center gap-1.5 active:scale-95 shadow-sm"
+                title="免等倒计时，将你在自习室实际完成的学时直接填入入账"
+              >
+                <Zap class="w-3.5 h-3.5 text-amber-400" />
+                <span>填报实际学时</span>
+              </button>
+
               <!-- If already checked in -->
-              <div v-if="getCheckpointRecord(cp.id)" class="text-right">
+              <div v-if="getCheckpointRecord(cp.id)" class="text-right space-y-1">
                 <div class="flex items-center gap-1.5 justify-end">
                   <span
                     class="text-xs font-bold px-2.5 py-1 rounded-lg flex items-center gap-1"
@@ -176,8 +186,34 @@
                     {{ getCheckpointRecord(cp.id)?.status === 'on_time' ? '已准时打卡' : `迟到 ${getCheckpointRecord(cp.id)?.diffMinutes} 分钟` }}
                   </span>
                 </div>
-                <div class="text-[11px] text-slate-500 mt-1 font-mono">
+                <div class="text-[11px] text-slate-500 font-mono">
                   打卡时间: {{ formatCheckInTime(getCheckpointRecord(cp.id)?.checkInTime) }}
+                </div>
+                <!-- Focus Log Sync Status & Quick Settlement -->
+                <div class="flex items-center gap-1.5 justify-end pt-0.5">
+                  <div
+                    v-if="isCheckpointLogRecorded(cp)"
+                    class="flex items-center gap-1 text-[10px] font-semibold text-emerald-400 bg-emerald-500/10 border border-emerald-500/20 px-2 py-0.5 rounded-md"
+                  >
+                    <Check class="w-3 h-3 text-emerald-400" />
+                    <span>已计入学时 ({{ getCheckpointLoggedMinutes(cp) }}m)</span>
+                    <button
+                      @click="openQuickTimeEntry(cp)"
+                      class="text-slate-400 hover:text-white underline ml-1"
+                      title="点击追加或修改"
+                    >
+                      追加
+                    </button>
+                  </div>
+                  <button
+                    v-else
+                    @click="openQuickTimeEntry(cp)"
+                    class="text-[10px] font-bold text-amber-300 hover:text-white bg-amber-500/25 hover:bg-amber-500/40 border border-amber-500/50 px-2.5 py-1 rounded-md transition-all flex items-center gap-1 shadow-sm"
+                    title="点击直接将本次打卡时段的实际学时存入今日流水"
+                  >
+                    <Zap class="w-3 h-3 text-amber-400" />
+                    一键登记实际学时 ({{ cp.durationMinutes }}m)
+                  </button>
                 </div>
               </div>
 
@@ -219,6 +255,17 @@
       @close="showExtraModal = false"
     />
 
+    <!-- Quick Time Entry Modal -->
+    <QuickTimeEntryModal
+      :is-open="showQuickTimeModal"
+      :initial-minutes="quickTimeData.minutes"
+      :initial-category-id="quickTimeData.categoryId"
+      :initial-task-title="quickTimeData.taskTitle"
+      :initial-notes="quickTimeData.notes"
+      @close="showQuickTimeModal = false"
+      @saved="showQuickTimeModal = false"
+    />
+
     <!-- Mobile Connect Modal -->
     <MobileConnectModal
       :is-open="showMobileModal"
@@ -238,20 +285,34 @@ import {
   AlertTriangle,
   Play,
   Sparkles,
-  Smartphone
+  Smartphone,
+  Check,
+  Clock,
+  Zap
 } from 'lucide-vue-next'
 import { useScheduleStore } from '@/stores/useScheduleStore'
 import { usePomodoroStore } from '@/stores/usePomodoroStore'
+import { useTimeLogStore } from '@/stores/useTimeLogStore'
 import ExtraStudyModal from '@/components/ExtraStudyModal.vue'
+import QuickTimeEntryModal from '@/components/QuickTimeEntryModal.vue'
 import MobileConnectModal from '@/components/MobileConnectModal.vue'
 import type { StudyCheckpoint } from '@/types'
 
 const router = useRouter()
 const scheduleStore = useScheduleStore()
 const pomodoroStore = usePomodoroStore()
+const timeLogStore = useTimeLogStore()
 
 const showExtraModal = ref(false)
+const showQuickTimeModal = ref(false)
 const showMobileModal = ref(false)
+
+const quickTimeData = ref({
+  minutes: 90,
+  categoryId: '',
+  taskTitle: '',
+  notes: ''
+})
 
 const dayTabs = [
   { dayOfWeek: 1, label: '周一' },
@@ -290,7 +351,7 @@ function getDayMetaDesc(day: number) {
   const map: Record<number, string> = {
     1: '任务1(3h) + 任务2(1.5h) + 任务3(1h) 全达标',
     2: '下午2点+晚间7点半双时段拆解任务1',
-    3: '午休前完成任务2，组会后推进任务1，晚课后攻坚任务3',
+    3: '午休前完成任务2，下午党课后16:00攻坚任务1，晚课后21:00保质收尾',
     4: '上午满课，下午保任务2，晚间保任务1 (免做任务3)',
     5: '早八攻坚任务3，课上消化任务2，下午保任务1',
     6: '早八任务2，10点健身房2.5h，下午保任务1 (免做任务3)',
@@ -303,7 +364,7 @@ function getDayExecutionSummary(day: number) {
   const map: Record<number, string> = {
     1: '上午八点准时到达自习室打卡完成任务2，九点半上足球课；下午两点准时自习室打卡攻坚任务1和任务3，晚上上双创课。',
     2: '早上无课，八点到达自习室打卡完成任务2和任务3；下午两点打卡完成任务1前半段，技能课后晚上七点半继续打卡完成任务1后半段。',
-    3: '早上游泳课后十点到达自习室打卡完成任务2，下午组会后两点半自习室打卡攻坚任务1，晚课后九点准时自习室推进任务3。',
+    3: '早上游泳课后10点自习室打卡完成任务2；下午两点上党课至四点，四点到达自习室打卡攻坚任务1前半段(150m)；晚课后21点打卡完成雅思收尾(30m)+专业课(60m)。',
     4: '上午满课，下午两点准时到达自习室打卡完成任务2，晚上七点半准时自习室打卡完成任务1（周四免做任务3）。',
     5: '早上八点准时到达自习室打卡完成任务3，十点习概课上完成任务2，下午两点半准时自习室打卡完成任务1。',
     6: '无课！早上八点准时到达自习室打卡完成任务2，十点准时到达健身房打卡锻炼2.5小时，下午两点半自习室打卡完成任务1。',
@@ -338,6 +399,97 @@ function handleDoCheckIn(cp: StudyCheckpoint) {
   } catch (err: unknown) {
     alert(err instanceof Error ? err.message : String(err))
   }
+}
+
+// 打开自习节点实际学时填报弹窗
+function openQuickTimeEntry(cp: StudyCheckpoint) {
+  let catId = 'cat-ielts-research'
+  if (cp.taskName.includes('任务二') || cp.taskName.includes('习概') || cp.taskName.includes('双创')) {
+    catId = 'cat-politics-innovation'
+  } else if (cp.taskName.includes('任务三') || cp.taskName.includes('专业课')) {
+    catId = 'cat-major-courses'
+  } else if (cp.target === '健身房') {
+    catId = 'cat-fitness-workout'
+  }
+
+  quickTimeData.value = {
+    minutes: cp.durationMinutes,
+    categoryId: catId,
+    taskTitle: cp.taskName,
+    notes: `${cp.target}准时攻坚，实际专注完成`
+  }
+  showQuickTimeModal.value = true
+}
+
+// 获取打卡节点已记录的总分钟数
+function getCheckpointLoggedMinutes(cp: StudyCheckpoint) {
+  const today = todayStr.value
+  const logs = timeLogStore.timeLogs.filter(l => {
+    const isSameDay = dayjs(l.startTime).format('YYYY-MM-DD') === today
+    if (!isSameDay) return false
+    return l.taskTitle.includes(cp.taskName) || cp.taskName.includes(l.taskTitle) || (l.notes && l.notes.includes(cp.taskName))
+  })
+  return logs.reduce((sum, l) => sum + l.durationMinutes, 0)
+}
+
+// 检查该打卡节点对应的专注时长是否已被流水记录
+function isCheckpointLogRecorded(cp: StudyCheckpoint) {
+  const today = todayStr.value
+  return timeLogStore.timeLogs.some(l => {
+    const isSameDay = dayjs(l.startTime).format('YYYY-MM-DD') === today
+    if (!isSameDay) return false
+    return l.taskTitle.includes(cp.taskName) || cp.taskName.includes(l.taskTitle) || (l.notes && l.notes.includes(cp.taskName))
+  })
+}
+
+// 一键结转打卡节点的专注时长
+function quickLogCheckpoint(cp: StudyCheckpoint) {
+  let catId = 'cat-ielts-research'
+  let catName = '任务一: 雅思备考 & AI科研推进'
+  let catColor = '#8b5cf6'
+  let catIcon = 'GraduationCap'
+  let taskId = 'task-ielts-1'
+
+  if (cp.taskName.includes('任务二') || cp.taskName.includes('习概') || cp.taskName.includes('双创')) {
+    catId = 'cat-politics-innovation'
+    catName = '任务二: 习概与双创导论'
+    catColor = '#f59e0b'
+    catIcon = 'BookOpen'
+    taskId = 'task-pol-1'
+  } else if (cp.taskName.includes('任务三') || cp.taskName.includes('专业课')) {
+    catId = 'cat-major-courses'
+    catName = '任务三: 体育专业课三科'
+    catColor = '#3b82f6'
+    catIcon = 'Code'
+    taskId = 'task-major-1'
+  } else if (cp.target === '健身房') {
+    catId = 'cat-fitness-workout'
+    catName = '周末专项: 健身房高强度锻炼'
+    catColor = '#10b981'
+    catIcon = 'Dumbbell'
+    taskId = 'task-fit-tue-01'
+  }
+
+  const rec = getCheckpointRecord(cp.id)
+  const startTime = rec?.checkInTime ? new Date(rec.checkInTime) : new Date(Date.now() - cp.durationMinutes * 60000)
+  const endTime = new Date(startTime.getTime() + cp.durationMinutes * 60000)
+
+  timeLogStore.addLog({
+    taskId,
+    taskTitle: cp.taskName,
+    categoryId: catId,
+    categoryName: catName,
+    categoryColor: catColor,
+    categoryIcon: catIcon,
+    startTime: startTime.toISOString(),
+    endTime: endTime.toISOString(),
+    durationMinutes: cp.durationMinutes,
+    mode: 'pomodoro',
+    isExtra: false,
+    notes: `${cp.target}准时打卡专注就位，全额完成 ${cp.durationMinutes} 分钟既定目标！`
+  })
+
+  alert(`🎉 已成功将【${cp.taskName}】${cp.durationMinutes}分钟 记入今日专注流水！`)
 }
 
 // 直连当前时段所需任务总时长，中途不设休息

@@ -87,6 +87,19 @@ export const usePomodoroStore = defineStore('pomodoro', () => {
     return `${m.toString().padStart(2, '0')}:${s.toString().padStart(2, '0')}`
   })
 
+  // 已过去/已专注的秒数
+  const elapsedSeconds = computed(() => {
+    if (mode.value === 'stopwatch') return stopwatchElapsed.value
+    const totalSec = settings.value.pomodoroMinutes * 60
+    return Math.max(0, totalSec - timeLeft.value)
+  })
+
+  // 已过去/已专注的分钟数（向下/向上取整：若不足30秒显示0，达到则正常四舍五入，最少计1m）
+  const elapsedMinutes = computed(() => {
+    if (elapsedSeconds.value < 30) return 0
+    return Math.max(1, Math.round(elapsedSeconds.value / 60))
+  })
+
   // 保存当前计时器快照到本地存储，防页面刷新或系统后台杀进程
   function saveSnapshot() {
     try {
@@ -373,6 +386,86 @@ export const usePomodoroStore = defineStore('pomodoro', () => {
     sessionStartTime.value = null
   }
 
+  // 提前结束当前倒计时专注，将实际已专注的时长直接存入流水（彻底解决中途停止或提前完成不记录的问题）
+  function settleElapsedPomodoro(customMinutes?: number) {
+    if (mode.value !== 'pomodoro') return
+    const actualMinutes = customMinutes !== undefined ? Math.max(1, customMinutes) : Math.max(1, elapsedMinutes.value)
+    pause()
+    clearSnapshot()
+    soundManager.stopAmbient()
+
+    if (settings.value.soundEnabled) {
+      soundManager.playCompletionBell(settings.value.soundVolume)
+    }
+
+    // 燃放彩带
+    try {
+      confetti({
+        particleCount: 100,
+        spread: 70,
+        origin: { y: 0.6 }
+      })
+    } catch {
+      // ignore
+    }
+
+    recordTimeLog(actualMinutes, 'pomodoro')
+    // 重置回预设时长
+    timeLeft.value = settings.value.pomodoroMinutes * 60
+    sessionStartTime.value = null
+    updateTitle()
+  }
+
+  // 极速直接填入实际学习时间（无需等待倒计时，自习结束随时填入）
+  function quickLogDirect(params: {
+    durationMinutes: number
+    categoryId?: string
+    taskId?: string
+    taskTitle?: string
+    notes?: string
+    startTime?: string
+    endTime?: string
+  }) {
+    const targetCatId = params.categoryId || selectedCategoryId.value || categoryStore.categories[0]?.id
+    const cat = categoryStore.getCategoryById(targetCatId) || categoryStore.categories[0]
+    const task = params.taskId ? taskStore.tasks.find(t => t.id === params.taskId) : undefined
+
+    const end = params.endTime ? new Date(params.endTime) : new Date()
+    const start = params.startTime ? new Date(params.startTime) : new Date(end.getTime() - params.durationMinutes * 60000)
+
+    timeLogStore.addLog({
+      taskId: task?.id || params.taskId,
+      taskTitle: params.taskTitle || task?.title || `${cat.name} 实际攻坚`,
+      categoryId: cat.id,
+      categoryName: cat.name,
+      categoryColor: cat.color,
+      categoryIcon: cat.icon,
+      startTime: start.toISOString(),
+      endTime: end.toISOString(),
+      durationMinutes: params.durationMinutes,
+      mode: 'pomodoro',
+      notes: params.notes || '自习室实际攻坚完成，直接填报入账'
+    })
+
+    if (task) {
+      taskStore.incrementTaskPomodoro(task.id)
+    }
+
+    try {
+      confetti({
+        particleCount: 80,
+        spread: 60,
+        origin: { y: 0.7 }
+      })
+    } catch {
+      // ignore
+    }
+
+    if (settings.value.soundEnabled) {
+      soundManager.playCompletionBell(settings.value.soundVolume)
+    }
+  }
+
   // 写入一条实际时间记录
   function recordTimeLog(durationMin: number, logMode: 'pomodoro' | 'stopwatch') {
     const cat = categoryStore.getCategoryById(selectedCategoryId.value) || categoryStore.categories[0]
@@ -517,11 +610,15 @@ export const usePomodoroStore = defineStore('pomodoro', () => {
     totalDuration,
     progressPercent,
     formattedTime,
+    elapsedSeconds,
+    elapsedMinutes,
     start,
     pause,
     reset,
     switchMode,
     setTargetDuration,
+    settleElapsedPomodoro,
+    quickLogDirect,
     finishStopwatch,
     updateSettings,
     syncFromTimestamp

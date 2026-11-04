@@ -100,7 +100,13 @@ export const TrustedDeviceService = {
     if (typeof window === 'undefined') return { verified: false, isNew: false }
 
     const urlParams = new URLSearchParams(window.location.search)
-    const token = urlParams.get('token') || urlParams.get('auth')
+    let token = urlParams.get('token') || urlParams.get('auth')
+
+    if (!token && window.location.hash.includes('?')) {
+      const hashQuery = window.location.hash.split('?')[1]
+      const hashParams = new URLSearchParams(hashQuery)
+      token = hashParams.get('token') || hashParams.get('auth')
+    }
 
     if (token) {
       const master = this.getMasterSecret()

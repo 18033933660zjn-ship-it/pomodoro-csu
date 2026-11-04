@@ -53,6 +53,15 @@ export const weeklyCourses: CourseItem[] = [
     weeks: '全学期'
   },
   {
+    id: 'course-wed-party',
+    name: '专题党课与思想政治理论培训',
+    dayOfWeek: 3,
+    time: '14:00-16:00',
+    location: '学院党校 / 教学报告厅',
+    instructor: '组织部 / 理论导师',
+    weeks: '今日专设'
+  },
+  {
     id: 'course-wed-3',
     name: '运动生物力学',
     dayOfWeek: 3,
@@ -176,20 +185,20 @@ export const weeklyCheckpoints: StudyCheckpoint[] = [
   {
     id: 'cp-wed-2',
     dayOfWeek: 3,
-    time: '14:30',
+    time: '16:00',
     target: '自习室',
-    taskName: '任务1: 雅思与AI科研推进 (180分钟)',
-    durationMinutes: 180,
-    description: '组会结束后14:30前到达自习室打卡，专注3小时至17:30，随后准备19:00运动生物力学课'
+    taskName: '任务1前半部分: 雅思与AI科研 (150分钟)',
+    durationMinutes: 150,
+    description: '党课下课后 16:00 前到达自习室打卡，专注至 18:30，随后晚餐并准备 19:00 运动生物力学课'
   },
   {
     id: 'cp-wed-3',
     dayOfWeek: 3,
     time: '21:00',
     target: '自习室',
-    taskName: '任务3: 专业课知识巩固 (60分钟)',
-    durationMinutes: 60,
-    description: '晚课下课后21:00前到达自习室打卡，专注生物力学/科研方法/竞赛学，22:00回宿舍'
+    taskName: '任务1剩余(30m) + 任务3: 专业课巩固 (60m)',
+    durationMinutes: 90,
+    description: '晚课下课后 21:00 前到达自习室打卡，补齐雅思剩余30分钟并巩固专业课60分钟，全天雅思3小时保质全满贯！'
   },
 
   // 周四

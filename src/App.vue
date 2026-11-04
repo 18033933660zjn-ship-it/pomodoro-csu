@@ -4,6 +4,7 @@
     <Sidebar
       class="hidden md:flex"
       @open-manual-log="showManualLogModal = true"
+      @open-quick-time="showQuickTimeModal = true"
       @open-backup="showBackupModal = true"
       @open-extra-study="showExtraStudyModal = true"
       @open-mobile-connect="showMobileConnectModal = true"
@@ -17,6 +18,30 @@
       </div>
 
       <div class="flex items-center gap-2">
+        <!-- Live Cloud Sync Button -->
+        <button
+          @click="syncState.syncNow"
+          class="flex items-center gap-1 px-2 py-1.5 rounded-lg border text-xs font-medium transition-all"
+          :class="[
+            syncState.isSyncing.value
+              ? 'bg-amber-950/40 border-amber-800/60 text-amber-300'
+              : 'bg-cyan-950/40 border-cyan-800/60 text-cyan-300 hover:text-white'
+          ]"
+          :title="'手机/电脑实时云同步 (点击立即互通)'"
+        >
+          <RefreshCw class="w-3.5 h-3.5" :class="{ 'animate-spin': syncState.isSyncing.value }" />
+          <span class="text-[10px] font-mono">{{ syncState.isSyncing.value ? '同步' : '云互通' }}</span>
+        </button>
+
+        <!-- Quick Time Entry Trigger Button -->
+        <button
+          @click="showQuickTimeModal = true"
+          class="p-2 rounded-lg bg-amber-500/20 border border-amber-500/40 text-amber-300 hover:text-white"
+          title="填报实际学时 (免等倒计时)"
+        >
+          <Zap class="w-4 h-4 fill-current" />
+        </button>
+
         <button
           @click="showMobileConnectModal = true"
           class="p-2 rounded-lg bg-cyan-950/60 border border-cyan-800/60 text-cyan-400 hover:text-white"
@@ -80,6 +105,14 @@
 
         <div class="pt-4 border-t border-slate-800 space-y-2">
           <button
+            @click="showQuickTimeModal = true; mobileMenuOpen = false"
+            class="w-full flex items-center gap-2 px-3 py-2.5 text-xs text-amber-300 hover:text-amber-200 bg-amber-500/15 rounded-lg border border-amber-500/30 font-bold"
+          >
+            <Zap class="w-4 h-4 fill-current text-amber-400" />
+            <span>填报实际学时 (免等倒计时)</span>
+          </button>
+
+          <button
             @click="showMobileConnectModal = true; mobileMenuOpen = false"
             class="w-full flex items-center gap-2 px-3 py-2 text-xs text-cyan-400 hover:text-cyan-300 bg-cyan-950/30 rounded-lg border border-cyan-800/40 font-semibold"
           >
@@ -104,6 +137,12 @@
     </main>
 
     <!-- Modals -->
+    <QuickTimeEntryModal
+      :is-open="showQuickTimeModal"
+      @close="showQuickTimeModal = false"
+      @saved="showQuickTimeModal = false"
+    />
+
     <ManualLogModal
       :is-open="showManualLogModal"
       @close="showManualLogModal = false"
@@ -143,24 +182,35 @@ import {
   BarChart3,
   Settings,
   Sparkles,
-  Smartphone
+  Smartphone,
+  RefreshCw,
+  Zap
 } from 'lucide-vue-next'
 import Sidebar from '@/components/Sidebar.vue'
+import QuickTimeEntryModal from '@/components/QuickTimeEntryModal.vue'
 import ManualLogModal from '@/components/ManualLogModal.vue'
 import DataExportModal from '@/components/DataExportModal.vue'
 import ExtraStudyModal from '@/components/ExtraStudyModal.vue'
 import MobileConnectModal from '@/components/MobileConnectModal.vue'
 import DeviceAuthGate from '@/components/DeviceAuthGate.vue'
-import { StorageService } from '@/utils/storage'
+import { StorageService, useSyncState } from '@/utils/storage'
 import { useScheduleStore } from '@/stores/useScheduleStore'
 import { useTimeLogStore } from '@/stores/useTimeLogStore'
+import { useTaskStore } from '@/stores/useTaskStore'
+import { useCategoryStore } from '@/stores/useCategoryStore'
+import { useReflectionStore } from '@/stores/useReflectionStore'
 
 // 初始化存储
 StorageService.init()
 
+const syncState = useSyncState()
 const scheduleStore = useScheduleStore()
 const timeLogStore = useTimeLogStore()
+const taskStore = useTaskStore()
+const categoryStore = useCategoryStore()
+const reflectionStore = useReflectionStore()
 
+const showQuickTimeModal = ref(false)
 const showManualLogModal = ref(false)
 const showBackupModal = ref(false)
 const showExtraStudyModal = ref(false)
@@ -169,23 +219,40 @@ const mobileMenuOpen = ref(false)
 
 let pollTimer: any = null
 
+function reloadAllStores() {
+  scheduleStore.reload()
+  timeLogStore.reload()
+  taskStore.reload()
+  categoryStore.reload()
+  reflectionStore.reload()
+}
+
 onMounted(() => {
-  const syncAndReload = async () => {
-    const updated = await StorageService.syncWithServer()
-    if (updated) {
-      scheduleStore.reload()
-      timeLogStore.reload()
+  // 1. 监听来自 storage 的跨端/云端数据变更通知
+  window.addEventListener('pomodoro-sync-updated', () => {
+    reloadAllStores()
+  })
+
+  const syncRoutine = async () => {
+    const res = await StorageService.syncWithServer()
+    if (res.updated) {
+      reloadAllStores()
     }
   }
 
+  // 2. 页面可见或聚焦时（如手机切回浏览器、屏幕唤醒），立即执行一次秒级同步
   window.addEventListener('visibilitychange', () => {
     if (document.visibilityState === 'visible') {
-      syncAndReload()
+      syncRoutine()
     }
   })
 
-  // 每15秒后台轻量同步，实现手机打卡与电脑端无感一致
-  pollTimer = setInterval(syncAndReload, 15000)
+  window.addEventListener('focus', () => {
+    syncRoutine()
+  })
+
+  // 3. 每 10 秒轻量循环拉取云端，确保手机与电脑无论在任何网络下均保持零差异实时互通
+  pollTimer = setInterval(syncRoutine, 10000)
 })
 
 onUnmounted(() => {

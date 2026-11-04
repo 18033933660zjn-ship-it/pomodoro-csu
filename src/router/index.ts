@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHashHistory } from 'vue-router'
 import TimerView from '@/views/TimerView.vue'
 import TasksView from '@/views/TasksView.vue'
 import ScheduleView from '@/views/ScheduleView.vue'
@@ -44,6 +44,6 @@ const routes = [
 ]
 
 export const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHashHistory(),
   routes
 })

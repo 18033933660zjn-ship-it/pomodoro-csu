@@ -61,6 +61,16 @@
           <span>手机打卡</span>
         </button>
 
+        <!-- Quick Actual Study Time Log -->
+        <button
+          @click="$emit('open-quick-time')"
+          class="flex items-center gap-1.5 px-3 py-2.5 rounded-xl bg-amber-500/20 hover:bg-amber-500 text-amber-300 hover:text-slate-950 font-bold text-xs border border-amber-500/40 transition-all shadow-sm"
+          title="免等倒计时，将实际专注时间直接填入流水"
+        >
+          <Zap class="w-3.5 h-3.5 text-amber-400 fill-current" />
+          <span>填报学时</span>
+        </button>
+
         <!-- Extra Study Quick Trigger -->
         <button
           @click="$emit('open-extra-study')"
@@ -112,12 +122,13 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 import dayjs from 'dayjs'
-import { MapPin, CheckCircle2, Sparkles, Smartphone } from 'lucide-vue-next'
+import { MapPin, CheckCircle2, Sparkles, Smartphone, Zap } from 'lucide-vue-next'
 import { useScheduleStore } from '@/stores/useScheduleStore'
 
 defineEmits<{
   (e: 'open-extra-study'): void
   (e: 'open-mobile-connect'): void
+  (e: 'open-quick-time'): void
 }>()
 
 const scheduleStore = useScheduleStore()

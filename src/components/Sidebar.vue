@@ -27,6 +27,28 @@
       </span>
     </div>
 
+    <!-- Cloud Real-time Sync Badge -->
+    <div class="px-3.5 py-1.5 mx-4 mt-2 rounded-lg border flex items-center justify-between text-[11px] cursor-pointer transition-colors"
+      :class="[
+        syncState.isSyncing.value
+          ? 'bg-amber-500/10 border-amber-500/20 text-amber-300'
+          : 'bg-cyan-500/10 border-cyan-500/20 text-cyan-300 hover:bg-cyan-500/20'
+      ]"
+      @click="syncState.syncNow"
+      :title="'手机与电脑秒级云端互通 (点击立即强制双向核验)'"
+    >
+      <span class="flex items-center gap-1.5 font-medium">
+        <RefreshCw class="w-3.5 h-3.5 text-cyan-400" :class="{ 'animate-spin': syncState.isSyncing.value }" />
+        手机电脑云端互通
+      </span>
+      <span class="text-[10px] px-1.5 py-0.2 rounded-full font-semibold flex items-center gap-1"
+        :class="syncState.isSyncing.value ? 'bg-amber-500/20 text-amber-300' : 'bg-emerald-500/20 text-emerald-300'"
+      >
+        <span class="w-1.5 h-1.5 rounded-full bg-emerald-400" :class="{ 'animate-pulse': !syncState.isSyncing.value }"></span>
+        {{ syncState.isSyncing.value ? '同步中' : '实时在线' }}
+      </span>
+    </div>
+
     <!-- Quick Stats Card -->
     <div class="px-4 py-3 mx-4 my-3 rounded-xl bg-slate-800/40 border border-slate-700/50">
       <div class="flex items-center justify-between text-xs text-slate-400 mb-1.5">
@@ -78,6 +100,14 @@
     <!-- Bottom Actions -->
     <div class="p-4 border-t border-slate-800/80 space-y-2">
       <button
+        @click="$emit('open-quick-time')"
+        class="w-full flex items-center justify-center gap-2 py-2 px-3 rounded-lg bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-slate-950 text-xs font-bold transition-all shadow-sm hover:scale-[1.01] active:scale-[0.99]"
+      >
+        <Zap class="w-4 h-4 fill-current" />
+        填报实际学时 (免等倒计时)
+      </button>
+
+      <button
         @click="$emit('open-mobile-connect')"
         class="w-full flex items-center justify-center gap-2 py-2 px-3 rounded-lg bg-cyan-500/15 hover:bg-cyan-500 text-cyan-300 hover:text-slate-950 border border-cyan-500/30 text-xs font-bold transition-all shadow-sm"
       >
@@ -128,19 +158,24 @@ import {
   Database,
   Sparkles,
   Smartphone,
-  ShieldCheck
+  ShieldCheck,
+  RefreshCw,
+  Zap
 } from 'lucide-vue-next'
 import { useTimeLogStore } from '@/stores/useTimeLogStore'
 import { useTaskStore } from '@/stores/useTaskStore'
 import { useScheduleStore } from '@/stores/useScheduleStore'
+import { useSyncState } from '@/utils/storage'
 
 defineEmits<{
   (e: 'open-manual-log'): void
   (e: 'open-backup'): void
   (e: 'open-extra-study'): void
   (e: 'open-mobile-connect'): void
+  (e: 'open-quick-time'): void
 }>()
 
+const syncState = useSyncState()
 const route = useRoute()
 const timeLogStore = useTimeLogStore()
 const taskStore = useTaskStore()

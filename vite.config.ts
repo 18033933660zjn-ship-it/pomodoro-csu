@@ -57,6 +57,18 @@ function syncStoragePlugin() {
         return
       }
 
+      // API: 获取受信任的云端同步 Token (从本地受保护文件 .sync-token 动态读取)
+      if (cleanUrl === '/api/sync-token' && req.method === 'GET') {
+        res.setHeader('Content-Type', 'application/json')
+        const tokenFile = path.resolve(dataDir, '.sync-token')
+        let token = ''
+        if (fs.existsSync(tokenFile)) {
+          token = fs.readFileSync(tokenFile, 'utf-8').trim()
+        }
+        res.end(JSON.stringify({ token }))
+        return
+      }
+
       // API: 获取全量共享数据 (手机与电脑多端同步)
       if (cleanUrl === '/api/storage' && req.method === 'GET') {
         res.setHeader('Content-Type', 'application/json')
@@ -105,6 +117,7 @@ function syncStoragePlugin() {
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: './',
   plugins: [vue(), syncStoragePlugin()],
   resolve: {
     alias: {

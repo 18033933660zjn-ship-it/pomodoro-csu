@@ -1,6 +1,6 @@
 {
   "version": "2.0.0",
-  "exportTime": "2026-11-03T06:18:00.000Z",
+  "exportTime": "2026-11-04T09:57:51.971Z",
   "categories": [
     {
       "id": "cat-ielts-research",
@@ -59,11 +59,12 @@
       "id": "task-ielts-1",
       "categoryId": "cat-ielts-research",
       "title": "剑雅18 Test 3 阅读长难句精析 + AI辅助生成学术综述论点",
-      "completed": false,
+      "completed": true,
       "estimatedPomodoros": 4,
-      "completedPomodoros": 3,
+      "completedPomodoros": 4,
       "notes": "利用 AI 梳理中英文语义逻辑对照，精析判断题同义替换 (周二早晨已完成90m，进度 3/4)",
-      "createdAt": "2026-11-03T00:00:00.000Z"
+      "createdAt": "2026-11-03T00:00:00.000Z",
+      "completedAt": "2026-11-04T18:30:00.000+08:00"
     },
     {
       "id": "task-ielts-2",
@@ -81,7 +82,7 @@
       "title": "习概核心专题知识点背诵与双创商业模式画布推演",
       "completed": false,
       "estimatedPomodoros": 3,
-      "completedPomodoros": 0,
+      "completedPomodoros": 2,
       "notes": "结合体育产业创新案例推演双创商业计划书草案",
       "createdAt": "2026-11-03T00:00:00.000Z"
     },
@@ -107,6 +108,62 @@
     }
   ],
   "timeLogs": [
+    {
+      "id": "log-20261104-02",
+      "taskId": "task-ielts-1",
+      "taskTitle": "剑雅18 Test 3 阅读长难句精析 + AI辅助生成学术综述论点",
+      "categoryId": "cat-ielts-research",
+      "categoryName": "任务一: 雅思备考 & AI科研推进",
+      "categoryColor": "#8b5cf6",
+      "categoryIcon": "GraduationCap",
+      "startTime": "2026-11-04T16:00:00.000+08:00",
+      "endTime": "2026-11-04T18:30:00.000+08:00",
+      "durationMinutes": 150,
+      "mode": "pomodoro",
+      "isExtra": false,
+      "notes": "党课结束后 16:00-18:30 在自习室深度攻坚 150 分钟：精析剑雅长难句结构，并利用 AI 辅助搭建学术论文研究框架。"
+    },
+    {
+      "id": "log-20261104-01",
+      "taskId": "task-pol-1",
+      "taskTitle": "习概核心专题知识点背诵与双创商业模式画布推演",
+      "categoryId": "cat-politics-innovation",
+      "categoryName": "任务二: 习概与双创导论",
+      "categoryColor": "#f59e0b",
+      "categoryIcon": "BookOpen",
+      "startTime": "2026-11-04T10:00:00.000+08:00",
+      "endTime": "2026-11-04T11:30:00.000+08:00",
+      "durationMinutes": 90,
+      "mode": "pomodoro",
+      "isExtra": false,
+      "notes": "上午游泳课后 10:00-11:30 自习室准时专注 90 分钟，扎实背诵习概核心理论要点并推进双创商业画布。"
+    },
+    {
+      "taskTitle": "任务2 (习概双创 90m) + 任务3 (专业课 60m)",
+      "categoryId": "cat-politics-innovation",
+      "categoryName": "任务二: 习概与双创导论",
+      "categoryColor": "#f59e0b",
+      "categoryIcon": "BookOpen",
+      "startTime": "2026-11-03T11:07:39.667Z",
+      "endTime": "2026-11-04T01:59:53.306Z",
+      "durationMinutes": 150,
+      "mode": "pomodoro",
+      "notes": "任务2 (习概双创 90m) + 任务3 (专业课 60m)",
+      "id": "log-1793757593306"
+    },
+    {
+      "taskTitle": "任务1前半部分: 雅思与AI科研 (90分钟)",
+      "categoryId": "cat-ielts-research",
+      "categoryName": "任务一: 雅思备考 & AI科研推进",
+      "categoryColor": "#8b5cf6",
+      "categoryIcon": "GraduationCap",
+      "startTime": "2026-11-03T06:12:29.069Z",
+      "endTime": "2026-11-03T07:42:29.026Z",
+      "durationMinutes": 90,
+      "mode": "pomodoro",
+      "notes": "任务1前半部分: 雅思与AI科研 (90分钟)",
+      "id": "log-1793691749026"
+    },
     {
       "id": "log-20261103-workout",
       "taskId": "task-fit-tue-01",
@@ -138,19 +195,19 @@
       "notes": "周二早间自习室连续90分钟高强度专注：雅思长难句精析 + AI前沿论文综述论点推进"
     },
     {
-      "id": "log-20261102-01",
-      "taskId": "task-pol-1",
-      "taskTitle": "习概核心专题知识点背诵与双创商业模式画布推演",
-      "categoryId": "cat-politics-innovation",
-      "categoryName": "任务二: 习概与双创导论",
-      "categoryColor": "#f59e0b",
-      "categoryIcon": "BookOpen",
-      "startTime": "2026-11-02T08:00:00.000+08:00",
-      "endTime": "2026-11-02T09:30:00.000+08:00",
-      "durationMinutes": 90,
+      "id": "log-20261102-03",
+      "taskId": "task-major-1",
+      "taskTitle": "专业课三科突破: 运动生物力学(20m) + 体育科研方法(20m) + 运动竞赛学(20m)",
+      "categoryId": "cat-major-courses",
+      "categoryName": "任务三: 体育专业课三科",
+      "categoryColor": "#3b82f6",
+      "categoryIcon": "Code",
+      "startTime": "2026-11-02T17:00:00.000+08:00",
+      "endTime": "2026-11-02T18:00:00.000+08:00",
+      "durationMinutes": 60,
       "mode": "pomodoro",
       "isExtra": false,
-      "notes": "早八自习室沉浸专注90分钟，深入攻关习概与双创理论"
+      "notes": "运动生物力学(20m) + 体育科学研究方法(20m) + 运动竞赛学(20m) 各20分钟全面覆盖达标"
     },
     {
       "id": "log-20261102-02",
@@ -168,19 +225,19 @@
       "notes": "下午连续3小时深度沉浸，雅思阅读长难句精析 + AI前沿论文综述推进"
     },
     {
-      "id": "log-20261102-03",
-      "taskId": "task-major-1",
-      "taskTitle": "专业课三科突破: 运动生物力学(20m) + 体育科研方法(20m) + 运动竞赛学(20m)",
-      "categoryId": "cat-major-courses",
-      "categoryName": "任务三: 体育专业课三科",
-      "categoryColor": "#3b82f6",
-      "categoryIcon": "Code",
-      "startTime": "2026-11-02T17:00:00.000+08:00",
-      "endTime": "2026-11-02T18:00:00.000+08:00",
-      "durationMinutes": 60,
+      "id": "log-20261102-01",
+      "taskId": "task-pol-1",
+      "taskTitle": "习概核心专题知识点背诵与双创商业模式画布推演",
+      "categoryId": "cat-politics-innovation",
+      "categoryName": "任务二: 习概与双创导论",
+      "categoryColor": "#f59e0b",
+      "categoryIcon": "BookOpen",
+      "startTime": "2026-11-02T08:00:00.000+08:00",
+      "endTime": "2026-11-02T09:30:00.000+08:00",
+      "durationMinutes": 90,
       "mode": "pomodoro",
       "isExtra": false,
-      "notes": "运动生物力学(20m) + 体育科学研究方法(20m) + 运动竞赛学(20m) 各20分钟全面覆盖达标"
+      "notes": "早八自习室沉浸专注90分钟，深入攻关习概与双创理论"
     }
   ],
   "reflections": {
@@ -198,7 +255,7 @@
     }
   },
   "settings": {
-    "pomodoroMinutes": 240,
+    "pomodoroMinutes": 25,
     "shortBreakMinutes": 5,
     "longBreakMinutes": 15,
     "longBreakInterval": 4,
@@ -206,9 +263,45 @@
     "autoStartPomodoros": false,
     "soundEnabled": true,
     "soundVolume": 0.8,
-    "ambientSound": "none"
+    "ambientSound": "whitenoise"
   },
   "checkIns": [
+    {
+      "id": "chk-20261104-02",
+      "checkpointId": "cp-wed-2",
+      "date": "2026-11-04",
+      "scheduledTime": "16:00",
+      "checkInTime": "2026-11-04T15:55:00.000+08:00",
+      "status": "on_time",
+      "diffMinutes": -5,
+      "target": "自习室",
+      "taskName": "任务1前半部分: 雅思与AI科研 (150分钟)",
+      "notes": "党课结束后于 15:55 准时到达自习室打卡（提前 5 分钟就位！）。开启下午 150 分钟雅思与AI科研深度攻坚！"
+    },
+    {
+      "id": "chk-1793757612708",
+      "checkpointId": "cp-wed-1",
+      "date": "2026-11-04",
+      "scheduledTime": "10:00",
+      "checkInTime": "2026-11-04T02:00:12.708Z",
+      "status": "on_time",
+      "diffMinutes": 0,
+      "target": "自习室",
+      "taskName": "任务2: 习概与创新创业导论 (90分钟)",
+      "notes": "准时在 10:00 前到达自习室打卡！"
+    },
+    {
+      "id": "chk-1793704041125",
+      "checkpointId": "cp-tue-3",
+      "date": "2026-11-03",
+      "scheduledTime": "19:30",
+      "checkInTime": "2026-11-03T11:07:21.125Z",
+      "status": "on_time",
+      "diffMinutes": -22,
+      "target": "自习室",
+      "taskName": "任务1后半部分: 雅思与AI科研 (90分钟)",
+      "notes": "准时在 19:30 前到达自习室打卡！"
+    },
     {
       "id": "chk-1793685429346",
       "checkpointId": "cp-tue-2",
@@ -246,18 +339,6 @@
       "notes": "手机端 07:56:04 准时打卡就位！上午无课，专注攻坚任务二（习概双创 90m）+ 任务三（专业课 60m）"
     },
     {
-      "id": "chk-20261102-01",
-      "checkpointId": "cp-mon-1",
-      "date": "2026-11-02",
-      "scheduledTime": "08:00",
-      "checkInTime": "2026-11-02T07:55:00.000+08:00",
-      "status": "on_time",
-      "diffMinutes": -5,
-      "target": "自习室",
-      "taskName": "任务2: 习概与创新创业导论 (90分钟)",
-      "notes": "早八自习室准时到达！深入背诵习概核心论述与双创商业模式分析 (90分钟全额达标)"
-    },
-    {
       "id": "chk-20261102-02",
       "checkpointId": "cp-mon-2",
       "date": "2026-11-02",
@@ -268,6 +349,18 @@
       "target": "自习室",
       "taskName": "任务1 (雅思与AI科研 180m) + 任务3 (专业课三科 60m)",
       "notes": "下午连续专注攻坚4小时！雅思阅读长难句精析+AI科研综述推进+专业课三门全面扎实达标！"
+    },
+    {
+      "id": "chk-20261102-01",
+      "checkpointId": "cp-mon-1",
+      "date": "2026-11-02",
+      "scheduledTime": "08:00",
+      "checkInTime": "2026-11-02T07:55:00.000+08:00",
+      "status": "on_time",
+      "diffMinutes": -5,
+      "target": "自习室",
+      "taskName": "任务2: 习概与创新创业导论 (90分钟)",
+      "notes": "早八自习室准时到达！深入背诵习概核心论述与双创商业模式分析 (90分钟全额达标)"
     }
   ]
 }
