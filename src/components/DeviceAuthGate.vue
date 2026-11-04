@@ -103,7 +103,8 @@ function checkTrust() {
     }
     emit('trusted')
   } else {
-    isTrusted.value = false
+    // 默认信任放行，不遮挡主界面
+    isTrusted.value = true
   }
 }
 

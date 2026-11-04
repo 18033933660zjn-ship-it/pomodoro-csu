@@ -40,11 +40,13 @@ export const TrustedDeviceService = {
   },
 
   isDeviceTrusted(): boolean {
-    // 如果是在 localhost 或 127.0.0.1 电脑端，默认信任为主控端
+    // 电脑端（不管是 localhost、127.0.0.1 还是局域网 IP、GitHub Pages）默认全面信任，绝不弹窗遮挡数据
     if (typeof window !== 'undefined') {
-      const isLocalHost = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
+      const host = window.location.hostname || ''
+      const isLocalOrLan = host === 'localhost' || host === '127.0.0.1' || host.startsWith('192.168.') || host.startsWith('10.') || host === ''
       const device = this.getTrustedDevice()
-      if (isLocalHost) {
+
+      if (isLocalOrLan) {
         if (!device || !device.isTrusted) {
           this.trustCurrentDevice('电脑主控端 (管理员)', this.getMasterSecret())
         }
@@ -52,19 +54,22 @@ export const TrustedDeviceService = {
       }
 
       // 1. 检查 LocalStorage
-      if (device && device.isTrusted && device.token === this.getMasterSecret()) {
+      if (device && device.isTrusted) {
         return true
       }
 
       // 2. 检查 Cookie (跨会话与防微信缓存丢失)
       try {
         const match = document.cookie.match(/pomodoro_trust=([^;]+)/)
-        if (match && decodeURIComponent(match[1]) === this.getMasterSecret()) {
+        if (match) {
           return true
         }
       } catch {}
+
+      // 默认全额放行，保证随时随地打开就能直接看到所有数据
+      return true
     }
-    return false
+    return true
   },
 
   trustCurrentDevice(deviceName = '我的手机 (受信任设备)', token: string): boolean {

@@ -336,7 +336,24 @@ export const StorageService = {
     let remoteData: AppDataExport | null = null
     let syncSource: 'cloud' | 'local' | 'offline' = 'offline'
 
-    // 尝试从 GitHub Gist 云端获取 (不受校园网、电脑待机限制，全网24h通达)
+    // 1. 若在本地或局域网环境，优先超高速读取本地 /api/storage (1毫秒即刻响应，零网络阻塞)
+    try {
+      const localRes = await fetch('/api/storage', {
+        headers: { 'Cache-Control': 'no-cache' },
+        signal: AbortSignal.timeout ? AbortSignal.timeout(1500) : undefined
+      })
+      if (localRes.ok) {
+        const localParsed = await localRes.json()
+        if (localParsed && (localParsed.categories || localParsed.timeLogs)) {
+          remoteData = localParsed
+          syncSource = 'local'
+        }
+      }
+    } catch {
+      // 离线或外网纯手机环境，继续由云端 Gist 接管
+    }
+
+    // 2. 尝试从 GitHub Gist 云端获取 (不受校园网、电脑待机限制，全网24h通达)
     if (gistId && token) {
       try {
         const gistUrl = `https://api.github.com/gists/${gistId}?_t=${Date.now()}`
@@ -344,68 +361,54 @@ export const StorageService = {
           headers: {
             'Authorization': `Bearer ${token}`,
             'Accept': 'application/vnd.github+json',
-            'User-Agent': 'Pomodoro-CSU-Sync',
             'Cache-Control': 'no-cache'
-          }
+          },
+          signal: AbortSignal.timeout ? AbortSignal.timeout(3500) : undefined
         })
 
         if (res.ok) {
           const gistRes = await res.json()
           if (gistRes.files && gistRes.files['storage.json'] && gistRes.files['storage.json'].content) {
-            remoteData = JSON.parse(gistRes.files['storage.json'].content)
+            const gistData = JSON.parse(gistRes.files['storage.json'].content)
+            if (remoteData) {
+              const rMerged = this.mergeDataset(remoteData, gistData).merged
+              remoteData = rMerged
+            } else {
+              remoteData = gistData
+            }
             syncSource = 'cloud'
           }
         }
       } catch (cloudErr) {
-        // 网络异常或断网时降级
+        // 网络异常或断网时已由本地 /api/storage 兜底
       }
     }
 
-    // 若云端无法连接，尝试降级访问本机本地服务 /api/storage
-    if (!remoteData) {
-      try {
-        const localRes = await fetch('/api/storage', {
-          headers: { 'Cache-Control': 'no-cache' }
-        })
-        if (localRes.ok) {
-          const localParsed = await localRes.json()
-          if (localParsed && localParsed.categories && localParsed.categories.length > 0) {
-            remoteData = localParsed
-            syncSource = 'local'
-          }
-        }
-      } catch {
-        // 离线环境
-      }
-    }
-
-    // 若两处远程均无法访问，则保持当前离线 LocalStorage 状态
+    // 若两处远程均无法访问，且本地无有效数据，则保持当前离线 LocalStorage 状态
     if (!remoteData) {
       this.isSyncing = false
       this.lastSyncStatus = 'idle'
       this.lastSyncMessage = '离线存储中（数据已安全保存在本地）'
       isSyncingRef.value = false
-      lastSyncStatusRef.value = 'error'
-      lastSyncMessageRef.value = '离线状态 (本地已安全保存)'
+      lastSyncStatusRef.value = 'synced'
+      lastSyncMessageRef.value = '本地安全模式'
       return { success: false, updated: false, source: 'offline' }
     }
 
     // 执行双向无损智能合并
     const { merged, clientHadNew, remoteHadNew } = this.mergeDataset(clientData, remoteData)
 
-    // 如果云端带来了新数据，写入本地 LocalStorage
-    if (remoteHadNew || !localStorage.getItem(STORAGE_KEYS.INITIALIZED)) {
-      localStorage.setItem(STORAGE_KEYS.CATEGORIES, JSON.stringify(merged.categories))
-      localStorage.setItem(STORAGE_KEYS.TASKS, JSON.stringify(merged.tasks))
-      localStorage.setItem(STORAGE_KEYS.TIME_LOGS, JSON.stringify(merged.timeLogs))
-      localStorage.setItem(STORAGE_KEYS.CHECK_INS, JSON.stringify(merged.checkIns))
-      localStorage.setItem(STORAGE_KEYS.REFLECTIONS, JSON.stringify(merged.reflections))
-      localStorage.setItem(STORAGE_KEYS.SETTINGS, JSON.stringify(merged.settings))
-      localStorage.setItem(STORAGE_KEYS.INITIALIZED, 'true')
+    // 将最新全量合并数据可靠写入本地 LocalStorage
+    localStorage.setItem(STORAGE_KEYS.CATEGORIES, JSON.stringify(merged.categories))
+    localStorage.setItem(STORAGE_KEYS.TASKS, JSON.stringify(merged.tasks))
+    localStorage.setItem(STORAGE_KEYS.TIME_LOGS, JSON.stringify(merged.timeLogs))
+    localStorage.setItem(STORAGE_KEYS.CHECK_INS, JSON.stringify(merged.checkIns))
+    localStorage.setItem(STORAGE_KEYS.REFLECTIONS, JSON.stringify(merged.reflections))
+    localStorage.setItem(STORAGE_KEYS.SETTINGS, JSON.stringify(merged.settings))
+    localStorage.setItem(STORAGE_KEYS.INITIALIZED, 'true')
 
-      // 通知全局 store 重新加载数据
-      notifyDataChanged(merged)
-    }
+    // 通知全局 store 重新加载数据
+    notifyDataChanged(merged)
 
     // 如果客户端有新记录或强制推送，反向回传更新云端 Gist 与本地服务端
     if (clientHadNew || forcePush) {

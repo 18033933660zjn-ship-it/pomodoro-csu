@@ -227,20 +227,28 @@ function reloadAllStores() {
   reflectionStore.reload()
 }
 
-onMounted(() => {
+onMounted(async () => {
   // 1. 监听来自 storage 的跨端/云端数据变更通知
   window.addEventListener('pomodoro-sync-updated', () => {
     reloadAllStores()
   })
 
-  const syncRoutine = async () => {
-    const res = await StorageService.syncWithServer()
-    if (res.updated) {
-      reloadAllStores()
-    }
+  // 2. 页面载入立即触发极速全量同步，并热重载全部 stores
+  try {
+    await StorageService.syncWithServer()
+    reloadAllStores()
+  } catch {
+    reloadAllStores()
   }
 
-  // 2. 页面可见或聚焦时（如手机切回浏览器、屏幕唤醒），立即执行一次秒级同步
+  const syncRoutine = async () => {
+    try {
+      await StorageService.syncWithServer()
+      reloadAllStores()
+    } catch {}
+  }
+
+  // 3. 页面可见或聚焦时（如手机切回浏览器、屏幕唤醒、电脑激活窗口），立即执行一次秒级同步
   window.addEventListener('visibilitychange', () => {
     if (document.visibilityState === 'visible') {
       syncRoutine()
@@ -251,8 +259,8 @@ onMounted(() => {
     syncRoutine()
   })
 
-  // 3. 每 10 秒轻量循环拉取云端，确保手机与电脑无论在任何网络下均保持零差异实时互通
-  pollTimer = setInterval(syncRoutine, 10000)
+  // 4. 每 8 秒轻量循环拉取云端，确保手机与电脑无论在任何网络下均保持零差异实时互通
+  pollTimer = setInterval(syncRoutine, 8000)
 })
 
 onUnmounted(() => {
