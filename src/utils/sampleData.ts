@@ -5,13 +5,13 @@ import { weeklyCheckpoints } from './courseScheduleData'
 export const defaultCategories: Category[] = [
   {
     id: 'cat-ielts-research',
-    name: '任务一: 雅思备考 & AI科研推进',
+    name: '任务一: 雅思基础突破 (200词背写 + 40句读写)',
     icon: 'GraduationCap',
     color: '#8b5cf6', // purple
     dimension: 'language',
     dailyTargetMinutes: 180, // 3h
     weeklyTargetMinutes: 1260, // 21h (7天每天3h)
-    description: '每天3小时雅思强化学习，并同步利用大模型AI工具推进前沿学术科研'
+    description: '初级阶段每日3小时：前1.5h背写200个核心高频词，后1.5h精读精写40个核心语法句型'
   },
   {
     id: 'cat-politics-innovation',
@@ -49,21 +49,21 @@ export const defaultTasks: Task[] = [
   {
     id: 'task-ielts-1',
     categoryId: 'cat-ielts-research',
-    title: '剑雅18 Test 3 阅读长难句精析 + AI辅助生成学术综述论点',
+    title: '雅思核心高频词汇默写与背诵 (200词 · 90分钟)',
     completed: false,
-    estimatedPomodoros: 4,
+    estimatedPomodoros: 2,
     completedPomodoros: 2,
-    notes: '利用 AI 梳理中英文语义逻辑对照，精析判断题同义替换',
+    notes: '高频词默写、词根词缀识记、拼写与核心释义过关',
     createdAt: dayjs().toISOString()
   },
   {
     id: 'task-ielts-2',
     categoryId: 'cat-ielts-research',
-    title: '雅思学术写作 Task 2 范文仿写 + AI多轮批改语法与衔接',
+    title: '雅思基础语法与核心长难句读写 (40句 · 90分钟)',
     completed: false,
-    estimatedPomodoros: 3,
+    estimatedPomodoros: 2,
     completedPomodoros: 1,
-    notes: '聚焦科技与健康伦理话题论证框架',
+    notes: '40个语法核心句精读、句式框架拆解、笔头翻译与仿写',
     createdAt: dayjs().subtract(1, 'day').toISOString()
   },
   {

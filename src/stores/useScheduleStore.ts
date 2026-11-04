@@ -186,10 +186,14 @@ export const useScheduleStore = defineStore('schedule', () => {
 
     if (!alreadyLogged) {
       let catId = 'cat-ielts-research'
-      let catName = '任务一: 雅思备考 & AI科研推进'
+      let catName = '任务一: 雅思基础突破 (200词背写 + 40句读写)'
       let catColor = '#8b5cf6'
       let catIcon = 'GraduationCap'
       let taskId = 'task-ielts-1'
+
+      if (cp.taskName.includes('句型') || cp.taskName.includes('40句') || cp.taskName.includes('后半段')) {
+        taskId = 'task-ielts-2'
+      }
 
       if (cp.taskName.includes('任务二') || cp.taskName.includes('习概') || cp.taskName.includes('双创')) {
         catId = 'cat-politics-innovation'
@@ -390,13 +394,13 @@ export const useScheduleStore = defineStore('schedule', () => {
       improvements.push(`迟到节点明细：${lateDetails}。请重点复盘以上时段前是否有拖延或下课换场耽搁，建议提前10分钟启程前往自习室。`)
     }
 
-    // 点评任务1：雅思与AI科研
+    // 点评任务1：雅思基础突破 (200词背写 + 40句读写)
     const t1Hours = Number((t1Minutes / 60).toFixed(1))
     const t1Target = isCurrentWeek ? currentDay * 3 : 21
     if (t1Hours >= t1Target * 0.95) {
-      praises.push(isCurrentWeek ? `任务一（雅思3小时+AI科研推进）截止今日累计投入 ${t1Hours}h（阶段目标 ${t1Target}h），科研与语言双轨推进扎实！` : `任务一全周累计达成 ${t1Hours} 小时（目标 21h），攻坚强度极高，科研与语言双轨推进扎实！`)
+      praises.push(isCurrentWeek ? `任务一（雅思基础突破 3小时：200词背写+40句读写）截止今日累计投入 ${t1Hours}h（阶段目标 ${t1Target}h），核心词汇默写与句型读写扎实到位！` : `任务一全周累计达成 ${t1Hours} 小时（目标 21h），核心词汇默写与句型读写执行极为严谨！`)
     } else {
-      improvements.push(`任务一实际投入 ${t1Hours}h，未满 ${t1Target}h 阶段线。雅思必须保持每天3小时雷打不动，AI工具的辅助效率需进一步提升。`)
+      improvements.push(`任务一实际投入 ${t1Hours}h，未满 ${t1Target}h 阶段线。雅思必须保持每天3小时雷打不动（前1.5h背写200词，后1.5h读写40句）。`)
     }
 
     // 点评任务2：习概与双创

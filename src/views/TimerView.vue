@@ -433,11 +433,12 @@ function openDetailedModal() {
 
 // 任务时段总时长直连预设（匹配用户实际课表日程，无中途强制休息中断）
 const durationPresets = [
+  { label: '90m (雅思核心词汇 200词)', minutes: 90, catId: 'cat-ielts-research' },
+  { label: '90m (雅思核心句型 40句)', minutes: 90, catId: 'cat-ielts-research' },
   { label: '90m (任务二 习概双创)', minutes: 90, catId: 'cat-politics-innovation' },
-  { label: '180m (任务一 雅思AI科研 3h)', minutes: 180, catId: 'cat-ielts-research' },
   { label: '60m (任务三 专业课三科)', minutes: 60, catId: 'cat-major-courses' },
+  { label: '150m (周三雅思 200词+句型)', minutes: 150, catId: 'cat-ielts-research' },
   { label: '150m (周末健身 2.5h)', minutes: 150, catId: 'cat-fitness-workout' },
-  { label: '240m (周一下午 4h攻坚)', minutes: 240, catId: 'cat-ielts-research' },
   { label: '25m (短番茄)', minutes: 25, catId: undefined }
 ]
 

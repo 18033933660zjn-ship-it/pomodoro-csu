@@ -1,16 +1,16 @@
 {
   "version": "2.0.0",
-  "exportTime": "2026-11-04T13:09:18.095Z",
+  "exportTime": "2026-11-04T13:40:54.302Z",
   "categories": [
     {
       "id": "cat-ielts-research",
-      "name": "任务一: 雅思备考 & AI科研推进",
+      "name": "任务一: 雅思基础突破 (200词背写 + 40句读写)",
       "icon": "GraduationCap",
       "color": "#8b5cf6",
       "dimension": "language",
       "dailyTargetMinutes": 180,
       "weeklyTargetMinutes": 1260,
-      "description": "每天3小时雅思强化学习，并同步利用大模型AI工具推进前沿学术科研"
+      "description": "每天3小时初级阶段扎实筑基：前1.5小时背写200个核心单词，后1.5小时精读与仿写40个核心句子。"
     },
     {
       "id": "cat-politics-innovation",
@@ -70,11 +70,12 @@
       "id": "task-ielts-2",
       "categoryId": "cat-ielts-research",
       "title": "雅思学术写作 Task 2 范文仿写 + AI多轮批改语法与衔接",
-      "completed": false,
+      "completed": true,
       "estimatedPomodoros": 3,
-      "completedPomodoros": 0,
+      "completedPomodoros": 3,
       "notes": "聚焦科技与健康伦理话题论证框架",
-      "createdAt": "2026-11-01T10:04:50.858Z"
+      "createdAt": "2026-11-01T10:04:50.858Z",
+      "completedAt": "2026-11-04T22:23:34.000+08:00"
     },
     {
       "id": "task-pol-1",
@@ -109,6 +110,21 @@
   ],
   "timeLogs": [
     {
+      "id": "log-20261104-04",
+      "taskId": "task-ielts-2",
+      "taskTitle": "雅思核心句型读写收尾 (补齐今日剩余13句 · 40句全额达标)",
+      "categoryId": "cat-ielts-research",
+      "categoryName": "任务一: 雅思基础突破 (200词背写 + 40句读写)",
+      "categoryColor": "#8b5cf6",
+      "categoryIcon": "GraduationCap",
+      "startTime": "2026-11-04T21:53:34.000+08:00",
+      "endTime": "2026-11-04T22:23:34.000+08:00",
+      "durationMinutes": 30,
+      "mode": "pomodoro",
+      "isExtra": false,
+      "notes": "晚间自习室收尾：高效攻克今日剩余13个核心句子的读写默写，全天200词+40句任务全额满贯达成！"
+    },
+    {
       "id": "log-20261104-03",
       "taskId": "task-major-1",
       "taskTitle": "专业课三科巩固突破: 运动生物力学 + 体育科研方法 + 运动竞赛学",
@@ -124,26 +140,11 @@
       "notes": "晚课后 20:53 准时到达自习室打卡！重点巩固晚课运动生物力学力矩与运动链平衡，并推进体育科研方法实验设计 (60分钟扎实达标)。"
     },
     {
-      "id": "log-20261104-04",
-      "taskId": "task-ielts-1",
-      "taskTitle": "剑雅18阅读长难句精析收尾与学术综述论点提炼",
-      "categoryId": "cat-ielts-research",
-      "categoryName": "任务一: 雅思备考 & AI科研推进",
-      "categoryColor": "#8b5cf6",
-      "categoryIcon": "GraduationCap",
-      "startTime": "2026-11-04T21:53:34.000+08:00",
-      "endTime": "2026-11-04T22:23:34.000+08:00",
-      "durationMinutes": 30,
-      "mode": "pomodoro",
-      "isExtra": false,
-      "notes": "补齐今日雅思全天最后30分钟，全天任务一累计达成 180 分钟（3小时满贯达成！）。"
-    },
-    {
       "id": "log-20261104-02",
       "taskId": "task-ielts-1",
-      "taskTitle": "剑雅18 Test 3 阅读长难句精析 + AI辅助生成学术综述论点",
+      "taskTitle": "雅思初级核心攻坚: 200词深度背写(90m) + 核心句型读写前半段(60m)",
       "categoryId": "cat-ielts-research",
-      "categoryName": "任务一: 雅思备考 & AI科研推进",
+      "categoryName": "任务一: 雅思基础突破 (200词背写 + 40句读写)",
       "categoryColor": "#8b5cf6",
       "categoryIcon": "GraduationCap",
       "startTime": "2026-11-04T16:00:00.000+08:00",
@@ -151,7 +152,7 @@
       "durationMinutes": 150,
       "mode": "pomodoro",
       "isExtra": false,
-      "notes": "党课结束后 16:00-18:30 在自习室深度攻坚 150 分钟：精析剑雅长难句结构，并利用 AI 辅助搭建学术论文研究框架。"
+      "notes": "党课结束后16:00-18:30在自习室深度攻坚150分钟：全额背写200个高频单词(90m)，并推进核心句型读写27句(60m)。"
     },
     {
       "id": "log-20261104-01",
@@ -182,17 +183,18 @@
       "id": "log-1793757593306"
     },
     {
-      "taskTitle": "任务1前半部分: 雅思与AI科研 (90分钟)",
+      "taskTitle": "雅思后半段攻坚: 核心长难句型读写精练 (40个句子语法切分与朗读默写)",
       "categoryId": "cat-ielts-research",
-      "categoryName": "任务一: 雅思备考 & AI科研推进",
+      "categoryName": "任务一: 雅思基础突破 (200词背写 + 40句读写)",
       "categoryColor": "#8b5cf6",
       "categoryIcon": "GraduationCap",
       "startTime": "2026-11-03T06:12:29.069Z",
       "endTime": "2026-11-03T07:42:29.026Z",
       "durationMinutes": 90,
       "mode": "pomodoro",
-      "notes": "任务1前半部分: 雅思与AI科研 (90分钟)",
-      "id": "log-1793691749026"
+      "notes": "后一个半小时专注完成40个句子的语法切分、朗读与精读默写，句型过关。",
+      "id": "log-1793691749026",
+      "taskId": "task-ielts-2"
     },
     {
       "id": "log-20261103-workout",
@@ -242,9 +244,9 @@
     {
       "id": "log-20261102-02",
       "taskId": "task-ielts-1",
-      "taskTitle": "剑雅18 Test 3 阅读长难句精析 + AI辅助生成学术综述论点",
+      "taskTitle": "雅思基础全天攻坚: 核心词汇背写200词(90m) + 核心句型读写40句(90m)",
       "categoryId": "cat-ielts-research",
-      "categoryName": "任务一: 雅思备考 & AI科研推进",
+      "categoryName": "任务一: 雅思基础突破 (200词背写 + 40句读写)",
       "categoryColor": "#8b5cf6",
       "categoryIcon": "GraduationCap",
       "startTime": "2026-11-02T14:00:00.000+08:00",
@@ -252,7 +254,7 @@
       "durationMinutes": 180,
       "mode": "pomodoro",
       "isExtra": false,
-      "notes": "下午连续3小时深度沉浸，雅思阅读长难句精析 + AI前沿论文综述推进"
+      "notes": "全天3小时达标：前一个半小时背写200个核心单词，后一个半小时完成40个核心句型的读写精练！"
     },
     {
       "id": "log-20261102-01",
@@ -305,7 +307,7 @@
       "status": "on_time",
       "diffMinutes": -6,
       "target": "自习室",
-      "taskName": "任务1剩余(30m) + 任务3: 专业课巩固 (60m)",
+      "taskName": "任务1句型收尾(30m) + 任务3: 专业课巩固 (60m)",
       "notes": "准时在 21:00 前到达自习室打卡！"
     },
     {
@@ -317,7 +319,7 @@
       "status": "on_time",
       "diffMinutes": -5,
       "target": "自习室",
-      "taskName": "任务1前半部分: 雅思与AI科研 (150分钟)",
+      "taskName": "任务1前半段: 雅思核心词汇背写 (200词 · 90分钟)",
       "notes": "党课结束后于 15:55 准时到达自习室打卡（提前 5 分钟就位！）。开启下午 150 分钟雅思与AI科研深度攻坚！"
     },
     {
@@ -341,7 +343,7 @@
       "status": "on_time",
       "diffMinutes": -22,
       "target": "自习室",
-      "taskName": "任务1后半部分: 雅思与AI科研 (90分钟)",
+      "taskName": "任务1后半段: 雅思核心句型读写 (40句 · 90分钟)",
       "notes": "准时在 19:30 前到达自习室打卡！"
     },
     {
@@ -353,7 +355,7 @@
       "status": "on_time",
       "diffMinutes": -2,
       "target": "自习室",
-      "taskName": "任务1前半部分: 雅思与AI科研 (90分钟)",
+      "taskName": "任务1前半段: 雅思核心词汇背写 (200词 · 90分钟)",
       "notes": "准时在 14:00 前到达自习室打卡！"
     },
     {
@@ -389,7 +391,7 @@
       "status": "on_time",
       "diffMinutes": -6,
       "target": "自习室",
-      "taskName": "任务1 (雅思与AI科研 180m) + 任务3 (专业课三科 60m)",
+      "taskName": "任务1: 雅思基础攻坚 (200词背写90m + 40句读写90m)",
       "notes": "下午连续专注攻坚4小时！雅思阅读长难句精析+AI科研综述推进+专业课三门全面扎实达标！"
     },
     {
