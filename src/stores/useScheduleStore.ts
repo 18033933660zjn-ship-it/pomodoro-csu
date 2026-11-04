@@ -178,6 +178,58 @@ export const useScheduleStore = defineStore('schedule', () => {
     }
     saveCheckIns()
 
+    // 关键机制升级：打卡即自动入账学时流水，彻底杜绝“打了卡却未记学时”的脱节问题！
+    const alreadyLogged = timeLogStore.timeLogs.some(l => {
+      const isSameDay = dayjs(l.startTime).format('YYYY-MM-DD') === todayStr
+      return isSameDay && (l.taskTitle.includes(cp.taskName) || cp.taskName.includes(l.taskTitle) || (l.notes && l.notes.includes(cp.taskName)))
+    })
+
+    if (!alreadyLogged) {
+      let catId = 'cat-ielts-research'
+      let catName = '任务一: 雅思备考 & AI科研推进'
+      let catColor = '#8b5cf6'
+      let catIcon = 'GraduationCap'
+      let taskId = 'task-ielts-1'
+
+      if (cp.taskName.includes('任务二') || cp.taskName.includes('习概') || cp.taskName.includes('双创')) {
+        catId = 'cat-politics-innovation'
+        catName = '任务二: 习概与双创导论'
+        catColor = '#f59e0b'
+        catIcon = 'BookOpen'
+        taskId = 'task-pol-1'
+      } else if (cp.taskName.includes('任务三') || cp.taskName.includes('专业课')) {
+        catId = 'cat-major-courses'
+        catName = '任务三: 体育专业课三科'
+        catColor = '#3b82f6'
+        catIcon = 'Code'
+        taskId = 'task-major-1'
+      } else if (cp.target === '健身房') {
+        catId = 'cat-fitness-workout'
+        catName = '周末专项: 健身房高强度锻炼'
+        catColor = '#10b981'
+        catIcon = 'Dumbbell'
+        taskId = 'task-fit-1'
+      }
+
+      const startTime = now.toISOString()
+      const endTime = now.add(cp.durationMinutes, 'minute').toISOString()
+
+      timeLogStore.addLog({
+        taskId,
+        taskTitle: cp.taskName,
+        categoryId: catId,
+        categoryName: catName,
+        categoryColor: catColor,
+        categoryIcon: catIcon,
+        startTime,
+        endTime,
+        durationMinutes: cp.durationMinutes,
+        mode: 'pomodoro',
+        isExtra: false,
+        notes: `${cp.target}准时打卡就位，系统自动同步计入 ${cp.durationMinutes} 分钟专注时长！`
+      })
+    }
+
     if (!isLate) {
       soundManager.playCompletionBell(0.8)
       try {

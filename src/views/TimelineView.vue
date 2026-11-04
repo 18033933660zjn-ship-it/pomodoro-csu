@@ -117,6 +117,47 @@
       </div>
     </div>
 
+    <!-- Selected Date Check-in Milestones (自习室/健身房准时就位打卡足迹) -->
+    <div v-if="selectedDateCheckIns.length > 0" class="p-4 sm:p-5 rounded-2xl bg-slate-800/40 border border-emerald-500/30 space-y-3">
+      <div class="flex items-center justify-between">
+        <span class="text-xs font-bold text-slate-200 flex items-center gap-1.5">
+          <MapPin class="w-4 h-4 text-emerald-400" />
+          <span>{{ formattedDateDisplay }} · 自习室/健身房打卡就位足迹 ({{ selectedDateCheckIns.length }}次达成)</span>
+        </span>
+        <span class="text-[10px] text-emerald-400 bg-emerald-500/10 border border-emerald-500/20 px-2 py-0.5 rounded-full font-mono">
+          防作弊核验已通过
+        </span>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2.5">
+        <div
+          v-for="chk in selectedDateCheckIns"
+          :key="chk.id"
+          class="p-3 rounded-xl bg-slate-900/60 border border-slate-700/60 flex items-start gap-2.5"
+        >
+          <div class="w-7 h-7 rounded-lg bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 shrink-0 mt-0.5">
+            <CheckCircle2 class="w-4 h-4" />
+          </div>
+          <div class="min-w-0 flex-1">
+            <div class="flex items-center justify-between gap-1">
+              <span class="text-xs font-bold text-slate-100 truncate">{{ chk.target }} · {{ chk.taskName }}</span>
+              <span class="text-[10px] font-mono font-bold text-emerald-400 shrink-0">
+                {{ chk.status === 'on_time' ? '准时' : `迟到${chk.diffMinutes}m` }}
+              </span>
+            </div>
+            <div class="text-[11px] text-slate-400 mt-0.5 flex items-center gap-1.5 font-mono">
+              <span>预定: {{ chk.scheduledTime }}</span>
+              <span>·</span>
+              <span class="text-emerald-400">打卡: {{ formatCheckInTime(chk.checkInTime) }}</span>
+            </div>
+            <p v-if="chk.notes" class="text-[10px] text-slate-500 mt-1 truncate">
+              {{ chk.notes }}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Filter & Search Toolbar -->
     <div class="flex flex-col sm:flex-row items-center justify-between gap-3">
       <!-- Search input -->
@@ -229,14 +270,18 @@ import {
   Clock,
   Search,
   History,
-  Trash2
+  Trash2,
+  MapPin,
+  CheckCircle2
 } from 'lucide-vue-next'
 import { useTimeLogStore } from '@/stores/useTimeLogStore'
 import { useCategoryStore } from '@/stores/useCategoryStore'
+import { useScheduleStore } from '@/stores/useScheduleStore'
 import type { TimeLog } from '@/types'
 
 const timeLogStore = useTimeLogStore()
 const categoryStore = useCategoryStore()
+const scheduleStore = useScheduleStore()
 
 const selectedDateStr = ref(dayjs().format('YYYY-MM-DD'))
 const selectedCategory = ref<string>('all')
@@ -244,6 +289,15 @@ const searchKeyword = ref<string>('')
 
 function changeDate(delta: number) {
   selectedDateStr.value = dayjs(selectedDateStr.value).add(delta, 'day').format('YYYY-MM-DD')
+}
+
+const selectedDateCheckIns = computed(() => {
+  return scheduleStore.getCheckInsByDate(selectedDateStr.value)
+})
+
+function formatCheckInTime(iso?: string) {
+  if (!iso) return '--:--'
+  return dayjs(iso).format('HH:mm:ss')
 }
 
 const formattedDateDisplay = computed(() => {
