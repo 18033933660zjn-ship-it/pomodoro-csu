@@ -1,6 +1,6 @@
 {
   "version": "2.0.0",
-  "exportTime": "2026-11-05T14:22:02.348Z",
+  "exportTime": "2026-11-05T14:25:04.547Z",
   "categories": [
     {
       "id": "cat-ielts-research",
@@ -45,17 +45,6 @@
   ],
   "tasks": [
     {
-      "id": "task-fit-tue-01",
-      "categoryId": "cat-fitness-workout",
-      "title": "健身房大重量下肢与核心拉练（深蹲顶峰140kg + RDL + 髋内收 + 悬垂举腿/山羊挺身）",
-      "completed": true,
-      "estimatedPomodoros": 4,
-      "completedPomodoros": 4,
-      "notes": "10:30-12:30 严格执行2小时。深蹲冲击140kg成功；大容量后侧链RDL与多角度核心轰炸",
-      "createdAt": "2026-11-03T02:30:00.000Z",
-      "completedAt": "2026-11-03T04:30:00.000Z"
-    },
-    {
       "id": "task-ielts-1",
       "categoryId": "cat-ielts-research",
       "title": "剑雅18 Test 3 阅读长难句精析 + AI辅助生成学术综述论点",
@@ -98,6 +87,17 @@
       "createdAt": "2026-11-03T00:00:00.000Z"
     },
     {
+      "id": "task-fit-tue-01",
+      "categoryId": "cat-fitness-workout",
+      "title": "健身房大重量下肢与核心拉练（深蹲顶峰140kg + RDL + 髋内收 + 悬垂举腿/山羊挺身）",
+      "completed": true,
+      "estimatedPomodoros": 4,
+      "completedPomodoros": 4,
+      "notes": "10:30-12:30 严格执行2小时。深蹲冲击140kg成功；大容量后侧链RDL与多角度核心轰炸",
+      "createdAt": "2026-11-03T02:30:00.000Z",
+      "completedAt": "2026-11-03T04:30:00.000Z"
+    },
+    {
       "id": "task-fit-1",
       "categoryId": "cat-fitness-workout",
       "title": "周末健身房胸肩抗阻力训练 + 40分钟高强度心肺体能",
@@ -109,6 +109,49 @@
     }
   ],
   "timeLogs": [
+    {
+      "id": "log-20261105-02",
+      "taskId": "task-ielts-2",
+      "taskTitle": "雅思基础语法与核心长难句读写 (40句 · 90分钟)",
+      "categoryId": "cat-ielts-research",
+      "categoryName": "任务一: 雅思基础突破 (200词背写 + 40句读写)",
+      "categoryColor": "#8b5cf6",
+      "categoryIcon": "GraduationCap",
+      "startTime": "2026-11-05T20:30:00.000+08:00",
+      "endTime": "2026-11-05T22:00:00.000+08:00",
+      "durationMinutes": 90,
+      "mode": "pomodoro",
+      "isExtra": false,
+      "notes": "后一个半小时接续攻坚：完成40个核心语法句型的精读切分拆解、朗读与笔头翻译仿写！全天雅思3小时大满贯！"
+    },
+    {
+      "taskTitle": "任务一: 雅思基础突破 (200词背写 + 40句读写) 攻坚",
+      "categoryId": "cat-ielts-research",
+      "categoryName": "任务一: 雅思基础突破 (200词背写 + 40句读写)",
+      "categoryColor": "#8b5cf6",
+      "categoryIcon": "GraduationCap",
+      "startTime": "2026-11-05T12:10:27.846Z",
+      "endTime": "2026-11-05T13:10:27.925Z",
+      "durationMinutes": 60,
+      "mode": "pomodoro",
+      "notes": "整段高强度纯沉浸攻坚",
+      "id": "log-1793884227925"
+    },
+    {
+      "id": "log-20261105-01",
+      "taskId": "task-ielts-1",
+      "taskTitle": "雅思核心高频词汇默写与背诵 (200词 · 90分钟)",
+      "categoryId": "cat-ielts-research",
+      "categoryName": "任务一: 雅思基础突破 (200词背写 + 40句读写)",
+      "categoryColor": "#8b5cf6",
+      "categoryIcon": "GraduationCap",
+      "startTime": "2026-11-05T19:00:00.000+08:00",
+      "endTime": "2026-11-05T20:30:00.000+08:00",
+      "durationMinutes": 90,
+      "mode": "pomodoro",
+      "isExtra": false,
+      "notes": "19:00 准点到达自习室专注攻坚：前一个半小时专注完成200个核心高频词汇默写与记忆强化！"
+    },
     {
       "taskTitle": "60m (任务三 专业课三科)",
       "categoryId": "cat-major-courses",
