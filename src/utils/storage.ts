@@ -201,16 +201,26 @@ export const StorageService = {
       (a, b) => new Date(b.checkInTime).getTime() - new Date(a.checkInTime).getTime()
     )
 
-    // 2. 合并专注日志流水 (TimeLogs)：按 id 唯一去重
+    // 2. 合并专注日志流水 (TimeLogs)：按 id 唯一去重，且严密过滤已删除的流水 (deletedLogIds)
     const logMap = new Map<string, TimeLog>()
     const remoteLogs = remoteData.timeLogs || []
     const clientLogs = clientData.timeLogs || []
+    const deletedLogIds = new Set<string>([
+      ...(remoteData.deletedLogIds || []),
+      ...(clientData.deletedLogIds || [])
+    ])
 
     for (const r of remoteLogs) {
-      logMap.set(r.id, r)
+      if (!deletedLogIds.has(r.id)) {
+        logMap.set(r.id, r)
+      }
     }
 
     for (const c of clientLogs) {
+      // 若该条已被标记彻底删除，绝不复活！
+      if (deletedLogIds.has(c.id)) {
+        continue
+      }
       if (!logMap.has(c.id)) {
         logMap.set(c.id, c)
         clientHadNew = true
@@ -247,10 +257,11 @@ export const StorageService = {
       if (!clientReflKeys.includes(k)) remoteHadNew = true
     }
 
-    // 4. 合并任务进度 (Tasks)：保留最大番茄进度及完成标记
+    // 4. 合并任务进度 (Tasks)：以权威更新为准，严禁私自强行 || completed！
     const taskMap = new Map<string, Task>()
     const remoteTasks = remoteData.tasks || []
     const clientTasks = clientData.tasks || []
+    const isRemoteNewer = !clientData.exportTime || (remoteData.exportTime && new Date(remoteData.exportTime).getTime() >= new Date(clientData.exportTime).getTime())
 
     for (const r of remoteTasks) {
       taskMap.set(r.id, r)
@@ -262,19 +273,19 @@ export const StorageService = {
         taskMap.set(c.id, c)
         clientHadNew = true
       } else {
-        const higherPomodoros = Math.max(c.completedPomodoros || 0, r.completedPomodoros || 0)
-        const isCompleted = c.completed || r.completed
-        if ((c.completedPomodoros || 0) > (r.completedPomodoros || 0) || (c.completed && !r.completed)) {
-          clientHadNew = true
-        } else if ((r.completedPomodoros || 0) > (c.completedPomodoros || 0) || (r.completed && !c.completed)) {
-          remoteHadNew = true
+        if (isRemoteNewer) {
+          // 服务端最新，尊重服务端的 completed 状态（允许重置为未完成）
+          taskMap.set(c.id, {
+            ...c,
+            ...r
+          })
+        } else {
+          // 客户端更新，尊重客户端
+          taskMap.set(c.id, {
+            ...r,
+            ...c
+          })
         }
-        taskMap.set(c.id, {
-          ...r,
-          ...c,
-          completed: isCompleted,
-          completedPomodoros: higherPomodoros
-        })
       }
     }
 
@@ -305,7 +316,8 @@ export const StorageService = {
       timeLogs: mergedLogs,
       reflections: mergedReflections,
       settings: mergedSettings,
-      checkIns: mergedCheckIns
+      checkIns: mergedCheckIns,
+      deletedLogIds: Array.from(deletedLogIds)
     }
 
     return { merged, clientHadNew, remoteHadNew }

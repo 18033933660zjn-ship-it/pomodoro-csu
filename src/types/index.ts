@@ -134,6 +134,7 @@ export interface AppDataExport {
   reflections: Record<string, DailyReflection>
   settings: TimerSettings
   checkIns?: CheckInRecord[]
+  deletedLogIds?: string[]
 }
 
 // 受信任设备与专属密匙凭据
