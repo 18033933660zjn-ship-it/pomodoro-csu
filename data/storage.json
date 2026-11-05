@@ -1,6 +1,6 @@
 {
   "version": "2.0.0",
-  "exportTime": "2026-11-05T14:35:09.103Z",
+  "exportTime": "2026-11-05T14:35:50.411Z",
   "categories": [
     {
       "id": "cat-ielts-research",
@@ -47,7 +47,7 @@
     {
       "id": "task-ielts-1",
       "categoryId": "cat-ielts-research",
-      "title": "剑雅18 Test 3 阅读长难句精析 + AI辅助生成学术综述论点",
+      "title": "雅思核心高频词汇默写与背诵 (200词 · 90分钟)",
       "completed": false,
       "estimatedPomodoros": 4,
       "completedPomodoros": 4,
@@ -57,7 +57,7 @@
     {
       "id": "task-ielts-2",
       "categoryId": "cat-ielts-research",
-      "title": "雅思学术写作 Task 2 范文仿写 + AI多轮批改语法与衔接",
+      "title": "雅思基础语法与核心长难句读写 (40句 · 90分钟)",
       "completed": false,
       "estimatedPomodoros": 3,
       "completedPomodoros": 3,
