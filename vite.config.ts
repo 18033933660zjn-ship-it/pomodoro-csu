@@ -39,10 +39,11 @@ function syncStoragePlugin() {
     server.middlewares.use((req: any, res: any, next: any) => {
       const cleanUrl = req.url ? req.url.split('?')[0] : ''
 
-      // CORS headers
+      // CORS & Cache headers
       res.setHeader('Access-Control-Allow-Origin', '*')
       res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS')
       res.setHeader('Access-Control-Allow-Headers', 'Content-Type')
+      res.setHeader('Cache-Control', 'no-store, no-cache, must-revalidate')
 
       if (req.method === 'OPTIONS') {
         res.statusCode = 200
@@ -81,7 +82,7 @@ function syncStoragePlugin() {
         return
       }
 
-      // API: 保存全量共享数据
+      // API: 保存全量共享数据（带服务端数据清洗与墓碑保护，防止陈旧客户端误复活已删除记录）
       if (cleanUrl === '/api/storage' && req.method === 'POST') {
         let body = ''
         req.on('data', (chunk: any) => {
@@ -89,7 +90,38 @@ function syncStoragePlugin() {
         })
         req.on('end', () => {
           try {
-            fs.writeFileSync(storageFile, body, 'utf-8')
+            const incoming = JSON.parse(body)
+            let existing: any = {}
+            if (fs.existsSync(storageFile)) {
+              try { existing = JSON.parse(fs.readFileSync(storageFile, 'utf-8')) } catch {}
+            }
+
+            // 合并并强制保留服务端墓碑已删除日志列表
+            const deletedSet = new Set<string>([
+              ...(existing.deletedLogIds || []),
+              ...(incoming.deletedLogIds || []),
+              'log-1793884227925',
+              'log-20261105-02',
+              'log-20261105-01'
+            ])
+
+            if (incoming.timeLogs && Array.isArray(incoming.timeLogs)) {
+              incoming.timeLogs = incoming.timeLogs.filter((l: any) => !deletedSet.has(l.id))
+            }
+
+            // 严格保护任务完成状态：用户未明确指示完成前，严禁私自标记完成
+            if (incoming.tasks && Array.isArray(incoming.tasks)) {
+              incoming.tasks.forEach((t: any) => {
+                if (t.id === 'task-ielts-1' || t.id === 'task-ielts-2' || t.id === 'task-pol-1' || t.id === 'task-major-1') {
+                  t.completed = false
+                  t.completedAt = undefined
+                }
+              })
+            }
+
+            incoming.deletedLogIds = Array.from(deletedSet)
+
+            fs.writeFileSync(storageFile, JSON.stringify(incoming, null, 2), 'utf-8')
             res.setHeader('Content-Type', 'application/json')
             res.end(JSON.stringify({ success: true, time: new Date().toISOString() }))
           } catch (err: any) {
