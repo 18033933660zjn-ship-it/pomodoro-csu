@@ -1,6 +1,6 @@
 {
   "version": "2.0.0",
-  "exportTime": "2026-11-05T11:58:04.224Z",
+  "exportTime": "2026-11-05T14:22:02.348Z",
   "categories": [
     {
       "id": "cat-ielts-research",
@@ -109,36 +109,6 @@
     }
   ],
   "timeLogs": [
-    {
-      "id": "log-20261105-02",
-      "taskId": "task-ielts-2",
-      "taskTitle": "雅思基础语法与核心长难句读写 (40句 · 90分钟)",
-      "categoryId": "cat-ielts-research",
-      "categoryName": "任务一: 雅思基础突破 (200词背写 + 40句读写)",
-      "categoryColor": "#8b5cf6",
-      "categoryIcon": "GraduationCap",
-      "startTime": "2026-11-05T20:30:00.000+08:00",
-      "endTime": "2026-11-05T22:00:00.000+08:00",
-      "durationMinutes": 90,
-      "mode": "pomodoro",
-      "isExtra": false,
-      "notes": "后一个半小时接续攻坚：完成40个核心语法句型的精读切分拆解、朗读与笔头翻译仿写！全天雅思3小时大满贯！"
-    },
-    {
-      "id": "log-20261105-01",
-      "taskId": "task-ielts-1",
-      "taskTitle": "雅思核心高频词汇默写与背诵 (200词 · 90分钟)",
-      "categoryId": "cat-ielts-research",
-      "categoryName": "任务一: 雅思基础突破 (200词背写 + 40句读写)",
-      "categoryColor": "#8b5cf6",
-      "categoryIcon": "GraduationCap",
-      "startTime": "2026-11-05T19:00:00.000+08:00",
-      "endTime": "2026-11-05T20:30:00.000+08:00",
-      "durationMinutes": 90,
-      "mode": "pomodoro",
-      "isExtra": false,
-      "notes": "19:00 准点到达自习室专注攻坚：前一个半小时专注完成200个核心高频词汇默写与记忆强化！"
-    },
     {
       "taskTitle": "60m (任务三 专业课三科)",
       "categoryId": "cat-major-courses",
