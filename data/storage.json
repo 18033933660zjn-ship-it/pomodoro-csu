@@ -1,6 +1,6 @@
 {
   "version": "2.0.0",
-  "exportTime": "2026-11-05T14:33:18.082Z",
+  "exportTime": "2026-11-05T14:35:09.103Z",
   "categories": [
     {
       "id": "cat-ielts-research",
@@ -47,21 +47,21 @@
     {
       "id": "task-ielts-1",
       "categoryId": "cat-ielts-research",
-      "title": "雅思核心高频词汇默写与背诵 (200词 · 90分钟)",
+      "title": "剑雅18 Test 3 阅读长难句精析 + AI辅助生成学术综述论点",
       "completed": false,
-      "estimatedPomodoros": 2,
-      "completedPomodoros": 0,
-      "notes": "初级阶段核心高频词汇默写与记忆强化（待用户明确指示完成时再标记）",
+      "estimatedPomodoros": 4,
+      "completedPomodoros": 4,
+      "notes": "利用 AI 梳理中英文语义逻辑对照，精析判断题同义替换 (周二早晨已完成90m，进度 3/4)",
       "createdAt": "2026-11-03T00:00:00.000Z"
     },
     {
       "id": "task-ielts-2",
       "categoryId": "cat-ielts-research",
-      "title": "雅思基础语法与核心长难句读写 (40句 · 90分钟)",
+      "title": "雅思学术写作 Task 2 范文仿写 + AI多轮批改语法与衔接",
       "completed": false,
-      "estimatedPomodoros": 2,
-      "completedPomodoros": 0,
-      "notes": "初级阶段核心长难句切分、语法句式朗读与笔头翻译仿写（待用户明确指示完成时再标记）",
+      "estimatedPomodoros": 3,
+      "completedPomodoros": 3,
+      "notes": "聚焦科技与健康伦理话题论证框架",
       "createdAt": "2026-11-01T10:04:50.858Z"
     },
     {
@@ -72,7 +72,7 @@
       "estimatedPomodoros": 3,
       "completedPomodoros": 2,
       "notes": "结合体育产业创新案例推演双创商业计划书草案",
-      "createdAt": "2026-11-01T10:04:50.858Z"
+      "createdAt": "2026-11-03T00:00:00.000Z"
     },
     {
       "id": "task-major-1",
@@ -81,8 +81,8 @@
       "completed": false,
       "estimatedPomodoros": 2,
       "completedPomodoros": 2,
-      "notes": "运动生物力学 + 体育科学研究方法 + 运动竞赛学",
-      "createdAt": "2026-11-01T10:04:50.858Z"
+      "notes": "梳理运动环节受力平衡方程与实验抽样方法",
+      "createdAt": "2026-11-03T00:00:00.000Z"
     },
     {
       "id": "task-fit-tue-01",
@@ -91,7 +91,7 @@
       "completed": true,
       "estimatedPomodoros": 4,
       "completedPomodoros": 4,
-      "notes": "周二上午课余自主加练打卡：深蹲冲击140kg成功，完成大容量RDL与核心体能拉练",
+      "notes": "10:30-12:30 严格执行2小时。深蹲冲击140kg成功；大容量后侧链RDL与多角度核心轰炸",
       "createdAt": "2026-11-03T02:30:00.000Z",
       "completedAt": "2026-11-03T04:30:00.000Z"
     },
@@ -102,11 +102,41 @@
       "completed": false,
       "estimatedPomodoros": 4,
       "completedPomodoros": 0,
-      "notes": "周末固定时段专注抗阻与体能雕刻",
+      "notes": "10:00-12:30严格执行2.5小时，深蹲与卧推递增组",
       "createdAt": "2026-11-02T10:04:50.858Z"
     }
   ],
   "timeLogs": [
+    {
+      "id": "log-20261105-ielts-01",
+      "taskId": "task-ielts-1",
+      "taskTitle": "雅思核心高频词汇背写默写 (60分钟)",
+      "categoryId": "cat-ielts-research",
+      "categoryName": "任务一: 雅思基础突破 (200词背写 + 40句读写)",
+      "categoryColor": "#8b5cf6",
+      "categoryIcon": "GraduationCap",
+      "startTime": "2026-11-05T19:00:00.000+08:00",
+      "endTime": "2026-11-05T20:00:00.000+08:00",
+      "durationMinutes": 60,
+      "mode": "pomodoro",
+      "isExtra": false,
+      "notes": "周四晚自习专注60分钟：雅思核心高频词汇背写默写强化。"
+    },
+    {
+      "id": "log-20261105-ielts-02",
+      "taskId": "task-ielts-2",
+      "taskTitle": "雅思基础语法与核心长难句读写 (60分钟)",
+      "categoryId": "cat-ielts-research",
+      "categoryName": "任务一: 雅思基础突破 (200词背写 + 40句读写)",
+      "categoryColor": "#8b5cf6",
+      "categoryIcon": "GraduationCap",
+      "startTime": "2026-11-05T20:00:00.000+08:00",
+      "endTime": "2026-11-05T21:00:00.000+08:00",
+      "durationMinutes": 60,
+      "mode": "pomodoro",
+      "isExtra": false,
+      "notes": "周四晚自习接续专注60分钟：核心长难句型精读拆解与读写仿写。全晚雅思2小时达成！"
+    },
     {
       "taskTitle": "60m (任务三 专业课三科)",
       "categoryId": "cat-major-courses",
@@ -134,21 +164,6 @@
       "id": "log-1793863834268"
     },
     {
-      "id": "log-20261104-04",
-      "taskId": "task-ielts-2",
-      "taskTitle": "雅思核心句型读写收尾 (补齐今日剩余13句 · 40句全额达标)",
-      "categoryId": "cat-ielts-research",
-      "categoryName": "任务一: 雅思基础突破 (200词背写 + 40句读写)",
-      "categoryColor": "#8b5cf6",
-      "categoryIcon": "GraduationCap",
-      "startTime": "2026-11-04T21:53:34.000+08:00",
-      "endTime": "2026-11-04T22:23:34.000+08:00",
-      "durationMinutes": 30,
-      "mode": "pomodoro",
-      "isExtra": false,
-      "notes": "晚间自习室收尾：高效攻克今日剩余13个核心句子的读写默写，全天200词+40句任务全额满贯达成！"
-    },
-    {
       "id": "log-20261104-03",
       "taskId": "task-major-1",
       "taskTitle": "专业课三科巩固突破: 运动生物力学 + 体育科研方法 + 运动竞赛学",
@@ -166,17 +181,17 @@
     {
       "id": "log-20261104-02",
       "taskId": "task-ielts-1",
-      "taskTitle": "雅思初级核心攻坚: 200词深度背写(90m) + 核心句型读写前半段(60m)",
+      "taskTitle": "雅思基础突破: 核心词汇背写(60m) + 核心句型读写(60m)",
       "categoryId": "cat-ielts-research",
       "categoryName": "任务一: 雅思基础突破 (200词背写 + 40句读写)",
       "categoryColor": "#8b5cf6",
       "categoryIcon": "GraduationCap",
       "startTime": "2026-11-04T16:00:00.000+08:00",
-      "endTime": "2026-11-04T18:30:00.000+08:00",
-      "durationMinutes": 150,
+      "endTime": "2026-11-04T18:00:00.000+08:00",
+      "durationMinutes": 120,
       "mode": "pomodoro",
       "isExtra": false,
-      "notes": "党课结束后16:00-18:30在自习室深度攻坚150分钟：全额背写200个高频单词(90m)，并推进核心句型读写27句(60m)。"
+      "notes": "周三自习室专注120分钟：核心词汇背写默写60m + 核心长难句语法读写60m，2小时扎实达标。"
     },
     {
       "id": "log-20261104-01",
@@ -207,16 +222,16 @@
       "id": "log-1793757593306"
     },
     {
-      "taskTitle": "雅思后半段攻坚: 核心长难句型读写精练 (40个句子语法切分与朗读默写)",
+      "taskTitle": "雅思基础语法与核心长难句读写 (60分钟)",
       "categoryId": "cat-ielts-research",
       "categoryName": "任务一: 雅思基础突破 (200词背写 + 40句读写)",
       "categoryColor": "#8b5cf6",
       "categoryIcon": "GraduationCap",
-      "startTime": "2026-11-03T06:12:29.069Z",
-      "endTime": "2026-11-03T07:42:29.026Z",
-      "durationMinutes": 90,
+      "startTime": "2026-11-03T19:30:00.000+08:00",
+      "endTime": "2026-11-03T20:30:00.000+08:00",
+      "durationMinutes": 60,
       "mode": "pomodoro",
-      "notes": "后一个半小时专注完成40个句子的语法切分、朗读与精读默写，句型过关。",
+      "notes": "周二自习室专注60分钟：核心长难句语法切分拆解与读写翻译。",
       "id": "log-1793691749026",
       "taskId": "task-ielts-2"
     },
@@ -238,17 +253,17 @@
     {
       "id": "log-20261103-01",
       "taskId": "task-ielts-1",
-      "taskTitle": "剑雅18 Test 3 阅读长难句精析 + AI辅助生成学术综述论点",
+      "taskTitle": "雅思核心高频词汇背写默写 (60分钟)",
       "categoryId": "cat-ielts-research",
       "categoryName": "任务一: 雅思备考 & AI科研推进",
       "categoryColor": "#8b5cf6",
       "categoryIcon": "GraduationCap",
       "startTime": "2026-11-03T08:15:00.000+08:00",
-      "endTime": "2026-11-03T09:45:00.000+08:00",
-      "durationMinutes": 90,
+      "endTime": "2026-11-03T09:15:00.000+08:00",
+      "durationMinutes": 60,
       "mode": "pomodoro",
       "isExtra": false,
-      "notes": "周二早间自习室连续90分钟高强度专注：雅思长难句精析 + AI前沿论文综述论点推进"
+      "notes": "周二自习室专注60分钟：核心高频词汇默写与词义拼写强化。"
     },
     {
       "id": "log-20261102-03",
@@ -268,7 +283,7 @@
     {
       "id": "log-20261102-02",
       "taskId": "task-ielts-1",
-      "taskTitle": "雅思基础全天攻坚: 核心词汇背写200词(90m) + 核心句型读写40句(90m)",
+      "taskTitle": "雅思基础攻坚: 核心词汇背写(90m) + 核心长难句读写(90m)",
       "categoryId": "cat-ielts-research",
       "categoryName": "任务一: 雅思基础突破 (200词背写 + 40句读写)",
       "categoryColor": "#8b5cf6",
@@ -278,7 +293,7 @@
       "durationMinutes": 180,
       "mode": "pomodoro",
       "isExtra": false,
-      "notes": "全天3小时达标：前一个半小时背写200个核心单词，后一个半小时完成40个核心句型的读写精练！"
+      "notes": "周一全天3小时达标：前一个半小时背写200个核心高频词，后一个半小时完成40个核心句型的读写精练！"
     },
     {
       "id": "log-20261102-01",
@@ -458,6 +473,7 @@
   "deletedLogIds": [
     "log-1793884227925",
     "log-20261105-02",
-    "log-20261105-01"
+    "log-20261105-01",
+    "log-20261104-04"
   ]
 }
