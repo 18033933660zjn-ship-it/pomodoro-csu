@@ -102,7 +102,10 @@ function syncStoragePlugin() {
               ...(incoming.deletedLogIds || []),
               'log-1793884227925',
               'log-20261105-02',
-              'log-20261105-01'
+              'log-20261105-01',
+              'log-1793928933900',
+              'log-1793928966449',
+              'log-1793928958725'
             ])
 
             if (incoming.timeLogs && Array.isArray(incoming.timeLogs)) {
