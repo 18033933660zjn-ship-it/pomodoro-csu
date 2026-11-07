@@ -277,9 +277,14 @@ export const useScheduleStore = defineStore('schedule', () => {
     // 2. 统计该周任务实际完成时长 vs 计划目标
     const weekLogs = timeLogStore.getLogsByRange(start.toISOString(), end.toISOString())
 
-    // 任务1: 雅思与AI科研 (每日3h，7天总目标 21h = 1260m)
+    // 任务1: 雅思基础突破 (周目标 11h = 660m，雅思21h中分出10h给科研推进)
     const t1Minutes = weekLogs
       .filter(l => l.categoryId === 'cat-ielts-research' || l.taskTitle.includes('任务一') || l.taskTitle.includes('雅思'))
+      .reduce((s, l) => s + l.durationMinutes, 0)
+
+    // 任务4: 科研推进 (周目标 10h = 600m)
+    const t4Minutes = weekLogs
+      .filter(l => l.categoryId === 'cat-research-advance' || l.taskTitle.includes('任务四') || l.taskTitle.includes('科研') || l.taskTitle.includes('论文'))
       .reduce((s, l) => s + l.durationMinutes, 0)
 
     // 任务2: 习概与创新创业导论 (周一至周六6天，每天90m，总目标 9h = 540m)
@@ -339,13 +344,22 @@ export const useScheduleStore = defineStore('schedule', () => {
       improvements.push(`迟到节点明细：${lateDetails}。请重点复盘以上时段前是否有拖延或下课换场耽搁，建议提前10分钟启程前往自习室。`)
     }
 
-    // 点评任务1：雅思基础突破 (200词背写 + 40句读写)
+    // 点评任务1：雅思基础突破 (原21h中分出10h给科研推进，雅思现每周目标 11h)
     const t1Hours = Number((t1Minutes / 60).toFixed(1))
-    const t1Target = isCurrentWeek ? currentDay * 3 : 21
-    if (t1Hours >= t1Target * 0.95) {
-      praises.push(isCurrentWeek ? `任务一（雅思基础突破 3小时：200词背写+40句读写）截止今日累计投入 ${t1Hours}h（阶段目标 ${t1Target}h），核心词汇默写与句型读写扎实到位！` : `任务一全周累计达成 ${t1Hours} 小时（目标 21h），核心词汇默写与句型读写执行极为严谨！`)
+    const t1Target = isCurrentWeek ? Number(((currentDay / 7) * 11).toFixed(1)) : 11
+    if (t1Hours >= t1Target * 0.9) {
+      praises.push(isCurrentWeek ? `任务一（雅思基础突破）截止今日累计投入 ${t1Hours}h（阶段目标 ${t1Target}h），核心词汇默写与句型读写稳步推进！` : `任务一全周累计达成 ${t1Hours} 小时（目标 11h），基础打磨严谨！`)
     } else {
-      improvements.push(`任务一实际投入 ${t1Hours}h，未满 ${t1Target}h 阶段线。雅思必须保持每天3小时雷打不动（前1.5h背写200词，后1.5h读写40句）。`)
+      improvements.push(`任务一实际投入 ${t1Hours}h（阶段目标 ${t1Target}h），请保持每日词汇与句型背写读写节奏。`)
+    }
+
+    // 点评任务4：科研推进 (每周目标 10h)
+    const t4Hours = Number((t4Minutes / 60).toFixed(1))
+    const t4Target = isCurrentWeek ? Number(((currentDay / 7) * 10).toFixed(1)) : 10
+    if (t4Hours >= t4Target * 0.9) {
+      praises.push(isCurrentWeek ? `任务四（科研推进）截止今日累计投入 ${t4Hours}h（阶段目标 ${t4Target}h），文献钻研与论文打磨高效推进！` : `任务四全周累计达成 ${t4Hours} 小时（目标 10h），科研产出扎实！`)
+    } else if (t4Hours > 0) {
+      praises.push(`任务四科研推进已累计投入 ${t4Hours}h，保持学术钻研与论文修改势头！`)
     }
 
     // 点评任务2：习概与双创
@@ -379,8 +393,8 @@ export const useScheduleStore = defineStore('schedule', () => {
 
     // 综合评级判定
     let overallGrade: 'S' | 'A' | 'B' | 'C' | 'D' = 'A'
-    const totalActual = t1Hours + t2Hours + t3Hours + fitHours
-    const totalTarget = isCurrentWeek ? (t1Target + t2Target + t3Target + fitTarget) : 40
+    const totalActual = t1Hours + t2Hours + t3Hours + t4Hours + fitHours
+    const totalTarget = isCurrentWeek ? (t1Target + t2Target + t3Target + t4Target + fitTarget) : 40
     const hourRate = totalTarget > 0 ? (totalActual / totalTarget) : 1
 
     if (punctualityRate >= 92 && hourRate >= 0.95) overallGrade = 'S'
@@ -391,7 +405,7 @@ export const useScheduleStore = defineStore('schedule', () => {
     const coachingAdvice = overallGrade === 'S' || overallGrade === 'A'
       ? (isCurrentWeek && currentDay === 1
           ? '🌟 周一首战告捷，达成 S 级完美开门红！明日周二上午无课，保持早起势头，08:00 自习室准点见！'
-          : '状态绝佳！下周继续严格执行分段式雅思攻坚，上午课后务必保证下午两点准时就位自习室，坚决捍卫打卡全勤！')
+          : '状态绝佳！下周继续严格执行分段式雅思与科研攻坚，上午课后务必保证下午两点准时就位自习室，坚决捍卫打卡全勤！')
       : '警惕节奏滑坡！下周首要任务是消除迟到现象，严格设置提前10分钟闹钟。重新夺回主动权！'
 
     return {
@@ -403,7 +417,8 @@ export const useScheduleStore = defineStore('schedule', () => {
       totalLate: lateCount,
       totalMissed: missedCount,
       lateRecords,
-      task1Hours: { actual: t1Hours, target: 21 },
+      task1Hours: { actual: t1Hours, target: 11 },
+      task4Hours: { actual: t4Hours, target: 10 },
       task2Hours: { actual: t2Hours, target: 9 },
       task3Hours: {
         total: { actual: t3Hours, target: 5 },

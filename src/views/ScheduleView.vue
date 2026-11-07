@@ -410,6 +410,8 @@ function openQuickTimeEntry(cp: StudyCheckpoint) {
     catId = 'cat-major-courses'
   } else if (cp.target === '健身房') {
     catId = 'cat-fitness-workout'
+  } else if (cp.taskName.includes('科研') || cp.taskName.includes('论文')) {
+    catId = 'cat-research-advance'
   }
 
   // 默认填报时长设为 60 分钟（或不超过计划时长），由用户精准自主修改，严禁默认强推计划整段时长
@@ -454,6 +456,8 @@ function startContinuousFocus(cp: StudyCheckpoint) {
     catId = 'cat-major-courses'
   } else if (cp.target === '健身房') {
     catId = 'cat-fitness-workout'
+  } else if (cp.taskName.includes('科研') || cp.taskName.includes('论文')) {
+    catId = 'cat-research-advance'
   }
 
   pomodoroStore.setTargetDuration(cp.durationMinutes, catId, cp.taskName)

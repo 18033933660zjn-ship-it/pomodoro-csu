@@ -115,6 +115,7 @@ export interface WeeklyAutomatedReview {
     researchMethod: { actual: number; target: number }
     competition: { actual: number; target: number }
   }
+  task4Hours?: { actual: number; target: number }
   fitnessHours: { actual: number; target: number }
   extraHours: number // 额外空闲多学累计小时
   extraDetails: { name: string; hours: number }[]

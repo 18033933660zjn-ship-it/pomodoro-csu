@@ -1,6 +1,6 @@
 {
   "version": "2.0.0",
-  "exportTime": "2026-11-07T02:25:13.435Z",
+  "exportTime": "2026-11-07T02:29:37.480Z",
   "categories": [
     {
       "id": "cat-ielts-research",
@@ -8,9 +8,19 @@
       "icon": "GraduationCap",
       "color": "#8b5cf6",
       "dimension": "language",
-      "dailyTargetMinutes": 180,
-      "weeklyTargetMinutes": 1260,
-      "description": "每天3小时初级阶段扎实筑基：前1.5小时背写200个核心单词，后1.5小时精读与仿写40个核心句子。"
+      "dailyTargetMinutes": 95,
+      "weeklyTargetMinutes": 660,
+      "description": "初级阶段每周11小时：高频词汇背写默写与核心长难句型读写，与科研推进统筹共享自习时段"
+    },
+    {
+      "id": "cat-research-advance",
+      "name": "任务四: 科研推进 (文献研读与论文写作)",
+      "icon": "FileText",
+      "color": "#ec4899",
+      "dimension": "academic",
+      "dailyTargetMinutes": 85,
+      "weeklyTargetMinutes": 600,
+      "description": "每周10小时专注推进科研进度：文献精读分析、论文撰写、内容论证与格式规范完善"
     },
     {
       "id": "cat-politics-innovation",
@@ -44,6 +54,16 @@
     }
   ],
   "tasks": [
+    {
+      "id": "task-research-1",
+      "categoryId": "cat-research-advance",
+      "title": "学术科研与论文写作: 推进科研进度，完善文章内容与格式",
+      "completed": false,
+      "estimatedPomodoros": 4,
+      "completedPomodoros": 0,
+      "notes": "推进科研进度，深入完善文章核心论证内容、学术规范与格式排版",
+      "createdAt": "2026-11-06T14:30:00.000Z"
+    },
     {
       "id": "task-ielts-1",
       "categoryId": "cat-ielts-research",
