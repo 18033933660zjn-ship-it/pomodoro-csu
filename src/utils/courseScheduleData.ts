@@ -249,16 +249,16 @@ export const weeklyCheckpoints: StudyCheckpoint[] = [
     target: '自习室',
     taskName: '任务2: 习概与创新创业导论 (90分钟)',
     durationMinutes: 90,
-    description: '全天无课，08:00前到达自习室打卡，09:30完成任务2后准备去健身房'
+    description: '全天无课，08:00前到达自习室打卡，因早间晚到自主补时延后至10:30，随后前往健身房'
   },
   {
     id: 'cp-sat-2',
     dayOfWeek: 6,
-    time: '10:00',
+    time: '10:30',
     target: '健身房',
-    taskName: '健身房力量与心肺高强度锻炼 (150分钟)',
+    taskName: '健身房力量与心肺高强度锻炼 (120-150分钟)',
     durationMinutes: 150,
-    description: '10:00前到达健身房打卡，高强度训练至12:30，随后午餐午休'
+    description: '根据早间自习补学调整：推迟半小时至 10:30 开始，力量与心肺高强度训练至 13:00，随后午餐午休'
   },
   {
     id: 'cp-sat-3',

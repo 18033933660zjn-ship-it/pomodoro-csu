@@ -1,6 +1,6 @@
 {
   "version": "2.0.0",
-  "exportTime": "2026-11-07T01:32:30.365Z",
+  "exportTime": "2026-11-07T02:25:13.435Z",
   "categories": [
     {
       "id": "cat-ielts-research",
@@ -107,6 +107,49 @@
     }
   ],
   "timeLogs": [
+    {
+      "taskId": "task-fit-1",
+      "taskTitle": "健身房力量与心肺高强度锻炼 (150分钟)",
+      "categoryId": "cat-fitness-workout",
+      "categoryName": "周末专项: 健身房高强度锻炼",
+      "categoryColor": "#10b981",
+      "categoryIcon": "Dumbbell",
+      "startTime": "2026-11-07T02:22:31.206Z",
+      "endTime": "2026-11-07T04:52:31.206Z",
+      "durationMinutes": 150,
+      "mode": "pomodoro",
+      "isExtra": false,
+      "notes": "健身房准时打卡就位，系统自动同步计入 150 分钟专注时长！",
+      "id": "log-1794018151207"
+    },
+    {
+      "taskId": "task-pol-1",
+      "taskTitle": "任务2: 习概与创新创业导论 (90分钟)",
+      "categoryId": "cat-politics-innovation",
+      "categoryName": "任务二: 习概与双创导论",
+      "categoryColor": "#f59e0b",
+      "categoryIcon": "BookOpen",
+      "startTime": "2026-11-07T01:23:23.982Z",
+      "endTime": "2026-11-07T02:53:23.982Z",
+      "durationMinutes": 90,
+      "mode": "pomodoro",
+      "isExtra": false,
+      "notes": "自习室准时打卡就位，系统自动同步计入 90 分钟专注时长！",
+      "id": "log-1794014603982"
+    },
+    {
+      "taskTitle": "任务2: 习概与创新创业导论 (90分钟)",
+      "categoryId": "cat-politics-innovation",
+      "categoryName": "任务二: 习概与双创导论",
+      "categoryColor": "#f59e0b",
+      "categoryIcon": "BookOpen",
+      "startTime": "2026-11-07T00:53:46.633Z",
+      "endTime": "2026-11-07T01:23:46.633Z",
+      "durationMinutes": 30,
+      "mode": "pomodoro",
+      "notes": "自习室准时攻坚，实际专注完成",
+      "id": "log-1794014626633"
+    },
     {
       "id": "log-20261105-ielts-02",
       "taskId": "task-ielts-2",
@@ -231,7 +274,7 @@
       "endTime": "2026-11-03T07:42:29.026Z",
       "durationMinutes": 60,
       "mode": "pomodoro",
-      "notes": "后一个半小时专注完成40个句子的语法切分、朗读与精读默写，句型过关。",
+      "notes": "后一个半小时专注完成40个句子的��法切分、朗读与精读默写，句型过关。",
       "id": "log-1793691749026",
       "taskId": "task-ielts-2"
     },
@@ -337,6 +380,30 @@
     "ambientSound": "none"
   },
   "checkIns": [
+    {
+      "id": "chk-1794018151206",
+      "checkpointId": "cp-sat-2",
+      "date": "2026-11-07",
+      "scheduledTime": "10:30",
+      "checkInTime": "2026-11-07T02:22:31.206Z",
+      "status": "on_time",
+      "diffMinutes": -8,
+      "target": "健身房",
+      "taskName": "健身房力量与心肺高强度锻炼 (150分钟)",
+      "notes": "根据早间自习补学调整：健身时间推迟至 10:30 开始。10:22 到达打卡，提前 8 分钟准点就位！"
+    },
+    {
+      "id": "chk-1794014603982",
+      "checkpointId": "cp-sat-1",
+      "date": "2026-11-07",
+      "scheduledTime": "08:00",
+      "checkInTime": "2026-11-07T01:23:23.982Z",
+      "status": "late",
+      "diffMinutes": 83,
+      "target": "自习室",
+      "taskName": "任务2: 习概与创新创业导论 (90分钟)",
+      "notes": "09:23 到达自习室打卡。因早间晚到，自主在自习室补学延后至 10:30，扎实弥补学习进度。"
+    },
     {
       "id": "chk-1793948907072",
       "checkpointId": "cp-fri-2",
