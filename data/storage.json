@@ -1,6 +1,6 @@
 {
   "version": "2.0.0",
-  "exportTime": "2026-11-07T02:29:37.480Z",
+  "exportTime": "2026-11-07T02:32:01.521Z",
   "categories": [
     {
       "id": "cat-ielts-research",
@@ -128,47 +128,32 @@
   ],
   "timeLogs": [
     {
-      "taskId": "task-fit-1",
-      "taskTitle": "健身房力量与心肺高强度锻炼 (150分钟)",
-      "categoryId": "cat-fitness-workout",
-      "categoryName": "周末专项: 健身房高强度锻炼",
-      "categoryColor": "#10b981",
-      "categoryIcon": "Dumbbell",
-      "startTime": "2026-11-07T02:22:31.206Z",
-      "endTime": "2026-11-07T04:52:31.206Z",
-      "durationMinutes": 150,
+      "id": "log-20261106-major-01",
+      "taskId": "task-major-1",
+      "taskTitle": "任务3: 体育专业课三科巩固 (60分钟)",
+      "categoryId": "cat-major-courses",
+      "categoryName": "任务三: 体育专业课三科",
+      "categoryColor": "#3b82f6",
+      "categoryIcon": "Code",
+      "startTime": "2026-11-06T19:00:00.000+08:00",
+      "endTime": "2026-11-06T20:00:00.000+08:00",
+      "durationMinutes": 60,
       "mode": "pomodoro",
-      "isExtra": false,
-      "notes": "健身房准时打卡就位，系统自动同步计入 150 分钟专注时长！",
-      "id": "log-1794018151207"
+      "notes": "周五完成一次60分钟专业课攻坚（生物力学20m + 科研方法20m + 竞赛学20m）"
     },
     {
+      "id": "log-20261106-pol-01",
       "taskId": "task-pol-1",
-      "taskTitle": "任务2: 习概与创新创业导论 (90分钟)",
+      "taskTitle": "任务2: 习概核心考点背诵与双创商业推演 (120分钟)",
       "categoryId": "cat-politics-innovation",
       "categoryName": "任务二: 习概与双创导论",
       "categoryColor": "#f59e0b",
       "categoryIcon": "BookOpen",
-      "startTime": "2026-11-07T01:23:23.982Z",
-      "endTime": "2026-11-07T02:53:23.982Z",
-      "durationMinutes": 90,
+      "startTime": "2026-11-06T10:00:00.000+08:00",
+      "endTime": "2026-11-06T12:00:00.000+08:00",
+      "durationMinutes": 120,
       "mode": "pomodoro",
-      "isExtra": false,
-      "notes": "自习室准时打卡就位，系统自动同步计入 90 分钟专注时长！",
-      "id": "log-1794014603982"
-    },
-    {
-      "taskTitle": "任务2: 习概与创新创业导论 (90分钟)",
-      "categoryId": "cat-politics-innovation",
-      "categoryName": "任务二: 习概与双创导论",
-      "categoryColor": "#f59e0b",
-      "categoryIcon": "BookOpen",
-      "startTime": "2026-11-07T00:53:46.633Z",
-      "endTime": "2026-11-07T01:23:46.633Z",
-      "durationMinutes": 30,
-      "mode": "pomodoro",
-      "notes": "自习室准时攻坚，实际专注完成",
-      "id": "log-1794014626633"
+      "notes": "周五实际攻坚达成120分钟：课堂深研与课后知识点闭环"
     },
     {
       "id": "log-20261105-ielts-02",
@@ -591,6 +576,9 @@
     "log-1793928958725",
     "log-1793948907073",
     "log-1793974672111",
-    "log-1793958183181"
+    "log-1793958183181",
+    "log-1794018151207",
+    "log-1794014603982",
+    "log-1794014626633"
   ]
 }
