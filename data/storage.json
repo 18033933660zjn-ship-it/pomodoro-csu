@@ -1,6 +1,6 @@
 {
   "version": "2.0.0",
-  "exportTime": "2026-11-07T02:32:01.521Z",
+  "exportTime": "2026-11-07T02:33:37.520Z",
   "categories": [
     {
       "id": "cat-ielts-research",
@@ -140,6 +140,21 @@
       "durationMinutes": 60,
       "mode": "pomodoro",
       "notes": "周五完成一次60分钟专业课攻坚（生物力学20m + 科研方法20m + 竞赛学20m）"
+    },
+    {
+      "id": "log-20261106-research-01",
+      "taskId": "task-research-1",
+      "taskTitle": "学术科研与论文写作: 推进科研进度，完善文章内容与格式",
+      "categoryId": "cat-research-advance",
+      "categoryName": "任务四: 科研推进 (文献研读与论文写作)",
+      "categoryColor": "#ec4899",
+      "categoryIcon": "FileText",
+      "startTime": "2026-11-06T14:30:00.000+08:00",
+      "endTime": "2026-11-06T17:30:00.000+08:00",
+      "durationMinutes": 180,
+      "mode": "pomodoro",
+      "isExtra": false,
+      "notes": "周五下午原定雅思时段全面投入科研推进：深入完善文章核心论点内容、逻辑衔接与论文排版格式规范（专注180分钟 · 3小时）"
     },
     {
       "id": "log-20261106-pol-01",
