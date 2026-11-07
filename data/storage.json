@@ -1,6 +1,6 @@
 {
   "version": "2.0.0",
-  "exportTime": "2026-11-07T02:33:37.520Z",
+  "exportTime": "2026-11-07T02:35:43.404Z",
   "categories": [
     {
       "id": "cat-ielts-research",
@@ -201,19 +201,6 @@
       "notes": "周四晚自习专注60分钟：雅思核心高频词汇背写默写强化。"
     },
     {
-      "taskTitle": "60m (任务三 专业课三科)",
-      "categoryId": "cat-major-courses",
-      "categoryName": "任务三: 体育专业课三科",
-      "categoryColor": "#3b82f6",
-      "categoryIcon": "Code",
-      "startTime": "2026-11-05T10:54:15.406Z",
-      "endTime": "2026-11-05T11:54:15.096Z",
-      "durationMinutes": 60,
-      "mode": "pomodoro",
-      "notes": "60m (任务三 专业课三科)",
-      "id": "log-1793879655096"
-    },
-    {
       "taskTitle": "任务2: 习概与创新创业导论 (90分钟)",
       "categoryId": "cat-politics-innovation",
       "categoryName": "任务二: 习概与双创导论",
@@ -278,7 +265,7 @@
       "categoryColor": "#f59e0b",
       "categoryIcon": "BookOpen",
       "startTime": "2026-11-03T11:07:39.667Z",
-      "endTime": "2026-11-04T01:59:53.306Z",
+      "endTime": "2026-11-03T13:37:39.667Z",
       "durationMinutes": 150,
       "mode": "pomodoro",
       "notes": "任务2 (习概双创 90m) + 任务3 (专业课 60m)",
@@ -458,7 +445,7 @@
       "diffMinutes": -30,
       "target": "自习室",
       "taskName": "任务1: 雅思基础突破 (200词背写90m + 40句读写90m · 180分钟)",
-      "notes": "19:00 准点提前30分钟就位自习室打卡！开启全晚3小时雅思初级基础攻坚：前1.5h背写200词，后1.5h精读精写40句。"
+      "notes": "19:00 准点提前就位自习室打卡！专注攻坚2小时雅思初级基础（19:00-21:00）：前1h背写200词，后1h读写40句。周四晚不进行任务三。"
     },
     {
       "id": "chk-1793858413852",
@@ -594,6 +581,7 @@
     "log-1793958183181",
     "log-1794018151207",
     "log-1794014603982",
-    "log-1794014626633"
+    "log-1794014626633",
+    "log-1793879655096"
   ]
 }
