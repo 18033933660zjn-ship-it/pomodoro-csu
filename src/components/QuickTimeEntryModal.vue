@@ -6,10 +6,10 @@
         <div>
           <h3 class="text-base font-bold text-slate-100 flex items-center gap-2">
             <Zap class="w-5 h-5 text-amber-400" />
-            <span>填报实际学习时间 (免等倒计时)</span>
+            <span>填报实际学习时长 (填多少记多少)</span>
           </h3>
           <p class="text-[11px] text-slate-400 mt-0.5">
-            真实自习结束随时填入，立即算入今日专注进度并自动同步
+            按自习实际专注分钟数精准入账，绝不预设或叠加额外时间
           </p>
         </div>
         <button @click="close" class="text-slate-400 hover:text-slate-200 p-1.5 rounded-lg hover:bg-slate-800 transition-colors">
@@ -116,14 +116,25 @@
           ></textarea>
         </div>
 
+        <!-- Strict User Principle Notice -->
+        <div class="p-3 rounded-xl bg-amber-500/10 border border-amber-500/25 text-xs text-slate-300 space-y-1">
+          <div class="flex items-center gap-1.5 text-amber-300 font-bold">
+            <ShieldCheck class="w-4 h-4 text-amber-400" />
+            <span>核心原则：填多少就是多少</span>
+          </div>
+          <p class="text-[11px] text-slate-400 leading-relaxed">
+            系统将严格按照你填报的 <span class="font-mono font-bold text-amber-300">{{ durationMinutes }}</span> 分钟记入流水，绝不在其基础上额外叠加任何时间；打卡到馆亦不代表任务完成。
+          </p>
+        </div>
+
         <!-- Submit Button -->
-        <div class="pt-2">
+        <div class="pt-1">
           <button
             type="submit"
             class="w-full flex items-center justify-center gap-2 py-3 rounded-xl bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-slate-950 font-bold text-sm shadow-lg shadow-amber-500/20 transition-all hover:scale-[1.01] active:scale-[0.99]"
           >
             <Check class="w-4 h-4 stroke-[3]" />
-            <span>确认填入今日专注 ({{ durationMinutes }}分钟)</span>
+            <span>确认记录 {{ durationMinutes }} 分钟实际学时 (无额外叠加)</span>
           </button>
         </div>
       </form>
@@ -133,7 +144,7 @@
 
 <script setup lang="ts">
 import { ref, watch } from 'vue'
-import { Zap, Clock, X, Check } from 'lucide-vue-next'
+import { Zap, Clock, X, Check, ShieldCheck } from 'lucide-vue-next'
 import { useCategoryStore } from '@/stores/useCategoryStore'
 import { usePomodoroStore } from '@/stores/usePomodoroStore'
 import type { Category } from '@/types'
@@ -147,7 +158,7 @@ const props = withDefaults(
     initialNotes?: string
   }>(),
   {
-    initialMinutes: 90,
+    initialMinutes: 60,
     initialCategoryId: '',
     initialTaskTitle: '',
     initialNotes: ''
@@ -164,7 +175,7 @@ const pomodoroStore = usePomodoroStore()
 
 const selectedCategoryId = ref<string>('')
 const title = ref<string>('')
-const durationMinutes = ref<number>(90)
+const durationMinutes = ref<number>(60)
 const notes = ref<string>('')
 
 watch(
@@ -172,7 +183,7 @@ watch(
   (val) => {
     if (val) {
       selectedCategoryId.value = props.initialCategoryId || categoryStore.categories[0]?.id || ''
-      durationMinutes.value = props.initialMinutes || 90
+      durationMinutes.value = props.initialMinutes || 60
       title.value = props.initialTaskTitle || ''
       notes.value = props.initialNotes || ''
 

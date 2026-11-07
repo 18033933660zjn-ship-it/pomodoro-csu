@@ -106,7 +106,9 @@ function syncStoragePlugin() {
               'log-1793928933900',
               'log-1793928966449',
               'log-1793928958725',
-              'log-1793948907073'
+              'log-1793948907073',
+              'log-1793974672111',
+              'log-1793958183181'
             ])
 
             if (incoming.timeLogs && Array.isArray(incoming.timeLogs)) {
