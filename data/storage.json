@@ -1,6 +1,6 @@
 {
   "version": "2.0.0",
-  "exportTime": "2026-11-07T02:41:44.220Z",
+  "exportTime": "2026-11-07T07:00:20.273Z",
   "categories": [
     {
       "id": "cat-ielts-research",
@@ -118,15 +118,31 @@
     {
       "id": "task-fit-1",
       "categoryId": "cat-fitness-workout",
-      "title": "周末健身房胸肩抗阻力训练 + 40分钟高强度心肺体能",
-      "completed": false,
-      "estimatedPomodoros": 4,
-      "completedPomodoros": 0,
-      "notes": "10:00-12:30严格执行2.5小时，深蹲与卧推递增组",
-      "createdAt": "2026-11-02T10:04:50.858Z"
+      "title": "周末健身房大重量下肢与核心专项拉练（深蹲顶峰150kg + 保加利亚蹲 + 髋内收 + 核心四重奏）",
+      "completed": true,
+      "estimatedPomodoros": 5,
+      "completedPomodoros": 5,
+      "notes": "10:40-13:00 实际高强度执行140分钟：5组西班牙蹲；深蹲冲刺150kg顶峰成功；保加利亚蹲30kg×5次×5组；坐姿髋内收机递增至64kg；45°山羊侧压腿15kg、反向山羊挺身10kg、反向山羊俄罗斯转体10kg、平板支撑60s×3组，核心与下肢全面超额达成！",
+      "createdAt": "2026-11-02T10:04:50.858Z",
+      "completedAt": "2026-11-07T13:00:00.000+08:00"
     }
   ],
   "timeLogs": [
+    {
+      "id": "log-20261107-fit-01",
+      "taskId": "task-fit-1",
+      "taskTitle": "健身房大重量下肢与核心专项拉练 (140分钟)",
+      "categoryId": "cat-fitness-workout",
+      "categoryName": "周末专项: 健身房高强度锻炼",
+      "categoryColor": "#10b981",
+      "categoryIcon": "Dumbbell",
+      "startTime": "2026-11-07T10:40:00.000+08:00",
+      "endTime": "2026-11-07T13:00:00.000+08:00",
+      "durationMinutes": 140,
+      "mode": "pomodoro",
+      "isExtra": false,
+      "notes": "10:40-13:00 实打实高强度训练140分钟：5组西班牙蹲；深蹲梯形加重(60kg*5, 80kg*5, 100kg*5, 120kg*5, 140kg*1, 150kg*1)顶峰冲刺成功；保加利亚蹲30kg*5次*5组；坐姿髋内收机(47kg*10次*2组, 54kg*8次*2组, 64kg*6次*2组)；45°山羊凳侧压腿15kg*10次*3组；反向山羊挺身10kg*10次*3组；反向山羊俄罗斯转体10kg*10次*3组；平板支撑60秒*3组。"
+    },
     {
       "id": "log-20261106-major-01",
       "taskId": "task-major-1",
@@ -388,6 +404,30 @@
   },
   "checkIns": [
     {
+      "id": "chk-20261107-gym-1040",
+      "checkpointId": "cp-sat-2",
+      "date": "2026-11-07",
+      "scheduledTime": "10:30",
+      "checkInTime": "2026-11-07T10:40:00.000+08:00",
+      "status": "late",
+      "diffMinutes": 10,
+      "target": "健身房",
+      "taskName": "健身房大重量下肢与核心专项拉练 (140分钟)",
+      "notes": "10:40 到达健身房打卡（迟到 10 分钟）。随后高强度训练至 13:00，深蹲顶峰突破 150kg！"
+    },
+    {
+      "id": "chk-1794034215079",
+      "checkpointId": "cp-sat-3",
+      "date": "2026-11-07",
+      "scheduledTime": "14:30",
+      "checkInTime": "2026-11-07T06:50:15.079Z",
+      "status": "late",
+      "diffMinutes": 20,
+      "target": "自习室",
+      "taskName": "任务1: 雅思基础突破 (200词背写90m + 40句读写90m · 180分钟)",
+      "notes": "迟到 20 分钟到达，已如实记录进周总结改进项"
+    },
+    {
       "id": "chk-1794014603982",
       "checkpointId": "cp-sat-1",
       "date": "2026-11-07",
@@ -570,10 +610,10 @@
     "log-1794018151207",
     "log-1794014603982",
     "log-1794014626633",
-    "log-1793879655096"
+    "log-1793879655096",
+    "log-1794034215079"
   ],
   "deletedCheckInIds": [
-    "chk-1794018151206",
-    "2026-11-07_cp-sat-2"
+    "chk-1794018151206"
   ]
 }

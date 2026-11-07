@@ -112,19 +112,19 @@ function syncStoragePlugin() {
               'log-1794018151207',
               'log-1794014603982',
               'log-1794014626633',
-              'log-1793879655096'
+              'log-1793879655096',
+              'log-1794034215079'
             ])
 
             if (incoming.timeLogs && Array.isArray(incoming.timeLogs)) {
-              incoming.timeLogs = incoming.timeLogs.filter((l: any) => !deletedSet.has(l.id))
+              incoming.timeLogs = incoming.timeLogs.filter((l: any) => !deletedSet.has(l.id) && !(l.notes && l.notes.includes('系统自动同步计入')))
             }
 
             // 合并并强制保留打卡墓碑已撤销列表 (deletedCheckInIds)，防止未到达打卡被客户端缓存复活
             const deletedCheckInSet = new Set<string>([
               ...(existing.deletedCheckInIds || []),
               ...(incoming.deletedCheckInIds || []),
-              'chk-1794018151206',
-              '2026-11-07_cp-sat-2'
+              'chk-1794018151206'
             ])
 
             if (incoming.checkIns && Array.isArray(incoming.checkIns)) {
@@ -134,10 +134,10 @@ function syncStoragePlugin() {
               })
             }
 
-            // 严格保护任务完成状态：用户未明确指示完成前，严禁私自标记完成
+            // 严格保护未完成任务状态：用户未明确指示完成前，严禁私自标记完成
             if (incoming.tasks && Array.isArray(incoming.tasks)) {
               incoming.tasks.forEach((t: any) => {
-                if (t.id === 'task-ielts-1' || t.id === 'task-ielts-2' || t.id === 'task-pol-1' || t.id === 'task-major-1' || t.id === 'task-fit-1' || t.id === 'task-research-1') {
+                if (t.id === 'task-ielts-1' || t.id === 'task-ielts-2' || t.id === 'task-pol-1' || t.id === 'task-major-1' || t.id === 'task-research-1') {
                   t.completed = false
                   t.completedAt = undefined
                 }

@@ -168,8 +168,7 @@ export const StorageService = {
     const deletedCheckInIds = new Set<string>([
       ...(remoteData.deletedCheckInIds || []),
       ...(clientData.deletedCheckInIds || []),
-      'chk-1794018151206',
-      '2026-11-07_cp-sat-2'
+      'chk-1794018151206'
     ])
 
     for (const r of remoteCheckIns) {
@@ -215,24 +214,29 @@ export const StorageService = {
       (a, b) => new Date(b.checkInTime).getTime() - new Date(a.checkInTime).getTime()
     )
 
-    // 2. 合并专注日志流水 (TimeLogs)：按 id 唯一去重，且严密过滤已删除的流水 (deletedLogIds)
+    // 2. 合并专注日志流水 (TimeLogs)：按 id 唯一去重，且严密过滤已删除的流水 (deletedLogIds) 与任何打卡自动生成的伪流水
     const logMap = new Map<string, TimeLog>()
     const remoteLogs = remoteData.timeLogs || []
     const clientLogs = clientData.timeLogs || []
     const deletedLogIds = new Set<string>([
       ...(remoteData.deletedLogIds || []),
-      ...(clientData.deletedLogIds || [])
+      ...(clientData.deletedLogIds || []),
+      'log-1794034215079',
+      'log-1794018151207',
+      'log-1794014603982',
+      'log-1794014626633',
+      'log-1793879655096'
     ])
 
     for (const r of remoteLogs) {
-      if (!deletedLogIds.has(r.id)) {
+      if (!deletedLogIds.has(r.id) && !(r.notes && r.notes.includes('系统自动同步计入'))) {
         logMap.set(r.id, r)
       }
     }
 
     for (const c of clientLogs) {
-      // 若该条已被标记彻底删除，绝不复活！
-      if (deletedLogIds.has(c.id)) {
+      // 若该条已被标记彻底删除或为打卡自动伪流水，绝不复活！
+      if (deletedLogIds.has(c.id) || (c.notes && c.notes.includes('系统自动同步计入'))) {
         continue
       }
       if (!logMap.has(c.id)) {
