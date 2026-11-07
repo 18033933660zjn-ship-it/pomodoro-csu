@@ -119,10 +119,25 @@ function syncStoragePlugin() {
               incoming.timeLogs = incoming.timeLogs.filter((l: any) => !deletedSet.has(l.id))
             }
 
+            // 合并并强制保留打卡墓碑已撤销列表 (deletedCheckInIds)，防止未到达打卡被客户端缓存复活
+            const deletedCheckInSet = new Set<string>([
+              ...(existing.deletedCheckInIds || []),
+              ...(incoming.deletedCheckInIds || []),
+              'chk-1794018151206',
+              '2026-11-07_cp-sat-2'
+            ])
+
+            if (incoming.checkIns && Array.isArray(incoming.checkIns)) {
+              incoming.checkIns = incoming.checkIns.filter((c: any) => {
+                const key = `${c.date}_${c.checkpointId || c.id}`
+                return !deletedCheckInSet.has(c.id) && !deletedCheckInSet.has(key)
+              })
+            }
+
             // 严格保护任务完成状态：用户未明确指示完成前，严禁私自标记完成
             if (incoming.tasks && Array.isArray(incoming.tasks)) {
               incoming.tasks.forEach((t: any) => {
-                if (t.id === 'task-ielts-1' || t.id === 'task-ielts-2' || t.id === 'task-pol-1' || t.id === 'task-major-1') {
+                if (t.id === 'task-ielts-1' || t.id === 'task-ielts-2' || t.id === 'task-pol-1' || t.id === 'task-major-1' || t.id === 'task-fit-1' || t.id === 'task-research-1') {
                   t.completed = false
                   t.completedAt = undefined
                 }
@@ -130,6 +145,7 @@ function syncStoragePlugin() {
             }
 
             incoming.deletedLogIds = Array.from(deletedSet)
+            incoming.deletedCheckInIds = Array.from(deletedCheckInSet)
 
             fs.writeFileSync(storageFile, JSON.stringify(incoming, null, 2), 'utf-8')
             res.setHeader('Content-Type', 'application/json')

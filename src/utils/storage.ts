@@ -161,18 +161,29 @@ export const StorageService = {
     let clientHadNew = false
     let remoteHadNew = false
 
-    // 1. 合并打卡记录 (CheckIns)：按 `${date}_${checkpointId || id}` 唯一识别
+    // 1. 合并打卡记录 (CheckIns)：按 `${date}_${checkpointId || id}` 唯一识别，且严密过滤墓碑已撤销的打卡记录 (deletedCheckInIds)
     const checkInMap = new Map<string, CheckInRecord>()
     const remoteCheckIns = remoteData.checkIns || []
     const clientCheckIns = clientData.checkIns || []
+    const deletedCheckInIds = new Set<string>([
+      ...(remoteData.deletedCheckInIds || []),
+      ...(clientData.deletedCheckInIds || []),
+      'chk-1794018151206',
+      '2026-11-07_cp-sat-2'
+    ])
 
     for (const r of remoteCheckIns) {
       const key = `${r.date}_${r.checkpointId || r.id}`
-      checkInMap.set(key, r)
+      if (!deletedCheckInIds.has(r.id) && !deletedCheckInIds.has(key)) {
+        checkInMap.set(key, r)
+      }
     }
 
     for (const c of clientCheckIns) {
       const key = `${c.date}_${c.checkpointId || c.id}`
+      if (deletedCheckInIds.has(c.id) || deletedCheckInIds.has(key)) {
+        continue
+      }
       const remoteRecord = checkInMap.get(key)
       if (!remoteRecord) {
         checkInMap.set(key, c)
@@ -191,6 +202,9 @@ export const StorageService = {
     // 检查云端是否有客户端所没有的记录
     for (const r of remoteCheckIns) {
       const key = `${r.date}_${r.checkpointId || r.id}`
+      if (deletedCheckInIds.has(r.id) || deletedCheckInIds.has(key)) {
+        continue
+      }
       const clientHas = clientCheckIns.some(c => `${c.date}_${c.checkpointId || c.id}` === key)
       if (!clientHas) {
         remoteHadNew = true
@@ -317,7 +331,8 @@ export const StorageService = {
       reflections: mergedReflections,
       settings: mergedSettings,
       checkIns: mergedCheckIns,
-      deletedLogIds: Array.from(deletedLogIds)
+      deletedLogIds: Array.from(deletedLogIds),
+      deletedCheckInIds: Array.from(deletedCheckInIds)
     }
 
     return { merged, clientHadNew, remoteHadNew }

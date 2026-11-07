@@ -1,6 +1,6 @@
 {
   "version": "2.0.0",
-  "exportTime": "2026-11-07T02:35:43.404Z",
+  "exportTime": "2026-11-07T02:41:44.220Z",
   "categories": [
     {
       "id": "cat-ielts-research",
@@ -388,18 +388,6 @@
   },
   "checkIns": [
     {
-      "id": "chk-1794018151206",
-      "checkpointId": "cp-sat-2",
-      "date": "2026-11-07",
-      "scheduledTime": "10:30",
-      "checkInTime": "2026-11-07T02:22:31.206Z",
-      "status": "on_time",
-      "diffMinutes": -8,
-      "target": "健身房",
-      "taskName": "健身房力量与心肺高强度锻炼 (150分钟)",
-      "notes": "根据早间自习补学调整：健身时间推迟至 10:30 开始。10:22 到达打卡，提前 8 分钟准点就位！"
-    },
-    {
       "id": "chk-1794014603982",
       "checkpointId": "cp-sat-1",
       "date": "2026-11-07",
@@ -583,5 +571,9 @@
     "log-1794014603982",
     "log-1794014626633",
     "log-1793879655096"
+  ],
+  "deletedCheckInIds": [
+    "chk-1794018151206",
+    "2026-11-07_cp-sat-2"
   ]
 }

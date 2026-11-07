@@ -136,6 +136,7 @@ export interface AppDataExport {
   settings: TimerSettings
   checkIns?: CheckInRecord[]
   deletedLogIds?: string[]
+  deletedCheckInIds?: string[]
 }
 
 // 受信任设备与专属密匙凭据
