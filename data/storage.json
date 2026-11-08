@@ -1,6 +1,6 @@
 {
   "version": "2.0.0",
-  "exportTime": "2026-11-08T09:54:03.898Z",
+  "exportTime": "2026-11-08T10:06:50.736Z",
   "categories": [
     {
       "id": "cat-ielts-research",
@@ -523,36 +523,6 @@
       "notes": "16:00-18:15 紧密衔接雅思完成2小时15分钟(135m)科研深度写作与格式完善"
     },
     {
-      "id": "log-std-20261107-pol",
-      "taskId": "task-pol-1",
-      "taskTitle": "习概双创核心专题考点复盘背诵",
-      "categoryId": "cat-politics-innovation",
-      "categoryName": "任务二: 习概与双创导论",
-      "categoryColor": "#f59e0b",
-      "categoryIcon": "BookOpen",
-      "startTime": "2026-11-07T08:00:00.000+08:00",
-      "endTime": "2026-11-07T08:45:00.000+08:00",
-      "durationMinutes": 45,
-      "mode": "pomodoro",
-      "isExtra": false,
-      "notes": "08:00-08:45 早间自习45分钟：背诵习概双创考点"
-    },
-    {
-      "id": "log-std-20261107-res-1",
-      "taskId": "task-research-1",
-      "taskTitle": "科研前沿文献精读研析: 动作分析与专项体能机制",
-      "categoryId": "cat-research-advance",
-      "categoryName": "任务四: 科研推进 (文献研读与论文写作)",
-      "categoryColor": "#ec4899",
-      "categoryIcon": "FileText",
-      "startTime": "2026-11-07T08:45:00.000+08:00",
-      "endTime": "2026-11-07T09:30:00.000+08:00",
-      "durationMinutes": 45,
-      "mode": "pomodoro",
-      "isExtra": false,
-      "notes": "08:45-09:30 习概时段分出45分钟用于文献精读"
-    },
-    {
       "id": "log-20261107-fit-01",
       "taskId": "task-fit-sat-01",
       "taskTitle": "健身房大重量下肢与核心专项拉练 (140分钟)",
@@ -566,51 +536,6 @@
       "mode": "pomodoro",
       "isExtra": false,
       "notes": "10:40-13:00 实打实140分钟下肢大重量深蹲：\n• 5组西班牙蹲热身；\n• 深蹲：60kg×5, 80kg×5, 100kg×5, 120kg×5, 140kg×1, 150kg×1突破成功；\n• 保加利亚分腿蹲：30kg×5次×5组；\n• 坐姿髋内收机：47kg×10(2组), 54kg×8(2组), 64kg×6(2组)；\n• 核心四重奏：45°山羊侧压腿15kg×10次×3组；反向山羊挺身10kg×10次×3组；反向山羊俄罗斯转体10kg×10次×3组；平板支撑60秒×3组。"
-    },
-    {
-      "id": "log-std-20261107-ielts",
-      "taskId": "task-ielts-1",
-      "taskTitle": "雅思基础突破: 200词背写(45m) + 40句读写(45m)",
-      "categoryId": "cat-ielts-research",
-      "categoryName": "任务一: 雅思基础突破 (200词背写 + 40句读写)",
-      "categoryColor": "#8b5cf6",
-      "categoryIcon": "GraduationCap",
-      "startTime": "2026-11-07T14:30:00.000+08:00",
-      "endTime": "2026-11-07T16:00:00.000+08:00",
-      "durationMinutes": 90,
-      "mode": "pomodoro",
-      "isExtra": false,
-      "notes": "14:30-16:00 练后高能自习90分钟：雅思核心词汇与学术长难句"
-    },
-    {
-      "id": "log-std-20261107-res-2",
-      "taskId": "task-research-1",
-      "taskTitle": "科研推进: 结合雅思学术长难句精修论文正文论证",
-      "categoryId": "cat-research-advance",
-      "categoryName": "任务四: 科研推进 (文献研读与论文写作)",
-      "categoryColor": "#ec4899",
-      "categoryIcon": "FileText",
-      "startTime": "2026-11-07T16:00:00.000+08:00",
-      "endTime": "2026-11-07T17:30:00.000+08:00",
-      "durationMinutes": 90,
-      "mode": "pomodoro",
-      "isExtra": false,
-      "notes": "16:00-17:30 雅思时段匀出90分钟紧密衔接科研写作，全天科研累计达成135分钟(2h15m)"
-    },
-    {
-      "id": "log-std-20261108-maj",
-      "taskId": "task-major-1",
-      "taskTitle": "专业课三科巩固突破 (生物力学/科研方法/竞赛学各20m)",
-      "categoryId": "cat-major-courses",
-      "categoryName": "任务三: 体育专业课三科",
-      "categoryColor": "#3b82f6",
-      "categoryIcon": "Code",
-      "startTime": "2026-11-08T08:00:00.000+08:00",
-      "endTime": "2026-11-08T09:00:00.000+08:00",
-      "durationMinutes": 60,
-      "mode": "pomodoro",
-      "isExtra": false,
-      "notes": "08:00-09:00 早间自习60分钟：专业课三科各20分钟扎实推进"
     },
     {
       "id": "log-20261108-fit-01",
@@ -643,34 +568,19 @@
       "notes": "下午专注 60 分钟：完成发展对象学习体会撰写与思想汇报总结"
     },
     {
-      "id": "log-std-20261108-ielts",
+      "id": "log-1794048210647",
       "taskId": "task-ielts-1",
-      "taskTitle": "雅思基础突破: 核心词汇背写(45m) + 40句读写(45m)",
+      "taskTitle": "雅思与科研学术综合自习 (130分钟)",
       "categoryId": "cat-ielts-research",
       "categoryName": "任务一: 雅思基础突破 (200词背写 + 40句读写)",
       "categoryColor": "#8b5cf6",
       "categoryIcon": "GraduationCap",
-      "startTime": "2026-11-08T16:00:00.000+08:00",
-      "endTime": "2026-11-08T17:30:00.000+08:00",
-      "durationMinutes": 90,
+      "startTime": "2026-11-07T14:30:00.000+08:00",
+      "endTime": "2026-11-07T16:40:00.000+08:00",
+      "durationMinutes": 130,
       "mode": "pomodoro",
       "isExtra": false,
-      "notes": "16:00-17:30 下午大自习90分钟：雅思核心200词背写与学术句型精读"
-    },
-    {
-      "id": "log-std-20261108-res",
-      "taskId": "task-research-1",
-      "taskTitle": "学术科研推进: 文献研读总结与论文论证完善",
-      "categoryId": "cat-research-advance",
-      "categoryName": "任务四: 科研推进 (文献研读与论文写作)",
-      "categoryColor": "#ec4899",
-      "categoryIcon": "FileText",
-      "startTime": "2026-11-08T17:30:00.000+08:00",
-      "endTime": "2026-11-08T19:00:00.000+08:00",
-      "durationMinutes": 90,
-      "mode": "pomodoro",
-      "isExtra": false,
-      "notes": "17:30-19:00 紧密衔接雅思推进科研90分钟，全周科研圆满达成15小时总配额！"
+      "notes": "周六下午自习室真实专注130分钟"
     }
   ],
   "reflections": {
@@ -949,7 +859,14 @@
     "log-20261105-ielts-02",
     "log-20261106-pol-01",
     "log-20261106-research-01",
-    "log-20261106-major-01"
+    "log-20261106-major-01",
+    "log-std-20261108-maj",
+    "log-std-20261108-ielts",
+    "log-std-20261108-res",
+    "log-std-20261107-pol",
+    "log-std-20261107-res-1",
+    "log-std-20261107-res-2",
+    "log-std-20261107-ielts"
   ],
   "deletedCheckInIds": [
     "chk-1794018151206"

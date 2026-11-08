@@ -221,9 +221,16 @@ export const StorageService = {
     const deletedLogIds = new Set<string>([
       ...(remoteData.deletedLogIds || []),
       ...(clientData.deletedLogIds || []),
+      'log-std-20261108-maj',
+      'log-std-20261108-ielts',
+      'log-std-20261108-res',
+      'log-std-20261107-pol',
+      'log-std-20261107-res-1',
+      'log-std-20261107-res-2',
+      'log-std-20261107-ielts',
       'log-1794130429267',
       'log-1794124886301',
-      'log-1794048210647',
+      'log-1794048210647-old',
       'log-1794034215079',
       'log-1794018151207',
       'log-1794014603982',
@@ -238,21 +245,7 @@ export const StorageService = {
       'log-1793879655096',
       'log-1793863834268',
       'log-1793757593306',
-      'log-1793691749026',
-      'log-20261102-01',
-      'log-20261102-02',
-      'log-20261102-03',
-      'log-20261103-01',
-      'log-20261104-01',
-      'log-20261104-02',
-      'log-20261104-03',
-      'log-20261105-01',
-      'log-20261105-02',
-      'log-20261105-ielts-01',
-      'log-20261105-ielts-02',
-      'log-20261106-pol-01',
-      'log-20261106-research-01',
-      'log-20261106-major-01'
+      'log-1793691749026'
     ])
 
     for (const r of remoteLogs) {
