@@ -44,6 +44,16 @@ export const defaultCategories: Category[] = [
     description: '运动生物力学(20m) + 体育科学研究方法(20m) + 运动竞赛学(20m)'
   },
   {
+    id: 'cat-homework-custom',
+    name: '日常作业与自主研习',
+    icon: 'BookMarked',
+    color: '#06b6d4', // cyan
+    dimension: 'academic',
+    dailyTargetMinutes: 60, // 1h
+    weeklyTargetMinutes: 300, // 5h
+    description: '日常专业课作业、文献研读、自主复盘与自选研习任务'
+  },
+  {
     id: 'cat-fitness-workout',
     name: '周末专项: 健身房高强度锻炼',
     icon: 'Dumbbell',

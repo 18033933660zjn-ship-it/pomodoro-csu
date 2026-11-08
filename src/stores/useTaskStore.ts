@@ -17,20 +17,45 @@ export const useTaskStore = defineStore('tasks', () => {
     return tasks.value.filter(t => t.categoryId === categoryId)
   }
 
-  function addTask(task: { categoryId: string; title: string; estimatedPomodoros?: number; notes?: string }) {
+  function addTask(task: {
+    categoryId: string
+    title: string
+    targetMinutes?: number
+    estimatedPomodoros?: number
+    notes?: string
+    dueDate?: string
+  }) {
+    const targetMin = task.targetMinutes || (task.estimatedPomodoros ? task.estimatedPomodoros * 25 : 45)
     const newTask: Task = {
       id: `task-${Date.now()}`,
       categoryId: task.categoryId,
       title: task.title,
       completed: false,
-      estimatedPomodoros: task.estimatedPomodoros || 2,
+      targetMinutes: targetMin,
+      estimatedPomodoros: Math.max(1, Math.round(targetMin / 25)),
       completedPomodoros: 0,
       notes: task.notes || '',
+      dueDate: task.dueDate || '',
       createdAt: new Date().toISOString()
     }
     tasks.value.unshift(newTask)
     save()
     return newTask
+  }
+
+  function completeTaskWithLog(params: { taskId: string; actualMinutes: number; notes?: string }) {
+    const task = tasks.value.find(t => t.id === params.taskId)
+    if (task) {
+      task.completed = true
+      task.completedAt = new Date().toISOString()
+      task.actualMinutes = params.actualMinutes
+      task.completedPomodoros = Math.max(task.completedPomodoros, Math.max(1, Math.round(params.actualMinutes / 25)))
+      if (params.notes && !task.notes) {
+        task.notes = params.notes
+      }
+      save()
+    }
+    return task
   }
 
   function toggleTask(id: string) {
@@ -74,6 +99,7 @@ export const useTaskStore = defineStore('tasks', () => {
     getTasksByCategory,
     addTask,
     toggleTask,
+    completeTaskWithLog,
     incrementTaskPomodoro,
     updateTask,
     deleteTask,

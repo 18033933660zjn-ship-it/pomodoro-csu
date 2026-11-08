@@ -18,7 +18,10 @@ export interface Task {
   completed: boolean
   estimatedPomodoros: number
   completedPomodoros: number
-  notes?: string
+  targetMinutes?: number // 计划/预估学习时长 (分钟)
+  actualMinutes?: number // 实际完成学习时长 (分钟)
+  dueDate?: string // 截止日期或要求完成时间
+  notes?: string // 任务内容与作业详细要求
   createdAt: string
   completedAt?: string
 }

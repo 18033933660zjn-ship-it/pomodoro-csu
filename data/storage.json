@@ -1,6 +1,6 @@
 {
   "version": "2.0.0",
-  "exportTime": "2026-11-08T08:35:36.691Z",
+  "exportTime": "2026-11-08T09:06:36.074Z",
   "categories": [
     {
       "id": "cat-ielts-research",
@@ -41,6 +41,16 @@
       "dailyTargetMinutes": 60,
       "weeklyTargetMinutes": 300,
       "description": "运动生物力学(20m) + 体育科学研究方法(20m) + 运动竞赛学(20m)"
+    },
+    {
+      "id": "cat-homework-custom",
+      "name": "日常作业与自主研习",
+      "icon": "BookMarked",
+      "color": "#06b6d4",
+      "dimension": "academic",
+      "dailyTargetMinutes": 60,
+      "weeklyTargetMinutes": 300,
+      "description": "日常专业课作业、文献精读、自主复盘与专题探索"
     },
     {
       "id": "cat-fitness-workout",
