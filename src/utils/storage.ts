@@ -225,7 +225,8 @@ export const StorageService = {
       'log-1794018151207',
       'log-1794014603982',
       'log-1794014626633',
-      'log-1793879655096'
+      'log-1793879655096',
+      'log-1794124886301'
     ])
 
     for (const r of remoteLogs) {

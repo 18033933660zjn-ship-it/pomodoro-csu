@@ -1,6 +1,6 @@
 {
   "version": "2.0.0",
-  "exportTime": "2026-11-08T09:06:36.074Z",
+  "exportTime": "2026-11-08T09:24:54.549Z",
   "categories": [
     {
       "id": "cat-ielts-research",
@@ -64,6 +64,19 @@
     }
   ],
   "tasks": [
+    {
+      "id": "task-pol-dev-01",
+      "categoryId": "cat-politics-innovation",
+      "title": "完成发展对象学习体会",
+      "completed": true,
+      "estimatedPomodoros": 2,
+      "completedPomodoros": 2,
+      "targetMinutes": 60,
+      "actualMinutes": 60,
+      "notes": "完成发展对象学习体会撰写与思想汇报总结",
+      "createdAt": "2026-11-08T15:00:00.000+08:00",
+      "completedAt": "2026-11-08T16:00:00.000+08:00"
+    },
     {
       "id": "task-research-1",
       "categoryId": "cat-research-advance",
@@ -150,6 +163,21 @@
   ],
   "timeLogs": [
     {
+      "id": "log-20261108-pol-dev",
+      "taskId": "task-pol-dev-01",
+      "taskTitle": "完成发展对象学习体会",
+      "categoryId": "cat-politics-innovation",
+      "categoryName": "任务二: 习概与双创导论",
+      "categoryColor": "#f59e0b",
+      "categoryIcon": "BookOpen",
+      "startTime": "2026-11-08T15:00:00.000+08:00",
+      "endTime": "2026-11-08T16:00:00.000+08:00",
+      "durationMinutes": 60,
+      "mode": "pomodoro",
+      "isExtra": false,
+      "notes": "下午专注 60 分钟：完成发展对象学习体会撰写与思想汇报总结"
+    },
+    {
       "id": "log-20261108-fit-01",
       "taskId": "task-fit-1",
       "taskTitle": "健身房上肢大容量推拉与核心专项拉练 (150分钟)",
@@ -163,19 +191,6 @@
       "mode": "pomodoro",
       "isExtra": false,
       "notes": "10:30-13:00 实打实高强度上肢抗阻150分钟：\n• 平板卧推金字塔：20kg×5, 40kg×5, 60kg×5, 80kg×3(2组), 90kg×1冲刺顶峰成功, 60kg×8, 40kg×8泵感力竭收尾；\n• 高位下拉垂直拉力：50kg×8(3组), 60kg×8(3组)；\n• 杠铃站姿实力推：20kg×8(1组), 30kg×8(3组), 40kg×6(2组)；\n• 核心四重奏：45°山羊侧压腿15kg×10次×3组；反向山羊挺身10kg×10次×3组；反向山羊俄罗斯转体10kg×10次×3组；平板支撑60秒×3组。"
-    },
-    {
-      "taskTitle": "90m (任务二 习概双创)",
-      "categoryId": "cat-politics-innovation",
-      "categoryName": "任务二: 习概与双创导论",
-      "categoryColor": "#f59e0b",
-      "categoryIcon": "BookOpen",
-      "startTime": "2026-11-07T11:00:02.515Z",
-      "endTime": "2026-11-08T08:01:26.301Z",
-      "durationMinutes": 90,
-      "mode": "pomodoro",
-      "notes": "90m (任务二 习概双创)",
-      "id": "log-1794124886301"
     },
     {
       "taskTitle": "150m (周三雅思 200词+句型)",
@@ -697,7 +712,8 @@
     "log-1794014603982",
     "log-1794014626633",
     "log-1793879655096",
-    "log-1794034215079"
+    "log-1794034215079",
+    "log-1794124886301"
   ],
   "deletedCheckInIds": [
     "chk-1794018151206"
