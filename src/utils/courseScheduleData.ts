@@ -138,9 +138,9 @@ export const weeklyCheckpoints: StudyCheckpoint[] = [
     dayOfWeek: 1,
     time: '14:00',
     target: '自习室',
-    taskName: '任务1 (雅思基础突破 200词背写+40句读写 · 180m) + 任务3 (专业课三科 60m)',
+    taskName: '任务1: 雅思突破(90m) + 任务4: 科研推进(90m) + 任务3: 专业课(60m)',
     durationMinutes: 240,
-    description: '14:00前到达自习室打卡，下午无课连续攻坚4小时，18:00后去晚餐并准备19:00双创课'
+    description: '14:00前到达自习室打卡，下午攻坚4小时：雅思基础突破90m + 科研与论文推进90m + 专业课三科60m，统筹推进'
   },
 
   // 周二
@@ -158,18 +158,18 @@ export const weeklyCheckpoints: StudyCheckpoint[] = [
     dayOfWeek: 2,
     time: '14:00',
     target: '自习室',
-    taskName: '任务1前半段: 雅思核心词汇背写 (200词 · 90分钟)',
+    taskName: '任务1: 雅思基础突破 (词汇背写与长难句 · 90分钟)',
     durationMinutes: 90,
-    description: '14:00前到达自习室打卡，专注90分钟完成200个核心词汇背写默写，准备16:00专业技能课'
+    description: '14:00前到达自习室打卡，专注90分钟推进雅思核心词汇与句型读写，准备16:00专业技能课'
   },
   {
     id: 'cp-tue-3',
     dayOfWeek: 2,
     time: '19:30',
     target: '自习室',
-    taskName: '任务1后半段: 雅思核心句型读写 (40句 · 90分钟)',
+    taskName: '任务4: 科研推进 (文献研读与论文写作 · 90分钟)',
     durationMinutes: 90,
-    description: '19:30前到达自习室打卡，专注90分钟完成40个核心句型的精读与读写仿写，21:00完成全天所有任务'
+    description: '19:30前到达自习室打卡，专注90分钟推进学术科研、文献精析与论文内容完善，21:00完成全天所有任务'
   },
 
   // 周三
@@ -187,18 +187,18 @@ export const weeklyCheckpoints: StudyCheckpoint[] = [
     dayOfWeek: 3,
     time: '16:00',
     target: '自习室',
-    taskName: '任务1前半段: 雅思核心词汇背写(200词) + 句型读写前半段 (150分钟)',
+    taskName: '任务1: 雅思基础突破 (90m) + 任务4: 科研推进前半段 (60m · 共150分钟)',
     durationMinutes: 150,
-    description: '党课下课后 16:00 前到达自习室打卡，专注完成200词背写(90m)并推进句型读写(60m)'
+    description: '党课下课后 16:00 前到达自习室打卡，专注完成雅思90m并开启科研文献精读60m'
   },
   {
     id: 'cp-wed-3',
     dayOfWeek: 3,
     time: '21:00',
     target: '自习室',
-    taskName: '任务1句型收尾(30m · 补齐40句) + 任务3: 专业课巩固 (60m)',
+    taskName: '任务4: 科研推进收尾 (30m) + 任务3: 专业课巩固 (60m)',
     durationMinutes: 90,
-    description: '晚课下课后 21:00 前到达自习室打卡，补齐今日雅思剩余句型并巩固专业课60分钟，全天200词+40句满贯达标！'
+    description: '晚课下课后 21:00 前到达自习室打卡，补齐今日科研剩余30m（全天科研达标90m）并巩固专业课60分钟'
   },
 
   // 周四
@@ -216,9 +216,9 @@ export const weeklyCheckpoints: StudyCheckpoint[] = [
     dayOfWeek: 4,
     time: '19:30',
     target: '自习室',
-    taskName: '任务1: 雅思基础突破 (200词背写90m + 40句读写90m · 180分钟)',
+    taskName: '任务1: 雅思基础突破 (90m) + 任务4: 科研推进 (90m · 共180分钟)',
     durationMinutes: 180,
-    description: '19:30前到达自习室打卡，专注3小时：前1.5h背写200词，后1.5h读写40句至22:30'
+    description: '19:30前到达自习室打卡，专注3小时：前1.5h雅思词汇句型(90m)，后1.5h科研文献与论文推进(90m)至22:30'
   },
 
   // 周五
@@ -236,9 +236,9 @@ export const weeklyCheckpoints: StudyCheckpoint[] = [
     dayOfWeek: 5,
     time: '14:30',
     target: '自习室',
-    taskName: '任务1: 雅思基础突破 (200词背写90m + 40句读写90m · 180分钟)',
+    taskName: '任务1: 雅思基础突破 (90m) + 任务4: 科研推进 (90m · 共180分钟)',
     durationMinutes: 180,
-    description: '14:30前到达自习室打卡，专注3小时：前1.5h背写200词，后1.5h读写40句至17:30'
+    description: '14:30前到达自习室打卡，专注3小时：前1.5h雅思突破(90m)，后1.5h科研与论文写作完善(90m)至17:30'
   },
 
   // 周六
@@ -265,9 +265,9 @@ export const weeklyCheckpoints: StudyCheckpoint[] = [
     dayOfWeek: 6,
     time: '14:30',
     target: '自习室',
-    taskName: '任务1: 雅思基础突破 (200词背写90m + 40句读写90m · 180分钟)',
+    taskName: '任务1: 雅思基础突破 (90m) + 任务4: 科研推进 (90m · 共180分钟)',
     durationMinutes: 180,
-    description: '14:30前到达自习室打卡，专注3小时：前1.5h背写200词，后1.5h读写40句，周六不进行任务三'
+    description: '14:30前到达自习室打卡，专注3小时：前1.5h雅思词汇句型(90m)，后1.5h科研文献研读与论文推进(90m)'
   },
 
   // 周日
@@ -294,8 +294,8 @@ export const weeklyCheckpoints: StudyCheckpoint[] = [
     dayOfWeek: 7,
     time: '14:30',
     target: '自习室',
-    taskName: '任务1: 雅思基础突破 (200词背写90m + 40句读写90m · 180分钟) + 周末全维复盘生成',
+    taskName: '任务1: 雅思基础突破 (90m) + 任务4: 科研推进 (90m · 共180分钟) + 周末全维复盘生成',
     durationMinutes: 180,
-    description: '14:30前到达自习室打卡，专注3小时：前1.5h背写200词，后1.5h读写40句，完成后自动触发每周总复盘汇报！'
+    description: '14:30前到达自习室打卡，专注3小时：雅思突破90m + 科研推进90m，完成后自动触发每周总复盘汇报！'
   }
 ]

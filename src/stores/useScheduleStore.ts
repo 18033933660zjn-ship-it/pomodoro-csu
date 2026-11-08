@@ -277,12 +277,12 @@ export const useScheduleStore = defineStore('schedule', () => {
     // 2. 统计该周任务实际完成时长 vs 计划目标
     const weekLogs = timeLogStore.getLogsByRange(start.toISOString(), end.toISOString())
 
-    // 任务1: 雅思基础突破 (周目标 11h = 660m，雅思21h中分出10h给科研推进)
+    // 任务1: 雅思基础突破 (周目标 10.5h = 630m，平均每天1.5h)
     const t1Minutes = weekLogs
       .filter(l => l.categoryId === 'cat-ielts-research' || l.taskTitle.includes('任务一') || l.taskTitle.includes('雅思'))
       .reduce((s, l) => s + l.durationMinutes, 0)
 
-    // 任务4: 科研推进 (周目标 10h = 600m)
+    // 任务4: 科研推进 (周目标 10.5h = 630m，平均每天1.5h)
     const t4Minutes = weekLogs
       .filter(l => l.categoryId === 'cat-research-advance' || l.taskTitle.includes('任务四') || l.taskTitle.includes('科研') || l.taskTitle.includes('论文'))
       .reduce((s, l) => s + l.durationMinutes, 0)
@@ -344,20 +344,20 @@ export const useScheduleStore = defineStore('schedule', () => {
       improvements.push(`迟到节点明细：${lateDetails}。请重点复盘以上时段前是否有拖延或下课换场耽搁，建议提前10分钟启程前往自习室。`)
     }
 
-    // 点评任务1：雅思基础突破 (原21h中分出10h给科研推进，雅思现每周目标 11h)
+    // 点评任务1：雅思基础突破 (每天1.5h，每周目标 10.5h = 630m)
     const t1Hours = Number((t1Minutes / 60).toFixed(1))
-    const t1Target = isCurrentWeek ? Number(((currentDay / 7) * 11).toFixed(1)) : 11
+    const t1Target = isCurrentWeek ? Number(((currentDay / 7) * 10.5).toFixed(1)) : 10.5
     if (t1Hours >= t1Target * 0.9) {
-      praises.push(isCurrentWeek ? `任务一（雅思基础突破）截止今日累计投入 ${t1Hours}h（阶段目标 ${t1Target}h），核心词汇默写与句型读写稳步推进！` : `任务一全周累计达成 ${t1Hours} 小时（目标 11h），基础打磨严谨！`)
+      praises.push(isCurrentWeek ? `任务一（雅思基础突破）截止今日累计投入 ${t1Hours}h（阶段目标 ${t1Target}h），核心词汇默写与句型读写稳步推进！` : `任务一全周累计达成 ${t1Hours} 小时（目标 10.5h），基础打磨严谨！`)
     } else {
       improvements.push(`任务一实际投入 ${t1Hours}h（阶段目标 ${t1Target}h），请保持每日词汇与句型背写读写节奏。`)
     }
 
-    // 点评任务4：科研推进 (每周目标 10h)
+    // 点评任务4：科研推进 (每天1.5h，每周目标 10.5h = 630m)
     const t4Hours = Number((t4Minutes / 60).toFixed(1))
-    const t4Target = isCurrentWeek ? Number(((currentDay / 7) * 10).toFixed(1)) : 10
+    const t4Target = isCurrentWeek ? Number(((currentDay / 7) * 10.5).toFixed(1)) : 10.5
     if (t4Hours >= t4Target * 0.9) {
-      praises.push(isCurrentWeek ? `任务四（科研推进）截止今日累计投入 ${t4Hours}h（阶段目标 ${t4Target}h），文献钻研与论文打磨高效推进！` : `任务四全周累计达成 ${t4Hours} 小时（目标 10h），科研产出扎实！`)
+      praises.push(isCurrentWeek ? `任务四（科研推进）截止今日累计投入 ${t4Hours}h（阶段目标 ${t4Target}h），文献钻研与论文打磨高效推进！` : `任务四全周累计达成 ${t4Hours} 小时（目标 10.5h），科研产出扎实！`)
     } else if (t4Hours > 0) {
       praises.push(`任务四科研推进已累计投入 ${t4Hours}h，保持学术钻研与论文修改势头！`)
     }

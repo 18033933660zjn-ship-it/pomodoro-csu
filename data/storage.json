@@ -1,6 +1,6 @@
 {
   "version": "2.0.0",
-  "exportTime": "2026-11-08T08:03:29.485Z",
+  "exportTime": "2026-11-08T08:09:36.722Z",
   "categories": [
     {
       "id": "cat-ielts-research",
@@ -8,9 +8,9 @@
       "icon": "GraduationCap",
       "color": "#8b5cf6",
       "dimension": "language",
-      "dailyTargetMinutes": 95,
-      "weeklyTargetMinutes": 660,
-      "description": "初级阶段每周11小时：高频词汇背写默写与核心长难句型读写，与科研推进统筹共享自习时段"
+      "dailyTargetMinutes": 90,
+      "weeklyTargetMinutes": 630,
+      "description": "每天平均1.5小时（每周10.5小时）：核心词汇背写默写与长难句型读写，与科研推进时段统筹并进"
     },
     {
       "id": "cat-research-advance",
@@ -18,9 +18,9 @@
       "icon": "FileText",
       "color": "#ec4899",
       "dimension": "academic",
-      "dailyTargetMinutes": 85,
-      "weeklyTargetMinutes": 600,
-      "description": "每周10小时专注推进科研进度：文献精读分析、论文撰写、内容论证与格式规范完善"
+      "dailyTargetMinutes": 90,
+      "weeklyTargetMinutes": 630,
+      "description": "每天平均1.5小时（每周10.5小时）：文献研读精析、论文写作推进、论点完善与学术格式规范"
     },
     {
       "id": "cat-politics-innovation",
@@ -118,13 +118,13 @@
     {
       "id": "task-fit-1",
       "categoryId": "cat-fitness-workout",
-      "title": "周日健身房胸肩上肢大容量抗阻与核心专项（卧推冲刺90kg + 实力推 + 高位下拉 + 核心四重奏）",
+      "title": "周末健身房胸肩抗阻力训练 + 40分钟高强度心肺体能",
       "completed": true,
-      "estimatedPomodoros": 6,
+      "estimatedPomodoros": 4,
       "completedPomodoros": 6,
-      "notes": "10:30-13:00 实际高强度执行150分钟：平板卧推冲刺90kg单次顶峰成功，高位下拉大容量6组，站姿实力推40kg×6，多维度核心强化超额达成！",
+      "notes": "10:00-12:30严格执行2.5小时，深蹲与卧推递增组",
       "createdAt": "2026-11-02T10:04:50.858Z",
-      "completedAt": "2026-11-08T13:00:00.000+08:00"
+      "completedAt": "2026-11-07T13:00:00.000+08:00"
     },
     {
       "id": "task-fit-sat-01",
@@ -153,6 +153,19 @@
       "mode": "pomodoro",
       "isExtra": false,
       "notes": "10:30-13:00 实打实高强度上肢抗阻150分钟：\n• 平板卧推金字塔：20kg×5, 40kg×5, 60kg×5, 80kg×3(2组), 90kg×1冲刺顶峰成功, 60kg×8, 40kg×8泵感力竭收尾；\n• 高位下拉垂直拉力：50kg×8(3组), 60kg×8(3组)；\n• 杠铃站姿实力推：20kg×8(1组), 30kg×8(3组), 40kg×6(2组)；\n• 核心四重奏：45°山羊侧压腿15kg×10次×3组；反向山羊挺身10kg×10次×3组；反向山羊俄罗斯转体10kg×10次×3组；平板支撑60秒×3组。"
+    },
+    {
+      "taskTitle": "90m (任务二 习概双创)",
+      "categoryId": "cat-politics-innovation",
+      "categoryName": "任务二: 习概与双创导论",
+      "categoryColor": "#f59e0b",
+      "categoryIcon": "BookOpen",
+      "startTime": "2026-11-07T11:00:02.515Z",
+      "endTime": "2026-11-08T08:01:26.301Z",
+      "durationMinutes": 90,
+      "mode": "pomodoro",
+      "notes": "90m (任务二 习概双创)",
+      "id": "log-1794124886301"
     },
     {
       "taskTitle": "150m (周三雅思 200词+句型)",
@@ -443,6 +456,18 @@
   },
   "checkIns": [
     {
+      "id": "chk-1794124890145",
+      "checkpointId": "cp-sun-3",
+      "date": "2026-11-08",
+      "scheduledTime": "14:30",
+      "checkInTime": "2026-11-08T08:01:30.145Z",
+      "status": "late",
+      "diffMinutes": 91,
+      "target": "自习室",
+      "taskName": "任务1: 雅思与AI科研推进 (180分钟) + 周末全维复盘生成",
+      "notes": "迟到 91 分钟到达，已如实记录进周总结改进项"
+    },
+    {
       "id": "chk-20261108-gym-1030",
       "checkpointId": "cp-sun-2",
       "date": "2026-11-08",
@@ -455,18 +480,6 @@
       "notes": "10:30 到达健身房打卡（迟到 30 分钟）。因昨日大重量深蹲中枢神经与下肢疲劳，早间充分休整，10:30 就位开启上肢大容量攻坚。"
     },
     {
-      "id": "chk-20261107-gym-1040",
-      "checkpointId": "cp-sat-2",
-      "date": "2026-11-07",
-      "scheduledTime": "10:30",
-      "checkInTime": "2026-11-07T10:40:00.000+08:00",
-      "status": "late",
-      "diffMinutes": 10,
-      "target": "健身房",
-      "taskName": "健身房大重量下肢与核心专项拉练 (140分钟)",
-      "notes": "10:40 到达健身房打卡（迟到 10 分钟）。随后高强度训练至 13:00，深蹲顶峰突破 150kg！"
-    },
-    {
       "id": "chk-1794034215079",
       "checkpointId": "cp-sat-3",
       "date": "2026-11-07",
@@ -477,6 +490,18 @@
       "target": "自习室",
       "taskName": "任务1: 雅思基础突破 (200词背写90m + 40句读写90m · 180分钟)",
       "notes": "迟到 20 分钟到达，已如实记录进周总结改进项"
+    },
+    {
+      "id": "chk-20261107-gym-1040",
+      "checkpointId": "cp-sat-2",
+      "date": "2026-11-07",
+      "scheduledTime": "10:30",
+      "checkInTime": "2026-11-07T10:40:00.000+08:00",
+      "status": "late",
+      "diffMinutes": 10,
+      "target": "健身房",
+      "taskName": "健身房大重量下肢与核心专项拉练 (140分钟)",
+      "notes": "10:40 到达健身房打卡（迟到 10 分钟）。随后高强度训练至 13:00，深蹲顶峰突破 150kg！"
     },
     {
       "id": "chk-1794014603982",

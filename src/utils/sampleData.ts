@@ -9,9 +9,9 @@ export const defaultCategories: Category[] = [
     icon: 'GraduationCap',
     color: '#8b5cf6', // purple
     dimension: 'language',
-    dailyTargetMinutes: 95, // ~1.5h
-    weeklyTargetMinutes: 660, // 11h (21h减去10h分给科研推进)
-    description: '初级阶段每周11小时：高频词汇背写默写与核心长难句型读写，与科研推进统筹共享自习时段'
+    dailyTargetMinutes: 90, // 1.5h
+    weeklyTargetMinutes: 630, // 10.5h (平均每天1.5h，与科研推进并进)
+    description: '初级阶段每天1.5小时（每周10.5小时）：核心词汇背写默写与长难句型读写，与科研推进统筹共享自习时段'
   },
   {
     id: 'cat-research-advance',
@@ -19,9 +19,9 @@ export const defaultCategories: Category[] = [
     icon: 'FileText',
     color: '#ec4899', // pink
     dimension: 'academic',
-    dailyTargetMinutes: 85, // ~1.5h
-    weeklyTargetMinutes: 600, // 10h (从雅思总时长中分出10小时独立统筹)
-    description: '每周10小时专注推进科研进度：文献精读分析、论文撰写、内容论证与格式规范完善'
+    dailyTargetMinutes: 90, // 1.5h
+    weeklyTargetMinutes: 630, // 10.5h (平均每天1.5h，从雅思时段均等分出)
+    description: '每天平均1.5小时（每周10.5小时）：专注推进科研进度、文献研读分析、论文撰写、内容论证与格式规范完善'
   },
   {
     id: 'cat-politics-innovation',
