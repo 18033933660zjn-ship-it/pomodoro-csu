@@ -19,9 +19,9 @@ export const defaultCategories: Category[] = [
     icon: 'FileText',
     color: '#ec4899', // pink
     dimension: 'academic',
-    dailyTargetMinutes: 90, // 1.5h
-    weeklyTargetMinutes: 630, // 10.5h (平均每天1.5h，从雅思时段均等分出)
-    description: '每天平均1.5小时（每周10.5小时）：专注推进科研进度、文献研读分析、论文撰写、内容论证与格式规范完善'
+    dailyTargetMinutes: 135, // 2h 15m
+    weeklyTargetMinutes: 900, // 15h (雅思时段分出10.5h + 习概时段分出4.5h)
+    description: '每天平均2小时15分钟（每周15小时）：由雅思时段与习概时段统筹支持，深度攻坚文献研读分析、论文核心论证与格式规范完善'
   },
   {
     id: 'cat-politics-innovation',
@@ -29,9 +29,9 @@ export const defaultCategories: Category[] = [
     icon: 'BookOpen',
     color: '#f59e0b', // amber
     dimension: 'academic',
-    dailyTargetMinutes: 90, // 1.5h
-    weeklyTargetMinutes: 540, // 9h (周一到周六共6天)
-    description: '每天深入学习习近平新时代思想概论与创新创业导论核心理论'
+    dailyTargetMinutes: 45, // 45m
+    weeklyTargetMinutes: 270, // 4.5h (周一到周六共6天，每天45m)
+    description: '每天深入学习习近平新时代思想概论与创新创业导论核心理论45分钟，与早间科研统筹推进'
   },
   {
     id: 'cat-major-courses',

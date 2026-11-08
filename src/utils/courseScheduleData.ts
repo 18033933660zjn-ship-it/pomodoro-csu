@@ -129,9 +129,9 @@ export const weeklyCheckpoints: StudyCheckpoint[] = [
     dayOfWeek: 1,
     time: '08:00',
     target: '自习室',
-    taskName: '任务2: 习概与创新创业导论 (90分钟)',
+    taskName: '任务2: 习概双创精缩背诵(45m) + 任务4: 科研文献精读(45m · 共90m)',
     durationMinutes: 90,
-    description: '08:00前必须到达自习室打卡，学习至09:30，随后前往足球课'
+    description: '08:00前必须到达自习室打卡：前45m习概双创背诵，后45m文献研读，09:30后前往足球课'
   },
   {
     id: 'cp-mon-2',
@@ -140,7 +140,7 @@ export const weeklyCheckpoints: StudyCheckpoint[] = [
     target: '自习室',
     taskName: '任务1: 雅思突破(90m) + 任务4: 科研推进(90m) + 任务3: 专业课(60m)',
     durationMinutes: 240,
-    description: '14:00前到达自习室打卡，下午攻坚4小时：雅思基础突破90m + 科研与论文推进90m + 专业课三科60m，统筹推进'
+    description: '14:00前到达自习室打卡，下午攻坚4小时：雅思90m + 科研推进90m（全天科研达135m） + 专业课60m'
   },
 
   // 周二
@@ -149,9 +149,9 @@ export const weeklyCheckpoints: StudyCheckpoint[] = [
     dayOfWeek: 2,
     time: '08:00',
     target: '自习室',
-    taskName: '任务2 (习概双创 90m) + 任务3 (专业课 60m)',
+    taskName: '任务2: 习概双创(45m) + 任务4: 科研推进(45m) + 任务3: 专业课(60m)',
     durationMinutes: 150,
-    description: '08:00前到达自习室打卡，上午无课，专注至10:30后回宿舍午休'
+    description: '08:00前到达自习室打卡，上午无课专注2.5小时：习概45m + 科研45m + 专业课60m，10:30后午休'
   },
   {
     id: 'cp-tue-2',
@@ -169,7 +169,7 @@ export const weeklyCheckpoints: StudyCheckpoint[] = [
     target: '自习室',
     taskName: '任务4: 科研推进 (文献研读与论文写作 · 90分钟)',
     durationMinutes: 90,
-    description: '19:30前到达自习室打卡，专注90分钟推进学术科研、文献精析与论文内容完善，21:00完成全天所有任务'
+    description: '19:30前到达自习室打卡，专注90分钟推进论文写作与学术规范（今日科研累计达135m · 2h15m）'
   },
 
   // 周三
@@ -178,9 +178,9 @@ export const weeklyCheckpoints: StudyCheckpoint[] = [
     dayOfWeek: 3,
     time: '10:00',
     target: '自习室',
-    taskName: '任务2: 习概与创新创业导论 (90分钟)',
+    taskName: '任务2: 习概双创核心背诵(45m) + 任务4: 科研文献精读(45m · 共90m)',
     durationMinutes: 90,
-    description: '游泳课下课后10:00前到达自习室打卡，专注至11:30后回宿舍午休，准备13:00组会'
+    description: '游泳课下课后10:00前到达自习室打卡：习概45m + 科研45m至11:30，随后准备13:00组会'
   },
   {
     id: 'cp-wed-2',
@@ -198,7 +198,7 @@ export const weeklyCheckpoints: StudyCheckpoint[] = [
     target: '自习室',
     taskName: '任务4: 科研推进收尾 (30m) + 任务3: 专业课巩固 (60m)',
     durationMinutes: 90,
-    description: '晚课下课后 21:00 前到达自习室打卡，补齐今日科研剩余30m（全天科研达标90m）并巩固专业课60分钟'
+    description: '晚课下课后 21:00 前到达自习室打卡，补齐今日科研剩余30m（全天科研达标135m · 2h15m）并巩固专业课60分钟'
   },
 
   // 周四
@@ -207,9 +207,9 @@ export const weeklyCheckpoints: StudyCheckpoint[] = [
     dayOfWeek: 4,
     time: '14:00',
     target: '自习室',
-    taskName: '任务2: 习概与创新创业导论 (90分钟)',
+    taskName: '任务2: 习概双创精缩背诵(45m) + 任务4: 科研文献研读(45m · 共90m)',
     durationMinutes: 90,
-    description: '上午满课，下午14:00前到达自习室打卡，专注至15:30，准备16:00专业技能训练课'
+    description: '上午满课，下午14:00前到达自习室打卡：习概45m + 科研45m至15:30，准备16:00羽毛球课'
   },
   {
     id: 'cp-thu-2',
@@ -247,9 +247,9 @@ export const weeklyCheckpoints: StudyCheckpoint[] = [
     dayOfWeek: 6,
     time: '08:00',
     target: '自习室',
-    taskName: '任务2: 习概与创新创业导论 (90分钟)',
+    taskName: '任务2: 习概双创核心背诵(45m) + 任务4: 科研文献精读(45m · 共90m)',
     durationMinutes: 90,
-    description: '全天无课，08:00前到达自习室打卡，因早间晚到自主补时延后至10:30，随后前往健身房'
+    description: '全天无课，08:00前到达自习室打卡：习概45m + 科研45m至09:30，随后休整前往健身房'
   },
   {
     id: 'cp-sat-2',

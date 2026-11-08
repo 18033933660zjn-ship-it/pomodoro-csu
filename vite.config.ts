@@ -144,6 +144,11 @@ function syncStoragePlugin() {
               })
             }
 
+            // 确保服务端权威的科目配额分类不被旧客户端覆盖
+            if (existing.categories && Array.isArray(existing.categories) && existing.categories.length > 0) {
+              incoming.categories = existing.categories
+            }
+
             incoming.deletedLogIds = Array.from(deletedSet)
             incoming.deletedCheckInIds = Array.from(deletedCheckInSet)
 

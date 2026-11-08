@@ -1,6 +1,6 @@
 {
   "version": "2.0.0",
-  "exportTime": "2026-11-08T08:09:36.722Z",
+  "exportTime": "2026-11-08T08:35:36.691Z",
   "categories": [
     {
       "id": "cat-ielts-research",
@@ -10,7 +10,7 @@
       "dimension": "language",
       "dailyTargetMinutes": 90,
       "weeklyTargetMinutes": 630,
-      "description": "每天平均1.5小时（每周10.5小时）：核心词汇背写默写与长难句型读写，与科研推进时段统筹并进"
+      "description": "初级阶段每天平均1.5小时（每周10.5小时）：核心词汇背写默写与长难句型读写，与科研推进时段统筹并进"
     },
     {
       "id": "cat-research-advance",
@@ -18,9 +18,9 @@
       "icon": "FileText",
       "color": "#ec4899",
       "dimension": "academic",
-      "dailyTargetMinutes": 90,
-      "weeklyTargetMinutes": 630,
-      "description": "每天平均1.5小时（每周10.5小时）：文献研读精析、论文写作推进、论点完善与学术格式规范"
+      "dailyTargetMinutes": 135,
+      "weeklyTargetMinutes": 900,
+      "description": "每天平均2小时15分钟（每周15小时）：由雅思时段（每天1.5h）与习概时段（每天45m）统筹支持，深度攻坚文献研读分析、论文核心论证与格式规范完善"
     },
     {
       "id": "cat-politics-innovation",
@@ -28,9 +28,9 @@
       "icon": "BookOpen",
       "color": "#f59e0b",
       "dimension": "academic",
-      "dailyTargetMinutes": 90,
-      "weeklyTargetMinutes": 540,
-      "description": "每天深入学习习近平新时代思想概论与创新创业导论核心理论"
+      "dailyTargetMinutes": 45,
+      "weeklyTargetMinutes": 270,
+      "description": "每天深入学习习近平新时代思想概论与创新创业导论核心理论45分钟，与早间科研统筹推进"
     },
     {
       "id": "cat-major-courses",
@@ -366,7 +366,7 @@
       "durationMinutes": 120,
       "mode": "extra",
       "isExtra": true,
-      "notes": "【下肢主项】深蹲：60kg×5, 80kg×5, 100kg×5, 110kg×5, 120kg×3, 140kg×1（顶峰单次突破）；罗马尼亚硬拉(RDL)：60kg×6 (3组), 80kg×4 (2组)；坐姿髋内收：47kg×10 (2组), 54kg×8 (2组), 64kg×6 (2组)。【核心体能】悬垂举腿：10次×5组；山羊凳侧压腿：10kg负重×10次 (5组)；反向山羊挺身：5kg负重×10次 (5组)；反向山羊俄罗斯转体：5kg负重×10次 (5组)；���板支撑：60秒×3组。"
+      "notes": "【下肢主项】深蹲：60kg×5, 80kg×5, 100kg×5, 110kg×5, 120kg×3, 140kg×1（顶峰单次突破）；罗马尼亚硬拉(RDL)：60kg×6 (3组), 80kg×4 (2组)；坐姿髋内收：47kg×10 (2组), 54kg×8 (2组), 64kg×6 (2组)。【核心体能】悬垂举腿�������������������������������������������10次×5组；山羊凳侧压腿：10kg负重×10次 (5组)；反向山羊挺身：5kg负重×10次 (5组)；反向山羊俄罗斯转体：5kg负重×10次 (5组)；���板支撑：60秒×3组。"
     },
     {
       "id": "log-20261103-01",

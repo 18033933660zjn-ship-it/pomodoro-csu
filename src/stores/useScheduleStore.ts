@@ -282,12 +282,12 @@ export const useScheduleStore = defineStore('schedule', () => {
       .filter(l => l.categoryId === 'cat-ielts-research' || l.taskTitle.includes('任务一') || l.taskTitle.includes('雅思'))
       .reduce((s, l) => s + l.durationMinutes, 0)
 
-    // 任务4: 科研推进 (周目标 10.5h = 630m，平均每天1.5h)
+    // 任务4: 科研推进 (周目标 15h = 900m，由雅思与习概共同分流支撑)
     const t4Minutes = weekLogs
       .filter(l => l.categoryId === 'cat-research-advance' || l.taskTitle.includes('任务四') || l.taskTitle.includes('科研') || l.taskTitle.includes('论文'))
       .reduce((s, l) => s + l.durationMinutes, 0)
 
-    // 任务2: 习概与创新创业导论 (周一至周六6天，每天90m，总目标 9h = 540m)
+    // 任务2: 习概与创新创业导论 (周一至周六6天，每天45m，总目标 4.5h = 270m)
     const t2Minutes = weekLogs
       .filter(l => l.categoryId === 'cat-politics-innovation' || l.taskTitle.includes('任务二') || l.taskTitle.includes('习概') || l.taskTitle.includes('双创'))
       .reduce((s, l) => s + l.durationMinutes, 0)
@@ -353,22 +353,22 @@ export const useScheduleStore = defineStore('schedule', () => {
       improvements.push(`任务一实际投入 ${t1Hours}h（阶段目标 ${t1Target}h），请保持每日词汇与句型背写读写节奏。`)
     }
 
-    // 点评任务4：科研推进 (每天1.5h，每周目标 10.5h = 630m)
+    // 点评任务4：科研推进 (每天平均2h15m，每周目标 15h = 900m)
     const t4Hours = Number((t4Minutes / 60).toFixed(1))
-    const t4Target = isCurrentWeek ? Number(((currentDay / 7) * 10.5).toFixed(1)) : 10.5
+    const t4Target = isCurrentWeek ? Number(((currentDay / 7) * 15).toFixed(1)) : 15
     if (t4Hours >= t4Target * 0.9) {
-      praises.push(isCurrentWeek ? `任务四（科研推进）截止今日累计投入 ${t4Hours}h（阶段目标 ${t4Target}h），文献钻研与论文打磨高效推进！` : `任务四全周累计达成 ${t4Hours} 小时（目标 10.5h），科研产出扎实！`)
+      praises.push(isCurrentWeek ? `任务四（科研推进）截止今日累计投入 ${t4Hours}h（阶段目标 ${t4Target}h），文献钻研与论文打磨高效推进！` : `任务四全周累计达成 ${t4Hours} 小时（目标 15h），科研产出扎实！`)
     } else if (t4Hours > 0) {
       praises.push(`任务四科研推进已累计投入 ${t4Hours}h，保持学术钻研与论文修改势头！`)
     }
 
-    // 点评任务2：习概与双创
+    // 点评任务2：习概与双创 (每天45m，周目标 4.5h = 270m)
     const t2Hours = Number((t2Minutes / 60).toFixed(1))
-    const t2Target = isCurrentWeek ? Math.min(6, currentDay) * 1.5 : 9
+    const t2Target = isCurrentWeek ? Math.min(6, currentDay) * 0.75 : 4.5
     if (t2Hours >= t2Target * 0.95) {
-      praises.push(isCurrentWeek ? `任务二（习概与双创导论 90m）截止今日累计投入 ${t2Hours}h（阶段目标 ${t2Target}h），核心理论与商业推演执行到位！` : `任务二全周累计投入 ${t2Hours} 小时（目标 9h），理论复习与商业模式推演执行到位。`)
+      praises.push(isCurrentWeek ? `任务二（习概与双创导论 45m）截止今日累计投入 ${t2Hours}h（阶段目标 ${t2Target}h），核心理论与商业推演执行到位！` : `任务二全周累计投入 ${t2Hours} 小时（目标 4.5h），理论复习与商业模式推演执行到位。`)
     } else {
-      improvements.push(`任务二用时仅 ${t2Hours}h（阶段目标 ${t2Target}h），存在学时打折，需利用好早间90分钟闭环。`)
+      improvements.push(`任务二用时仅 ${t2Hours}h（阶段目标 ${t2Target}h），存在学时打折，需利用好早间45分钟精缩背诵。`)
     }
 
     // 点评任务3：体育专业课
