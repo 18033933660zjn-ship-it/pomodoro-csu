@@ -1,6 +1,6 @@
 {
   "version": "2.0.0",
-  "exportTime": "2026-11-08T10:06:50.736Z",
+  "exportTime": "2026-11-09T06:51:44.658Z",
   "categories": [
     {
       "id": "cat-ielts-research",
@@ -64,6 +64,19 @@
     }
   ],
   "tasks": [
+    {
+      "id": "task-ielts-vlog",
+      "categoryId": "cat-ielts-research",
+      "title": "听英语vlog (30分钟)",
+      "completed": true,
+      "estimatedPomodoros": 1,
+      "completedPomodoros": 1,
+      "targetMinutes": 30,
+      "actualMinutes": 30,
+      "notes": "09:00-09:30 晨间英语语感泛听：听英语vlog半小时",
+      "createdAt": "2026-11-09T09:00:00.000+08:00",
+      "completedAt": "2026-11-09T09:30:00.000+08:00"
+    },
     {
       "id": "task-pol-dev-01",
       "categoryId": "cat-politics-innovation",
@@ -162,6 +175,21 @@
     }
   ],
   "timeLogs": [
+    {
+      "id": "log-20261109-ielts-vlog",
+      "taskId": "task-ielts-vlog",
+      "taskTitle": "听英语vlog (30分钟)",
+      "categoryId": "cat-ielts-research",
+      "categoryName": "任务一: 雅思基础突破 (200词背写 + 40句读写)",
+      "categoryColor": "#8b5cf6",
+      "categoryIcon": "GraduationCap",
+      "startTime": "2026-11-09T09:00:00.000+08:00",
+      "endTime": "2026-11-09T09:30:00.000+08:00",
+      "durationMinutes": 30,
+      "mode": "manual",
+      "isExtra": false,
+      "notes": "09:00-09:30 晨间英语语感泛听：听英语vlog半小时，高频真实语料输入"
+    },
     {
       "id": "log-std-20261102-pol",
       "taskId": "task-pol-1",

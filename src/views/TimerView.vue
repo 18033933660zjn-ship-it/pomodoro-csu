@@ -1,11 +1,40 @@
 <template>
   <div class="max-w-4xl mx-auto space-y-6 animate-fade-in pb-10">
-    <!-- Check-in Urgent Banner (带30分钟防作弊锁) -->
-    <CheckInBanner
-      @open-extra-study="showExtraModal = true"
-      @open-mobile-connect="showMobileModal = true"
-      @open-quick-time="showQuickTimeModal = true"
-    />
+    <!-- Freedom Header: 自主自律，免定时打卡 -->
+    <div class="p-4 sm:p-5 rounded-2xl bg-gradient-to-r from-slate-800/80 via-slate-800/60 to-slate-900/80 border border-slate-700/70 shadow-soft-lg flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+      <div>
+        <div class="flex items-center gap-2">
+          <span class="text-xs font-bold px-2.5 py-0.5 rounded-full bg-emerald-500/15 text-emerald-300 border border-emerald-500/30 flex items-center gap-1.5">
+            <Sparkles class="w-3.5 h-3.5" />
+            自主自律模式 · 免定时打卡
+          </span>
+          <span class="text-xs text-slate-400 font-mono">随时专注 · 自由记录</span>
+        </div>
+        <p class="text-xs text-slate-300 mt-1">
+          根据实际作息弹性安排，开启番茄钟沉浸攻坚，或随时填报实际学时直接入账
+        </p>
+      </div>
+
+      <div class="flex items-center gap-2.5 shrink-0 self-end sm:self-center flex-wrap">
+        <button
+          @click="showMobileModal = true"
+          class="flex items-center gap-1.5 px-3 py-2 rounded-xl bg-cyan-500/15 hover:bg-cyan-500 text-cyan-300 hover:text-slate-950 font-bold text-xs border border-cyan-500/30 transition-all shadow-sm"
+          title="手机扫码多端同步"
+        >
+          <Smartphone class="w-3.5 h-3.5" />
+          <span>手机多端同步</span>
+        </button>
+
+        <button
+          @click="showQuickTimeModal = true"
+          class="flex items-center gap-1.5 px-3 py-2 rounded-xl bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-slate-950 font-bold text-xs shadow-md shadow-amber-500/20 transition-all active:scale-95"
+          title="免等倒计时，直接填报实际专注时长"
+        >
+          <Zap class="w-3.5 h-3.5 fill-current" />
+          <span>填报实际学时</span>
+        </button>
+      </div>
+    </div>
 
     <!-- Continuous Slot Duration Quick Selector (直连任务时段总时长，中途无间断) -->
     <div class="p-4 rounded-2xl bg-slate-800/40 border border-slate-700/60 flex flex-col md:flex-row items-start md:items-center justify-between gap-3">
@@ -387,7 +416,8 @@ import {
   Zap,
   Sparkles,
   CheckCircle2,
-  Sliders
+  Sliders,
+  Smartphone
 } from 'lucide-vue-next'
 import { usePomodoroStore } from '@/stores/usePomodoroStore'
 import { useCategoryStore } from '@/stores/useCategoryStore'
