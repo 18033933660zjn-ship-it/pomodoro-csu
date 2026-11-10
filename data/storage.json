@@ -1,6 +1,6 @@
 {
   "version": "2.0.0",
-  "exportTime": "2026-11-10T01:23:13.481Z",
+  "exportTime": "2026-11-10T06:35:31.047Z",
   "categories": [
     {
       "id": "cat-ielts-research",
@@ -64,6 +64,19 @@
     }
   ],
   "tasks": [
+    {
+      "id": "task-pol-ch6-20261110",
+      "categoryId": "cat-politics-innovation",
+      "title": "学习习概第六章 (45分钟)",
+      "completed": true,
+      "targetMinutes": 45,
+      "actualMinutes": 45,
+      "estimatedPomodoros": 2,
+      "completedPomodoros": 2,
+      "notes": "10:00-10:45 深入攻关习概第六章重点理论考点",
+      "createdAt": "2026-11-10T10:00:00.000+08:00",
+      "completedAt": "2026-11-10T10:45:00.000+08:00"
+    },
     {
       "id": "task-hw-20261109-04",
       "categoryId": "cat-homework-custom",
@@ -227,6 +240,21 @@
     }
   ],
   "timeLogs": [
+    {
+      "id": "log-20261110-pol-01",
+      "taskId": "task-pol-ch6-20261110",
+      "taskTitle": "学习习概第六章 (45分钟)",
+      "categoryId": "cat-politics-innovation",
+      "categoryName": "任务二: 习概与双创导论",
+      "categoryColor": "#f59e0b",
+      "categoryIcon": "BookOpen",
+      "startTime": "2026-11-10T10:00:00.000+08:00",
+      "endTime": "2026-11-10T10:45:00.000+08:00",
+      "durationMinutes": 45,
+      "mode": "manual",
+      "isExtra": false,
+      "notes": "10:00-10:45 深入攻坚习概第六章：梳理核心理论要点、关键论述与考点框架"
+    },
     {
       "id": "log-20261109-hw-evening",
       "taskId": "task-hw-20261109-03",
