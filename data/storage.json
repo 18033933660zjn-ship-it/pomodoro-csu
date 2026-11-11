@@ -1,6 +1,6 @@
 {
   "version": "2.0.0",
-  "exportTime": "2026-11-11T09:30:45.390Z",
+  "exportTime": "2026-11-11T14:18:24.542Z",
   "categories": [
     {
       "id": "cat-ielts-research",
@@ -64,6 +64,19 @@
     }
   ],
   "tasks": [
+    {
+      "id": "task-major-research-method-20261111",
+      "categoryId": "cat-major-courses",
+      "title": "专业课作业: 体育科学研究方法作业",
+      "completed": true,
+      "targetMinutes": 60,
+      "actualMinutes": 60,
+      "estimatedPomodoros": 2,
+      "completedPomodoros": 2,
+      "notes": "21:15-22:15 晚间高效完成体育科学研究方法作业，深入掌握体育科研选题、实验设计与数据统计分析规范",
+      "createdAt": "2026-11-11T21:15:00.000+08:00",
+      "completedAt": "2026-11-11T22:15:00.000+08:00"
+    },
     {
       "id": "task-pol-intro-ch1-20261111",
       "categoryId": "cat-politics-innovation",
@@ -344,6 +357,21 @@
     }
   ],
   "timeLogs": [
+    {
+      "id": "log-20261111-major-research-method",
+      "taskId": "task-major-research-method-20261111",
+      "taskTitle": "专业课作业: 体育科学研究方法作业 (60分钟)",
+      "categoryId": "cat-major-courses",
+      "categoryName": "任务三: 体育专业课三科",
+      "categoryColor": "#3b82f6",
+      "categoryIcon": "Code",
+      "startTime": "2026-11-11T21:15:00.000+08:00",
+      "endTime": "2026-11-11T22:15:00.000+08:00",
+      "durationMinutes": 60,
+      "mode": "pomodoro",
+      "isExtra": false,
+      "notes": "21:15-22:15 晚间专注60分钟：深入完成体育专业核心课程《体育科学研究方法》作业，系统梳理体育科研选题原则、研究假设建立、实验设计与数据统计分析方法规范，完成今日任务三（体育专业课 60m 100%满额达标）。"
+    },
     {
       "id": "log-20261111-pol-intro-ch1",
       "taskId": "task-pol-intro-ch1-20261111",
@@ -998,9 +1026,10 @@
     "2026-11-11": {
       "date": "2026-11-11",
       "score": 5,
-      "mood": "🔥 文武双全 · 学术与体能全面爆发",
-      "summary": "周三全天体能、专项与理论学习全线爆发！早间 09:10-09:40 听 YouTube 英语 vlog（30m）；09:18-09:40 22分钟内高效收尾完成昨晚剩余党课笔记；上午 10:10-12:40 进驻健身房完成 150 分钟下肢大重量深蹲（120kg×4组）+ 30kg哑铃保加利亚蹲（5组）+ 核心四重奏；随后 12:50-13:40 篮球场 50 分钟高强度专项练习；午餐足量补充白切鸡烧腊与大份生菜，饭后补充97%高纯鱼油+5g一水肌酸，15:00加餐25g坚果稳态供能；下午 15:50-17:20 深度专注 90 分钟攻克习概导论与第一章理论，并完成导论单选与多选刷题巩固（任务二 200% 超额达成）！全天有效专注达 342 分钟（5.7 小时）！",
+      "mood": "🏆 全天文武双全大满贯 · 高效自律",
+      "summary": "周三全天各项任务全线大满贯！早间 09:10-09:40 听 YouTube 英语 vlog（30m）；09:18-09:40 22分钟内高效收尾完成昨晚剩余党课笔记；上午 10:10-12:40 进驻健身房完成 150 分钟下肢大重量深蹲（120kg×4组）+ 30kg哑铃保加利亚蹲（5组）+ 核心四重奏；随后 12:50-13:40 篮球场 50 分钟高强度专项练习；午餐足量补充白切鸡烧腊与大份生菜，饭后补充97%高纯鱼油+5g一水肌酸，15:00加餐25g坚果稳态供能；下午 15:50-17:20 深度专注 90 分钟攻克习概导论与第一章理论及单选多选刷题（任务二 200% 超额达成）；晚间 21:15-22:15 专注 1 小时高质量完成体育科学研究方法作业（任务三 100% 满额达标）！全天累计有效专注/高强度训练突破 402 分钟（6.7 小时）！",
       "achievements": [
+        "任务三 (专业课作业): 21:15-22:15 高质量完成体育科学研究方法作业 (60m，日标达成率 100% 满额达标)",
         "任务二 (习概理论与刷题): 15:50-17:20 深入学习导论与第一章 + 导论单选多选题刷题巩固 (90m，日标达成率 200% 超额突破)",
         "健身房大重量下肢抗阻: 10:10-12:40 靠墙静蹲+120kg深蹲4组+30kg保加利亚蹲+核心四重奏 (150m)",
         "篮球专项技术与体能: 12:50-13:40 篮球场专项练习50分钟，力量迁移实战 (50m)",
@@ -1308,5 +1337,254 @@
   ],
   "deletedCheckInIds": [
     "chk-1794018151206"
-  ]
+  ],
+  "athleteRecords": {
+    "2026-11-03": {
+      "id": "ath-2026-11-03",
+      "date": "2026-11-03",
+      "basketball": {
+        "modules": [
+          "球场专项体能"
+        ],
+        "durationMinutes": 0,
+        "rpe": 5,
+        "highIntensityJumps": 0,
+        "decelerations": "以健身房下肢大重量为主，未安排全场对抗",
+        "contactIntensity": "low",
+        "notes": "力量攻坚专项储备日"
+      },
+      "strength": {
+        "phase": "最大力量",
+        "primaryLifts": "深蹲顶峰140kg突破 + 罗马尼亚硬拉(RDL) 60-80kg 5组 + 坐姿髋内收47-64kg 6组 + 核心五重奏",
+        "plyometricsVolume": "悬垂举腿10次×5组 + 山羊挺身侧压10kg",
+        "durationMinutes": 120,
+        "notes": "深蹲冲刺140kg成功，后侧链机械张力充沛"
+      },
+      "biomechanics": {
+        "ankleFootFeel": "optimal",
+        "patellarTendonPain": 1,
+        "hipSpineMobility": "optimal",
+        "ankleFootNotes": "足底稳定",
+        "patellarTendonNotes": "140kg深蹲后髌腱轻微应力感，无急性痛感",
+        "hipSpineNotes": "RDL动作髋铰链主导，腰椎稳定无代偿"
+      },
+      "nutrition": {
+        "periWorkoutSupplements": "练前中枢兴奋补给 + 练后高蛋白碳水",
+        "proteinGPerKg": 1.8,
+        "carbEnergyFeel": "optimal",
+        "urineColorLevel": 2,
+        "waterIntakeMl": 2800,
+        "supplementsDetail": "肌酸5g + 复合维生素",
+        "mealsDetail": "足量碳水回补肌糖原"
+      },
+      "recovery": {
+        "bedTime": "23:20",
+        "wakeTime": "07:15",
+        "sleepDurationHours": 7.9,
+        "deepSleepPerception": "good",
+        "restingHeartRate": 59,
+        "morningReadinessScore": 8,
+        "cnsExcitement": "normal",
+        "sleepNotes": "中枢恢复良好"
+      },
+      "diagnosis": {
+        "generatedAt": "2026-11-03T12:30:00.000Z",
+        "overallScore": 92,
+        "statusTag": "最大力量突破·中枢适应良好",
+        "cnsAcwrEvaluation": "深蹲突破140kg，高阈值运动单位充分激活，ACWR处于最佳适应区间。",
+        "kineticChainTransfer": "双腿基础绝对力量夯实，后侧链RDL有效巩固了垂直起跳髋伸动力链。",
+        "prehabProtocol": "髌腱轻微应力感（1/10），建议配合等长靠墙静蹲激活与泡沫轴放松股四头肌。",
+        "biochemNutritionPrescription": "补充5g一水肌酸加速ATP-PCr再合成，全天保持浅色尿液水合。",
+        "nextDayPrescription": "次日下肢彻底减载，避免重负荷弹跳与急停变向，重点上肢或胸椎活动度。"
+      },
+      "createdAt": "2026-11-03T12:30:00.000Z",
+      "updatedAt": "2026-11-03T12:30:00.000Z"
+    },
+    "2026-11-07": {
+      "id": "ath-2026-11-07",
+      "date": "2026-11-07",
+      "basketball": {
+        "modules": [
+          "投篮专项"
+        ],
+        "durationMinutes": 0,
+        "rpe": 6,
+        "highIntensityJumps": 0,
+        "decelerations": "下肢绝对力量峰值日，避免高频连续冲击",
+        "contactIntensity": "low",
+        "notes": "保留中枢神经以供深蹲极量"
+      },
+      "strength": {
+        "phase": "最大力量",
+        "primaryLifts": "5组西班牙蹲热身 + 深蹲突破150kg顶峰 + 保加利亚分腿蹲30kg×5×5 + 坐姿髋内收64kg + 核心四重奏",
+        "plyometricsVolume": "西班牙蹲等长肌腱预载荷",
+        "durationMinutes": 140,
+        "notes": "150kg深蹲单次成功，保加利亚蹲强化单侧支撑与稳定"
+      },
+      "biomechanics": {
+        "ankleFootFeel": "optimal",
+        "patellarTendonPain": 2,
+        "hipSpineMobility": "optimal",
+        "ankleFootNotes": "西班牙蹲充分润滑髌下脂肪垫与滑膜",
+        "patellarTendonNotes": "西班牙蹲等长收缩有效抑制了髌腱痛感，150kg负荷下无刺痛",
+        "hipSpineNotes": "单腿深蹲骨盆水平，核心四重奏锁死躯干"
+      },
+      "nutrition": {
+        "periWorkoutSupplements": "高纯鱼油 + 5g肌酸 + 充分电解质",
+        "proteinGPerKg": 2,
+        "carbEnergyFeel": "optimal",
+        "urineColorLevel": 2,
+        "waterIntakeMl": 3000,
+        "supplementsDetail": "97%高纯鱼油2粒 + 5g一水肌酸",
+        "mealsDetail": "极高蛋白摄入与高糖原回补"
+      },
+      "recovery": {
+        "bedTime": "23:30",
+        "wakeTime": "07:30",
+        "sleepDurationHours": 8,
+        "deepSleepPerception": "deep",
+        "restingHeartRate": 57,
+        "morningReadinessScore": 9,
+        "cnsExcitement": "relaxed",
+        "sleepNotes": "极深睡眠，生长激素脉冲修复"
+      },
+      "diagnosis": {
+        "generatedAt": "2026-11-07T13:00:00.000Z",
+        "overallScore": 96,
+        "statusTag": "绝对力量巅峰·150kg突破",
+        "cnsAcwrEvaluation": "150kg深蹲刷新个人纪录，单腿30kg保加利亚蹲5组，高负荷刺激下神经恢复平稳。",
+        "kineticChainTransfer": "单腿抗阻消除双侧力量赤字，直接增益球场第一步变向爆发力。",
+        "prehabProtocol": "西班牙蹲是完美的跳跃膝主动防护方案，必须作为日常深蹲标配。",
+        "biochemNutritionPrescription": "高纯鱼油抗炎配合2.0g/kg高蛋白，完全覆盖肌纤维微损伤修复。",
+        "nextDayPrescription": "次日安排上肢推拉，给予下肢48小时胶原重塑周期。"
+      },
+      "createdAt": "2026-11-07T13:00:00.000Z",
+      "updatedAt": "2026-11-07T13:00:00.000Z"
+    },
+    "2026-11-08": {
+      "id": "ath-2026-11-08",
+      "date": "2026-11-08",
+      "basketball": {
+        "modules": [
+          "投篮专项"
+        ],
+        "durationMinutes": 0,
+        "rpe": 5,
+        "highIntensityJumps": 0,
+        "decelerations": "上肢与核心抗阻",
+        "contactIntensity": "low",
+        "notes": "上肢推拉平衡与躯干抗旋"
+      },
+      "strength": {
+        "phase": "最大力量",
+        "primaryLifts": "平板卧推冲刺90kg顶峰 + 高位下拉60kg + 杠铃站姿实力推40kg + 核心四重奏",
+        "plyometricsVolume": "无下肢冲击，下肢积极恢复",
+        "durationMinutes": 150,
+        "notes": "90kg卧推单次成功，站姿实力推提升胸椎与肩袖稳定性"
+      },
+      "biomechanics": {
+        "ankleFootFeel": "optimal",
+        "patellarTendonPain": 1,
+        "hipSpineMobility": "optimal",
+        "ankleFootNotes": "下肢充分休整",
+        "patellarTendonNotes": "较昨日150kg深蹲后明显回落至1分，胶原修护良好",
+        "hipSpineNotes": "胸椎旋转与伸展度充足，利于投篮出手动力链"
+      },
+      "nutrition": {
+        "periWorkoutSupplements": "高蛋白正餐 + 充分水合",
+        "proteinGPerKg": 1.9,
+        "carbEnergyFeel": "optimal",
+        "urineColorLevel": 2,
+        "waterIntakeMl": 2600,
+        "supplementsDetail": "鱼油2粒 + 肌酸5g",
+        "mealsDetail": "规律优质膳食"
+      },
+      "recovery": {
+        "bedTime": "23:40",
+        "wakeTime": "07:20",
+        "sleepDurationHours": 7.6,
+        "deepSleepPerception": "good",
+        "restingHeartRate": 59,
+        "morningReadinessScore": 8,
+        "cnsExcitement": "normal",
+        "sleepNotes": "上肢轻度酸胀，中枢无疲劳积累"
+      },
+      "diagnosis": {
+        "generatedAt": "2026-11-08T13:00:00.000Z",
+        "overallScore": 91,
+        "statusTag": "上肢推拉平衡·胸椎稳定",
+        "cnsAcwrEvaluation": "卧推90kg与站姿推举，强化了肩袖肌群与胸椎抗屈能力，负荷均衡。",
+        "kineticChainTransfer": "垂直推拉力量有助于在空中对抗中维持出手姿态稳定。",
+        "prehabProtocol": "肩关节外旋肌群（冈下肌/小圆肌）轻微激活，防范投篮过度内旋。",
+        "biochemNutritionPrescription": "优质蛋白与水分平衡良好，无电解质紊乱。",
+        "nextDayPrescription": "进入周中常规训练与学术推进，保持规律作息。"
+      },
+      "createdAt": "2026-11-08T13:00:00.000Z",
+      "updatedAt": "2026-11-08T13:00:00.000Z"
+    },
+    "2026-11-11": {
+      "id": "ath-2026-11-11",
+      "date": "2026-11-11",
+      "basketball": {
+        "modules": [
+          "运球脚步",
+          "投篮专项",
+          "半场技战术",
+          "球场专项体能"
+        ],
+        "durationMinutes": 50,
+        "rpe": 8,
+        "highIntensityJumps": 45,
+        "decelerations": "急停跳投高频制动，运球变向突破跨步急停，大重量深蹲后强行抗疲劳手感建立",
+        "contactIntensity": "medium",
+        "notes": "力量训练后无缝进驻球场50分钟，下肢深蹲大力量向球场爆发力高效迁移转化，第四节抗疲劳手感极佳"
+      },
+      "strength": {
+        "phase": "最大力量",
+        "primaryLifts": "靠墙静蹲5组×30s + 深蹲金字塔(60/80/100kg各5, 4组120kg×4大机械张力攻坚, 2组100kg退减) + 保加利亚分腿蹲左右各5组(负重30kg哑铃) + 核心四重奏",
+        "plyometricsVolume": "靠墙静蹲VMO等长激活 + 球场变向快速SSC",
+        "durationMinutes": 150,
+        "notes": "150分钟高密度抗阻，保加利亚蹲单腿制动与侧向稳定深层轰炸，瑞幸美式全程中枢神经支持"
+      },
+      "biomechanics": {
+        "ankleFootFeel": "mild_tight",
+        "patellarTendonPain": 2,
+        "hipSpineMobility": "optimal",
+        "ankleFootNotes": "高强度急停变向后足底筋膜与足跟稍紧，需赛后筋膜球踩踏",
+        "patellarTendonNotes": "靠墙静蹲等长收缩有效减痛，120kg深蹲后跳投膝关节无急性压痛，晨僵指数2分",
+        "hipSpineNotes": "保加利亚分腿蹲充分拉伸并强化了屈髋肌群与臀大肌，骨盆稳定无侧倾"
+      },
+      "nutrition": {
+        "periWorkoutSupplements": "瑞幸标准美式1杯（中枢神经兴奋与抗疲劳） + 练后白切鸡烧腊高蛋白高碳水 + 饭后2粒97%高纯鱼油 + 5g一水肌酸 + 15:00坚果25g",
+        "proteinGPerKg": 2.1,
+        "carbEnergyFeel": "optimal",
+        "urineColorLevel": 2,
+        "waterIntakeMl": 3200,
+        "supplementsDetail": "97%高纯鱼油2粒 + 5g一水肌酸 + 瑞幸黑咖啡",
+        "mealsDetail": "白切鸡烧腊+大份生菜+足量米饭糖原重载，15:00加餐25g抗氧化坚果稳态供能"
+      },
+      "recovery": {
+        "bedTime": "23:30",
+        "wakeTime": "07:30",
+        "sleepDurationHours": 8,
+        "deepSleepPerception": "deep",
+        "restingHeartRate": 58,
+        "morningReadinessScore": 9,
+        "cnsExcitement": "normal",
+        "sleepNotes": "晨起专注力极高，白天完成雅思英语vlog、党课笔记、习概导论与第一章刷题超额达标"
+      },
+      "diagnosis": {
+        "generatedAt": "2026-11-11T13:40:00.000Z",
+        "overallScore": 96,
+        "statusTag": "功能性超负荷·高迁移窗口",
+        "cnsAcwrEvaluation": "今日深蹲120kg攻坚（4组×4次）后紧接50分钟篮球专项实战，高阈值运动单位（HTMU）高度募集，ACWR处于1.15-1.25黄金区间。",
+        "kineticChainTransfer": "利用PAP后激活增强效应，将深蹲与保加利亚蹲单腿闭链力量无缝迁移为急停跳投爆发力与身体平衡刚性。",
+        "prehabProtocol": "靠墙静蹲5组×30秒完美发挥了等长收缩（Isometric）皮层镇痛效应；髌腱压痛仅2分，足底筋膜需踩球松解。",
+        "biochemNutritionPrescription": "白切鸡高蛋白+高碳水迅速开启肌蛋白合成（MPS）窗口，高纯鱼油抗炎配合5g肌酸加速磷酸原回补。",
+        "nextDayPrescription": "次日下肢彻底减载（Deload），建议安排胸椎活动度与低强度上肢肌耐力，全场对抗控制为0。"
+      },
+      "createdAt": "2026-11-11T13:40:00.000Z",
+      "updatedAt": "2026-11-11T13:40:00.000Z"
+    }
+  }
 }
