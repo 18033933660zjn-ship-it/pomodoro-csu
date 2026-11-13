@@ -225,7 +225,6 @@ export const StorageService = {
       'log-std-20261108-maj',
       'log-1794576225298',
       'log-1794570807161',
-      'log-20261113-gym-upperbody',
       'log-std-20261108-ielts',
       'log-std-20261108-res',
       'log-std-20261107-pol',
