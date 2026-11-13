@@ -1,6 +1,6 @@
 {
   "version": "2.0.0",
-  "exportTime": "2026-11-12T12:36:32.153Z",
+  "exportTime": "2026-11-13T12:22:58.833Z",
   "categories": [
     {
       "id": "cat-ielts-research",
@@ -64,6 +64,45 @@
     }
   ],
   "tasks": [
+    {
+      "id": "task-pol-intro-ch1-20261113",
+      "categoryId": "cat-politics-innovation",
+      "title": "习概深度研习: 导论与第一章核心考点深化 + 选择题专项强化刷题",
+      "completed": true,
+      "targetMinutes": 45,
+      "actualMinutes": 120,
+      "estimatedPomodoros": 2,
+      "completedPomodoros": 4,
+      "notes": "18:00-20:00 晚间高专注投入2小时（120分钟，超额达成日标 267%）：深入研习习概导论与第一章核心理论体系，系统攻关时代背景、历史地位与科学体系，完成导论与第一章全部单选及多选考点强化刷题与错题深度辨析。",
+      "createdAt": "2026-11-13T18:00:00.000+08:00",
+      "completedAt": "2026-11-13T20:00:00.000+08:00"
+    },
+    {
+      "id": "task-fit-20261112-badminton",
+      "categoryId": "cat-fitness-workout",
+      "title": "主动恢复日: 羽毛球单打娱乐 (40分钟)",
+      "completed": true,
+      "targetMinutes": 40,
+      "actualMinutes": 40,
+      "estimatedPomodoros": 2,
+      "completedPomodoros": 2,
+      "notes": "10:30-11:10 下肢卸载主动恢复，睡前补充450ml悦鲜活A2鲜牛奶",
+      "createdAt": "2026-11-12T10:30:00.000+08:00",
+      "completedAt": "2026-11-12T11:10:00.000+08:00"
+    },
+    {
+      "id": "task-fit-20261113-upper",
+      "categoryId": "cat-fitness-workout",
+      "title": "上肢大重量推拉与核心4组（卧推90kg/80kg×4 + 引体5×3 + 实力推 + 飞鸟 + 哑铃划船）",
+      "completed": true,
+      "targetMinutes": 150,
+      "actualMinutes": 150,
+      "estimatedPomodoros": 6,
+      "completedPomodoros": 6,
+      "notes": "10:10-12:40 实打实执行150分钟上肢力量，卧推80kg次数突破，核心升级至4组",
+      "createdAt": "2026-11-13T10:10:00.000+08:00",
+      "completedAt": "2026-11-13T12:40:00.000+08:00"
+    },
     {
       "id": "task-major-integrated-20261112",
       "categoryId": "cat-major-courses",
@@ -371,6 +410,36 @@
   ],
   "timeLogs": [
     {
+      "id": "log-20261113-pol-intro-ch1",
+      "taskId": "task-pol-intro-ch1-20261113",
+      "taskTitle": "任务二: 习概导论与第一章深度研习 + 选择题刷题 (120分钟)",
+      "categoryId": "cat-politics-innovation",
+      "categoryName": "任务二: 习概与双创导论",
+      "categoryColor": "#f59e0b",
+      "categoryIcon": "BookOpen",
+      "startTime": "2026-11-13T18:00:00.000+08:00",
+      "endTime": "2026-11-13T20:00:00.000+08:00",
+      "durationMinutes": 120,
+      "mode": "pomodoro",
+      "isExtra": false,
+      "notes": "18:00-20:00 晚间深度专注2小时（120分钟，任务二日标达成率 267% 🔥）：精读研习习概导论与第一章核心考点，全面吃透新时代中国特色社会主义思想的创立背景、历史地位与科学体系；高质高效完成导论与第一章单选、多选题刷题实战与易错选项对比剖析。"
+    },
+    {
+      "id": "log-20261113-gym-upperbody",
+      "taskId": "task-fit-20261113-upper",
+      "taskTitle": "健身房上肢大重量推拉与核心强化 (150分钟)",
+      "categoryId": "cat-fitness-workout",
+      "categoryName": "周末专项: 健身房高强度锻炼",
+      "categoryColor": "#10b981",
+      "categoryIcon": "Dumbbell",
+      "startTime": "2026-11-13T10:10:00.000+08:00",
+      "endTime": "2026-11-13T12:40:00.000+08:00",
+      "durationMinutes": 150,
+      "mode": "pomodoro",
+      "isExtra": false,
+      "notes": "10:10-12:40 上肢力量与核心4组攻坚（150m）：平板卧推前段80kg×4×2+90kg×1突破后，尾段执行【零间歇六阶超级递减组：70×5→60×7→50×7→40×7→30×8→20×10】+ 引体向上5×3 + 杠铃实力推(最高40kg×6×2) + 哑铃站姿飞鸟(左右各5组10kg×8) + 单臂哑铃划船(3×17.5kg×10 + 1×22.5kg×8) + 核心三件套各4组。练后补充白切鸡烧腊+满碗米饭+生菜+无糖可乐+2粒鱼油+5g肌酸。"
+    },
+    {
       "id": "log-20261112-major-integrated",
       "taskId": "task-major-integrated-20261112",
       "taskTitle": "任务三: 运动生物力学+竞赛组织编排+习概核心梳理 (90分钟)",
@@ -384,6 +453,21 @@
       "mode": "pomodoro",
       "isExtra": false,
       "notes": "19:00-20:30 晚间高强度专注90分钟（任务三超额攻坚 150%）：深入完成运动生物力学四大力学机制、运动竞赛组织与赛制编排（淘汰赛与循环赛全公式与贝格尔编排法）以及习概核心知识体系框架梳理，产出并归档高质量学术 PDF 整合手册。"
+    },
+    {
+      "id": "log-20261112-badminton-recovery",
+      "taskId": "task-fit-20261112-badminton",
+      "taskTitle": "羽毛球单打娱乐与主动恢复 (40分钟)",
+      "categoryId": "cat-fitness-workout",
+      "categoryName": "周末专项: 健身房高强度锻炼",
+      "categoryColor": "#10b981",
+      "categoryIcon": "Dumbbell",
+      "startTime": "2026-11-12T10:30:00.000+08:00",
+      "endTime": "2026-11-12T11:10:00.000+08:00",
+      "durationMinutes": 40,
+      "mode": "extra",
+      "isExtra": true,
+      "notes": "10:30-11:10 40分钟羽毛球单打主动恢复（Active Recovery），促进下肢代谢冲刷与恢复；睡前补充450ml君乐宝悦鲜活A2β-酪蛋白鲜牛奶（16.2g蛋白+562.5mg钙）。"
     },
     {
       "id": "log-20261111-major-research-method",
@@ -1075,6 +1159,17 @@
         "任务三 (专业课三科理论整合): 19:00-20:30 深度梳理生物力学、竞赛编排与习概考点 (90m，达成度 150%)",
         "学术产出与成果转化: 成功导出高清排版 PDF 手册《专业课三科与习概核心考点梳理整合手册.pdf》"
       ]
+    },
+    "2026-11-13": {
+      "date": "2026-11-13",
+      "score": 5,
+      "mood": "🔥 上肢力量巅峰 · 理论考点狂飙",
+      "summary": "周五全天高质量高强度推进！上午 10:10-12:40 进驻健身房完成 150 分钟上肢大重量推拉与核心专项攻坚（平板卧推冲刺90kg突破 + 零间歇六阶超级递减组70→20kg + 引体向上 + 实力推 + 划船 + 核心三件套），练后足量补充高蛋白营养与补剂；晚间 18:00-20:00 纯沉浸专注 2 小时（120分钟）深入攻克习概导论与第一章理论体系，并高质量完成选择题刷题实操（任务二日标达成率高达 267%）！全天累计深度投入 270 分钟（4.5 小时）！",
+      "achievements": [
+        "任务二 (习概理论与刷题): 18:00-20:00 深入研习导论与第一章 + 选择题专项刷题 (120m，日标达成率 267% 超额突破)",
+        "健身房上肢大重量抗阻: 10:10-12:40 卧推90kg突破+六阶超级递减组+引体向上+实力推+划船+核心 (150m，达成度 100%)",
+        "高阶运动营养与恢复: 练后补充白切鸡烧腊+满碗米饭+生菜+无糖可乐+2粒鱼油+5g肌酸"
+      ]
     }
   },
   "settings": {
@@ -1594,12 +1689,12 @@
       },
       "nutrition": {
         "periWorkoutSupplements": "瑞幸标准美式1杯（中枢神经兴奋与抗疲劳） + 练后白切鸡烧腊高蛋白高碳水 + 饭后2粒97%高纯鱼油 + 5g一水肌酸 + 15:00坚果25g",
-        "proteinGPerKg": 2.1,
+        "proteinGPerKg": 1.55,
         "carbEnergyFeel": "optimal",
         "urineColorLevel": 2,
         "waterIntakeMl": 3200,
         "supplementsDetail": "97%高纯鱼油2粒 + 5g一水肌酸 + 瑞幸黑咖啡",
-        "mealsDetail": "白切鸡烧腊+大份生菜+足量米饭糖原重载，15:00加餐25g抗氧化坚果稳态供能"
+        "mealsDetail": "早餐白吉馍瘦肉+3蛋1黄+300ml豆浆；午餐白切鸡烧腊+大份生菜+米饭；15:00坚果25g；18:20晚餐纯瘦白吉馍（全天蛋白~147g）"
       },
       "recovery": {
         "bedTime": "23:30",
@@ -1622,7 +1717,129 @@
         "nextDayPrescription": "次日下肢彻底减载（Deload），建议安排胸椎活动度与低强度上肢肌耐力，全场对抗控制为0。"
       },
       "createdAt": "2026-11-11T13:40:00.000Z",
-      "updatedAt": "2026-11-11T13:40:00.000Z"
+      "updatedAt": "2026-11-13T17:03:00.000+08:00"
+    },
+    "2026-11-12": {
+      "id": "ath-2026-11-12",
+      "date": "2026-11-12",
+      "basketball": {
+        "modules": [
+          "羽毛球主动恢复"
+        ],
+        "durationMinutes": 40,
+        "rpe": 5,
+        "highIntensityJumps": 10,
+        "decelerations": "10:30 40分钟羽毛球单打娱乐，轻中度侧向移动与滑步，作为前日120kg深蹲后的主动恢复冲刷代谢产物",
+        "contactIntensity": "low",
+        "notes": "全天仅此40分钟身体活动，有效避免下肢髌腱连续高冲击"
+      },
+      "strength": {
+        "phase": "超量恢复与减载",
+        "primaryLifts": "无抗阻训练（大负荷次日主动减载 Deload）",
+        "plyometricsVolume": "无",
+        "durationMinutes": 0,
+        "notes": "给予下肢胶原与中枢神经系统48小时修复窗口"
+      },
+      "biomechanics": {
+        "ankleFootFeel": "optimal",
+        "patellarTendonPain": 1,
+        "hipSpineMobility": "optimal",
+        "ankleFootNotes": "轻度羽毛球活动促进下肢静脉回流",
+        "patellarTendonNotes": "未做连续篮球跳跃，髌腱压力明显回落",
+        "hipSpineNotes": "正常"
+      },
+      "nutrition": {
+        "periWorkoutSupplements": "午餐后2粒高品质鱼油 + 5g一水肌酸；睡前饮用450ml君乐宝悦鲜活A2β-酪蛋白鲜牛奶（补进16.2g蛋白/562.5mg钙）",
+        "proteinGPerKg": 1.2,
+        "carbEnergyFeel": "moderate",
+        "urineColorLevel": 2,
+        "waterIntakeMl": 2500,
+        "supplementsDetail": "2粒高纯鱼油 + 5g一水肌酸 + 450ml悦鲜活A2β-酪蛋白鲜奶(3.6g/100ml蛋白, 125mg/100ml钙)",
+        "mealsDetail": "早：3鸡蛋(1黄)+25g坚果；午：白切鸡+叉烧+大份生菜+米饭+小碗米饭；晚：1个纯瘦白吉馍；睡前：450ml悦鲜活A2鲜奶（全天蛋白~114g，热量~1750kcal）"
+      },
+      "recovery": {
+        "bedTime": "23:30",
+        "wakeTime": "07:30",
+        "sleepDurationHours": 8,
+        "deepSleepPerception": "good",
+        "restingHeartRate": 58,
+        "morningReadinessScore": 8,
+        "cnsExcitement": "normal",
+        "sleepNotes": "A2β-酪蛋白亲和消化，整夜缓释氨基酸防分解"
+      },
+      "diagnosis": {
+        "generatedAt": "2026-11-13T17:03:00.000+08:00",
+        "overallScore": 89,
+        "statusTag": "主动恢复与代谢冲刷窗口",
+        "cnsAcwrEvaluation": "昨日120kg深蹲+篮球背靠背之后，今日精准执行了40分钟轻中度羽毛球单打作为主动恢复（Active Recovery），有效降低了急性负荷，ACWR保持在安全黄金区间。",
+        "kineticChainTransfer": "羽毛球轻量侧移与跨步促进了下肢筋膜滑动与代谢副产物清除，未对95kg体重的髌腱造成过度剪切应力。",
+        "prehabProtocol": "睡前450ml悦鲜活A2鲜奶提供562.5mg原生钙，支持95kg下肢骨骼再矿化；建议睡前继续坚持3分钟足底筋膜球放松。",
+        "biochemNutritionPrescription": "原本早中晚蛋白仅~98g（偏低），睡前补入悦鲜活450ml（+16.2g蛋白）后全天拉升至~114g，成功缓冲了减脂期的负氮平衡风险；提示减脂期后续夜间可优先选择0脂/低脂高蛋白奶以减少17.55g额外乳脂。",
+        "nextDayPrescription": "下肢已获48小时休整，明日可切入高强度上肢力量推拉训练，全力打磨卧推与背部牵引力。"
+      },
+      "createdAt": "2026-11-12T22:00:00.000+08:00",
+      "updatedAt": "2026-11-13T17:03:00.000+08:00"
+    },
+    "2026-11-13": {
+      "id": "ath-2026-11-13",
+      "date": "2026-11-13",
+      "basketball": {
+        "modules": [
+          "投篮专项"
+        ],
+        "durationMinutes": 0,
+        "rpe": 7,
+        "highIntensityJumps": 0,
+        "decelerations": "今日专注上肢大肌群与核心推拉轰炸，未安排球场对抗",
+        "contactIntensity": "low",
+        "notes": "卧推80kg从3次进阶至4次（2组），引体向上+哑铃划船大幅强化2号位对抗与出手肩胛稳定性"
+      },
+      "strength": {
+        "phase": "最大力量",
+        "primaryLifts": "平板卧推(金字塔递增+零间歇六阶递减组)：20/40/60×5, 80×4, 90×1顶峰, 80×4, 70×5，随后【零间歇直接卸片递减组：70×5→60×7→50×7→40×7→30×8→20×10】(总容量3520kg) + 引体向上5×3(95kg自重) + 站姿实力推(20×10, 30×8×3, 40×6×2, 1400kg) + 哑铃站姿飞鸟(左右各5组10kg×8) + 单臂哑铃划船(左右各3×17.5kg×10 + 1×22.5kg×8) + 核心三件套各4组(侧压15kg×10×4, 反向挺身10kg×10×4, 俄罗斯转体10kg×10×4)",
+        "plyometricsVolume": "核心抗侧屈与多平面旋转抗阻全面升至4组",
+        "durationMinutes": 150,
+        "notes": "10:10-12:40 上肢高强度力量+超级递减组：前段80×4与90×1吃满机械张力，尾段采用前沿零间歇六阶递减组（连续44次）引爆极限代谢压力与快肌全募集；核心升级至4组。"
+      },
+      "biomechanics": {
+        "ankleFootFeel": "optimal",
+        "patellarTendonPain": 1,
+        "hipSpineMobility": "optimal",
+        "ankleFootNotes": "下肢与足踝继续充分休整",
+        "patellarTendonNotes": "髌腱状态极佳，完全无晨僵痛感",
+        "hipSpineNotes": "上肢大推拉后需重点注意胸大肌拉伸与肩袖外旋平衡，防止圆肩影响投篮出手高度"
+      },
+      "nutrition": {
+        "periWorkoutSupplements": "早：纯瘦白吉馍+4蛋白1蛋黄+350ml无糖豆浆 | 午：白切鸡烧腊(220-250g)+满碗米饭(400-450g)+生菜+无糖可乐+2粒鱼油+5g一水肌酸 | 晚(已实锤吃完)：2鸡腿+2鸭腿(全去皮仅少量皮)+水煮白菜油菜(未喝菜汤,零淀粉)",
+        "proteinGPerKg": 2.07,
+        "carbEnergyFeel": "optimal",
+        "urineColorLevel": 2,
+        "waterIntakeMl": 2800,
+        "supplementsDetail": "2粒高品质鱼油 + 5g一水肌酸（无糖可乐0kcal）",
+        "mealsDetail": "早：纯瘦白吉馍+4蛋白1蛋黄+350ml无糖豆浆（~60g蛋白, ~480kcal）；午(全吃完，残油与骨头已剔除)：大份白切鸡烧腊+满碗米饭+生菜+无糖可乐+2鱼油+5g肌酸（~70g蛋白, ~120g碳水, ~1,221kcal）。晚(已实锤吃完)：2只去皮鸡腿(~110g肉) + 2只去皮鸭腿(~175g肉) + 极少量皮 + 水煮白菜油菜（全去皮、未喝菜汤、零主食），精确估算：~67g蛋白 / ~29g脂肪 / ~7g碳水 / ~560kcal。今日三餐汇总实锤：~197g蛋白(2.07g/kg)、~185g碳水、~80g脂肪、总热量约2,250-2,260kcal，对比今日150分钟上肢超级递减组训练日TDEE(~3,050-3,150kcal)，达成约800-900kcal顶级“高蛋白净减脂+增肌留存”热量缺口！"
+      },
+      "recovery": {
+        "bedTime": "23:30",
+        "wakeTime": "07:30",
+        "sleepDurationHours": 8,
+        "deepSleepPerception": "good",
+        "restingHeartRate": 58,
+        "morningReadinessScore": 8,
+        "cnsExcitement": "normal",
+        "sleepNotes": "上肢局部肌纤维微损伤与泵感强烈，今晚保证8小时慢波睡眠与肩背松解"
+      },
+      "diagnosis": {
+        "generatedAt": "2026-11-13T17:03:00.000+08:00",
+        "overallScore": 93,
+        "statusTag": "上肢推拉容量超负荷·95kg重装巩固",
+        "cnsAcwrEvaluation": "• 负荷与前沿训练法解析：前段卧推（80kg×4×2、90kg×1）攻克高机械张力，尾段接【70→20kg 零间歇六阶超级递减组】在局部缺血缺氧环境下连续完成44次抗阻，依据 Henneman 尺寸原理在轻重量下依然强行征召 Type II 快肌纤维，产生极高的代谢压力（Metabolic Stress）与 EPOC 燃脂后燃效应。\n• 总耗时统筹提醒：递减组本身极其省时高效，但后续多组单侧孤立（飞鸟+划船）与核心12组将总时长推至150分钟；建议下回紧凑控制组间歇，把全流程锁在 95-110 分钟内以控制皮质醇峰值。",
+        "kineticChainTransfer": "• 篮球专项转化（2号位第四节抗疲劳投篮）：零间歇超级递减组大幅度提升了胸大肌、三角肌前束与肱三头肌的局部抗乳酸耐力（Muscular Endurance），使你在高强度比赛第四节上肢酸胀时仍能保持稳固的投篮推射结构。\n• 推拉平衡：5组95kg自重引体+单臂划船对冲了大重量推力，核心三件套4组显著增强空中抗对抗刚性。",
+        "prehabProtocol": "• 主动防护方案（Prehab Protocol）：\n  1. 【递减组后 EIMD 微损伤管理】：极限递减组带来的延迟性肌酸痛（DOMS）通常持续 48-72 小时；切忌在正式比赛前 48 小时内使用此法，以免影响投篮精细神经控制。\n  2. 【肩袖外旋与胸肌筋膜放松】：高代谢肿胀后务必做弹力带外旋（3组×15次）与胸大肌拉伸，防止前侧链挛缩。",
+        "biochemNutritionPrescription": "今日三餐营养目标已【100%满分闭环】：早午合计~130g蛋白与~178g碳水(~1,701kcal)充分支撑150分钟上肢大重量递减组及糖原回补；晚餐强忍平淡口感将2只鸡腿+2只鸭腿彻底去皮并拒喝菜汤（零淀粉），仅摄入~67g高生物价动物蛋白+血红素铁/锌与~560kcal，避开了最致命的禽皮饱和脂肪与高钠浮油汤汁！全天实锤~197g蛋白（2.07g/kg）、~2,250kcal，稳稳锁死~800-900kcal减脂转化肌肉黄金窗口。今晚无需硬塞加餐，睡前补足600-800ml白开水冲刷上肢高代谢微损伤与无糖可乐磷/咖啡因即可。",
+        "nextDayPrescription": "1. 【明日安排】：上肢大肌群彻底休息，可切入下肢爆发力/球场投篮手感打磨（注意投前充分激活肩袖）。\n2. 【补水提示】：今日喝了无糖可乐（含少量磷酸与咖啡因），晚间多喝白开水 800ml 维持尿液1-2级清澈。\n3. 【心理锚定】：80kg卧推次数的每一次递增，都是你在球场对抗中撞开防线的绝对底气。"
+      },
+      "createdAt": "2026-11-13T16:59:00.000+08:00",
+      "updatedAt": "2026-11-13T11:03:35.324Z"
     }
   }
 }
