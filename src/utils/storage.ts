@@ -1,5 +1,5 @@
 import { ref } from 'vue'
-import type { Category, Task, TimeLog, TimerSettings, DailyReflection, AppDataExport, CheckInRecord } from '@/types'
+import type { Category, Task, TimeLog, TimerSettings, DailyReflection, AppDataExport, CheckInRecord, AthleteDailyRecord } from '@/types'
 import { defaultCategories, defaultTasks, defaultSettings, generateSampleLogs, generateSampleReflections, generateSampleCheckIns } from './sampleData'
 
 const STORAGE_KEYS = {
@@ -9,6 +9,7 @@ const STORAGE_KEYS = {
   REFLECTIONS: 'pomodoro_pro_reflections',
   SETTINGS: 'pomodoro_pro_settings',
   CHECK_INS: 'pomodoro_pro_check_ins',
+  ATHLETE_RECORDS: 'pomodoro_pro_athlete_records',
   INITIALIZED: 'pomodoro_pro_initialized_v2',
   LAST_SYNC_TIME: 'pomodoro_pro_last_sync_time',
   CUSTOM_GIST_ID: 'pomodoro_pro_custom_gist_id',
@@ -346,6 +347,30 @@ export const StorageService = {
       ...(clientData.settings || {})
     }
 
+    // 6. 合并运动科学身体管家记录 (AthleteRecords - 按 updatedAt 时间戳取最新)
+    const mergedAthleteRecords: Record<string, AthleteDailyRecord> = {
+      ...(remoteData.athleteRecords || {})
+    }
+    for (const [k, clientRec] of Object.entries(clientData.athleteRecords || {})) {
+      const remoteRec = mergedAthleteRecords[k]
+      if (!remoteRec) {
+        mergedAthleteRecords[k] = clientRec
+        clientHadNew = true
+      } else {
+        const clientTime = new Date(clientRec.updatedAt || clientRec.createdAt || 0).getTime()
+        const remoteTime = new Date(remoteRec.updatedAt || remoteRec.createdAt || 0).getTime()
+        if (clientTime > remoteTime) {
+          mergedAthleteRecords[k] = clientRec
+          clientHadNew = true
+        } else if (remoteTime > clientTime) {
+          remoteHadNew = true
+        }
+      }
+    }
+    for (const k of Object.keys(remoteData.athleteRecords || {})) {
+      if (!clientData.athleteRecords?.[k]) remoteHadNew = true
+    }
+
     const merged: AppDataExport = {
       version: '2.0.0',
       exportTime: new Date().toISOString(),
@@ -355,6 +380,7 @@ export const StorageService = {
       reflections: mergedReflections,
       settings: mergedSettings,
       checkIns: mergedCheckIns,
+      athleteRecords: mergedAthleteRecords,
       deletedLogIds: Array.from(deletedLogIds),
       deletedCheckInIds: Array.from(deletedCheckInIds)
     }
@@ -405,15 +431,18 @@ export const StorageService = {
     }
 
     // 2. 尝试从 GitHub Gist 云端获取 (不受校园网、电脑待机限制，全网24h通达)
-    if (gistId && token) {
+    if (gistId) {
       try {
         const gistUrl = `https://api.github.com/gists/${gistId}?_t=${Date.now()}`
+        const headers: Record<string, string> = {
+          'Accept': 'application/vnd.github+json',
+          'Cache-Control': 'no-cache'
+        }
+        if (token) {
+          headers['Authorization'] = `Bearer ${token}`
+        }
         const res = await fetch(gistUrl, {
-          headers: {
-            'Authorization': `Bearer ${token}`,
-            'Accept': 'application/vnd.github+json',
-            'Cache-Control': 'no-cache'
-          },
+          headers,
           signal: AbortSignal.timeout ? AbortSignal.timeout(3500) : undefined
         })
 
@@ -432,6 +461,25 @@ export const StorageService = {
         }
       } catch (cloudErr) {
         // 网络异常或断网时已由本地 /api/storage 兜底
+      }
+    }
+
+    // 3. 若仍无远程数据，尝试从静态资源 ./storage.json 获取 (保障 GitHub Pages 静态脱机依然包含全量数据)
+    if (!remoteData) {
+      try {
+        const staticRes = await fetch('./storage.json?_t=' + Date.now(), {
+          headers: { 'Cache-Control': 'no-cache' },
+          signal: AbortSignal.timeout ? AbortSignal.timeout(2000) : undefined
+        })
+        if (staticRes.ok) {
+          const staticParsed = await staticRes.json()
+          if (staticParsed && (staticParsed.categories || staticParsed.timeLogs)) {
+            remoteData = staticParsed
+            syncSource = 'local'
+          }
+        }
+      } catch {
+        // ignore
       }
     }
 
@@ -586,6 +634,16 @@ export const StorageService = {
     debouncePush()
   },
 
+  getAthleteRecords(): Record<string, AthleteDailyRecord> {
+    const data = localStorage.getItem(STORAGE_KEYS.ATHLETE_RECORDS)
+    return data ? JSON.parse(data) : {}
+  },
+
+  saveAthleteRecords(records: Record<string, AthleteDailyRecord>) {
+    localStorage.setItem(STORAGE_KEYS.ATHLETE_RECORDS, JSON.stringify(records))
+    debouncePush()
+  },
+
   getSettings(): TimerSettings {
     const data = localStorage.getItem(STORAGE_KEYS.SETTINGS)
     return data ? JSON.parse(data) : defaultSettings
@@ -605,7 +663,8 @@ export const StorageService = {
       timeLogs: this.getTimeLogs(),
       reflections: this.getReflections(),
       settings: this.getSettings(),
-      checkIns: this.getCheckIns()
+      checkIns: this.getCheckIns(),
+      athleteRecords: this.getAthleteRecords()
     }
   },
 
@@ -617,6 +676,7 @@ export const StorageService = {
       if (data.reflections) this.saveReflections(data.reflections)
       if (data.settings) this.saveSettings(data.settings)
       if (data.checkIns) this.saveCheckIns(data.checkIns)
+      if (data.athleteRecords) this.saveAthleteRecords(data.athleteRecords)
       this.pushToServer()
       notifyDataChanged(data)
       return true
@@ -637,6 +697,7 @@ export const StorageService = {
     localStorage.setItem(STORAGE_KEYS.TASKS, JSON.stringify([]))
     localStorage.setItem(STORAGE_KEYS.REFLECTIONS, JSON.stringify({}))
     localStorage.setItem(STORAGE_KEYS.CHECK_INS, JSON.stringify([]))
+    localStorage.setItem(STORAGE_KEYS.ATHLETE_RECORDS, JSON.stringify({}))
     this.pushToServer()
     notifyDataChanged()
   }

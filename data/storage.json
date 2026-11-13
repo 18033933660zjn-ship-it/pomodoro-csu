@@ -1,6 +1,6 @@
 {
   "version": "2.0.0",
-  "exportTime": "2026-11-13T12:22:58.833Z",
+  "exportTime": "2026-11-13T13:38:46.550Z",
   "categories": [
     {
       "id": "cat-ielts-research",
@@ -64,6 +64,196 @@
     }
   ],
   "tasks": [
+    {
+      "id": "task-1794322083790",
+      "categoryId": "cat-homework-custom",
+      "title": "AIi学习和应用",
+      "completed": true,
+      "targetMinutes": 45,
+      "estimatedPomodoros": 2,
+      "completedPomodoros": 2,
+      "notes": "",
+      "dueDate": "",
+      "createdAt": "2026-11-10T14:48:03.790Z",
+      "completedAt": "2026-11-10T14:48:03.791Z",
+      "actualMinutes": 45
+    },
+    {
+      "id": "task-pol-ch6-20261110",
+      "categoryId": "cat-politics-innovation",
+      "title": "学习习概第六章 (45分钟)",
+      "completed": true,
+      "targetMinutes": 45,
+      "actualMinutes": 45,
+      "estimatedPomodoros": 2,
+      "completedPomodoros": 2,
+      "notes": "10:00-10:45 深入攻关习概第六章重点理论考点",
+      "createdAt": "2026-11-10T10:00:00.000+08:00",
+      "completedAt": "2026-11-10T10:45:00.000+08:00"
+    },
+    {
+      "id": "task-hw-20261109-04",
+      "categoryId": "cat-homework-custom",
+      "title": "优化和完善创新创业导论的汇报PPT",
+      "completed": true,
+      "targetMinutes": 40,
+      "actualMinutes": 40,
+      "estimatedPomodoros": 2,
+      "completedPomodoros": 2,
+      "notes": "全面优化和完善创新创业导论课堂汇报 PPT，打磨商业逻辑架构与汇报视觉排版",
+      "createdAt": "2026-11-09T17:12:38.000+08:00",
+      "completedAt": "2026-11-09T21:40:00.000+08:00"
+    },
+    {
+      "id": "task-hw-20261109-03",
+      "categoryId": "cat-homework-custom",
+      "title": "完成发展对象信息填写与自传修改",
+      "completed": true,
+      "targetMinutes": 60,
+      "actualMinutes": 60,
+      "estimatedPomodoros": 2,
+      "completedPomodoros": 2,
+      "notes": "20:50-21:50 专注60分钟：继续完成发展对象信息填报与个人自传修改完善",
+      "createdAt": "2026-11-09T15:29:25.000+08:00",
+      "completedAt": "2026-11-09T21:50:00.000+08:00"
+    },
+    {
+      "id": "task-hw-20261109-02",
+      "categoryId": "cat-homework-custom",
+      "title": "写发展对象笔记",
+      "completed": true,
+      "targetMinutes": 35,
+      "actualMinutes": 35,
+      "estimatedPomodoros": 1,
+      "completedPomodoros": 1,
+      "notes": "撰写发展对象培训理论学习笔记与思想汇报心得",
+      "createdAt": "2026-11-09T17:12:38.000+08:00",
+      "completedAt": "2026-11-09T18:12:38.000+08:00"
+    },
+    {
+      "id": "task-hw-20261109-01",
+      "categoryId": "cat-homework-custom",
+      "title": "完成发展对象PPT制作",
+      "completed": true,
+      "targetMinutes": 45,
+      "actualMinutes": 45,
+      "estimatedPomodoros": 2,
+      "completedPomodoros": 2,
+      "notes": "党课培训与发展对象答辩/汇报展示 PPT 全面制作完成",
+      "createdAt": "2026-11-09T15:29:25.000+08:00",
+      "completedAt": "2026-11-09T16:29:26.000+08:00"
+    },
+    {
+      "id": "task-ielts-vlog",
+      "categoryId": "cat-ielts-research",
+      "title": "听英语vlog (30分钟)",
+      "completed": true,
+      "estimatedPomodoros": 1,
+      "completedPomodoros": 1,
+      "targetMinutes": 30,
+      "actualMinutes": 30,
+      "notes": "09:00-09:30 晨间英语语感泛听：听英语vlog半小时",
+      "createdAt": "2026-11-09T09:00:00.000+08:00",
+      "completedAt": "2026-11-09T09:30:00.000+08:00"
+    },
+    {
+      "id": "task-pol-dev-01",
+      "categoryId": "cat-politics-innovation",
+      "title": "完成发展对象学习体会",
+      "completed": true,
+      "estimatedPomodoros": 2,
+      "completedPomodoros": 2,
+      "targetMinutes": 60,
+      "actualMinutes": 60,
+      "notes": "完成发展对象学习体会撰写与思想汇报总结",
+      "createdAt": "2026-11-08T15:00:00.000+08:00",
+      "completedAt": "2026-11-08T16:00:00.000+08:00"
+    },
+    {
+      "id": "task-research-1",
+      "categoryId": "cat-research-advance",
+      "title": "学术科研与论文写作: 推进科研进度，完善文章内容与格式",
+      "completed": false,
+      "estimatedPomodoros": 4,
+      "completedPomodoros": 0,
+      "notes": "推进科研进度，深入完善文章核心论证内容、学术规范与格式排版",
+      "createdAt": "2026-11-06T14:30:00.000Z"
+    },
+    {
+      "id": "task-ielts-1",
+      "categoryId": "cat-ielts-research",
+      "title": "剑雅18 Test 3 阅读长难句精析 + AI辅助生成学术综述论点",
+      "completed": true,
+      "estimatedPomodoros": 4,
+      "completedPomodoros": 4,
+      "notes": "利用 AI 梳理中英文语义逻辑对照，精析判断题同义替换 (周二早晨已完成90m，进度 3/4)",
+      "createdAt": "2026-11-03T00:00:00.000Z",
+      "completedAt": "2026-11-04T18:30:00.000+08:00"
+    },
+    {
+      "id": "task-ielts-2",
+      "categoryId": "cat-ielts-research",
+      "title": "雅思学术写作 Task 2 范文仿写 + AI多轮批改语法与衔接",
+      "completed": true,
+      "estimatedPomodoros": 3,
+      "completedPomodoros": 3,
+      "notes": "聚焦科技与健康伦理话题论证框架",
+      "createdAt": "2026-11-01T10:04:50.858Z",
+      "completedAt": "2026-11-04T22:23:34.000+08:00"
+    },
+    {
+      "id": "task-pol-1",
+      "categoryId": "cat-politics-innovation",
+      "title": "习概核心专题知识点背诵与双创商业模式画布推演",
+      "completed": false,
+      "estimatedPomodoros": 3,
+      "completedPomodoros": 2,
+      "notes": "结合体育产业创新案例推演双创商业计划书草案",
+      "createdAt": "2026-11-03T00:00:00.000Z"
+    },
+    {
+      "id": "task-major-1",
+      "categoryId": "cat-major-courses",
+      "title": "专业课三科突破: 运动生物力学(20m) + 体育科研方法(20m) + 运动竞赛学(20m)",
+      "completed": true,
+      "estimatedPomodoros": 2,
+      "completedPomodoros": 2,
+      "notes": "梳理运动环节受力平衡方程与实验抽样方法",
+      "createdAt": "2026-11-03T00:00:00.000Z"
+    },
+    {
+      "id": "task-fit-tue-01",
+      "categoryId": "cat-fitness-workout",
+      "title": "健身房大重量下肢与核心拉练（深蹲顶峰140kg + RDL + 髋内收 + 悬垂举腿/山羊挺身）",
+      "completed": true,
+      "estimatedPomodoros": 4,
+      "completedPomodoros": 4,
+      "notes": "10:30-12:30 严格执行2小时。深蹲冲击140kg成功；大容量后侧链RDL与多角度核心轰炸",
+      "createdAt": "2026-11-03T02:30:00.000Z",
+      "completedAt": "2026-11-03T04:30:00.000Z"
+    },
+    {
+      "id": "task-fit-1",
+      "categoryId": "cat-fitness-workout",
+      "title": "周末健身房胸肩抗阻力训练 + 40分钟高强度心肺体能",
+      "completed": true,
+      "estimatedPomodoros": 4,
+      "completedPomodoros": 6,
+      "notes": "10:00-12:30严格执行2.5小时，深蹲与卧推递增组",
+      "createdAt": "2026-11-02T10:04:50.858Z",
+      "completedAt": "2026-11-07T13:00:00.000+08:00"
+    },
+    {
+      "id": "task-fit-sat-01",
+      "categoryId": "cat-fitness-workout",
+      "title": "周六健身房大重量下肢深蹲专项（深蹲顶峰150kg + 保加利亚蹲 + 髋内收 + 核心四重奏）",
+      "completed": true,
+      "estimatedPomodoros": 5,
+      "completedPomodoros": 5,
+      "notes": "10:40-13:00 实际高强度执行140分钟：5组西班牙蹲；深蹲冲刺150kg顶峰成功；保加利亚蹲30kg×5次×5组；坐姿髋内收机递增至64kg；核心四重奏超额达成！",
+      "createdAt": "2026-11-02T10:04:50.858Z",
+      "completedAt": "2026-11-07T13:00:00.000+08:00"
+    },
     {
       "id": "task-pol-intro-ch1-20261113",
       "categoryId": "cat-politics-innovation",
@@ -232,183 +422,22 @@
       "notes": "深入完成专业课作业：系统掌握国际篮联三人执裁响哨后换位及违体犯规分类标准",
       "createdAt": "2026-11-10T14:37:06.000+08:00",
       "completedAt": "2026-11-10T15:37:06.000+08:00"
-    },
-    {
-      "id": "task-pol-ch6-20261110",
-      "categoryId": "cat-politics-innovation",
-      "title": "学习习概第六章 (45分钟)",
-      "completed": true,
-      "targetMinutes": 45,
-      "actualMinutes": 45,
-      "estimatedPomodoros": 2,
-      "completedPomodoros": 2,
-      "notes": "10:00-10:45 深入攻关习概第六章重点理论考点",
-      "createdAt": "2026-11-10T10:00:00.000+08:00",
-      "completedAt": "2026-11-10T10:45:00.000+08:00"
-    },
-    {
-      "id": "task-hw-20261109-04",
-      "categoryId": "cat-homework-custom",
-      "title": "优化和完善创新创业导论的汇报PPT",
-      "completed": true,
-      "targetMinutes": 40,
-      "actualMinutes": 40,
-      "estimatedPomodoros": 2,
-      "completedPomodoros": 2,
-      "notes": "全面优化和完善创新创业导论课堂汇报 PPT，打磨商业逻辑架构与汇报视觉排版",
-      "createdAt": "2026-11-09T17:12:38.000+08:00",
-      "completedAt": "2026-11-09T21:40:00.000+08:00"
-    },
-    {
-      "id": "task-hw-20261109-03",
-      "categoryId": "cat-homework-custom",
-      "title": "完成发展对象信息填写与自传修改",
-      "completed": true,
-      "targetMinutes": 60,
-      "actualMinutes": 60,
-      "estimatedPomodoros": 2,
-      "completedPomodoros": 2,
-      "notes": "20:50-21:50 专注60分钟：继续完成发展对象信息填报与个人自传修改完善",
-      "createdAt": "2026-11-09T15:29:25.000+08:00",
-      "completedAt": "2026-11-09T21:50:00.000+08:00"
-    },
-    {
-      "id": "task-hw-20261109-02",
-      "categoryId": "cat-homework-custom",
-      "title": "写发展对象笔记",
-      "completed": true,
-      "targetMinutes": 35,
-      "actualMinutes": 35,
-      "estimatedPomodoros": 1,
-      "completedPomodoros": 1,
-      "notes": "撰写发展对象培训理论学习笔记与思想汇报心得",
-      "createdAt": "2026-11-09T17:12:38.000+08:00",
-      "completedAt": "2026-11-09T18:12:38.000+08:00"
-    },
-    {
-      "id": "task-hw-20261109-01",
-      "categoryId": "cat-homework-custom",
-      "title": "完成发展对象PPT制作",
-      "completed": true,
-      "targetMinutes": 45,
-      "actualMinutes": 45,
-      "estimatedPomodoros": 2,
-      "completedPomodoros": 2,
-      "notes": "党课培训与发展对象答辩/汇报展示 PPT 全面制作完成",
-      "createdAt": "2026-11-09T15:29:25.000+08:00",
-      "completedAt": "2026-11-09T16:29:26.000+08:00"
-    },
-    {
-      "id": "task-ielts-vlog",
-      "categoryId": "cat-ielts-research",
-      "title": "听英语vlog (30分钟)",
-      "completed": true,
-      "estimatedPomodoros": 1,
-      "completedPomodoros": 1,
-      "targetMinutes": 30,
-      "actualMinutes": 30,
-      "notes": "09:00-09:30 晨间英语语感泛听：听英语vlog半小时",
-      "createdAt": "2026-11-09T09:00:00.000+08:00",
-      "completedAt": "2026-11-09T09:30:00.000+08:00"
-    },
-    {
-      "id": "task-pol-dev-01",
-      "categoryId": "cat-politics-innovation",
-      "title": "完成发展对象学习体会",
-      "completed": true,
-      "estimatedPomodoros": 2,
-      "completedPomodoros": 2,
-      "targetMinutes": 60,
-      "actualMinutes": 60,
-      "notes": "完成发展对象学习体会撰写与思想汇报总结",
-      "createdAt": "2026-11-08T15:00:00.000+08:00",
-      "completedAt": "2026-11-08T16:00:00.000+08:00"
-    },
-    {
-      "id": "task-research-1",
-      "categoryId": "cat-research-advance",
-      "title": "学术科研与论文写作: 推进科研进度，完善文章内容与格式",
-      "completed": false,
-      "estimatedPomodoros": 4,
-      "completedPomodoros": 0,
-      "notes": "推进科研进度，深入完善文章核心论证内容、学术规范与格式排版",
-      "createdAt": "2026-11-06T14:30:00.000Z"
-    },
-    {
-      "id": "task-ielts-1",
-      "categoryId": "cat-ielts-research",
-      "title": "剑雅18 Test 3 阅读长难句精析 + AI辅助生成学术综述论点",
-      "completed": false,
-      "estimatedPomodoros": 4,
-      "completedPomodoros": 4,
-      "notes": "利用 AI 梳理中英文语义逻辑对照，精析判断题同义替换 (周二早晨已完成90m，进度 3/4)",
-      "createdAt": "2026-11-03T00:00:00.000Z"
-    },
-    {
-      "id": "task-ielts-2",
-      "categoryId": "cat-ielts-research",
-      "title": "雅思学术写作 Task 2 范文仿写 + AI多轮批改语法与衔接",
-      "completed": false,
-      "estimatedPomodoros": 3,
-      "completedPomodoros": 3,
-      "notes": "聚焦科技与健康伦理话题论证框架",
-      "createdAt": "2026-11-01T10:04:50.858Z"
-    },
-    {
-      "id": "task-pol-1",
-      "categoryId": "cat-politics-innovation",
-      "title": "习概核心专题知识点背诵与双创商业模式画布推演",
-      "completed": false,
-      "estimatedPomodoros": 3,
-      "completedPomodoros": 2,
-      "notes": "结合体育产业创新案例推演双创商业计划书草案",
-      "createdAt": "2026-11-03T00:00:00.000Z"
-    },
-    {
-      "id": "task-major-1",
-      "categoryId": "cat-major-courses",
-      "title": "专业课三科突破: 运动生物力学(20m) + 体育科研方法(20m) + 运动竞赛学(20m)",
-      "completed": false,
-      "estimatedPomodoros": 2,
-      "completedPomodoros": 2,
-      "notes": "梳理运动环节受力平衡方程与实验抽样方法",
-      "createdAt": "2026-11-03T00:00:00.000Z"
-    },
-    {
-      "id": "task-fit-tue-01",
-      "categoryId": "cat-fitness-workout",
-      "title": "健身房大重量下肢与核心拉练（深蹲顶峰140kg + RDL + 髋内收 + 悬垂举腿/山羊挺身）",
-      "completed": true,
-      "estimatedPomodoros": 4,
-      "completedPomodoros": 4,
-      "notes": "10:30-12:30 严格执行2小时。深蹲冲击140kg成功；大容量后侧链RDL与多角度核心轰炸",
-      "createdAt": "2026-11-03T02:30:00.000Z",
-      "completedAt": "2026-11-03T04:30:00.000Z"
-    },
-    {
-      "id": "task-fit-1",
-      "categoryId": "cat-fitness-workout",
-      "title": "周末健身房胸肩抗阻力训练 + 40分钟高强度心肺体能",
-      "completed": true,
-      "estimatedPomodoros": 4,
-      "completedPomodoros": 6,
-      "notes": "10:00-12:30严格执行2.5小时，深蹲与卧推递增组",
-      "createdAt": "2026-11-02T10:04:50.858Z",
-      "completedAt": "2026-11-07T13:00:00.000+08:00"
-    },
-    {
-      "id": "task-fit-sat-01",
-      "categoryId": "cat-fitness-workout",
-      "title": "周六健身房大重量下肢深蹲专项（深蹲顶峰150kg + 保加利亚蹲 + 髋内收 + 核心四重奏）",
-      "completed": true,
-      "estimatedPomodoros": 5,
-      "completedPomodoros": 5,
-      "notes": "10:40-13:00 实际高强度执行140分钟：5组西班牙蹲；深蹲冲刺150kg顶峰成功；保加利亚蹲30kg×5次×5组；坐姿髋内收机递增至64kg；核心四重奏超额达成！",
-      "createdAt": "2026-11-02T10:04:50.858Z",
-      "completedAt": "2026-11-07T13:00:00.000+08:00"
     }
   ],
   "timeLogs": [
+    {
+      "taskTitle": "任务三: 体育专业课三科 纯沉浸攻坚",
+      "categoryId": "cat-major-courses",
+      "categoryName": "任务三: 体育专业课三科",
+      "categoryColor": "#3b82f6",
+      "categoryIcon": "Code",
+      "startTime": "2026-11-13T12:23:45.625Z",
+      "endTime": "2026-11-13T13:23:45.298Z",
+      "durationMinutes": 60,
+      "mode": "pomodoro",
+      "notes": "任务三: 体育专业课三科 纯沉浸攻坚",
+      "id": "log-1794576225298"
+    },
     {
       "id": "log-20261113-pol-intro-ch1",
       "taskId": "task-pol-intro-ch1-20261113",
@@ -423,6 +452,19 @@
       "mode": "pomodoro",
       "isExtra": false,
       "notes": "18:00-20:00 晚间深度专注2小时（120分钟，任务二日标达成率 267% 🔥）：精读研习习概导论与第一章核心考点，全面吃透新时代中国特色社会主义思想的创立背景、历史地位与科学体系；高质高效完成导论与第一章单选、多选题刷题实战与易错选项对比剖析。"
+    },
+    {
+      "taskTitle": "90m (任务二 习概双创)",
+      "categoryId": "cat-politics-innovation",
+      "categoryName": "任务二: 习概与双创导论",
+      "categoryColor": "#f59e0b",
+      "categoryIcon": "BookOpen",
+      "startTime": "2026-11-13T09:10:30.624Z",
+      "endTime": "2026-11-13T11:53:27.161Z",
+      "durationMinutes": 90,
+      "mode": "pomodoro",
+      "notes": "90m (任务二 习概双创)",
+      "id": "log-1794570807161"
     },
     {
       "id": "log-20261113-gym-upperbody",
@@ -470,6 +512,19 @@
       "notes": "10:30-11:10 40分钟羽毛球单打主动恢复（Active Recovery），促进下肢代谢冲刷与恢复；睡前补充450ml君乐宝悦鲜活A2β-酪蛋白鲜牛奶（16.2g蛋白+562.5mg钙）。"
     },
     {
+      "taskTitle": "60m (任务三 专业课三科)",
+      "categoryId": "cat-major-courses",
+      "categoryName": "任务三: 体育专业课三科",
+      "categoryColor": "#3b82f6",
+      "categoryIcon": "Code",
+      "startTime": "2026-11-11T13:16:30.174Z",
+      "endTime": "2026-11-11T14:16:29.970Z",
+      "durationMinutes": 60,
+      "mode": "pomodoro",
+      "notes": "60m (任务三 专业课三科)",
+      "id": "log-1794406589970"
+    },
+    {
       "id": "log-20261111-major-research-method",
       "taskId": "task-major-research-method-20261111",
       "taskTitle": "专业课作业: 体育科学研究方法作业 (60分钟)",
@@ -485,6 +540,19 @@
       "notes": "21:15-22:15 晚间专注60分钟：深入完成体育专业核心课程《体育科学研究方法》作业，系统梳理体育科研选题原则、研究假设建立、实验设计与数据统计分析方法规范，完成今日任务三（体育专业课 60m 100%满额达标）。"
     },
     {
+      "taskTitle": "任务二: 习概与双创导论 纯沉浸攻坚",
+      "categoryId": "cat-politics-innovation",
+      "categoryName": "任务二: 习概与双创导论",
+      "categoryColor": "#f59e0b",
+      "categoryIcon": "BookOpen",
+      "startTime": "2026-11-11T08:43:56.314Z",
+      "endTime": "2026-11-11T09:28:56.095Z",
+      "durationMinutes": 45,
+      "mode": "pomodoro",
+      "notes": "任务二: 习概与双创导论 纯沉浸攻坚",
+      "id": "log-1794389336096"
+    },
+    {
       "id": "log-20261111-pol-intro-ch1",
       "taskId": "task-pol-intro-ch1-20261111",
       "taskTitle": "任务二: 学习习概导论与第一章 + 导论单选多选刷题 (90分钟)",
@@ -498,6 +566,19 @@
       "mode": "pomodoro",
       "isExtra": false,
       "notes": "15:50-17:20 下午深度学习90分钟（任务二日标45m，达成率达 200% 🔥）：系统精读习概导论与第一章理论知识，构建思想理论框架；并在课后题库中高质量完成导论单选题与多选题巩固实战，精准把控辨析细节。"
+    },
+    {
+      "taskTitle": "45m (任务二 习概双创精缩)",
+      "categoryId": "cat-politics-innovation",
+      "categoryName": "任务二: 习概与双创导论",
+      "categoryColor": "#f59e0b",
+      "categoryIcon": "BookOpen",
+      "startTime": "2026-11-11T07:31:14.353Z",
+      "endTime": "2026-11-11T08:43:47.920Z",
+      "durationMinutes": 45,
+      "mode": "pomodoro",
+      "notes": "45m (任务二 习概双创精缩)",
+      "id": "log-1794386627920"
     },
     {
       "id": "log-20261111-basketball-special",
@@ -530,6 +611,19 @@
       "notes": "10:10-12:40 健身房下肢力量与核心专项拉练150分钟（2.5小时）：\n• 靠墙静蹲：5组×30秒（膝关节与VMO等长激活）；\n• 深蹲金字塔与大重量攻坚：60kg×5, 80kg×5, 100kg×5, 4组120kg×4（85%+ 1RM大重量机械张力攻坚）, 2组100kg×5（退减容量组）；\n• 保加利亚分腿蹲：左右腿各5组，负重30kg哑铃（强化单腿支撑稳定性与起跳制动力）；\n• 核心四重奏：45°山羊凳侧压腿15kg×10次×3组；反向山羊挺身10kg×10次×3组；反向山羊俄罗斯转体10kg×10次×3组；平板支撑60秒×3组。\n• 训练补给：瑞幸标准美式1杯（中枢神经兴奋与抗疲劳）。"
     },
     {
+      "taskTitle": "日常作业与自主研习 纯沉浸攻坚",
+      "categoryId": "cat-homework-custom",
+      "categoryName": "日常作业与自主研习",
+      "categoryColor": "#06b6d4",
+      "categoryIcon": "BookMarked",
+      "startTime": "2026-11-11T01:24:23.475Z",
+      "endTime": "2026-11-11T01:46:35.123Z",
+      "durationMinutes": 22,
+      "mode": "pomodoro",
+      "notes": "日常作业与自主研习 纯沉浸攻坚",
+      "id": "log-1794361595123"
+    },
+    {
       "id": "log-20261111-party-notes-finish",
       "taskId": "task-party-notes-complete-20261111",
       "taskTitle": "日常作业: 完成昨晚剩下的党课笔记 (22分钟)",
@@ -558,6 +652,33 @@
       "mode": "pomodoro",
       "isExtra": false,
       "notes": "09:10-09:40 晨间听YouTube英语vlog 30分钟，沉浸式语感输入与高频生活学术口语磨耳朵。"
+    },
+    {
+      "taskId": "task-1794322083790",
+      "taskTitle": "AIi学习和应用",
+      "categoryId": "cat-homework-custom",
+      "categoryName": "日常作业与自主研习",
+      "categoryColor": "#06b6d4",
+      "categoryIcon": "BookMarked",
+      "startTime": "2026-11-10T14:03:03.790Z",
+      "endTime": "2026-11-10T14:48:03.790Z",
+      "durationMinutes": 45,
+      "mode": "manual",
+      "notes": "线下/课堂完成自主任务，直接记入学时流水",
+      "id": "log-1794322083790"
+    },
+    {
+      "taskTitle": "日常作业与自主研习 纯沉浸攻坚",
+      "categoryId": "cat-homework-custom",
+      "categoryName": "日常作业与自主研习",
+      "categoryColor": "#06b6d4",
+      "categoryIcon": "BookMarked",
+      "startTime": "2026-11-10T12:49:09.599Z",
+      "endTime": "2026-11-10T13:49:09.317Z",
+      "durationMinutes": 60,
+      "mode": "pomodoro",
+      "notes": "日常作业与自主研习 纯沉浸攻坚",
+      "id": "log-1794318549317"
     },
     {
       "id": "log-20261110-ielts-vlog",
@@ -590,8 +711,19 @@
       "notes": "20:00-22:00 晚间深度专注2小时（120分钟）：系统撰写整理党课上课理论学习笔记，梳理党的性质宗旨、指导思想与重大理论成果，紧密结合发展对象标准提炼学习心得体会。"
     },
     {
-      "id": "log-1794296226251",
-      "taskId": "task-major-referee-20261110",
+      "taskTitle": "日常作业与自主研习 纯沉浸攻坚",
+      "categoryId": "cat-homework-custom",
+      "categoryName": "日常作业与自主研习",
+      "categoryColor": "#06b6d4",
+      "categoryIcon": "BookMarked",
+      "startTime": "2026-11-10T11:34:28.218Z",
+      "endTime": "2026-11-10T12:34:28.244Z",
+      "durationMinutes": 60,
+      "mode": "pomodoro",
+      "notes": "日常作业与自主研习 纯沉浸攻坚",
+      "id": "log-1794314068244"
+    },
+    {
       "taskTitle": "专业课作业: 国际篮联三人执裁换位与违体犯规分类 (60分钟)",
       "categoryId": "cat-major-courses",
       "categoryName": "任务三: 体育专业课三科",
@@ -601,8 +733,10 @@
       "endTime": "2026-11-10T07:37:06.251Z",
       "durationMinutes": 60,
       "mode": "pomodoro",
-      "isExtra": false,
-      "notes": "14:37-15:37 深入完成运动竞赛学/篮球裁判法专业课作业：系统掌握国际篮联（FIBA）三人执裁机制（主副裁响哨后的换位轮转与视野分工原则），以及违体犯规五大类别（C1合法防守动作超限、C2非冲球动作、C3不必要过分接触、C4防快攻停表阻滞、C5最后两分钟界外球犯规）的判罚尺度。"
+      "notes": "14:37-15:37 深入完成运动竞赛学/篮球裁判法专业课作业：系统掌握国际篮联（FIBA）三人执裁机制（主副裁响哨后的换位轮转与视野分工原则），以及违体犯规五大类别（C1合法防守动作超限、C2非冲球动作、C3不必要过分接触、C4防快攻停表阻滞、C5最后两分钟界外球犯规）的判罚尺度。",
+      "id": "log-1794296226251",
+      "taskId": "task-major-referee-20261110",
+      "isExtra": false
     },
     {
       "id": "log-20261110-pol-01",
@@ -1425,52 +1559,6 @@
       "notes": "早八自习室准时到达！深入背诵习概核心论述与双创商业模式分析 (90分钟全额达标)"
     }
   ],
-  "deletedLogIds": [
-    "log-1793884227925",
-    "log-20261105-02",
-    "log-20261105-01",
-    "log-20261104-04",
-    "log-1793928933900",
-    "log-1793928966449",
-    "log-1793928958725",
-    "log-1793948907073",
-    "log-1793974672111",
-    "log-1793958183181",
-    "log-1794018151207",
-    "log-1794014603982",
-    "log-1794014626633",
-    "log-1793879655096",
-    "log-1794034215079",
-    "log-1794124886301",
-    "log-1794130429267",
-    "log-1794048210647",
-    "log-1793863834268",
-    "log-1793757593306",
-    "log-1793691749026",
-    "log-20261102-01",
-    "log-20261102-02",
-    "log-20261102-03",
-    "log-20261103-01",
-    "log-20261104-01",
-    "log-20261104-02",
-    "log-20261104-03",
-    "log-20261105-ielts-01",
-    "log-20261105-ielts-02",
-    "log-20261106-pol-01",
-    "log-20261106-research-01",
-    "log-20261106-major-01",
-    "log-std-20261108-maj",
-    "log-std-20261108-ielts",
-    "log-std-20261108-res",
-    "log-std-20261107-pol",
-    "log-std-20261107-res-1",
-    "log-std-20261107-res-2",
-    "log-std-20261107-ielts",
-    "log-1794048210647-old"
-  ],
-  "deletedCheckInIds": [
-    "chk-1794018151206"
-  ],
   "athleteRecords": {
     "2026-11-03": {
       "id": "ath-2026-11-03",
@@ -1841,5 +1929,51 @@
       "createdAt": "2026-11-13T16:59:00.000+08:00",
       "updatedAt": "2026-11-13T11:03:35.324Z"
     }
-  }
+  },
+  "deletedLogIds": [
+    "log-1793884227925",
+    "log-20261105-02",
+    "log-20261105-01",
+    "log-20261104-04",
+    "log-1793928933900",
+    "log-1793928966449",
+    "log-1793928958725",
+    "log-1793948907073",
+    "log-1793974672111",
+    "log-1793958183181",
+    "log-1794018151207",
+    "log-1794014603982",
+    "log-1794014626633",
+    "log-1793879655096",
+    "log-1794034215079",
+    "log-1794124886301",
+    "log-1794130429267",
+    "log-1794048210647",
+    "log-1793863834268",
+    "log-1793757593306",
+    "log-1793691749026",
+    "log-20261102-01",
+    "log-20261102-02",
+    "log-20261102-03",
+    "log-20261103-01",
+    "log-20261104-01",
+    "log-20261104-02",
+    "log-20261104-03",
+    "log-20261105-ielts-01",
+    "log-20261105-ielts-02",
+    "log-20261106-pol-01",
+    "log-20261106-research-01",
+    "log-20261106-major-01",
+    "log-std-20261108-maj",
+    "log-std-20261108-ielts",
+    "log-std-20261108-res",
+    "log-std-20261107-pol",
+    "log-std-20261107-res-1",
+    "log-std-20261107-res-2",
+    "log-std-20261107-ielts",
+    "log-1794048210647-old"
+  ],
+  "deletedCheckInIds": [
+    "chk-1794018151206"
+  ]
 }
