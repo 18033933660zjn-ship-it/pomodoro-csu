@@ -1,6 +1,6 @@
 {
   "version": "2.0.0",
-  "exportTime": "2026-11-15T08:37:50.996Z",
+  "exportTime": "2026-11-17T09:38:03.065Z",
   "categories": [
     {
       "id": "cat-ielts-research",
@@ -64,6 +64,58 @@
     }
   ],
   "tasks": [
+    {
+      "id": "task-research-methodology-20261116",
+      "categoryId": "cat-research-advance",
+      "title": "科研论文方法学深入学习与方法论构建",
+      "completed": true,
+      "targetMinutes": 60,
+      "actualMinutes": 60,
+      "estimatedPomodoros": 2,
+      "completedPomodoros": 2,
+      "notes": "17:00-18:00 傍晚专注60分钟：深入研读学术前沿科研论文的方法学部分（Methodology），系统掌握运动科学实验设计、自变量与因变量控制、数据采集与统计学处理规范。",
+      "createdAt": "2026-11-16T17:00:00.000+08:00",
+      "completedAt": "2026-11-16T18:00:00.000+08:00"
+    },
+    {
+      "id": "task-pol-ch4-review-20261116",
+      "categoryId": "cat-politics-innovation",
+      "title": "习概导论至第三章复习 + 第四章深入研读",
+      "completed": true,
+      "targetMinutes": 45,
+      "actualMinutes": 150,
+      "estimatedPomodoros": 3,
+      "completedPomodoros": 5,
+      "notes": "14:30-17:00 下午纯沉浸专注2.5小时（150分钟，任务二日标达成率 333%）：系统复盘串联习概导论、第一章、第二章与第三章核心考点脉络，并全新攻坚研读第四章重要理论与概念框架。",
+      "createdAt": "2026-11-16T14:30:00.000+08:00",
+      "completedAt": "2026-11-16T17:00:00.000+08:00"
+    },
+    {
+      "id": "task-fit-20261116-soccer",
+      "categoryId": "cat-fitness-workout",
+      "title": "足球课中低强度有氧比赛 (60分钟)",
+      "completed": true,
+      "targetMinutes": 60,
+      "actualMinutes": 60,
+      "estimatedPomodoros": 2,
+      "completedPomodoros": 2,
+      "notes": "10:00-11:00 足球课约1小时中低强度有氧比赛；早150g鸡蛋饼+午食堂四格餐(+2鱼油+5g肌酸)+晚全去皮双鸡腿双鸭腿热卤鸡排(剩100kcal米饭)，全天~156g蛋白, ~2,275kcal。",
+      "createdAt": "2026-11-16T10:00:00.000+08:00",
+      "completedAt": "2026-11-16T11:00:00.000+08:00"
+    },
+    {
+      "id": "task-fit-20261115-shooting",
+      "categoryId": "cat-fitness-workout",
+      "title": "晚间低强度投篮训练 (50分钟)",
+      "completed": true,
+      "targetMinutes": 50,
+      "actualMinutes": 50,
+      "estimatedPomodoros": 2,
+      "completedPomodoros": 2,
+      "notes": "19:20-20:10 晚间进行50分钟低强度投篮手感训练；全天配合4水煮蛋+辣椒炒肉拌面(10:00)与粤式烧腊鸡饭(18:00)+2鱼油+5g肌酸。",
+      "createdAt": "2026-11-15T19:20:00.000+08:00",
+      "completedAt": "2026-11-15T20:10:00.000+08:00"
+    },
     {
       "id": "task-ielts-vlog-20261115",
       "categoryId": "cat-ielts-research",
@@ -477,6 +529,66 @@
     }
   ],
   "timeLogs": [
+    {
+      "id": "log-20261116-research-methodology",
+      "taskId": "task-research-methodology-20261116",
+      "taskTitle": "任务四: 科研论文方法学深入学习 (60分钟)",
+      "categoryId": "cat-research-advance",
+      "categoryName": "任务四: 科研推进 (文献研读与论文写作)",
+      "categoryColor": "#ec4899",
+      "categoryIcon": "FileText",
+      "startTime": "2026-11-16T17:00:00.000+08:00",
+      "endTime": "2026-11-16T18:00:00.000+08:00",
+      "durationMinutes": 60,
+      "mode": "pomodoro",
+      "isExtra": false,
+      "notes": "17:00-18:00 傍晚专注60分钟：深入研读学术前沿科研论文的方法学部分（Methodology），系统掌握运动科学实验设计、自变量与因变量控制、数据采集与统计学处理规范。"
+    },
+    {
+      "id": "log-20261116-pol-ch4-review",
+      "taskId": "task-pol-ch4-review-20261116",
+      "taskTitle": "任务二: 习概导论至第三章复习 + 第四章深入学习 (150分钟)",
+      "categoryId": "cat-politics-innovation",
+      "categoryName": "任务二: 习概与双创导论",
+      "categoryColor": "#f59e0b",
+      "categoryIcon": "BookOpen",
+      "startTime": "2026-11-16T14:30:00.000+08:00",
+      "endTime": "2026-11-16T17:00:00.000+08:00",
+      "durationMinutes": 150,
+      "mode": "pomodoro",
+      "isExtra": false,
+      "notes": "14:30-17:00 下午纯沉浸专注2.5小时（150分钟，任务二日标达成率 333%）：系统复盘串联习概导论、第一章、第二章与第三章核心考点脉络，并深入精读第四章重要理论与概念框架。"
+    },
+    {
+      "id": "log-20261116-soccer",
+      "taskId": "task-fit-20261116-soccer",
+      "taskTitle": "足球课中低强度有氧比赛 (60分钟)",
+      "categoryId": "cat-fitness-workout",
+      "categoryName": "周末专项: 健身房高强度锻炼",
+      "categoryColor": "#10b981",
+      "categoryIcon": "Dumbbell",
+      "startTime": "2026-11-16T10:00:00.000+08:00",
+      "endTime": "2026-11-16T11:00:00.000+08:00",
+      "durationMinutes": 60,
+      "mode": "extra",
+      "isExtra": true,
+      "notes": "10:00-11:00 足球课约1小时中低强度有氧比赛（估算消耗~450-550kcal）。"
+    },
+    {
+      "id": "log-20261115-shooting",
+      "taskId": "task-fit-20261115-shooting",
+      "taskTitle": "晚间低强度投篮手感训练 (50分钟)",
+      "categoryId": "cat-fitness-workout",
+      "categoryName": "周末专项: 健身房高强度锻炼",
+      "categoryColor": "#10b981",
+      "categoryIcon": "Dumbbell",
+      "startTime": "2026-11-15T19:20:00.000+08:00",
+      "endTime": "2026-11-15T20:10:00.000+08:00",
+      "durationMinutes": 50,
+      "mode": "extra",
+      "isExtra": true,
+      "notes": "19:20-20:10 低强度投篮训练50分钟（轻负荷维持2号位投篮手感与主动恢复）。"
+    },
     {
       "id": "log-20261115-pol-ch2-ch3",
       "taskId": "task-pol-ch2-ch3-20261115",
@@ -1394,11 +1506,11 @@
     "2026-11-15": {
       "date": "2026-11-15",
       "score": 5,
-      "mood": "📖 双核稳进 · 英语与理论高效推进",
-      "summary": "周日学术研习推进扎实！早间 10:00-10:30 专注听英语 vlog 30分钟（任务一语感输入与口语磨耳朵）；午后 12:30-14:30 连续专注 2 小时（120分钟）系统攻关《习概》第二章与第三章内容学习及配套练习题（任务二达成率 267%）！全天累计有效研习 150 分钟（2.5 小时）！",
+      "mood": "📖 沉浸研习 · 投篮轻恢复",
+      "summary": "周日学习与恢复并进：午后 12:30-14:30 连续专注2小时完成习概第二、三章学习与练习题（120m，日标达成率267%），随后持续学习至18:00；晚间 19:20-20:10 进行50分钟低强度投篮手感训练。饮食摄入4水煮蛋+辣椒炒肉拌面与粤式烧腊鸡饭（+2鱼油+5g肌酸），总热量约1,630kcal，蛋白约85g偏低需次日补强。",
       "achievements": [
-        "任务一 (英语听力): 10:00-10:30 晨间听英语vlog磨耳朵 (30m)",
-        "任务二 (习概理论与刷题): 12:30-14:30 完成第二章、第三章内容学习与练习题 (120m，日标达成率 267%)"
+        "任务二 (习概理论与刷题): 12:30-14:30 完成第二章、第三章内容学习与练习题 (120m，日标达成率 267%)",
+        "晚间篮球专项: 19:20-20:10 低强度投篮训练 50 分钟维持手感"
       ]
     },
     "2026-11-14": {
@@ -1410,6 +1522,18 @@
         "下肢极限力量与代谢冲击: 11:20-13:00 深蹲130kg×4 + 五阶无间歇递减组(110→40kg) + 内收肌64kg + 平板支撑5分钟 (100m)",
         "室内球馆专项转换: 13:10-14:40 结合运球行进间投篮练习90分钟，极限抗疲劳手感建立 (90m)",
         "运动营养超量恢复: 早纯瘦白吉馍+库迪加浓冰美式；15:40双倍+铜锅鲜羊肉与部分碳水+2粒高纯鱼油+5g肌酸，晚间零进食轻断"
+      ]
+    },
+    "2026-11-16": {
+      "date": "2026-11-16",
+      "score": 5,
+      "mood": "🔥 理论串联 · 科研方法与体育多维并进",
+      "summary": "周一全天理论攻坚、学术科研与体育运动推进极其高效！上午 10:00-11:00 完成约60分钟足球课中低强度有氧比赛；下午 14:30-17:00 纯沉浸专注 2.5 小时（150分钟）系统完成习概导论至第三章复习并攻克第四章新理论（任务二达成率高达 333%）；傍晚 17:00-18:00 紧接着投入 60 分钟深入研读前沿科研论文方法学，学术思维全面进阶！晚间营养执行极佳（去皮禽肉摄入足量优质蛋白），全天累计高强度运动与学术专注时长达 270 分钟（4.5 小时）！",
+      "achievements": [
+        "任务二 (习概理论串联与第四章新学): 14:30-17:00 导论至第三章系统复习 + 第四章深入研读 (150m，日标达成率 333%)",
+        "任务四 (学术科研方法学推进): 17:00-18:00 深入研读科研论文方法学部分 (60m)",
+        "上午体育活动: 10:00-11:00 足球课中低强度有氧比赛 60 分钟",
+        "饮食神级执行: 晚餐去皮双鸡腿+双鸭腿+热卤鸡排，单餐狂揽~101g蛋白，全天蛋白达156g(1.64g/kg)"
       ]
     }
   },
@@ -2098,6 +2222,128 @@
       },
       "createdAt": "2026-11-15T15:28:00.000+08:00",
       "updatedAt": "2026-11-15T15:28:00.000+08:00"
+    },
+    "2026-11-15": {
+      "id": "ath-2026-11-15",
+      "date": "2026-11-15",
+      "basketball": {
+        "modules": [
+          "投篮专项"
+        ],
+        "durationMinutes": 50,
+        "rpe": 4,
+        "highIntensityJumps": 25,
+        "decelerations": "19:20-20:10 晚间低强度投篮手感训练，无高强度身体对抗与极限变向",
+        "contactIntensity": "low",
+        "notes": "周日全天专注习概等学业学习至18:00，晚间50分钟轻负荷投篮维持2号位出手节奏"
+      },
+      "strength": {
+        "phase": "恢复期",
+        "primaryLifts": "无抗阻力量训练（下肢与上肢保持主动恢复）",
+        "plyometricsVolume": "低强度定点/轻跳投篮50分钟",
+        "durationMinutes": 0,
+        "notes": "消化周五(11-13)上肢超级递减组后的DOMS，神经与肌肉充分喘息"
+      },
+      "biomechanics": {
+        "ankleFootFeel": "optimal",
+        "patellarTendonPain": 1,
+        "hipSpineMobility": "optimal",
+        "ankleFootNotes": "足踝无负荷压力，状态良好",
+        "patellarTendonNotes": "低强度投篮对髌腱负荷极低，维持无痛状态",
+        "hipSpineNotes": "久坐学习至18:00后，投篮前宜多做胸椎伸展与髋屈肌放松"
+      },
+      "nutrition": {
+        "periWorkoutSupplements": "10:00 4水煮蛋+辣椒炒肉拌面 | 18:00 白切鸡叉烧生菜饭 + 2粒高品质鱼油 + 5g肌酸",
+        "proteinGPerKg": 0.89,
+        "carbEnergyFeel": "optimal",
+        "urineColorLevel": 2,
+        "waterIntakeMl": 2200,
+        "supplementsDetail": "2粒高品质鱼油 + 5g一水肌酸（18:00随晚餐碳水吸收）",
+        "mealsDetail": "10:00：4个水煮蛋+一碗辣椒炒肉拌面（~50g蛋白, ~85g碳水, ~45g脂肪, ~940kcal）；18:00：粤式白切鸡叉烧+生菜+米饭+2鱼油+5g肌酸（~35g蛋白, ~82g碳水, ~23g脂肪, ~690kcal）。全天合计：~85g蛋白(0.89g/kg)、~167g碳水、~68g脂肪、~1,630kcal（对比TDEE~2,600kcal偏低且蛋白不足1.0g/kg）。"
+      },
+      "recovery": {
+        "bedTime": "23:30",
+        "wakeTime": "09:00",
+        "sleepDurationHours": 8,
+        "deepSleepPerception": "good",
+        "restingHeartRate": 58,
+        "morningReadinessScore": 8,
+        "cnsExcitement": "normal",
+        "sleepNotes": "久坐学习+晚间轻投篮，CNS疲劳极低"
+      },
+      "diagnosis": {
+        "generatedAt": "2026-11-16T09:23:55.081Z",
+        "overallScore": 76,
+        "statusTag": "学业攻坚+轻投篮恢复 · 蛋白摄入偏低警示",
+        "cnsAcwrEvaluation": "• 负荷评估：全天仅50分钟低强度投篮（RPE 4），CNS与关节零过载，利于周五上肢递减组后的恢复。\n• 久坐提示：学习至18:00长时间伏案易导致髋屈肌缩短与胸椎僵硬，晚间投篮起到了良好的唤醒作用。",
+        "kineticChainTransfer": "• 投篮手感维持：低负荷下强化上肢发力链与出手节奏微调，不影响肌肉超量恢复。",
+        "prehabProtocol": "• 久坐对冲：每学习60-90分钟起身做2分钟胸椎打开与臀桥激活。",
+        "biochemNutritionPrescription": "昨日最大短板在于全天仅进食两餐，蛋白仅约85g（0.89g/kg），远低于95kg运动员减脂保肌底线（1.6-2.0g/kg），且总热量仅~1,630kcal造成近1,000kcal缺口。高缺口+低蛋白会显著增加瘦体重流失风险。",
+        "nextDayPrescription": "1. 【补回蛋白】：次日需重点提升每餐瘦肉/蛋奶占比。\n2. 【持续学业-运动平衡】：保持高效番茄钟节律。"
+      },
+      "createdAt": "2026-11-15T20:30:00.000+08:00",
+      "updatedAt": "2026-11-16T09:23:55.081Z"
+    },
+    "2026-11-16": {
+      "id": "ath-2026-11-16",
+      "date": "2026-11-16",
+      "basketball": {
+        "modules": [
+          "全场实战"
+        ],
+        "durationMinutes": 60,
+        "rpe": 5,
+        "highIntensityJumps": 20,
+        "decelerations": "10:00-11:00 足球课约1小时中低强度有氧比赛（下肢持续跑动有氧刺激）",
+        "contactIntensity": "low",
+        "notes": "上午足球课有氧比赛1小时（消耗~450-550kcal），与篮球专项交叉有氧调节"
+      },
+      "strength": {
+        "phase": "恢复期",
+        "primaryLifts": "今日无力量房抗阻训练（足球有氧日）",
+        "plyometricsVolume": "60分钟足球中低强度有氧比赛",
+        "durationMinutes": 60,
+        "notes": "有氧心肺耐力刺激良好，注意赛后下肢拉伸与足踝放松"
+      },
+      "biomechanics": {
+        "ankleFootFeel": "optimal",
+        "patellarTendonPain": 1,
+        "hipSpineMobility": "optimal",
+        "ankleFootNotes": "足球场草地跑动缓冲较好，赛后留意小腿比目鱼肌与跟腱拉伸",
+        "patellarTendonNotes": "中低强度跑动对髌腱压力可控",
+        "hipSpineNotes": "有氧比赛后髋关节灵活性良好"
+      },
+      "nutrition": {
+        "periWorkoutSupplements": "早：150g鸡蛋饼(煎蛋+少量酱) | 12:00 食堂四格餐+满碗米饭+2粒鱼油+5g肌酸 | 18:50 2去皮鸡腿+2去皮鸭腿+热卤鸡排+香肠+时蔬酱菜+部分香米饭(剩100kcal未吃)",
+        "proteinGPerKg": 1.64,
+        "carbEnergyFeel": "optimal",
+        "urineColorLevel": 2,
+        "waterIntakeMl": 2800,
+        "supplementsDetail": "2粒高品质鱼油 + 5g一水肌酸（午间随米饭摄入）",
+        "mealsDetail": "早(踢球前)：1个约150g鸡蛋饼(煎蛋+面饼+少量酱，~13g蛋白, ~50g碳水, ~15g脂肪, ~385kcal)；午(10:00足球课后)：满碗米饭+食堂四格菜+2鱼油+5g肌酸（~42g蛋白, ~105g碳水, ~43g脂肪, ~980kcal）；晚(18:52实锤吃完，米饭剩约100kcal未吃，全去皮)：2只去皮卤鸡腿+2只去皮鸭腿+1块热卤鸡排+1根香香肠+时蔬酱菜+部分香米饭（~101g蛋白, ~40g碳水, ~38g脂肪, ~910kcal）。今日全天真实总账：~156g蛋白(1.64g/kg)、~195g碳水、~96g脂肪、总热量~2,275kcal，对比足球有氧日TDEE(~2,750-2,900kcal)，构成约500-600kcal黄金可持续“减脂+保肌”缺口！"
+      },
+      "recovery": {
+        "bedTime": "23:30",
+        "wakeTime": "07:30",
+        "sleepDurationHours": 8,
+        "deepSleepPerception": "good",
+        "restingHeartRate": 58,
+        "morningReadinessScore": 8,
+        "cnsExcitement": "normal",
+        "sleepNotes": "今日有氧消耗后急需今晚补足优质蛋白再入睡"
+      },
+      "diagnosis": {
+        "generatedAt": "2026-11-16T10:55:09.402Z",
+        "overallScore": 90,
+        "statusTag": "足球有氧达成 · 156g蛋白 × 550kcal黄金减脂闭环",
+        "cnsAcwrEvaluation": "• 负荷评估：上午1小时中低强度足球有氧（RPE 5）心肺收益佳，对CNS与大肌肉恢复友好。",
+        "kineticChainTransfer": "• 有氧底座强化：足球持续变向跑动巩固2号位全场体能底盘，但注意足球后小腿与内收肌群及时拉伸。",
+        "prehabProtocol": "• 足球赛后防护：今晚睡前重点泡沫轴滚压股四头肌、内收肌与腓肠肌各2分钟。",
+        "biochemNutritionPrescription": "加上早上踢球前的150g鸡蛋饼(~385kcal)，今日全天三餐真实总计为：~156g蛋白（1.64g/kg，精准跨过1.6g/kg运动员减脂保肌线！）、~195g碳水、~96g脂肪、总热量~2,275kcal。对比今日足球有氧日TDEE(~2,750-2,900kcal)，正好落在最健康、不掉代谢的~500-600kcal黄金减脂缺口！睡前补足600-800ml白开水排钠即可。",
+        "nextDayPrescription": "1. 【今晚紧急加餐】：现在时间17:23，睡前务必补一顿零淀粉高蛋白加餐把今日蛋白拉到120-130g+。\n2. 【食堂打菜优化】：用白切鸡去皮/清蒸鱼/卤牛肉替换五花肉与炸物。"
+      },
+      "createdAt": "2026-11-16T17:23:00.000+08:00",
+      "updatedAt": "2026-11-16T10:55:09.402Z"
     }
   },
   "deletedLogIds": [
