@@ -1,6 +1,6 @@
 {
   "version": "2.0.0",
-  "exportTime": "2026-11-17T09:38:03.065Z",
+  "exportTime": "2026-11-17T11:55:08.326Z",
   "categories": [
     {
       "id": "cat-ielts-research",
@@ -64,6 +64,19 @@
     }
   ],
   "tasks": [
+    {
+      "id": "task-ielts-study-20261117",
+      "categoryId": "cat-ielts-research",
+      "title": "雅思基础突破: 核心词汇背写与长难句精读",
+      "completed": true,
+      "targetMinutes": 60,
+      "actualMinutes": 60,
+      "estimatedPomodoros": 2,
+      "completedPomodoros": 2,
+      "notes": "17:30-18:30 傍晚专注60分钟：雅思核心学术词汇背写默写与重点长难句型精析，沉浸式语感输入与学术表达训练。",
+      "createdAt": "2026-11-17T17:30:00.000+08:00",
+      "completedAt": "2026-11-17T18:30:00.000+08:00"
+    },
     {
       "id": "task-research-methodology-20261116",
       "categoryId": "cat-research-advance",
@@ -529,6 +542,21 @@
     }
   ],
   "timeLogs": [
+    {
+      "id": "log-20261117-ielts-study",
+      "taskId": "task-ielts-study-20261117",
+      "taskTitle": "任务一: 雅思基础突破 (60分钟)",
+      "categoryId": "cat-ielts-research",
+      "categoryName": "任务一: 雅思基础突破 (200词背写 + 40句读写)",
+      "categoryColor": "#8b5cf6",
+      "categoryIcon": "GraduationCap",
+      "startTime": "2026-11-17T17:30:00.000+08:00",
+      "endTime": "2026-11-17T18:30:00.000+08:00",
+      "durationMinutes": 60,
+      "mode": "pomodoro",
+      "isExtra": false,
+      "notes": "17:30-18:30 傍晚专注60分钟：雅思核心学术词汇背写默写与重点长难句型精析，沉浸式语感输入与学术表达训练。"
+    },
     {
       "id": "log-20261116-research-methodology",
       "taskId": "task-research-methodology-20261116",
@@ -1534,6 +1562,15 @@
         "任务四 (学术科研方法学推进): 17:00-18:00 深入研读科研论文方法学部分 (60m)",
         "上午体育活动: 10:00-11:00 足球课中低强度有氧比赛 60 分钟",
         "饮食神级执行: 晚餐去皮双鸡腿+双鸭腿+热卤鸡排，单餐狂揽~101g蛋白，全天蛋白达156g(1.64g/kg)"
+      ]
+    },
+    "2026-11-17": {
+      "date": "2026-11-17",
+      "score": 5,
+      "mood": "📖 专注突破 · 英语词汇长难句攻坚",
+      "summary": "周二傍晚 17:30-18:30 纯沉浸专注 1 小时（60分钟），系统推进任务一（雅思基础突破）：扎实完成核心学术词汇背写默写与长难句型精读仿写，英语思维与语感沉淀扎实！",
+      "achievements": [
+        "任务一 (雅思基础突破): 17:30-18:30 扎实完成核心词汇背写默写与长难句精读仿写 (60m)"
       ]
     }
   },
