@@ -149,6 +149,7 @@ import {
   Timer,
   CalendarRange,
   CheckSquare,
+  Activity,
   History,
   BarChart3,
   Settings,
@@ -186,6 +187,12 @@ const navItems = computed(() => [
     path: '/',
     label: '专注时钟',
     icon: Timer
+  },
+  {
+    path: '/athlete',
+    label: '身体管家·运动科学',
+    icon: Activity,
+    badge: '篮球高绩效'
   },
   {
     path: '/schedule',

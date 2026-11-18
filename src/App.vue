@@ -176,6 +176,7 @@ import {
   PlusCircle,
   Database,
   Timer,
+  Activity,
   CalendarRange,
   CheckSquare,
   History,
@@ -199,6 +200,7 @@ import { useTimeLogStore } from '@/stores/useTimeLogStore'
 import { useTaskStore } from '@/stores/useTaskStore'
 import { useCategoryStore } from '@/stores/useCategoryStore'
 import { useReflectionStore } from '@/stores/useReflectionStore'
+import { useAthleteStore } from '@/stores/useAthleteStore'
 
 // 初始化存储
 StorageService.init()
@@ -209,6 +211,7 @@ const timeLogStore = useTimeLogStore()
 const taskStore = useTaskStore()
 const categoryStore = useCategoryStore()
 const reflectionStore = useReflectionStore()
+const athleteStore = useAthleteStore()
 
 const showQuickTimeModal = ref(false)
 const showManualLogModal = ref(false)
@@ -225,6 +228,7 @@ function reloadAllStores() {
   taskStore.reload()
   categoryStore.reload()
   reflectionStore.reload()
+  athleteStore.reload()
 }
 
 onMounted(async () => {
@@ -269,6 +273,7 @@ onUnmounted(() => {
 
 const mobileNavItems = [
   { path: '/', label: '专注时钟', icon: Timer },
+  { path: '/athlete', label: '身体管家·运动科学', icon: Activity },
   { path: '/schedule', label: '课表与自习打卡', icon: CalendarRange },
   { path: '/tasks', label: '任务与目标统筹', icon: CheckSquare },
   { path: '/timeline', label: '时光机回顾', icon: History },

@@ -1,6 +1,6 @@
 {
   "version": "2.0.0",
-  "exportTime": "2026-11-17T11:55:08.326Z",
+  "exportTime": "2026-11-18T07:40:39.664Z",
   "categories": [
     {
       "id": "cat-ielts-research",
@@ -64,6 +64,32 @@
     }
   ],
   "tasks": [
+    {
+      "id": "task-pol-ch5-study-20261118",
+      "categoryId": "cat-politics-innovation",
+      "title": "习概第三四章系统复习 + 第五章深入学习与配套习题",
+      "completed": true,
+      "targetMinutes": 45,
+      "actualMinutes": 120,
+      "estimatedPomodoros": 2,
+      "completedPomodoros": 4,
+      "notes": "13:30-15:30 图书馆专注2小时（120分钟，任务二日标达成率 267%）：系统复盘回顾第三章与第四章核心考点脉络，深入攻坚第五章重要理论与概念框架，并高质量完成配套章节习题，强化考点记忆与做题实战手感。",
+      "createdAt": "2026-11-18T13:30:00.000+08:00",
+      "completedAt": "2026-11-18T15:30:00.000+08:00"
+    },
+    {
+      "id": "task-fit-20261117-swim",
+      "categoryId": "cat-fitness-workout",
+      "title": "游泳课中低强度有氧训练 (40分钟)",
+      "completed": true,
+      "targetMinutes": 40,
+      "actualMinutes": 40,
+      "estimatedPomodoros": 2,
+      "completedPomodoros": 2,
+      "notes": "08:30-09:10 进行40分钟中低强度游泳有氧与无冲击恢复；全天包含泳前泳后双早餐、午间白切鸡烧鸡腿饭(+2鱼油+5g肌酸)、下午坚果、晚餐3鸡腿1鸭腿蔬菜少量碳水。",
+      "createdAt": "2026-11-17T08:30:00.000+08:00",
+      "completedAt": "2026-11-17T09:10:00.000+08:00"
+    },
     {
       "id": "task-ielts-study-20261117",
       "categoryId": "cat-ielts-research",
@@ -543,6 +569,21 @@
   ],
   "timeLogs": [
     {
+      "id": "log-20261118-pol-ch5-study",
+      "taskId": "task-pol-ch5-study-20261118",
+      "taskTitle": "任务二: 习概第三四章复习 + 第五章深入学习与习题实战 (120分钟)",
+      "categoryId": "cat-politics-innovation",
+      "categoryName": "任务二: 习概与双创导论",
+      "categoryColor": "#f59e0b",
+      "categoryIcon": "BookOpen",
+      "startTime": "2026-11-18T13:30:00.000+08:00",
+      "endTime": "2026-11-18T15:30:00.000+08:00",
+      "durationMinutes": 120,
+      "mode": "pomodoro",
+      "isExtra": false,
+      "notes": "13:30-15:30 图书馆专注2小时（120分钟，任务二达成率 267%）：高效完成第三章和第四章知识点系统复习，深入研读第五章核心理论，并趁热打铁完成配套习题练习，强化考点记忆与做题手感。"
+    },
+    {
       "id": "log-20261117-ielts-study",
       "taskId": "task-ielts-study-20261117",
       "taskTitle": "任务一: 雅思基础突破 (60分钟)",
@@ -556,6 +597,21 @@
       "mode": "pomodoro",
       "isExtra": false,
       "notes": "17:30-18:30 傍晚专注60分钟：雅思核心学术词汇背写默写与重点长难句型精析，沉浸式语感输入与学术表达训练。"
+    },
+    {
+      "id": "log-20261117-swim",
+      "taskId": "task-fit-20261117-swim",
+      "taskTitle": "游泳课中低强度有氧训练 (40分钟)",
+      "categoryId": "cat-fitness-workout",
+      "categoryName": "周末专项: 健身房高强度锻炼",
+      "categoryColor": "#10b981",
+      "categoryIcon": "Dumbbell",
+      "startTime": "2026-11-17T08:30:00.000+08:00",
+      "endTime": "2026-11-17T09:10:00.000+08:00",
+      "durationMinutes": 40,
+      "mode": "extra",
+      "isExtra": true,
+      "notes": "08:30-09:10 进行40分钟中低强度游泳（估算消耗~260-320kcal，无重力冲击促进肩背与下肢恢复）。"
     },
     {
       "id": "log-20261116-research-methodology",
@@ -1566,11 +1622,21 @@
     },
     "2026-11-17": {
       "date": "2026-11-17",
-      "score": 5,
-      "mood": "📖 专注突破 · 英语词汇长难句攻坚",
-      "summary": "周二傍晚 17:30-18:30 纯沉浸专注 1 小时（60分钟），系统推进任务一（雅思基础突破）：扎实完成核心学术词汇背写默写与长难句型精读仿写，英语思维与语感沉淀扎实！",
+      "score": 4,
+      "mood": "🏊 游泳恢复日 · 蛋白拉满但双早餐偏高",
+      "summary": "周二早间 08:30-09:10 进行40分钟中低强度游泳恢复；全天实锤摄入：泳前泳后双早餐（~900kcal）、午间白切鸡烧鸡腿+2碗米饭（+2鱼油+5g肌酸，~1,005kcal）、下午少量坚果及晚间同尺寸全去皮3鸡腿1鸭腿+蔬菜+少量碳水（~575kcal）。全天蛋白达 ~205g（2.16g/kg）、总热量 ~2,590kcal，稳居高蛋白糖原满充维持线！",
       "achievements": [
-        "任务一 (雅思基础突破): 17:30-18:30 扎实完成核心词汇背写默写与长难句精读仿写 (60m)"
+        "早间体育活动: 08:30-09:10 游泳课中低强度有氧恢复 40 分钟",
+        "高蛋白达标: 全天优质蛋白摄入突破 ~203g（2.14 g/kg）"
+      ]
+    },
+    "2026-11-18": {
+      "date": "2026-11-18",
+      "score": 5,
+      "mood": "🔥 图书馆高效攻坚 · 习概理论与习题双突破",
+      "summary": "周三下午 13:20 到达图书馆，13:30-15:30 纯沉浸专注 2 小时（120分钟），高效完成任务二（习概与双创导论）：系统复盘第三章与第四章核心考点，深入攻克第五章理论要点并高质量刷完章节习题，理论研读与实战解题紧密结合（达成率 267%）！",
+      "achievements": [
+        "任务二 (习概理论深化与习题巩固): 13:30-15:30 第三、四章系统复习 + 第五章新学及配套习题 (120m，日标达成率 267%)"
       ]
     }
   },
@@ -2381,6 +2447,128 @@
       },
       "createdAt": "2026-11-16T17:23:00.000+08:00",
       "updatedAt": "2026-11-16T10:55:09.402Z"
+    },
+    "2026-11-17": {
+      "id": "ath-2026-11-17",
+      "date": "2026-11-17",
+      "basketball": {
+        "modules": [
+          "恢复"
+        ],
+        "durationMinutes": 40,
+        "rpe": 4,
+        "highIntensityJumps": 0,
+        "decelerations": "08:30-09:10 40分钟中低强度游泳课，零地面冲击负荷，主动恢复心肺与上肢血液循环",
+        "contactIntensity": "low",
+        "notes": "周二早间游泳40分钟，兼顾肩背主动伸展与有氧代谢，对髌腱和踝关节零压力"
+      },
+      "strength": {
+        "phase": "恢复期",
+        "primaryLifts": "今日无力量房抗阻训练（游泳有氧恢复日）",
+        "plyometricsVolume": "40分钟中低强度游泳",
+        "durationMinutes": 40,
+        "notes": "昨日足球有氧+今日游泳恢复，下肢与上肢储备充沛，适合明后天切回高质量力量或篮球专项"
+      },
+      "biomechanics": {
+        "ankleFootFeel": "optimal",
+        "patellarTendonPain": 1,
+        "hipSpineMobility": "optimal",
+        "ankleFootNotes": "水中无落地冲击，足踝与跟腱充分放松",
+        "patellarTendonNotes": "连续多日低冲击后髌腱状态极佳",
+        "hipSpineNotes": "游泳划水有助于胸椎打开与肩胛灵活性恢复"
+      },
+      "nutrition": {
+        "periWorkoutSupplements": "08:00(泳前): 3蛋白+微糖豆浆+2元肉包 | 09:30(泳后): 纯瘦白吉馍+1全蛋+无糖豆浆 | 午: 白切鸡拼烧鸡腿+生菜+米饭 + 2鱼油 + 5g肌酸 | 16:00: 少量坚果 | 晚: 3鸡腿+1鸭腿+蔬菜+少量碳水",
+        "proteinGPerKg": 2.16,
+        "carbEnergyFeel": "optimal",
+        "urineColorLevel": 2,
+        "waterIntakeMl": 2500,
+        "supplementsDetail": "2粒高品质鱼油 + 5g一水肌酸（午间随正餐摄入）",
+        "mealsDetail": "早8:00(泳前)：3蛋白+微糖豆浆+2元肉包（~26.5g蛋白, ~42g碳水, ~370kcal）；早9:30(泳后)：纯瘦白吉馍+1全蛋+无糖豆浆（~40.5g蛋白, ~50g碳水, ~530kcal）；午(12:00 实锤吃完两碗米饭)：白切鸡拼烧鸡腿+白灼生菜+2碗米饭+2鱼油+5g肌酸（~70g蛋白, ~111g碳水, ~30g脂肪, ~1,005kcal）；16:00：少量坚果（~110kcal）；晚(按实拍尺寸核准，3去皮鸡腿+1去皮鸭腿+蔬菜+少量碳水)：3只去皮鸡腿(~41g蛋白,~250kcal)+1只去皮鸭腿(~19g蛋白,~145kcal)+蔬菜+少量碳水（~65g蛋白, ~36g碳水, ~19g脂肪, ~575kcal）。今日全天最终核准：~205g蛋白(2.16g/kg)、~242g碳水、~87g脂肪、总热量~2,590kcal，精准落在40m游泳日维持线（微缺口~50-150kcal）！"
+      },
+      "recovery": {
+        "bedTime": "23:30",
+        "wakeTime": "07:30",
+        "sleepDurationHours": 8,
+        "deepSleepPerception": "good",
+        "restingHeartRate": 58,
+        "morningReadinessScore": 8,
+        "cnsExcitement": "normal",
+        "sleepNotes": "游泳恢复日CNS状态轻松，建议晚间不再加餐，保持微热量缺口"
+      },
+      "diagnosis": {
+        "generatedAt": "2026-11-17T12:03:09.054Z",
+        "overallScore": 84,
+        "statusTag": "游泳无冲击恢复 · 207g蛋白满格维持蓄能日",
+        "cnsAcwrEvaluation": "• 负荷评估：40分钟中低强度游泳（RPE 4）对大体重篮球运动员极为友好，零落地冲击下完成心肺与肩背滑液循环，为后续力量训练蓄满电量。",
+        "kineticChainTransfer": "• 关节减压：连续两日非重负荷抗阻让上肢与下肢肌腱处于高准备度状态，明日适合高质量进健身房或球场对抗。",
+        "prehabProtocol": "• 泳后提示：注意肩袖前后束平衡拉伸与足量补水。",
+        "biochemNutritionPrescription": "按实拍同尺寸（3只去皮鸡腿+1只去皮鸭腿+蔬菜少量碳水）精算核准后，晚餐仅~575kcal、脂肪低至~19g，全天总计~205g蛋白（2.16g/kg）、~242g碳水、~87g脂肪、总热量~2,590kcal。刚好踩在今日约2,600-2,750kcal的维持蓄能线上，不长脂且糖原与氨基酸池全满，明日最适合安排大重量力量或高对抗篮球实战！",
+        "nextDayPrescription": "1. 【明日饮食微调】：若想继续稳步减脂，明天避免“双早餐”，省出350-400kcal给全天缺口。\n2. 【训练建议】：连续两天低冲击有氧后，明天能量充沛，可安排高强度力量或篮球实战。"
+      },
+      "createdAt": "2026-11-17T19:59:00.000+08:00",
+      "updatedAt": "2026-11-17T12:03:09.054Z"
+    },
+    "2026-11-18": {
+      "id": "ath-2026-11-18",
+      "date": "2026-11-18",
+      "basketball": {
+        "modules": [
+          "恢复"
+        ],
+        "durationMinutes": 0,
+        "rpe": 2,
+        "highIntensityJumps": 0,
+        "decelerations": "今日完全休息日（无运动负荷），为明日（11-19）高强度训练蓄力",
+        "contactIntensity": "low",
+        "notes": "完全休息日，CNS、肌腱与关节处于满格恢复状态"
+      },
+      "strength": {
+        "phase": "恢复期",
+        "primaryLifts": "今日休息日（明日11-19安排上高强度训练）",
+        "plyometricsVolume": "0",
+        "durationMinutes": 0,
+        "notes": "蓄力期，注意久坐间隙活动髋关节与胸椎"
+      },
+      "biomechanics": {
+        "ankleFootFeel": "optimal",
+        "patellarTendonPain": 1,
+        "hipSpineMobility": "optimal",
+        "ankleFootNotes": "足踝满状态恢复",
+        "patellarTendonNotes": "髌腱无痛感，准备迎接明日高负荷",
+        "hipSpineNotes": "休息日注意避免全天久坐导致髋屈肌紧张"
+      },
+      "nutrition": {
+        "periWorkoutSupplements": "休息日饮食（待晚间汇总记录） | 建议常规补充鱼油 + 5g肌酸维持肌酸池饱和",
+        "proteinGPerKg": 0,
+        "carbEnergyFeel": "optimal",
+        "urineColorLevel": 2,
+        "waterIntakeMl": 2200,
+        "supplementsDetail": "建议正常服用 2粒鱼油 + 5g一水肌酸（休息日不间断以维持肌肉磷酸肌酸饱和度）",
+        "mealsDetail": "今日为完全休息日（TDEE约2,300-2,400kcal），建议全天热量控制在1,750-1,900kcal，蛋白保持160-180g，碳水适度收紧（晚餐少碳水/零精制淀粉），待后续汇报更新。"
+      },
+      "recovery": {
+        "bedTime": "23:00",
+        "wakeTime": "07:30",
+        "sleepDurationHours": 8,
+        "deepSleepPerception": "good",
+        "restingHeartRate": 57,
+        "morningReadinessScore": 9,
+        "cnsExcitement": "normal",
+        "sleepNotes": "明日上强度，今晚务必早睡保证8小时高质量睡眠"
+      },
+      "diagnosis": {
+        "generatedAt": "2026-11-18T05:27:36.423Z",
+        "overallScore": 86,
+        "statusTag": "完全休息蓄力日 · 严控碳水稳守减脂窗口",
+        "cnsAcwrEvaluation": "• 负荷评估：经过周一足球、周二游泳的过渡，今日完全休息使中枢神经（CNS）与外周肌群恢复至峰值准备度（Readiness 9/10），明日冲大重量/高对抗状态极佳。",
+        "kineticChainTransfer": "• 明日战备：建议今晚花10分钟做髋关节90/90动态打开与肩袖激活预热。",
+        "prehabProtocol": "• 久坐防僵：每坐1小时起身活动2分钟，避免明日开练时髋膝发紧。",
+        "biochemNutritionPrescription": "【休息日饮食核心铁律】：今日无额外运动消耗，全天TDEE回落至约2,300-2,400kcal。由于昨日已吃够242g碳水把肌糖原加满，今日无需高碳水！建议全天控制在 1,750-1,900kcal（制造500-600kcal净减脂缺口）、蛋白质维持 160-180g（去皮禽腿/牛肉/鸡蛋/高蛋白奶），主食比训练日减半，且5g肌酸+2粒鱼油照常吃不断档！",
+        "nextDayPrescription": "1. 【明日上强度预案】：明早训练前60-90分钟吃一顿中等碳水+易消化蛋白（如白吉馍/鸡蛋+无糖豆浆），训练表现直接拉满！"
+      },
+      "createdAt": "2026-11-18T05:27:36.423Z",
+      "updatedAt": "2026-11-18T05:27:36.423Z"
     }
   },
   "deletedLogIds": [
