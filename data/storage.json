@@ -1,6 +1,6 @@
 {
   "version": "2.0.0",
-  "exportTime": "2026-11-23T03:58:49.417Z",
+  "exportTime": "2026-11-23T04:21:21.920Z",
   "categories": [
     {
       "id": "cat-ielts-research",
@@ -64,6 +64,32 @@
     }
   ],
   "tasks": [
+    {
+      "id": "task-fit-20261122-shooting",
+      "categoryId": "cat-fitness-workout",
+      "title": "力量后近距离投篮发力训练 (15分钟)",
+      "completed": true,
+      "targetMinutes": 15,
+      "actualMinutes": 15,
+      "estimatedPomodoros": 1,
+      "completedPomodoros": 1,
+      "notes": "13:30-13:45 上肢大重量训练后补吃1根香蕉，完成15分钟近距离投篮发力校准。",
+      "createdAt": "2026-11-22T13:30:00.000+08:00",
+      "completedAt": "2026-11-22T13:45:00.000+08:00"
+    },
+    {
+      "id": "task-fit-20261122-upper",
+      "categoryId": "cat-fitness-workout",
+      "title": "健身房上肢力量+高阶卧推递减组+高位下拉+核心 (135分钟)",
+      "completed": true,
+      "targetMinutes": 135,
+      "actualMinutes": 135,
+      "estimatedPomodoros": 5,
+      "completedPomodoros": 5,
+      "notes": "11:00进场：卧推(20/40/60×5, 80×4, 90×1, 80×4×2组 + 零间歇递减70→65→60→55→50→40×5, 总3350kg) + 高位下拉(54×8×2, 62×8×2, 69×8, 2408kg) + 实力推(20×8×2, 30×8×2, 40×5, 1000kg) + 坐姿飞鸟(各5×10×8) + 平板支撑哑铃划船(5组×12次×15kg) + 平板支撑4×60s + 死虫式4×20。",
+      "createdAt": "2026-11-22T11:00:00.000+08:00",
+      "completedAt": "2026-11-22T13:15:00.000+08:00"
+    },
     {
       "id": "task-pol-ch4-8-review-20261122",
       "categoryId": "cat-politics-innovation",
@@ -818,6 +844,36 @@
       "mode": "pomodoro",
       "isExtra": false,
       "notes": "16:00-17:00 下午专注60分钟：系统推进英语学习，完成核心词汇背诵与长难句理解，保持每日英语语感高频在线。"
+    },
+    {
+      "id": "log-20261122-shooting",
+      "taskId": "task-fit-20261122-shooting",
+      "taskTitle": "力量后近距离投篮发力训练 (15分钟)",
+      "categoryId": "cat-fitness-workout",
+      "categoryName": "周末专项: 健身房高强度锻炼",
+      "categoryColor": "#10b981",
+      "categoryIcon": "Dumbbell",
+      "startTime": "2026-11-22T13:30:00.000+08:00",
+      "endTime": "2026-11-22T13:45:00.000+08:00",
+      "durationMinutes": 15,
+      "mode": "extra",
+      "isExtra": true,
+      "notes": "13:30-13:45 投篮前吃1根香蕉，上肢大重量后进行15分钟近距离投篮发力训练。"
+    },
+    {
+      "id": "log-20261122-gym-upper",
+      "taskId": "task-fit-20261122-upper",
+      "taskTitle": "健身房上肢推拉力量+卧推70→40kg六阶递减+核心 (135分钟)",
+      "categoryId": "cat-fitness-workout",
+      "categoryName": "周末专项: 健身房高强度锻炼",
+      "categoryColor": "#10b981",
+      "categoryIcon": "Dumbbell",
+      "startTime": "2026-11-22T11:00:00.000+08:00",
+      "endTime": "2026-11-22T13:15:00.000+08:00",
+      "durationMinutes": 135,
+      "mode": "pomodoro",
+      "isExtra": false,
+      "notes": "11:00-13:15 卧推80×4达成3组+90×1+高阶70→40kg零间歇递减(总3350kg) + 高位下拉(最高69×8) + 实力推 + 坐姿飞鸟 + 平板支撑哑铃划船5×12(15kg) + 平板支撑4×60s + 死虫式4×20。"
     },
     {
       "id": "log-20261121-research-study",
@@ -2156,11 +2212,14 @@
     "2026-11-22": {
       "date": "2026-11-22",
       "score": 5,
-      "mood": "📖 理论大贯通 · 习概五章大串联 + 英语稳步推进",
-      "summary": "周日下午至傍晚专注效率极高！16:00-17:00 投入60分钟稳健完成英语综合研习；17:30-19:30 紧接着沉浸专注2小时（120分钟）完成《习概》第4章到第8章的大体量横向系统复盘，打通多章节核心考点脉络（任务二达成率高达267%）！全天纯学术专注达180分钟（3.0小时），周末两日自习总产出极为扎实！",
+      "mood": "💪🔥 卧推突破 · 习概五章串联 · 820-970kcal净减脂",
+      "summary": "周日文武大丰收！上午11:00起卧推突破完成3组80kg×4+90kg×1+高阶70→40kg零间歇递减(3,350kg)+高位下拉+核心抗旋转(135m)，13:30补香蕉后完成15m投篮发力校准；下午至傍晚学术自习全面爆发：16:00-17:00完成60m英语综合学习，17:30-19:30沉浸专注2小时大体量横向复盘《习概》第4-8章核心理论(120m，达成率267%)！全天运动150m+自习180m(总高效输出330m/5.5h)；全天三餐摄入~185g蛋白(1.95g/kg)、总热量~2,130kcal，斩获~820-970kcal超高净减脂缺口！",
       "achievements": [
+        "上肢推力突破: 卧推完成3组80kg×4+90kg×1，递减组抬高至70→40kg六阶连降 (3,350kg)",
+        "聪明护腰选配: 核心切换为平板支撑哑铃划船+平板支撑4×60s+死虫式4×20，避开下背剪切",
         "任务二 (习概五章宏观大串联): 17:30-19:30 系统复盘第4-8章核心考点与理论架构 (120m，达成率 267%)",
-        "任务一 (英语基础突破): 16:00-17:00 英语词汇与学术读写综合学习 (60m)"
+        "任务一 (英语基础突破): 16:00-17:00 英语词汇与学术读写综合学习 (60m)",
+        "饮食精准闭环: 全天~185g优质蛋白(1.95g/kg)，总热量~2,130kcal，稳斩~820-970kcal净减脂缺口"
       ]
     }
   },
@@ -3277,6 +3336,67 @@
       },
       "createdAt": "2026-11-21T10:51:39.849Z",
       "updatedAt": "2026-11-21T10:51:39.849Z"
+    },
+    "2026-11-22": {
+      "id": "ath-2026-11-22",
+      "date": "2026-11-22",
+      "basketball": {
+        "modules": [
+          "投篮专项"
+        ],
+        "durationMinutes": 15,
+        "rpe": 7,
+        "highIntensityJumps": 10,
+        "decelerations": "13:30-13:45 上肢大重量训练后补1根香蕉，完成15分钟近距离投篮发力校准",
+        "contactIntensity": "low",
+        "notes": "上肢推力极度充血后做近距离发力投篮，强化手腕压腕与躯干传导感知"
+      },
+      "strength": {
+        "phase": "最大力量",
+        "primaryLifts": "平板卧推(20/40/60×5, 80×4, 90×1, 80×4×2 + 零间歇递减70→65→60→55→50→40×5, 总3350kg) + 高位下拉(54×8×2, 62×8×2, 69×8, 2408kg) + 杠铃实力推(20×8×2, 30×8×2, 40×5, 1000kg) + 坐姿飞鸟(左右各5×10×8) + 平板支撑哑铃划船(5组×12次×15kg) + 平板支撑4×60s + 死虫式4×20",
+        "plyometricsVolume": "核心抗旋转与脊柱稳定强化(平板划船+平板支撑+死虫式)",
+        "durationMinutes": 135,
+        "notes": "卧推80kg×4突破至全天3组+90×1，且递减组平均负荷从70→20kg大幅提升至70→40kg；下肢后链刚经历周六4040kg深蹲，今日核心切换为平板支撑+死虫式完美避开腰椎二次疲劳！"
+      },
+      "biomechanics": {
+        "ankleFootFeel": "optimal",
+        "patellarTendonPain": 1,
+        "hipSpineMobility": "optimal",
+        "ankleFootNotes": "下肢与足踝完全避开跳跃冲击，充分消化周六深蹲DOMS",
+        "patellarTendonNotes": "髌腱处于休整恢复窗口",
+        "hipSpineNotes": "主动改用平板支撑+死虫式替代山羊挺身，腰椎零额外剪切负荷，动作选配极聪明"
+      },
+      "nutrition": {
+        "periWorkoutSupplements": "早+投篮前：4蛋白1蛋黄+2根香蕉 | 午(图一)：半只白切鸡+生菜+米饭 + 2鱼油 + 5g肌酸 | 晚(图二全去皮+剩1/3碳水)：2鸭腿+2鸡腿+香肠+卤蛋+酱菜+2/3米饭",
+        "proteinGPerKg": 1.95,
+        "carbEnergyFeel": "optimal",
+        "urineColorLevel": 2,
+        "waterIntakeMl": 3000,
+        "supplementsDetail": "2粒高品质鱼油 + 5g一水肌酸（午间练后随碳水大餐吸收）",
+        "mealsDetail": "早+练中：4蛋白(~14g)+1蛋黄(~3g)+2根香蕉(~2g)（~19g蛋白, ~48g碳水, ~5g脂肪, ~320kcal）；午(图一核准为半只白切鸡+2鱼油+5g肌酸)：半只白切鸡(约310g可食肉,~78g蛋白,~36g脂肪,~635kcal)+白灼生菜+1碗米饭（~84.5g蛋白, ~67g碳水, ~37g脂肪, ~935kcal）；晚(图二全去皮+留剩1/3碳水)：2去皮鸭腿+2去皮鸡腿+1根香肠+1颗卤蛋+酱菜+2/3米饭（~81g蛋白, ~48g碳水, ~39g脂肪, ~875kcal）。周日全天核准汇总：~185g蛋白(1.95g/kg)、~163g碳水、~81g脂肪、总热量~2,130kcal，对比上肢重训+投篮日TDEE(~2,950-3,100kcal)形成~820-970kcal超级黄金减脂增肌缺口！"
+      },
+      "recovery": {
+        "bedTime": "23:30",
+        "wakeTime": "07:30",
+        "sleepDurationHours": 8,
+        "deepSleepPerception": "good",
+        "restingHeartRate": 58,
+        "morningReadinessScore": 8,
+        "cnsExcitement": "normal",
+        "sleepNotes": "周末连续完成下肢(周六)+上肢(周日)双大日，周一宜以有氧或休息过渡"
+      },
+      "diagnosis": {
+        "generatedAt": "2026-11-23T04:20:21.003Z",
+        "overallScore": 95,
+        "statusTag": "卧推80kg三组突破 · 166g蛋白×1,000kcal净减脂",
+        "cnsAcwrEvaluation": "• 力量进阶里程碑：卧推在80kg×4的基础上冲完90kg×1后再连做2组80kg×4（合计3组80kg×4！），且零间歇递减组下限从20kg直接抬高到40kg（70→40kg每阶5次），上肢绝对推力与代谢耐力肉眼可见地飙升！\n• 聪明避伤设计：周六刚蹲完4040kg，周日核心果断弃用山羊挺身改做平板支撑+死虫式+平板划船，完美保护下背。",
+        "kineticChainTransfer": "• 练后1根香蕉迅速压住皮质醇，紧接15分钟近距离投篮巩固推力后手感。",
+        "prehabProtocol": "• 胸肩拉伸：大重量推举+坐姿飞鸟后注意拉伸胸小肌与肩前束，防圆肩。",
+        "biochemNutritionPrescription": "核准午餐为【半只白切鸡】后，周日全天蛋白精准跃升至~185g（1.95g/kg，几乎贴满2.0g/kg天花板！），总热量~2,130kcal，对比135分钟重训+15分钟投篮消耗依然保有~820-970kcal极其健康的净减脂缺口！",
+        "nextDayPrescription": "1. 【今日（周一11-23）安排】：周末两天连续轰炸下肢+上肢，今天以有氧课/低强度投篮或休息为主，让肌肉充分生长。\n2. 【持续优化】：下次晚间2只去皮鸡鸭腿+卤蛋已足量，香肠可酌情省去。"
+      },
+      "createdAt": "2026-11-23T04:08:34.589Z",
+      "updatedAt": "2026-11-23T04:20:21.003Z"
     }
   },
   "deletedLogIds": [
