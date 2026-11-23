@@ -1,6 +1,6 @@
 {
   "version": "2.0.0",
-  "exportTime": "2026-11-20T13:22:52.328Z",
+  "exportTime": "2026-11-23T03:58:49.417Z",
   "categories": [
     {
       "id": "cat-ielts-research",
@@ -64,6 +64,97 @@
     }
   ],
   "tasks": [
+    {
+      "id": "task-pol-ch4-8-review-20261122",
+      "categoryId": "cat-politics-innovation",
+      "title": "习概第四至八章全脉络系统复盘与串联巩固",
+      "completed": true,
+      "targetMinutes": 45,
+      "actualMinutes": 120,
+      "estimatedPomodoros": 2,
+      "completedPomodoros": 4,
+      "notes": "17:30-19:30 傍晚连续沉浸专注2小时（120分钟，任务二日标达成率 267%）：横跨第4章至第8章进行宏观全景式系统大复盘，打通各章逻辑关隘，深度串联核心考点、重点理论框架与关键命题。",
+      "createdAt": "2026-11-22T17:30:00.000+08:00",
+      "completedAt": "2026-11-22T19:30:00.000+08:00"
+    },
+    {
+      "id": "task-ielts-study-20261122",
+      "categoryId": "cat-ielts-research",
+      "title": "英语突破: 核心词汇记忆与英语综合研习",
+      "completed": true,
+      "targetMinutes": 60,
+      "actualMinutes": 60,
+      "estimatedPomodoros": 2,
+      "completedPomodoros": 2,
+      "notes": "16:00-17:00 下午高专注投入60分钟：推进英语学习，落实核心词汇与学术英语读写表达。",
+      "createdAt": "2026-11-22T16:00:00.000+08:00",
+      "completedAt": "2026-11-22T17:00:00.000+08:00"
+    },
+    {
+      "id": "task-research-study-20261121",
+      "categoryId": "cat-research-advance",
+      "title": "任务四: 科研学术文献精读与方法学研习",
+      "completed": true,
+      "targetMinutes": 60,
+      "actualMinutes": 60,
+      "estimatedPomodoros": 2,
+      "completedPomodoros": 2,
+      "notes": "19:30-20:30 晚间专注60分钟（衔接英语时段连贯推进）：深入研读科研前沿文献、梳理学术方法学与前沿进展。",
+      "createdAt": "2026-11-21T19:30:00.000+08:00",
+      "completedAt": "2026-11-21T20:30:00.000+08:00"
+    },
+    {
+      "id": "task-ielts-20261121-evening",
+      "categoryId": "cat-ielts-research",
+      "title": "英语突破: 核心词汇背写与读写巩固",
+      "completed": true,
+      "targetMinutes": 60,
+      "actualMinutes": 60,
+      "estimatedPomodoros": 2,
+      "completedPomodoros": 2,
+      "notes": "18:30-19:30 晚间高专注完成1小时英语词汇背写与读写综合训练。",
+      "createdAt": "2026-11-21T18:30:00.000+08:00",
+      "completedAt": "2026-11-21T19:30:00.000+08:00"
+    },
+    {
+      "id": "task-pol-ch8-20261121",
+      "categoryId": "cat-politics-innovation",
+      "title": "习概第八章核心理论深入研读与考点梳理",
+      "completed": true,
+      "targetMinutes": 45,
+      "actualMinutes": 90,
+      "estimatedPomodoros": 2,
+      "completedPomodoros": 3,
+      "notes": "16:00-17:30 下午高专注投入90分钟（任务二日标达成率 200%）：全面攻坚《习概》第八章核心理论考点、重大命题与知识框架。",
+      "createdAt": "2026-11-21T16:00:00.000+08:00",
+      "completedAt": "2026-11-21T17:30:00.000+08:00"
+    },
+    {
+      "id": "task-fit-20261121-shooting",
+      "categoryId": "cat-fitness-workout",
+      "title": "腿部力量后低强度投篮训练 (40分钟)",
+      "completed": true,
+      "targetMinutes": 40,
+      "actualMinutes": 40,
+      "estimatedPomodoros": 2,
+      "completedPomodoros": 2,
+      "notes": "13:00-13:40 下肢大重量后进行40分钟低强度投篮训练，在疲劳腿部状态下打磨投篮稳定度。",
+      "createdAt": "2026-11-21T13:00:00.000+08:00",
+      "completedAt": "2026-11-21T13:40:00.000+08:00"
+    },
+    {
+      "id": "task-fit-20261121-lower",
+      "categoryId": "cat-fitness-workout",
+      "title": "健身房下肢最大力量+深蹲零间歇递减组+PAP起跳+后链核心 (135分钟)",
+      "completed": true,
+      "targetMinutes": 135,
+      "actualMinutes": 135,
+      "estimatedPomodoros": 5,
+      "completedPomodoros": 5,
+      "notes": "10:30起热身(靠墙静蹲4×30s+西班牙蹲4×30s) + 深蹲60/80/100×5,120×3,130×2,140×1+零间歇递减组130×2→120×3→110×4→100×4→80×4→60×5(总4040kg) + 组间20kg杠铃跳3×10+徒手跳2×10 + 保加利亚蹲4×30kg×5/侧 + 山羊挺身5×20kg×8 + 侧压15×8×4 + 反向挺身10×10×4 + 俄罗斯转体10×10×4。",
+      "createdAt": "2026-11-21T10:30:00.000+08:00",
+      "completedAt": "2026-11-21T12:45:00.000+08:00"
+    },
     {
       "id": "task-ielts-study-20261120",
       "categoryId": "cat-ielts-research",
@@ -698,6 +789,111 @@
     }
   ],
   "timeLogs": [
+    {
+      "id": "log-20261122-pol-ch4-8-review",
+      "taskId": "task-pol-ch4-8-review-20261122",
+      "taskTitle": "任务二: 习概第四至八章系统大复盘 (120分钟)",
+      "categoryId": "cat-politics-innovation",
+      "categoryName": "任务二: 习概与双创导论",
+      "categoryColor": "#f59e0b",
+      "categoryIcon": "BookOpen",
+      "startTime": "2026-11-22T17:30:00.000+08:00",
+      "endTime": "2026-11-22T19:30:00.000+08:00",
+      "durationMinutes": 120,
+      "mode": "pomodoro",
+      "isExtra": false,
+      "notes": "17:30-19:30 傍晚纯沉浸专注120分钟（达成任务二日标 267%）：全面完成《习概》第4-8章知识点大串联复习，建立扎实的跨章节理论思维框架。"
+    },
+    {
+      "id": "log-20261122-ielts-study",
+      "taskId": "task-ielts-study-20261122",
+      "taskTitle": "任务一: 英语核心词汇与综合研学 (60分钟)",
+      "categoryId": "cat-ielts-research",
+      "categoryName": "任务一: 雅思基础突破 (200词背写 + 40句读写)",
+      "categoryColor": "#8b5cf6",
+      "categoryIcon": "GraduationCap",
+      "startTime": "2026-11-22T16:00:00.000+08:00",
+      "endTime": "2026-11-22T17:00:00.000+08:00",
+      "durationMinutes": 60,
+      "mode": "pomodoro",
+      "isExtra": false,
+      "notes": "16:00-17:00 下午专注60分钟：系统推进英语学习，完成核心词汇背诵与长难句理解，保持每日英语语感高频在线。"
+    },
+    {
+      "id": "log-20261121-research-study",
+      "taskId": "task-research-study-20261121",
+      "taskTitle": "任务四: 科研文献精读与方法研学 (60分钟)",
+      "categoryId": "cat-research-advance",
+      "categoryName": "任务四: 科研推进 (文献研读与论文写作)",
+      "categoryColor": "#ec4899",
+      "categoryIcon": "FileText",
+      "startTime": "2026-11-21T19:30:00.000+08:00",
+      "endTime": "2026-11-21T20:30:00.000+08:00",
+      "durationMinutes": 60,
+      "mode": "pomodoro",
+      "isExtra": false,
+      "notes": "19:30-20:30 晚间专注60分钟（紧跟英语时段连贯推进）：深入研读科研专业文献，提炼研究方法论与学术前沿知识。"
+    },
+    {
+      "id": "log-20261121-ielts-study",
+      "taskId": "task-ielts-20261121-evening",
+      "taskTitle": "任务一: 英语基础读写与词汇巩固 (60分钟)",
+      "categoryId": "cat-ielts-research",
+      "categoryName": "任务一: 雅思基础突破 (200词背写 + 40句读写)",
+      "categoryColor": "#8b5cf6",
+      "categoryIcon": "GraduationCap",
+      "startTime": "2026-11-21T18:30:00.000+08:00",
+      "endTime": "2026-11-21T19:30:00.000+08:00",
+      "durationMinutes": 60,
+      "mode": "pomodoro",
+      "isExtra": false,
+      "notes": "18:30-19:30 晚间高专注投入60分钟：推进英语学习，落实核心词汇背写与英语句型精读。"
+    },
+    {
+      "id": "log-20261121-pol-ch8",
+      "taskId": "task-pol-ch8-20261121",
+      "taskTitle": "任务二: 习概第八章深入学习 (90分钟)",
+      "categoryId": "cat-politics-innovation",
+      "categoryName": "任务二: 习概与双创导论",
+      "categoryColor": "#f59e0b",
+      "categoryIcon": "BookOpen",
+      "startTime": "2026-11-21T16:00:00.000+08:00",
+      "endTime": "2026-11-21T17:30:00.000+08:00",
+      "durationMinutes": 90,
+      "mode": "pomodoro",
+      "isExtra": false,
+      "notes": "16:00-17:30 下午高专注投入90分钟（达成任务二日标 200%）：系统完成《习概》第八章核心考点研学与理论框架梳理。"
+    },
+    {
+      "id": "log-20261121-shooting",
+      "taskId": "task-fit-20261121-shooting",
+      "taskTitle": "腿部力量后低强度投篮训练 (40分钟)",
+      "categoryId": "cat-fitness-workout",
+      "categoryName": "周末专项: 健身房高强度锻炼",
+      "categoryColor": "#10b981",
+      "categoryIcon": "Dumbbell",
+      "startTime": "2026-11-21T13:00:00.000+08:00",
+      "endTime": "2026-11-21T13:40:00.000+08:00",
+      "durationMinutes": 40,
+      "mode": "extra",
+      "isExtra": true,
+      "notes": "13:00-13:40 在大重量下肢训练后紧接40分钟低强度投篮校准。"
+    },
+    {
+      "id": "log-20261121-gym-lower",
+      "taskId": "task-fit-20261121-lower",
+      "taskTitle": "健身房下肢大重量深蹲递减组+PAP起跳+后链核心 (135分钟)",
+      "categoryId": "cat-fitness-workout",
+      "categoryName": "周末专项: 健身房高强度锻炼",
+      "categoryColor": "#10b981",
+      "categoryIcon": "Dumbbell",
+      "startTime": "2026-11-21T10:30:00.000+08:00",
+      "endTime": "2026-11-21T12:45:00.000+08:00",
+      "durationMinutes": 135,
+      "mode": "pomodoro",
+      "isExtra": false,
+      "notes": "10:30-12:45 下肢与核心重装轰炸：靠墙静蹲/西班牙蹲各4×30s + 深蹲冲140×1后接6阶零间歇递减组(总4040kg) + 组间20kg杠铃跳3×10/徒手跳2×10 + 保加利亚蹲4×30kg×5 + 山羊挺身5×20kg×8 + 核心3件套各4组。"
+    },
     {
       "id": "log-20261120-ielts-study",
       "taskId": "task-ielts-study-20261120",
@@ -1936,12 +2132,35 @@
     "2026-11-20": {
       "date": "2026-11-20",
       "score": 5,
-      "mood": "🎉 科研重磅突破 · 论文成功投稿 + 习概第七章通关 + 英语精进",
-      "summary": "周五下午至傍晚学术自习捷报频传！14:30-16:00 攻坚90分钟顺利完成科研文献材料终审与系统提交，已成功正式投稿（达成极具分量的科研关键里程碑！）；16:00-17:00 紧接着投入60分钟深入攻克习概第七章理论与练习题巩固（任务二达成率133%）；17:30-18:00 扎实完成30分钟英语词汇与语感研习。全天累计纯沉浸学术专注180分钟（3.0小时），科研与政治双双迎来高光突破！",
+      "mood": "🛋️ 休息日教科书饮食 · 180g高蛋白控碳",
+      "summary": "周五休息日休整：早间4蛋白1蛋黄+纯瘦白吉馍+无糖豆浆，午间图一白切鸡拼盘饭(+2鱼油)，晚间17:00图二2鸡腿2鸭腿全去皮+白菜+仅吃一半米饭(+5g肌酸)。全天蛋白高达~180g（1.89g/kg），脂肪仅~64g，总热量~1,905kcal，在完全休息日稳守~400-500kcal纯净减脂保肌缺口！",
       "achievements": [
-        "任务四 (重大科研里程碑): 14:30-16:00 科研文献终审与正式投稿完成，已成功投稿！(90m)",
-        "任务二 (习概理论与习题实战): 16:00-17:00 习概第七章深入研学与配套练习题自测 (60m，达成率 133%)",
-        "任务一 (英语语感与词汇学习): 17:30-18:00 傍晚英语核心词汇与学术语料精读 (30m)"
+        "休息日精准控碳: 晚餐全去皮4禽腿并主动只吃一半米饭，全天热量锁在~1,905kcal",
+        "蛋白密度拉满: 零蛋白粉下全天吃到~180g优质蛋白（1.89 g/kg，供能比达38%）"
+      ]
+    },
+    "2026-11-21": {
+      "date": "2026-11-21",
+      "score": 5,
+      "mood": "🔥 文武双全 · 下肢重装+习概八章+英语科研三科大捷",
+      "summary": "周六高能全天：上午10:30-12:45完成下肢重装深蹲140kg+零间歇递减组(4,040kg)+50次PAP跳+保加利亚蹲+后链核心(135m)，13:00紧接40m投篮。下午16:00-17:30高质攻克习概第八章核心理论(90m，达成率200%)；晚间18:30-19:30完成60m英语学习；19:30-20:30紧接着投入60m科研文献精读！全天有效运动175m+纯学术专注210m（合计385分钟/6.4小时），减脂增肌与学业双线大丰收！",
+      "achievements": [
+        "下肢极限突破: 10:30-12:45 深蹲140kg+零间歇递减(4,040kg)+50次PAP跳+保加利亚蹲+后链核心 (135m)",
+        "疲劳投篮校准: 13:00-13:40 下肢轰炸后完成40分钟低强度投篮",
+        "任务二 (习概第八章系统研学): 16:00-17:30 完成习概第八章核心理论研习与框架梳理 (90m，达成率 200%)",
+        "任务一 (英语专注突破): 18:30-19:30 晚间英语基础读写与词汇攻坚 (60m)",
+        "任务四 (科研文献研学): 19:30-20:30 科研文献深度精读与方法学研习 (60m)",
+        "蛋白天花板: 全天吃到~242g优质蛋白（2.55 g/kg）且晚餐控制在2/5米饭"
+      ]
+    },
+    "2026-11-22": {
+      "date": "2026-11-22",
+      "score": 5,
+      "mood": "📖 理论大贯通 · 习概五章大串联 + 英语稳步推进",
+      "summary": "周日下午至傍晚专注效率极高！16:00-17:00 投入60分钟稳健完成英语综合研习；17:30-19:30 紧接着沉浸专注2小时（120分钟）完成《习概》第4章到第8章的大体量横向系统复盘，打通多章节核心考点脉络（任务二达成率高达267%）！全天纯学术专注达180分钟（3.0小时），周末两日自习总产出极为扎实！",
+      "achievements": [
+        "任务二 (习概五章宏观大串联): 17:30-19:30 系统复盘第4-8章核心考点与理论架构 (120m，达成率 267%)",
+        "任务一 (英语基础突破): 16:00-17:00 英语词汇与学术读写综合学习 (60m)"
       ]
     }
   },
@@ -2936,6 +3155,128 @@
       },
       "createdAt": "2026-11-19T13:06:18.596Z",
       "updatedAt": "2026-11-19T13:10:08.835Z"
+    },
+    "2026-11-20": {
+      "id": "ath-2026-11-20",
+      "date": "2026-11-20",
+      "basketball": {
+        "modules": [
+          "恢复"
+        ],
+        "durationMinutes": 0,
+        "rpe": 2,
+        "highIntensityJumps": 0,
+        "decelerations": "今日完全休息日（零运动负荷），充分消化昨日160分钟羽毛球+篮球双场跑动后的下肢肌腱负荷",
+        "contactIntensity": "low",
+        "notes": "昨日双场160m后今日及时安排完整休息，下肢恢复节奏极佳"
+      },
+      "strength": {
+        "phase": "恢复期",
+        "primaryLifts": "今日完全休息日（无力量房与球场负荷）",
+        "plyometricsVolume": "0",
+        "durationMinutes": 0,
+        "notes": "全天静养恢复，高蛋白支撑肌纤维超量合成"
+      },
+      "biomechanics": {
+        "ankleFootFeel": "optimal",
+        "patellarTendonPain": 1,
+        "hipSpineMobility": "optimal",
+        "ankleFootNotes": "足踝经今日完全休息恢复充分",
+        "patellarTendonNotes": "髌腱负荷清零，状态回满",
+        "hipSpineNotes": "维持良好体态，准备明日高质量开练"
+      },
+      "nutrition": {
+        "periWorkoutSupplements": "早：4蛋白1蛋黄+纯瘦白吉馍+无糖豆浆 | 午(图一)：白切鸡拼烧鸭/鸡+生菜+米饭+2鱼油 | 17:00(图二全去皮+半份碳水)：2鸡腿+2鸭腿+白菜+半份米饭 + 5g肌酸",
+        "proteinGPerKg": 1.89,
+        "carbEnergyFeel": "optimal",
+        "urineColorLevel": 2,
+        "waterIntakeMl": 2500,
+        "supplementsDetail": "2粒高品质鱼油（午间）+ 5g一水肌酸（17:00晚间），休息日不断档",
+        "mealsDetail": "早：4蛋白1蛋黄+纯瘦白吉馍+无糖豆浆（~51g蛋白, ~50g碳水, ~18g脂肪, ~575kcal）；午(图一)：白切鸡拼少许烧肉+白灼生菜+1碗米饭+2鱼油（~60g蛋白, ~66g碳水, ~23g脂肪, ~715kcal）；17:00(图二全去皮+只吃一半碳水+5g肌酸)：2去皮鸡腿(~27g蛋白)+2去皮鸭腿(~38g蛋白，避开碗底黄油)+白菜+半份香米饭(~26g碳水)（~69g蛋白, ~31g碳水, ~23g脂肪, ~615kcal）。今日全天实锤汇总：~180g蛋白(1.89g/kg)、~147g碳水、~64g脂肪、总热量~1,905kcal，对比休息日TDEE(~2,300-2,400kcal)形成~400-500kcal纯净减脂缺口！"
+      },
+      "recovery": {
+        "bedTime": "23:30",
+        "wakeTime": "07:30",
+        "sleepDurationHours": 8,
+        "deepSleepPerception": "good",
+        "restingHeartRate": 57,
+        "morningReadinessScore": 9,
+        "cnsExcitement": "normal",
+        "sleepNotes": "休息日零疲劳叠加180g蛋白，明早Readiness将处于极佳水平"
+      },
+      "diagnosis": {
+        "generatedAt": "2026-11-20T13:24:15.075Z",
+        "overallScore": 95,
+        "statusTag": "休息日完美控碳 · 180g高蛋白×450kcal黄金减脂",
+        "cnsAcwrEvaluation": "• 恢复节奏评估：昨日160分钟高消耗双场运动后，今日果断执行完全休息日，下肢肌腱与CNS获得满血恢复，极大降低过劳风险。",
+        "kineticChainTransfer": "• 明日战备：180g蛋白+持续5g肌酸已将体内氨基酸与磷酸肌酸池保持在峰值，明天适合直接进健身房上强度。",
+        "prehabProtocol": "• 晚间放松：保持充足饮水，睡前可做5分钟髋屈肌与胸椎伸展。",
+        "biochemNutritionPrescription": "【休息日教科书级营养答卷】：在零运动消耗的休息日里，总热量精准控在~1,905kcal（形成~400-500kcal最稳妥的净减脂缺口），其中蛋白质高达~180g（1.89g/kg，蛋白供能比高达38%！），脂肪仅64g，碳水适度收紧至~147g，完美消化并修复昨日双场肌肉微损伤。今晚21:23已可完美收工，不饿无需再进食，补水早睡即可！",
+        "nextDayPrescription": "1. 【明日开练】：明天身体准备度极高，可安排高质量健身房大重量力量或篮球专项对抗。\n2. 【持续保持】：这种“休息日控碳+全去皮高蛋白”的饮食模板请直接复制固化！"
+      },
+      "createdAt": "2026-11-20T13:24:15.075Z",
+      "updatedAt": "2026-11-20T13:24:15.075Z"
+    },
+    "2026-11-21": {
+      "id": "ath-2026-11-21",
+      "date": "2026-11-21",
+      "basketball": {
+        "modules": [
+          "投篮专项"
+        ],
+        "durationMinutes": 40,
+        "rpe": 8,
+        "highIntensityJumps": 50,
+        "decelerations": "深蹲组间穿插20kg杠铃连续起跳3×10 + 徒手连续起跳2×10（共50次PAP爆发力跳），13:00补40分钟疲劳腿投篮训练",
+        "contactIntensity": "low",
+        "notes": "大重量深蹲后立刻转场投篮40分钟，高效打磨第四节疲惫腿部的投篮出手稳定性"
+      },
+      "strength": {
+        "phase": "最大力量",
+        "primaryLifts": "靠墙静蹲4×30s + 西班牙蹲4×30s + 深蹲(60/80/100×5,120×3,130×2,140×1 + 零间歇六阶递减组130×2→120×3→110×4→100×4→80×4→60×5, 总容量4040kg) + 保加利亚蹲4×30kg(15kg×2)×5/侧 + 山羊挺身5×20kg×8 + 侧压15×8×4 + 反向挺身10×10×4 + 俄罗斯转体10×10×4",
+        "plyometricsVolume": "20kg杠铃连续起跳3×10 + 徒手连续起跳2×10 (共50次PAP对比跳)",
+        "durationMinutes": 135,
+        "notes": "下肢机械张力(140kg) + PAP爆发力转化 + 零间歇六阶代谢压榨(4040kg)全面拉满"
+      },
+      "biomechanics": {
+        "ankleFootFeel": "optimal",
+        "patellarTendonPain": 1,
+        "hipSpineMobility": "optimal",
+        "ankleFootNotes": "50次连续起跳与保加利亚蹲落地缓冲良好",
+        "patellarTendonNotes": "深蹲前严格执行靠墙静蹲4×30s+西班牙蹲4×30s离心/等长预激，髌腱保护意识满分",
+        "hipSpineNotes": "深蹲零间歇递减组对腰椎与竖脊肌疲劳累积极大，48小时内严密监控下背紧绷度"
+      },
+      "nutrition": {
+        "periWorkoutSupplements": "09:50: 4蛋白1蛋黄+纯瘦白吉馍 | 14:00(图一): 白切鸡+烧鸭+生菜+大碗米饭+无糖可乐 + 2鱼油 + 5g肌酸 | 18:20(图二): 全去皮2鸡腿+2鸭腿+卤鸡排+卤蛋+酸豆角白菜+2/5米饭",
+        "proteinGPerKg": 2.55,
+        "carbEnergyFeel": "optimal",
+        "urineColorLevel": 2,
+        "waterIntakeMl": 3200,
+        "supplementsDetail": "2粒高品质鱼油 + 5g一水肌酸（14:00练后随碳水大餐吸收）",
+        "mealsDetail": "09:50(练前)：4蛋白1蛋黄+纯瘦白吉馍（~41g蛋白, ~47g碳水, ~14g脂肪, ~485kcal）；14:00(图一练后+无糖可乐+2鱼油+5g肌酸)：整盘白切鸡+整盘烧鸭+白灼生菜+大满碗米饭（~100g蛋白, ~113g碳水, ~58g脂肪, ~1,380kcal）；18:20(图二全去皮+只吃2/5碳水)：2去皮鸡腿(~27g蛋白)+2去皮鸭腿(~37g蛋白)+1块扁平卤鸡排(~28g蛋白)+1颗卤蛋(~6.5g蛋白)+酸豆角白菜+2/5香米饭(~22g碳水)（~101g蛋白, ~27g碳水, ~32g脂肪, ~815kcal）。今日全天实锤汇总：~242g蛋白(2.55g/kg)、~187g碳水、~104g脂肪、总热量~2,680kcal，对比135m下肢巨量+40m投篮TDEE(~3,200-3,350kcal)形成~520-670kcal黄金减脂增肌窗口！"
+      },
+      "recovery": {
+        "bedTime": "23:00",
+        "wakeTime": "07:30",
+        "sleepDurationHours": 8.5,
+        "deepSleepPerception": "good",
+        "restingHeartRate": 58,
+        "morningReadinessScore": 8,
+        "cnsExcitement": "high",
+        "sleepNotes": "下肢4040kg深蹲递减+50次跳对CNS与肌肉破坏极大，今晚务必保证8.5小时睡眠+充分补水"
+      },
+      "diagnosis": {
+        "generatedAt": "2026-11-21T10:51:39.849Z",
+        "overallScore": 94,
+        "statusTag": "4,040kg深蹲PAP巅峰 · 242g蛋白精准转化日",
+        "cnsAcwrEvaluation": "• 训练结构亮点：先用靠墙静蹲+西班牙蹲激活髌腱镇痛，随后140kg冲顶并穿插50次杠铃/徒手跳打造典型“法国对比法/PAP”爆发力转化，尾段接130→60kg零间歇六阶递减组将下肢总容量轰至4,040kg！\n• 安全边界提示：深蹲做高重量零间歇递减组会极大消耗竖脊肌稳定性，务必保证最后60-80kg时核心仍然绷紧，且赛前72小时内禁止使用下肢极限递减组。",
+        "kineticChainTransfer": "• 球场垂直爆发+第四节耐力：PAP跳直接提升2号位垂直起跳RFD，练后紧接40分钟投篮完美固化疲劳腿部出手机制。",
+        "prehabProtocol": "• 今晚强制恢复：泡沫轴滚压股四头肌、臀大肌、竖脊肌与腘绳肌各2分钟，洗热水澡加速下肢代谢废物清除。",
+        "biochemNutritionPrescription": "今天全天饮食同样封神：14:00练后白切鸡+烧鸭+大碗米饭（~1,380kcal）迅速回补糖原；18:20果断把鸡鸭腿全去皮、配上极瘦的卤鸡排和卤蛋并只吃2/5米饭，全天狂吃~242g蛋白（2.55g/kg）且总热量精准收在~2,680kcal，在3,250kcal高消耗日依然稳保~520-670kcal干净减脂缺口！",
+        "nextDayPrescription": "1. 【明日安排（11-22）】：下肢必须彻底休息（迎战未来48小时严重下肢DOMS），可完全休息或只做轻度上肢拉伸/投篮。\n2. 【补水补电解质】：今晚多喝600-800ml白开水防夜间腿抽筋与明天卤味水肿。"
+      },
+      "createdAt": "2026-11-21T10:51:39.849Z",
+      "updatedAt": "2026-11-21T10:51:39.849Z"
     }
   },
   "deletedLogIds": [
