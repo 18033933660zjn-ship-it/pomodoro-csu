@@ -1,6 +1,6 @@
 {
   "version": "2.0.0",
-  "exportTime": "2026-11-23T14:15:57.878Z",
+  "exportTime": "2026-11-24T10:26:50.973Z",
   "categories": [
     {
       "id": "cat-ielts-research",
@@ -64,6 +64,45 @@
     }
   ],
   "tasks": [
+    {
+      "id": "task-party-autobiography-20261124",
+      "categoryId": "cat-homework-custom",
+      "title": "日常研习: 发展对象个人自传撰写与工整抄写",
+      "completed": true,
+      "targetMinutes": 90,
+      "actualMinutes": 90,
+      "estimatedPomodoros": 3,
+      "completedPomodoros": 3,
+      "notes": "14:00-15:30 下午高专注投入90分钟（1.5小时）：全神贯注完成发展对象自传的工整抄写与思想回顾，全面端正思想政治态度，圆满达成发展对象重要材料归档要求。",
+      "createdAt": "2026-11-24T14:00:00.000+08:00",
+      "completedAt": "2026-11-24T15:30:00.000+08:00"
+    },
+    {
+      "id": "task-major-homework-20261123",
+      "categoryId": "cat-major-courses",
+      "title": "任务三: 体育科学研究方法课内作业攻坚",
+      "completed": true,
+      "targetMinutes": 60,
+      "actualMinutes": 60,
+      "estimatedPomodoros": 2,
+      "completedPomodoros": 2,
+      "notes": "19:00-20:00 晚间高专注完成1小时：扎实推进《体育科学研究方法》课内专业作业，结合方法学文献与研究设计规范完成作业撰写。",
+      "createdAt": "2026-11-23T19:00:00.000+08:00",
+      "completedAt": "2026-11-23T20:00:00.000+08:00"
+    },
+    {
+      "id": "task-fit-20261124-plyo-run",
+      "categoryId": "cat-fitness-workout",
+      "title": "户外有氧与弹跳专项: 4000m变速跑(21m) + 蛙跳/直腿跳(20m)",
+      "completed": true,
+      "targetMinutes": 41,
+      "actualMinutes": 41,
+      "estimatedPomodoros": 2,
+      "completedPomodoros": 2,
+      "notes": "16:00进行户外有氧结合弹跳训练：4000米变速跑21分钟 + 20分钟蛙跳及直腿左右向前跳；早4蛋白1蛋黄鲜肉包，午食堂四格餐+2鱼油+5g肌酸，晚白切鸡生菜米饭+餐后1根香蕉。",
+      "createdAt": "2026-11-24T16:00:00.000+08:00",
+      "completedAt": "2026-11-24T16:41:00.000+08:00"
+    },
     {
       "id": "task-ielts-reading-20261123",
       "categoryId": "cat-ielts-research",
@@ -855,6 +894,36 @@
   ],
   "timeLogs": [
     {
+      "id": "log-20261124-running-plyo",
+      "taskId": "task-fit-20261124-plyo-run",
+      "taskTitle": "户外有氧与弹跳: 4000m变速跑(21m) + 蛙跳/直腿跳(20m)",
+      "categoryId": "cat-fitness-workout",
+      "categoryName": "周末专项: 健身房高强度锻炼",
+      "categoryColor": "#10b981",
+      "categoryIcon": "Dumbbell",
+      "startTime": "2026-11-24T16:00:00.000+08:00",
+      "endTime": "2026-11-24T16:41:00.000+08:00",
+      "durationMinutes": 41,
+      "mode": "extra",
+      "isExtra": true,
+      "notes": "16:00 4000米变速跑(21分钟，配速约5:15/km) + 20分钟蛙跳及直腿左右向前跳（估算运动消耗~600-700kcal）。"
+    },
+    {
+      "id": "log-20261124-party-autobiography",
+      "taskId": "task-party-autobiography-20261124",
+      "taskTitle": "日常研习: 发展对象自传抄写完成 (90分钟)",
+      "categoryId": "cat-homework-custom",
+      "categoryName": "日常作业与自主研习",
+      "categoryColor": "#06b6d4",
+      "categoryIcon": "BookMarked",
+      "startTime": "2026-11-24T14:00:00.000+08:00",
+      "endTime": "2026-11-24T15:30:00.000+08:00",
+      "durationMinutes": 90,
+      "mode": "pomodoro",
+      "isExtra": false,
+      "notes": "14:00-15:30 下午专注90分钟：认真工整完成发展对象自传抄写与重要思想汇报材料整理。"
+    },
+    {
       "id": "log-20261123-ielts-reading",
       "taskId": "task-ielts-reading-20261123",
       "taskTitle": "任务一: 英文文章精读与学术阅读 (40分钟)",
@@ -868,6 +937,21 @@
       "mode": "pomodoro",
       "isExtra": false,
       "notes": "21:30-22:10 晚间专注40分钟：研读英文原版文章，提升学术词汇理解、长句语法分析与纯正英语语感。"
+    },
+    {
+      "id": "log-20261123-major-homework",
+      "taskId": "task-major-homework-20261123",
+      "taskTitle": "任务三: 体育科研方法课内作业 (60分钟)",
+      "categoryId": "cat-major-courses",
+      "categoryName": "任务三: 体育专业课三科",
+      "categoryColor": "#3b82f6",
+      "categoryIcon": "Code",
+      "startTime": "2026-11-23T19:00:00.000+08:00",
+      "endTime": "2026-11-23T20:00:00.000+08:00",
+      "durationMinutes": 60,
+      "mode": "pomodoro",
+      "isExtra": false,
+      "notes": "19:00-20:00 晚间专注60分钟：高效完成《体育科研方法》课内专业作业，梳理研究设计与科研方法学考点。"
     },
     {
       "id": "log-20261123-pol-ch9-study",
@@ -2309,12 +2393,26 @@
     "2026-11-23": {
       "date": "2026-11-23",
       "score": 5,
-      "mood": "🔥 周一开门红 · 习概第九章通关 + 科研英语双线精进",
-      "summary": "周一学业推进节奏紧凑高效！下午16:30-17:00专注30分钟深读科研学术文献；紧接着17:00-18:30沉浸专注90分钟强势攻克《习概》第九章全新理论体系（任务二日标达成率200%）；晚间21:30-22:10投入40分钟精读英文原版文章，长难句解构与阅读语感扎实提升！全天纯学术专注达160分钟（2小时40分钟），新一周开局稳健充实！",
+      "mood": "🔥 四线大满贯 · 习概九章+体育科研方法+英语+159g蛋白闭环",
+      "summary": "周一文武全面开花！不仅在饮食上严守16/8两餐节律，摄入159g高蛋白(1.67g/kg)、总热量仅1,720kcal（净减脂缺口580-680kcal）；在学术自习上更是四线全满贯：下午16:30-17:00精读科研文献(30m)，17:00-18:30强势攻克《习概》第九章全新理论(90m，达成率200%)，19:00-20:00高质量攻坚《体育科研方法》课内专业作业(60m)，晚间21:30-22:10精读英文原版文章(40m)！全天纯学术专注达220分钟（3小时40分钟），任务一二三四全面丰收！",
       "achievements": [
+        "任务三 (专业课作业攻坚): 19:00-20:00 高质量完成《体育科研方法》课内专业作业 (60m)",
         "任务二 (习概第九章全新理论攻坚): 17:00-18:30 深入研读第九章核心理论与考点梳理 (90m，达成率 200%)",
         "任务一 (英语文章沉浸精读): 21:30-22:10 原版英文文章长难句精读与学术语感训练 (40m)",
-        "任务四 (科研前沿文献精读): 16:30-17:00 深入研读专业文献与前沿学术方法论 (30m)"
+        "任务四 (科研前沿文献精读): 16:30-17:00 深入研读专业文献与前沿学术方法论 (30m)",
+        "休息日精准控卡: 两餐总热量仅~1,720kcal且保持~580-680kcal净缺口",
+        "高蛋白保肌执行: 11:00四蛋白去黄 + 17:00全去皮四禽腿加全蛋，全天蛋白~159g(1.67g/kg)"
+      ]
+    },
+    "2026-11-24": {
+      "date": "2026-11-24",
+      "score": 5,
+      "mood": "✍️🏃 文武并进 · 自传抄写+4km变速跑与弹跳+735kcal减脂",
+      "summary": "周二学业政工与户外体能双线丰收！下午14:00-15:30高专注完成90分钟发展对象个人自传工整抄写与材料归档；紧接着16:00-16:41完成4000米变速跑(21m)+20分钟蛙跳与直腿弹性跳(41m)；全天三餐自律搭配（午食堂优选荤素+晚白切鸡烧鸭+餐后香蕉），全天摄入~151g蛋白(1.59g/kg)、总热量~2,240kcal，稳斩~660-810kcal纯净减脂缺口！",
+      "achievements": [
+        "日常研习 (发展对象重要材料完结): 14:00-15:30 纯专注工整抄写完成发展对象个人自传 (90m)",
+        "户外体能与弹跳突破: 16:00-16:41 4000米变速跑(21m) + 蛙跳与直腿弹性跳(20m)",
+        "饮食与减脂缺口: 全天~151g优质蛋白(1.59g/kg)，三餐健康搭配，稳守~660-810kcal黄金减脂缺口"
       ]
     }
   },
@@ -3492,6 +3590,128 @@
       },
       "createdAt": "2026-11-23T04:08:34.589Z",
       "updatedAt": "2026-11-23T04:23:27.151Z"
+    },
+    "2026-11-23": {
+      "id": "ath-2026-11-23",
+      "date": "2026-11-23",
+      "basketball": {
+        "modules": [
+          "恢复"
+        ],
+        "durationMinutes": 0,
+        "rpe": 2,
+        "highIntensityJumps": 0,
+        "decelerations": "今日完全休息日（仅日常上下学步行），充分消化周末下肢4,040kg+上肢3,350kg双大日后的肌纤维微损伤与DOMS",
+        "contactIntensity": "low",
+        "notes": "周末两天极限轰炸后及时切换休息日，关节与CNS处于高效修复通道"
+      },
+      "strength": {
+        "phase": "恢复期",
+        "primaryLifts": "今日休息日（无力量房与球场负荷）",
+        "plyometricsVolume": "0",
+        "durationMinutes": 0,
+        "notes": "休息日高蛋白低脂饮食保障肌肉超量合成"
+      },
+      "biomechanics": {
+        "ankleFootFeel": "optimal",
+        "patellarTendonPain": 1,
+        "hipSpineMobility": "optimal",
+        "ankleFootNotes": "足踝无额外冲击，步行循环良好",
+        "patellarTendonNotes": "髌腱经今日休整回血迅速",
+        "hipSpineNotes": "日常上下学步行有助于缓解周末下肢训练后的髋部僵硬"
+      },
+      "nutrition": {
+        "periWorkoutSupplements": "11:00(图一早午饭): 白切鸡烧肉+生菜+米饭+4蛋白(去黄) + 2鱼油 + 5g肌酸 | 17:00(图二晚饭): 全去皮2鸡腿2鸭腿+香肠+1全卤蛋+白菜酱菜+4/5米饭(剩1/5)",
+        "proteinGPerKg": 1.67,
+        "carbEnergyFeel": "optimal",
+        "urineColorLevel": 2,
+        "waterIntakeMl": 2400,
+        "supplementsDetail": "2粒高品质鱼油 + 5g一水肌酸（11:00随早午饭摄入，休息日不断档）",
+        "mealsDetail": "11:00早午饭(图一+2鱼油+5g肌酸)：白切鸡拼少许烧肉(~56g蛋白)+4个水煮蛋白(~14g蛋白,去蛋黄)+白灼生菜+1碗米饭（~77g蛋白, ~70g碳水, ~26g脂肪, ~815kcal）；17:00晚饭(图二全去皮+吃1个全蛋+剩1/5米饭)：2去皮鸡腿(~27g蛋白)+2去皮鸭腿(~37g蛋白)+1根香肠(~6g蛋白)+1颗全卤蛋(~6.5g蛋白)+白菜酱菜+4/5香米饭(~44g碳水)（~82g蛋白, ~55g碳水, ~39g脂肪, ~905kcal）。全天两餐实锤汇总：~159g蛋白(1.67g/kg)、~125g碳水、~65g脂肪、总热量~1,720kcal，对比休息日TDEE(~2,300-2,400kcal)稳斩~580-680kcal纯净减脂缺口！"
+      },
+      "recovery": {
+        "bedTime": "23:00",
+        "wakeTime": "07:30",
+        "sleepDurationHours": 8.5,
+        "deepSleepPerception": "good",
+        "restingHeartRate": 57,
+        "morningReadinessScore": 8,
+        "cnsExcitement": "normal",
+        "sleepNotes": "17:00完成最后一餐，晚间保持纯净空腹窗口+8小时以上深度睡眠"
+      },
+      "diagnosis": {
+        "generatedAt": "2026-11-23T14:18:26.932Z",
+        "overallScore": 93,
+        "statusTag": "休息日16/8节律 · 159g蛋白×630kcal高效减脂",
+        "cnsAcwrEvaluation": "• 恢复节奏评估：周末连续两天总计325分钟（下肢4,040kg+上肢3,350kg）高强度刺激后，今日果断执行完全休息日，给肌纤维超量合成与DOMS消退留足空间。",
+        "kineticChainTransfer": "• 明日战备：今日蛋白稳居1.67g/kg且肌酸不断档，明早下肢酸痛若明显减轻，即可安排球场有氧或恢复性训练。",
+        "prehabProtocol": "• 睡前放松：可简单拉伸股四头肌与胸肌各1-2分钟缓解周末DOMS。",
+        "biochemNutritionPrescription": "今天在仅吃两顿正餐的休息日里交出了极高水准的成绩单：11:00吃足蛋白与碳水并补充鱼油肌酸，17:00全去皮4禽腿+全卤蛋并刻意留剩1/5米饭，全天仅~1,720kcal却塞进了~159g蛋白（1.67g/kg，蛋白供能比高达37%！）与仅65g脂肪，稳稳拿下~580-680kcal纯净减脂缺口！现在22:17可直接喝水准备休息，明早体重看涨概率极低、大概率刷新低！",
+        "nextDayPrescription": "1. 【明日安排】：根据明早腿部DOMS情况决定是否恢复球场有氧或继续休整。\n2. 【晚间提示】：今夜不用再吃任何东西，喝足白开水睡个好觉。"
+      },
+      "createdAt": "2026-11-23T14:18:26.932Z",
+      "updatedAt": "2026-11-23T14:18:26.932Z"
+    },
+    "2026-11-24": {
+      "id": "ath-2026-11-24",
+      "date": "2026-11-24",
+      "basketball": {
+        "modules": [
+          "体能拉练"
+        ],
+        "durationMinutes": 41,
+        "rpe": 8,
+        "highIntensityJumps": 120,
+        "decelerations": "16:00 户外4000米变速跑(21m) + 20分钟蛙跳及直腿左右向前跳（高地面反作用力弹性跳+深蹲跳冲击）",
+        "contactIntensity": "low",
+        "notes": "95kg体重完成21分钟4km变速跑体能极强，但跑后接20m蛙跳+直腿跳对跟腱与髌腱冲击负荷偏大"
+      },
+      "strength": {
+        "phase": "爆发力转化",
+        "primaryLifts": "户外有氧+超等长弹跳：4000米变速跑(21m) + 蛙跳与直腿左右向前跳(20m)",
+        "plyometricsVolume": "20分钟连续蛙跳及直腿反应跳（跟腱/髌腱高强度牵张-缩短周期负荷）",
+        "durationMinutes": 41,
+        "notes": "建议未来把弹跳训练放到跑步之前（CNS新鲜时），并将蛙跳替换为更护膝的跳箱/栏架跳"
+      },
+      "biomechanics": {
+        "ankleFootFeel": "normal",
+        "patellarTendonPain": 2,
+        "hipSpineMobility": "optimal",
+        "ankleFootNotes": "20分钟直腿左右向前跳对跟腱与比目鱼肌负荷集中，今晚务必拉伸小腿与滚压足底",
+        "patellarTendonNotes": "95kg在4km跑疲劳后做蛙跳对髌腱剪切力较大，明早留意膝下晨僵情况",
+        "hipSpineNotes": "变速跑后髋关节活动度良好"
+      },
+      "nutrition": {
+        "periWorkoutSupplements": "早：4蛋白1蛋黄+鲜肉包 | 午(图一)：食堂四格餐+满碗米饭 + 2鱼油 + 5g肌酸 | 晚(图二)：白切鸡拼烧肉+生菜+满碗米饭 + 餐后1根香蕉",
+        "proteinGPerKg": 1.59,
+        "carbEnergyFeel": "optimal",
+        "urineColorLevel": 2,
+        "waterIntakeMl": 2800,
+        "supplementsDetail": "2粒高品质鱼油 + 5g一水肌酸（午间随正餐摄入）",
+        "mealsDetail": "早：4蛋白+1蛋黄+1个鲜肉包（~25g蛋白, ~35g碳水, ~12g脂肪, ~355kcal）；午(图一+2鱼油+5g肌酸)：食堂四格菜(鸡排/花菜/青菜玉米/黄焖鸡番茄蛋/青椒肉片)+大碗米饭（~55g蛋白, ~103g碳水, ~31g脂肪, ~910kcal）；晚(图二+餐后1根香蕉)：白切鸡拼烧鸭块+白灼生菜+满碗米饭+1根香蕉（~71g蛋白, ~106g碳水, ~30g脂肪, ~975kcal）。全天实锤汇总：~151g蛋白(1.59g/kg)、~244g碳水、~73g脂肪、总热量~2,240kcal，对比4km变速跑+20m弹跳日TDEE(~2,900-3,050kcal)形成~660-810kcal净减脂缺口！"
+      },
+      "recovery": {
+        "bedTime": "23:00",
+        "wakeTime": "07:30",
+        "sleepDurationHours": 8,
+        "deepSleepPerception": "good",
+        "restingHeartRate": 58,
+        "morningReadinessScore": 8,
+        "cnsExcitement": "normal",
+        "sleepNotes": "今日下肢跟腱与髌腱冲击较大，睡前务必做好小腿/股四头肌拉伸与补水"
+      },
+      "diagnosis": {
+        "generatedAt": "2026-11-24T10:25:54.331Z",
+        "overallScore": 90,
+        "statusTag": "4km变速跑+弹跳 · 735kcal缺口但需护膝调序",
+        "cnsAcwrEvaluation": "• 有氧体能亮点：95kg体重以5:15/km均速跑完4000米变速跑，心肺与乳酸阈水平在篮球运动员中属于上游水准。\n• ⚠️ 顺序与动作警示：在4000米跑已经疲劳后再连续做20分钟蛙跳+直腿跳，极易在疲惫态下让跟腱与髌腱承受过载微损伤！",
+        "kineticChainTransfer": "• 直腿左右向前跳直接训练踝关节刚性与2号位变向第一步弹性，但注意单次触地量不宜拉满20分钟。",
+        "prehabProtocol": "• 今晚强制防护：小腿腓肠肌/比目鱼肌拉伸各2分钟 + 靠墙静蹲舒缓髌腱 + 补水600ml。",
+        "biochemNutritionPrescription": "今日午间食堂打菜选品比之前进步很多（避开了五花肉和腊肠，主打鸡排/黄焖鸡/青椒肉片+玉米蔬菜），全天~151g蛋白（1.59g/kg）、仅~73g脂肪、总热量~2,240kcal（含餐后香蕉补钾防抽筋），稳拿~660-810kcal减脂缺口！小优化：晚餐后已有香蕉补钾，今晚彻底封口不再加餐，下次晚餐米饭可略减1/3。",
+        "nextDayPrescription": "1. 【明日安排】：若明早小腿或膝下略紧，优先安排上肢力量或休息，避免连续两天高冲击跳跃。\n2. 【弹跳顺序】：下次先做10-12分钟高质量弹跳（跳箱/栏架），再去跑4000米！"
+      },
+      "createdAt": "2026-11-24T10:25:54.331Z",
+      "updatedAt": "2026-11-24T10:25:54.331Z"
     }
   },
   "deletedLogIds": [
