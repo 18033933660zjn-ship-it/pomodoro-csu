@@ -1,6 +1,6 @@
 {
   "version": "2.0.0",
-  "exportTime": "2026-11-24T10:26:50.973Z",
+  "exportTime": "2026-11-26T06:33:49.428Z",
   "categories": [
     {
       "id": "cat-ielts-research",
@@ -64,6 +64,71 @@
     }
   ],
   "tasks": [
+    {
+      "id": "task-ielts-study-20261125",
+      "categoryId": "cat-ielts-research",
+      "title": "英语突破: 核心词汇记忆与学术综合读写精进",
+      "completed": true,
+      "targetMinutes": 60,
+      "actualMinutes": 60,
+      "estimatedPomodoros": 2,
+      "completedPomodoros": 2,
+      "notes": "21:00-22:00 晚间高专注完成1小时：系统推进英语学习，落实核心学术词汇背写默写与长难句读写综合训练。",
+      "createdAt": "2026-11-25T21:00:00.000+08:00",
+      "completedAt": "2026-11-25T22:00:00.000+08:00"
+    },
+    {
+      "id": "task-pol-ch11-study-20261125",
+      "categoryId": "cat-politics-innovation",
+      "title": "习概第十一章核心理论深入研读与考点梳理",
+      "completed": true,
+      "targetMinutes": 45,
+      "actualMinutes": 90,
+      "estimatedPomodoros": 2,
+      "completedPomodoros": 3,
+      "notes": "17:00-18:30 傍晚连续沉浸专注90分钟（达成任务二日标 200%）：全面攻坚《习概》第十一章理论体系，系统梳理核心考点、重大理论论断与框架脉络。",
+      "createdAt": "2026-11-25T17:00:00.000+08:00",
+      "completedAt": "2026-11-25T18:30:00.000+08:00"
+    },
+    {
+      "id": "task-research-ai-20261125",
+      "categoryId": "cat-research-advance",
+      "title": "任务四: 科研学术文献研读与前沿AI工具赋能应用",
+      "completed": true,
+      "targetMinutes": 90,
+      "actualMinutes": 90,
+      "estimatedPomodoros": 3,
+      "completedPomodoros": 3,
+      "notes": "14:30-16:00 下午高专注投入90分钟（1.5小时）：深入学习科研专业文献研读技巧，掌握并实践前沿AI工具在学术检索、文献提炼、数据处理与研究方法学中的高效赋能应用。",
+      "createdAt": "2026-11-25T14:30:00.000+08:00",
+      "completedAt": "2026-11-25T16:00:00.000+08:00"
+    },
+    {
+      "id": "task-pol-ch10-study-20261124",
+      "categoryId": "cat-politics-innovation",
+      "title": "习概第十章深入研读与配套习题实战巩固",
+      "completed": true,
+      "targetMinutes": 45,
+      "actualMinutes": 60,
+      "estimatedPomodoros": 2,
+      "completedPomodoros": 2,
+      "notes": "18:20-19:20 晚间高专注投入60分钟（达成任务二日标 133%）：系统攻坚《习概》第十章核心理论内容，梳理重大理论论断与关键考点，并高质量完成配套练习题巩固考点记忆。",
+      "createdAt": "2026-11-24T18:20:00.000+08:00",
+      "completedAt": "2026-11-24T19:20:00.000+08:00"
+    },
+    {
+      "id": "task-fit-20261125-swim",
+      "categoryId": "cat-fitness-workout",
+      "title": "游泳课中等强度训练: 600m蛙泳 + 100m自由泳 (35分钟)",
+      "completed": true,
+      "targetMinutes": 35,
+      "actualMinutes": 35,
+      "estimatedPomodoros": 1,
+      "completedPomodoros": 1,
+      "notes": "08:00游泳课中等强度完成600米蛙泳+100米自由泳；早4蛋白1蛋黄，10:00辣椒炒肉拌面加肉炒蛋+半碗面+2鱼油+5g肌酸，17:00全去皮2鸭腿2鸡腿+卤鸡排+2/3米饭。",
+      "createdAt": "2026-11-25T08:00:00.000+08:00",
+      "completedAt": "2026-11-25T08:35:00.000+08:00"
+    },
     {
       "id": "task-party-autobiography-20261124",
       "categoryId": "cat-homework-custom",
@@ -893,6 +958,81 @@
     }
   ],
   "timeLogs": [
+    {
+      "id": "log-20261125-ielts-study",
+      "taskId": "task-ielts-study-20261125",
+      "taskTitle": "任务一: 英语核心词汇与综合读写 (60分钟)",
+      "categoryId": "cat-ielts-research",
+      "categoryName": "任务一: 雅思基础突破 (200词背写 + 40句读写)",
+      "categoryColor": "#8b5cf6",
+      "categoryIcon": "GraduationCap",
+      "startTime": "2026-11-25T21:00:00.000+08:00",
+      "endTime": "2026-11-25T22:00:00.000+08:00",
+      "durationMinutes": 60,
+      "mode": "pomodoro",
+      "isExtra": false,
+      "notes": "21:00-22:00 晚间专注60分钟：系统推进英语学习，进行核心词汇巩固与长难句型拆解，保持高效英语语感与学术表达输入。"
+    },
+    {
+      "id": "log-20261125-pol-ch11-study",
+      "taskId": "task-pol-ch11-study-20261125",
+      "taskTitle": "任务二: 习概第十一章深入研读 (90分钟)",
+      "categoryId": "cat-politics-innovation",
+      "categoryName": "任务二: 习概与双创导论",
+      "categoryColor": "#f59e0b",
+      "categoryIcon": "BookOpen",
+      "startTime": "2026-11-25T17:00:00.000+08:00",
+      "endTime": "2026-11-25T18:30:00.000+08:00",
+      "durationMinutes": 90,
+      "mode": "pomodoro",
+      "isExtra": false,
+      "notes": "17:00-18:30 傍晚专注90分钟（任务二达成率 200%）：全面研读《习概》第十一章核心理论观点，强化政治理论思维与重大考点储备。"
+    },
+    {
+      "id": "log-20261125-research-ai",
+      "taskId": "task-research-ai-20261125",
+      "taskTitle": "任务四: 科研文献与AI工具应用学习 (90分钟)",
+      "categoryId": "cat-research-advance",
+      "categoryName": "任务四: 科研推进 (文献研读与论文写作)",
+      "categoryColor": "#ec4899",
+      "categoryIcon": "FileText",
+      "startTime": "2026-11-25T14:30:00.000+08:00",
+      "endTime": "2026-11-25T16:00:00.000+08:00",
+      "durationMinutes": 90,
+      "mode": "pomodoro",
+      "isExtra": false,
+      "notes": "14:30-16:00 下午高专注投入90分钟：系统研学科研前沿方法论，深入探索并实操AI技术赋能学术科研的高效工作流。"
+    },
+    {
+      "id": "log-20261125-swim",
+      "taskId": "task-fit-20261125-swim",
+      "taskTitle": "游泳课中等强度训练: 600m蛙泳 + 100m自由泳 (35分钟)",
+      "categoryId": "cat-fitness-workout",
+      "categoryName": "周末专项: 健身房高强度锻炼",
+      "categoryColor": "#10b981",
+      "categoryIcon": "Dumbbell",
+      "startTime": "2026-11-25T08:00:00.000+08:00",
+      "endTime": "2026-11-25T08:35:00.000+08:00",
+      "durationMinutes": 35,
+      "mode": "extra",
+      "isExtra": true,
+      "notes": "08:00 游泳课中等强度600米蛙泳+100米自由泳（共700米，估算消耗~260-300kcal），有效冲刷周二跑跳下肢酸痛。"
+    },
+    {
+      "id": "log-20261124-pol-ch10-study",
+      "taskId": "task-pol-ch10-study-20261124",
+      "taskTitle": "任务二: 习概第十章研学与配套练习 (60分钟)",
+      "categoryId": "cat-politics-innovation",
+      "categoryName": "任务二: 习概与双创导论",
+      "categoryColor": "#f59e0b",
+      "categoryIcon": "BookOpen",
+      "startTime": "2026-11-24T18:20:00.000+08:00",
+      "endTime": "2026-11-24T19:20:00.000+08:00",
+      "durationMinutes": 60,
+      "mode": "pomodoro",
+      "isExtra": false,
+      "notes": "18:20-19:20 晚间专注60分钟（任务二达成率 133%）：全面深入学习《习概》第十章核心考点理论，趁热打铁高质量完成配套练习题巩固自测，做题手感与考点储备双丰收。"
+    },
     {
       "id": "log-20261124-running-plyo",
       "taskId": "task-fit-20261124-plyo-run",
@@ -2408,11 +2548,24 @@
       "date": "2026-11-24",
       "score": 5,
       "mood": "✍️🏃 文武并进 · 自传抄写+4km变速跑与弹跳+735kcal减脂",
-      "summary": "周二学业政工与户外体能双线丰收！下午14:00-15:30高专注完成90分钟发展对象个人自传工整抄写与材料归档；紧接着16:00-16:41完成4000米变速跑(21m)+20分钟蛙跳与直腿弹性跳(41m)；全天三餐自律搭配（午食堂优选荤素+晚白切鸡烧鸭+餐后香蕉），全天摄入~151g蛋白(1.59g/kg)、总热量~2,240kcal，稳斩~660-810kcal纯净减脂缺口！",
+      "summary": "周二下午16:00完成4000米变速跑(21m)结合20分钟蛙跳及直腿左右向前跳(约650kcal消耗)。全天三餐+补剂+晚餐后香蕉(晚为白切鸡拼1根烧鸡腿)合计摄入约2,205kcal、蛋白~154g（1.62g/kg）、脂肪仅68g，稳守~695-845kcal减脂缺口！",
       "achievements": [
         "日常研习 (发展对象重要材料完结): 14:00-15:30 纯专注工整抄写完成发展对象个人自传 (90m)",
         "户外体能与弹跳突破: 16:00-16:41 4000米变速跑(21m) + 蛙跳与直腿弹性跳(20m)",
         "饮食与减脂缺口: 全天~151g优质蛋白(1.59g/kg)，三餐健康搭配，稳守~660-810kcal黄金减脂缺口"
+      ]
+    },
+    "2026-11-25": {
+      "date": "2026-11-25",
+      "score": 5,
+      "mood": "🏊‍♂️📖 700m排酸+240m学术大爆发 · 习概11章与科研AI突破",
+      "summary": "周三文武双丰收！早8点游泳课完成700m蛙自排酸(35m)，全天饮食严控~1,870kcal、~153g蛋白(1.61g/kg)稳斩~690-780kcal净减脂缺口；下午至晚间学术自习全面爆发：14:30-16:00深入研学科研与AI运用(90m)，17:00-18:30沉浸攻克《习概》第11章理论(90m，达成率200%)，21:00-22:00稳健完成1小时英语综合精进！全天纯学术专注达240分钟（4.0小时），科研、政治、英语全线大捷！",
+      "achievements": [
+        "任务四 (科研与AI深度结合): 14:30-16:00 深入研学科研方法论与前沿AI学术应用 (90m)",
+        "任务二 (习概第11章全新理论攻坚): 17:00-18:30 深入研读第十一章核心理论与考点梳理 (90m，达成率 200%)",
+        "任务一 (英语基础读写与词汇攻坚): 21:00-22:00 晚间高专注英语综合学习 (60m)",
+        "早间游泳恢复: 08:00-08:35 完成 600m蛙泳 + 100m自由泳 (35m)",
+        "控脂执行升级: 晚餐省去高脂香肠保留卤鸡排，全天脂肪仅69g且蛋白达153g(1.61g/kg)"
       ]
     }
   },
@@ -3682,13 +3835,13 @@
         "hipSpineNotes": "变速跑后髋关节活动度良好"
       },
       "nutrition": {
-        "periWorkoutSupplements": "早：4蛋白1蛋黄+鲜肉包 | 午(图一)：食堂四格餐+满碗米饭 + 2鱼油 + 5g肌酸 | 晚(图二)：白切鸡拼烧肉+生菜+满碗米饭 + 餐后1根香蕉",
-        "proteinGPerKg": 1.59,
+        "periWorkoutSupplements": "早：4蛋白1蛋黄+鲜肉包 | 午(图一)：食堂四格餐+满碗米饭 + 2鱼油 + 5g肌酸 | 晚(图二)：白切鸡+1根烧鸡腿+生菜+满碗米饭 + 餐后1根香蕉",
+        "proteinGPerKg": 1.62,
         "carbEnergyFeel": "optimal",
         "urineColorLevel": 2,
         "waterIntakeMl": 2800,
         "supplementsDetail": "2粒高品质鱼油 + 5g一水肌酸（午间随正餐摄入）",
-        "mealsDetail": "早：4蛋白+1蛋黄+1个鲜肉包（~25g蛋白, ~35g碳水, ~12g脂肪, ~355kcal）；午(图一+2鱼油+5g肌酸)：食堂四格菜(鸡排/花菜/青菜玉米/黄焖鸡番茄蛋/青椒肉片)+大碗米饭（~55g蛋白, ~103g碳水, ~31g脂肪, ~910kcal）；晚(图二+餐后1根香蕉)：白切鸡拼烧鸭块+白灼生菜+满碗米饭+1根香蕉（~71g蛋白, ~106g碳水, ~30g脂肪, ~975kcal）。全天实锤汇总：~151g蛋白(1.59g/kg)、~244g碳水、~73g脂肪、总热量~2,240kcal，对比4km变速跑+20m弹跳日TDEE(~2,900-3,050kcal)形成~660-810kcal净减脂缺口！"
+        "mealsDetail": "早：4蛋白+1蛋黄+1个鲜肉包（~25g蛋白, ~35g碳水, ~12g脂肪, ~355kcal）；午(图一+2鱼油+5g肌酸)：食堂四格菜(鸡排/花菜/青菜玉米/黄焖鸡番茄蛋/青椒肉片)+大碗米饭（~55g蛋白, ~103g碳水, ~31g脂肪, ~910kcal）；晚(图二+餐后1根香蕉)：白切鸡+1根烧鸡腿+白灼生菜+满碗米饭+1根香蕉（~74g蛋白, ~106g碳水, ~25g脂肪, ~940kcal）。全天实锤汇总：~154g蛋白(1.62g/kg，稳跨1.6g/kg保肌线)、~244g碳水、~68g脂肪、总热量~2,205kcal，对比4km变速跑+20m弹跳日TDEE(~2,900-3,050kcal)形成~695-845kcal干净减脂缺口！"
       },
       "recovery": {
         "bedTime": "23:00",
@@ -3701,17 +3854,78 @@
         "sleepNotes": "今日下肢跟腱与髌腱冲击较大，睡前务必做好小腿/股四头肌拉伸与补水"
       },
       "diagnosis": {
-        "generatedAt": "2026-11-24T10:25:54.331Z",
+        "generatedAt": "2026-11-24T10:26:56.891Z",
         "overallScore": 90,
         "statusTag": "4km变速跑+弹跳 · 735kcal缺口但需护膝调序",
         "cnsAcwrEvaluation": "• 有氧体能亮点：95kg体重以5:15/km均速跑完4000米变速跑，心肺与乳酸阈水平在篮球运动员中属于上游水准。\n• ⚠️ 顺序与动作警示：在4000米跑已经疲劳后再连续做20分钟蛙跳+直腿跳，极易在疲惫态下让跟腱与髌腱承受过载微损伤！",
         "kineticChainTransfer": "• 直腿左右向前跳直接训练踝关节刚性与2号位变向第一步弹性，但注意单次触地量不宜拉满20分钟。",
         "prehabProtocol": "• 今晚强制防护：小腿腓肠肌/比目鱼肌拉伸各2分钟 + 靠墙静蹲舒缓髌腱 + 补水600ml。",
-        "biochemNutritionPrescription": "今日午间食堂打菜选品比之前进步很多（避开了五花肉和腊肠，主打鸡排/黄焖鸡/青椒肉片+玉米蔬菜），全天~151g蛋白（1.59g/kg）、仅~73g脂肪、总热量~2,240kcal（含餐后香蕉补钾防抽筋），稳拿~660-810kcal减脂缺口！小优化：晚餐后已有香蕉补钾，今晚彻底封口不再加餐，下次晚餐米饭可略减1/3。",
+        "biochemNutritionPrescription": "核准晚餐右侧为【1根烧鸡腿】后，全天脂肪进一步降至仅~68g，总蛋白升至~154g（1.62g/kg，精准跨过1.6g/kg保肌线！），总热量~2,205kcal，稳拿~695-845kcal减脂缺口！今晚已有香蕉补钾，彻底封口不再加餐即可。",
         "nextDayPrescription": "1. 【明日安排】：若明早小腿或膝下略紧，优先安排上肢力量或休息，避免连续两天高冲击跳跃。\n2. 【弹跳顺序】：下次先做10-12分钟高质量弹跳（跳箱/栏架），再去跑4000米！"
       },
       "createdAt": "2026-11-24T10:25:54.331Z",
-      "updatedAt": "2026-11-24T10:25:54.331Z"
+      "updatedAt": "2026-11-24T10:26:56.891Z"
+    },
+    "2026-11-25": {
+      "id": "ath-2026-11-25",
+      "date": "2026-11-25",
+      "basketball": {
+        "modules": [
+          "恢复"
+        ],
+        "durationMinutes": 35,
+        "rpe": 5,
+        "highIntensityJumps": 0,
+        "decelerations": "08:00游泳课中等强度600米蛙泳+100米自由泳（700m），无冲击主动冲刷周二4km变速跑与蛙跳后的下肢疲劳",
+        "contactIntensity": "low",
+        "notes": "周二高冲击跑跳后周三早上用700m游泳完美过渡恢复"
+      },
+      "strength": {
+        "phase": "恢复期",
+        "primaryLifts": "无力量房抗阻训练（早8点700m游泳主动恢复日）",
+        "plyometricsVolume": "600m蛙泳 + 100m自由泳",
+        "durationMinutes": 35,
+        "notes": "关节与下肢肌腱在水中得到充分放松"
+      },
+      "biomechanics": {
+        "ankleFootFeel": "optimal",
+        "patellarTendonPain": 1,
+        "hipSpineMobility": "optimal",
+        "ankleFootNotes": "水中无落地冲击，有效缓解周二直腿跳后的跟腱紧张",
+        "patellarTendonNotes": "蛙泳温和屈伸帮助髌腱滑液循环恢复",
+        "hipSpineNotes": "胸椎与肩胛活动度良好"
+      },
+      "nutrition": {
+        "periWorkoutSupplements": "早：4蛋白1蛋黄 | 10:00(图一)：辣椒炒肉拌面+肉炒蛋+加半碗面 + 2鱼油 + 5g肌酸 | 17:00(图二全去皮+剩1/3米饭)：2鸭腿+2鸡腿+卤鸡排+白菜酱菜+2/3米饭",
+        "proteinGPerKg": 1.61,
+        "carbEnergyFeel": "optimal",
+        "urineColorLevel": 2,
+        "waterIntakeMl": 2500,
+        "supplementsDetail": "2粒高品质鱼油 + 5g一水肌酸（10:00随拌面大餐摄入）",
+        "mealsDetail": "早(泳前)：4蛋白+1蛋黄（~17g蛋白, ~5g脂肪, ~120kcal）；10:00(图一+加半碗面+2鱼油+5g肌酸)：辣椒炒肉拌面加肉炒蛋+额外半碗面（~39g蛋白, ~116g碳水, ~37g脂肪, ~945kcal）；17:00(图二全去皮+留剩1/3碳水)：2去皮鸭腿(~37g蛋白)+1块卤鸡排(~28g蛋白)+2去皮鸡腿(~27g蛋白)+白菜酱菜+2/3香米饭(~37g碳水)（~97g蛋白, ~43g碳水, ~27g脂肪, ~805kcal）。昨日全天汇总：~153g蛋白(1.61g/kg)、~159g碳水、~69g脂肪、总热量~1,870kcal，对比游泳日TDEE(~2,560-2,650kcal)形成~690-780kcal高质量减脂缺口！"
+      },
+      "recovery": {
+        "bedTime": "23:30",
+        "wakeTime": "07:15",
+        "sleepDurationHours": 7.8,
+        "deepSleepPerception": "good",
+        "restingHeartRate": 57,
+        "morningReadinessScore": 8,
+        "cnsExcitement": "normal",
+        "sleepNotes": "17:00完成最后一餐，夜间空腹窗口干净，利于周四恢复精力"
+      },
+      "diagnosis": {
+        "generatedAt": "2026-11-26T06:32:25.425Z",
+        "overallScore": 92,
+        "statusTag": "700m游泳冲刷疲劳 · 153g蛋白×730kcal干净减脂",
+        "cnsAcwrEvaluation": "• 恢复节奏满分：周二跑完4km加20m蛙跳后，周三早8点正好接35分钟中等强度700m游泳，无重力冲击促进下肢排酸与关节恢复。",
+        "kineticChainTransfer": "• 游泳划水打开肩胸链，利于维持投篮举球舒适度。",
+        "prehabProtocol": "• 保持周内高低冲击交替节律，避免连续两天极限跳跃。",
+        "biochemNutritionPrescription": "昨日全天仅摄入~1,870kcal、脂肪低至~69g，蛋白稳达~153g（1.61g/kg），精准制造~690-780kcal净减脂缺口！亮点在于晚餐彻底省掉了香肠、保留了极瘦的卤鸡排并留剩1/3米饭；唯一小优化是10:00拌面加的那“半碗纯面条”多加了精制碳水而蛋白很少，下次可把加面换成2颗水煮蛋或1杯豆浆。",
+        "nextDayPrescription": "1. 【今日（周四11-26）】：下肢经过周三水中恢复已回血，今天可安排球场对抗或力量训练。\n2. 【加餐替换】：拌面管饱后不加纯面条，优先加蛋奶。"
+      },
+      "createdAt": "2026-11-26T06:32:25.425Z",
+      "updatedAt": "2026-11-26T06:32:25.425Z"
     }
   },
   "deletedLogIds": [
