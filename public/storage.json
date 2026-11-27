@@ -1,6 +1,6 @@
 {
   "version": "2.0.0",
-  "exportTime": "2026-11-26T06:33:49.428Z",
+  "exportTime": "2026-11-27T12:42:37.741Z",
   "categories": [
     {
       "id": "cat-ielts-research",
@@ -64,6 +64,71 @@
     }
   ],
   "tasks": [
+    {
+      "id": "task-ielts-study-20261127",
+      "categoryId": "cat-ielts-research",
+      "title": "英语突破: YouTube原声视频精听与外文前沿学术文献研读",
+      "completed": true,
+      "targetMinutes": 60,
+      "actualMinutes": 60,
+      "estimatedPomodoros": 2,
+      "completedPomodoros": 2,
+      "notes": "17:30-18:30 傍晚专注60分钟（达成任务一日标 67%）：观看优质 YouTube 英文原声视频强化地道听力与口语表达，沉浸研读英文外文专业学术文献，深化长难句解析与学术英语阅读理解。",
+      "createdAt": "2026-11-27T17:30:00.000+08:00",
+      "completedAt": "2026-11-27T18:30:00.000+08:00"
+    },
+    {
+      "id": "task-pol-ch12-study-20261127",
+      "categoryId": "cat-politics-innovation",
+      "title": "习概第十二章深入研读与配套练习题实战巩固",
+      "completed": true,
+      "targetMinutes": 45,
+      "actualMinutes": 60,
+      "estimatedPomodoros": 2,
+      "completedPomodoros": 2,
+      "notes": "16:00-17:00 下午高专注投入60分钟（达成任务二日标 133%）：系统攻坚《习概》第十二章核心理论体系，系统梳理关键命题与核心考点，并高质量完成配套练习题巩固。",
+      "createdAt": "2026-11-27T16:00:00.000+08:00",
+      "completedAt": "2026-11-27T17:00:00.000+08:00"
+    },
+    {
+      "id": "task-fit-20261127-upper",
+      "categoryId": "cat-fitness-workout",
+      "title": "健身房上肢推举突破+后链核心轰炸 (115分钟)",
+      "completed": true,
+      "targetMinutes": 115,
+      "actualMinutes": 115,
+      "estimatedPomodoros": 4,
+      "completedPomodoros": 4,
+      "notes": "12:00起：卧推20/40/60×5, 80×4, 2组90×1(新突破!), 80×4 + 零间歇递减70→65→60→55→50×5(总2920kg) + 实力推20×8, 30×8×2, 40×8×3(大突破!) + 坐姿飞鸟5×10×8/侧 + 山羊挺身5×20×8 + 侧压15×8×4 + 反向挺身10×10×4 + 俄罗斯转体10×10×4。",
+      "createdAt": "2026-11-27T12:00:00.000+08:00",
+      "completedAt": "2026-11-27T13:55:00.000+08:00"
+    },
+    {
+      "id": "task-fit-20261126-basketball",
+      "categoryId": "cat-fitness-workout",
+      "title": "下午篮球专项: 60m低强度对抗 + 20m低强度投篮 (80分钟)",
+      "completed": true,
+      "targetMinutes": 80,
+      "actualMinutes": 80,
+      "estimatedPomodoros": 3,
+      "completedPomodoros": 3,
+      "notes": "16:00起完成1小时低强度篮球对抗练习 + 20分钟低强度投篮练习，巩固手感与场上空间感。",
+      "createdAt": "2026-11-26T16:00:00.000+08:00",
+      "completedAt": "2026-11-26T17:20:00.000+08:00"
+    },
+    {
+      "id": "task-fit-20261126-badminton",
+      "categoryId": "cat-fitness-workout",
+      "title": "上午羽毛球对抗比赛6场(15分一局)含热身 (100分钟)",
+      "completed": true,
+      "targetMinutes": 100,
+      "actualMinutes": 100,
+      "estimatedPomodoros": 3,
+      "completedPomodoros": 3,
+      "notes": "10:00起羽毛球对抗比赛共打6场（15分制），含赛前热身对抗共计100分钟（高步频移动与急停）。",
+      "createdAt": "2026-11-26T10:00:00.000+08:00",
+      "completedAt": "2026-11-26T11:40:00.000+08:00"
+    },
     {
       "id": "task-ielts-study-20261125",
       "categoryId": "cat-ielts-research",
@@ -958,6 +1023,81 @@
     }
   ],
   "timeLogs": [
+    {
+      "id": "log-20261127-ielts-study",
+      "taskId": "task-ielts-study-20261127",
+      "taskTitle": "任务一: 英语精进 (YouTube视频精听+外文文献阅读) (60分钟)",
+      "categoryId": "cat-ielts-research",
+      "categoryName": "任务一: 雅思基础突破 (200词背写 + 40句读写)",
+      "categoryColor": "#8b5cf6",
+      "categoryIcon": "GraduationCap",
+      "startTime": "2026-11-27T17:30:00.000+08:00",
+      "endTime": "2026-11-27T18:30:00.000+08:00",
+      "durationMinutes": 60,
+      "mode": "pomodoro",
+      "isExtra": false,
+      "notes": "17:30-18:30 傍晚高专注投入60分钟：观看 YouTube 英文原声视频进行听力语感磨耳朵，并深入阅读外文专业文献，拓展学术词汇与国际前沿文献读写视野。"
+    },
+    {
+      "id": "log-20261127-pol-ch12-study",
+      "taskId": "task-pol-ch12-study-20261127",
+      "taskTitle": "任务二: 习概第十二章研学与配套练习 (60分钟)",
+      "categoryId": "cat-politics-innovation",
+      "categoryName": "任务二: 习概与双创导论",
+      "categoryColor": "#f59e0b",
+      "categoryIcon": "BookOpen",
+      "startTime": "2026-11-27T16:00:00.000+08:00",
+      "endTime": "2026-11-27T17:00:00.000+08:00",
+      "durationMinutes": 60,
+      "mode": "pomodoro",
+      "isExtra": false,
+      "notes": "16:00-17:00 下午专注60分钟（任务二达成率 133%）：全面研读《习概》第十二章核心理论知识，梳理重大理论观点与论断，并完成配套练习题自测巩固。"
+    },
+    {
+      "id": "log-20261127-gym-upper",
+      "taskId": "task-fit-20261127-upper",
+      "taskTitle": "健身房上肢推举突破+后链核心 (115分钟)",
+      "categoryId": "cat-fitness-workout",
+      "categoryName": "周末专项: 健身房高强度锻炼",
+      "categoryColor": "#10b981",
+      "categoryIcon": "Dumbbell",
+      "startTime": "2026-11-27T12:00:00.000+08:00",
+      "endTime": "2026-11-27T13:55:00.000+08:00",
+      "durationMinutes": 115,
+      "mode": "pomodoro",
+      "isExtra": false,
+      "notes": "12:00-13:55 卧推90kg×1完成2组+高阶70→50kg递减(2920kg) + 杠铃实力推40kg×8×3组大幅突破(1600kg) + 坐姿飞鸟5×10×8/侧 + 后链核心17组。"
+    },
+    {
+      "id": "log-20261126-basketball",
+      "taskId": "task-fit-20261126-basketball",
+      "taskTitle": "下午篮球专项: 低强度对抗(60m) + 投篮练习(20m)",
+      "categoryId": "cat-fitness-workout",
+      "categoryName": "周末专项: 健身房高强度锻炼",
+      "categoryColor": "#10b981",
+      "categoryIcon": "Dumbbell",
+      "startTime": "2026-11-26T16:00:00.000+08:00",
+      "endTime": "2026-11-26T17:20:00.000+08:00",
+      "durationMinutes": 80,
+      "mode": "extra",
+      "isExtra": true,
+      "notes": "16:00 进行60分钟低强度篮球对抗 + 20分钟低强度投篮练习（估算消耗~400-480kcal）。"
+    },
+    {
+      "id": "log-20261126-badminton",
+      "taskId": "task-fit-20261126-badminton",
+      "taskTitle": "上午羽毛球对抗比赛6场(15分制) (100分钟)",
+      "categoryId": "cat-fitness-workout",
+      "categoryName": "周末专项: 健身房高强度锻炼",
+      "categoryColor": "#10b981",
+      "categoryIcon": "Dumbbell",
+      "startTime": "2026-11-26T10:00:00.000+08:00",
+      "endTime": "2026-11-26T11:40:00.000+08:00",
+      "durationMinutes": 100,
+      "mode": "extra",
+      "isExtra": true,
+      "notes": "10:00 羽毛球对抗比赛6场(每场15分一局)含热身共计100分钟（估算消耗~650-750kcal）。"
+    },
     {
       "id": "log-20261125-ielts-study",
       "taskId": "task-ielts-study-20261125",
@@ -2567,6 +2707,29 @@
         "早间游泳恢复: 08:00-08:35 完成 600m蛙泳 + 100m自由泳 (35m)",
         "控脂执行升级: 晚餐省去高脂香肠保留卤鸡排，全天脂肪仅69g且蛋白达153g(1.61g/kg)"
       ]
+    },
+    "2026-11-26": {
+      "date": "2026-11-26",
+      "score": 5,
+      "mood": "🏸🏀 180分钟双场大捷 · 干净高蛋白燃脂",
+      "summary": "周四高能运动日：上午完成6场羽毛球对抗(100m)，下午完成60m篮球对抗+20m投篮(80m)，合计180分钟。全天饮食含早4蛋白1蛋黄半皮肉包、午食堂四格餐带皮(+2鱼油)、14:50香蕉+无糖加浓美式、晚白切鸡烧鸡腿2碗饭(+5g肌酸)，总计~166g蛋白(1.75g/kg)、~2,505kcal，稳守~850-1,050kcal高质量减脂缺口！",
+      "achievements": [
+        "羽毛球对抗: 10:00-11:40 完成6场15分制对抗比赛含热身 (100m)",
+        "篮球专项: 16:00-17:20 完成60m低强度对抗+20m投篮练习 (80m)",
+        "营养精准闭环: 全天脂肪仅73g，蛋白达~165g(1.74g/kg)，稳斩~1,100kcal缺口"
+      ]
+    },
+    "2026-11-27": {
+      "date": "2026-11-27",
+      "score": 5,
+      "mood": "🏋️‍♂️📖 双90kg卧推突破 · 习概12章通关+外文文献 · 207g蛋白神级控脂",
+      "summary": "周五文武全面大爆发！中午12:00健身房拿下卧推2组90kg×1+70→50kg递减(2,920kg)与杠铃实力推40kg×8×3组(1,600kg)+核心17组(115m)；下午自习接力：16:00-17:00沉浸60分钟攻克《习概》第12章及配套练习(达成率133%)，17:30-18:30专注60m精看YouTube英文原声视频并精读外文专业学术文献！全天重训115m+自习120m(总高效输出235m/3.9h)；饮食升级双份嫩牛肉+西兰花白菜，全天蛋白~207g(2.18g/kg)稳斩增肌黄金缺口！",
+      "achievements": [
+        "任务二 (习概第12章理论与习题): 16:00-17:00 深入研读第十二章核心理论并完成配套练习题 (60m，达成率 133%)",
+        "任务一 (英语听力视频与外文文献): 17:30-18:30 观看YouTube原声视频精听磨耳朵 + 外文专业文献精读 (60m)",
+        "上肢力量双突破: 卧推完成2组90kg×1 + 70→50kg递减，杠铃实力推飙升至40kg×8×3组 (115m)",
+        "饮食结构大升级: 晚餐采用双份嫩牛肉+西兰花白菜+煎蛋，全天~207g蛋白(2.18g/kg)且脂肪仅79g"
+      ]
     }
   },
   "settings": {
@@ -3926,6 +4089,129 @@
       },
       "createdAt": "2026-11-26T06:32:25.425Z",
       "updatedAt": "2026-11-26T06:32:25.425Z"
+    },
+    "2026-11-26": {
+      "id": "ath-2026-11-26",
+      "date": "2026-11-26",
+      "basketball": {
+        "modules": [
+          "全场实战",
+          "投篮专项"
+        ],
+        "durationMinutes": 80,
+        "rpe": 6,
+        "highIntensityJumps": 40,
+        "decelerations": "上午10:00羽毛球对抗比赛6场(100m) + 下午16:00低强度篮球对抗(60m)+投篮(20m)，全天总计180分钟球场跑动急停",
+        "contactIntensity": "low",
+        "notes": "全天双场运动总时长达3小时（180分钟），运动消耗极高（~1,050-1,230kcal）"
+      },
+      "strength": {
+        "phase": "恢复期",
+        "primaryLifts": "今日无力量房抗阻训练，以180分钟双球场专项对抗与有氧为主",
+        "plyometricsVolume": "100m羽毛球6场对抗 + 80m篮球对抗与投篮",
+        "durationMinutes": 100,
+        "notes": "180分钟跑跳急停对下肢肌腱累积负荷不小，明日宜留恢复空间或专注上肢"
+      },
+      "biomechanics": {
+        "ankleFootFeel": "optimal",
+        "patellarTendonPain": 2,
+        "hipSpineMobility": "optimal",
+        "ankleFootNotes": "6场羽毛球急停变向后接80m篮球，今晚睡前重点拉伸小腿三头肌与足底筋膜",
+        "patellarTendonNotes": "关注明早膝下髌腱反应，避免连续两天高冲击下肢跑跳",
+        "hipSpineNotes": "维持良好髋部柔韧度"
+      },
+      "nutrition": {
+        "periWorkoutSupplements": "07:50: 4蛋白1蛋黄+半皮鲜肉包 | 午(图二): 食堂四格餐(鸡鸭肉带皮+鱼块+青椒肉/菜/米饭)+2鱼油 | 14:50: 1根香蕉+无糖加浓美式 | 晚(图一): 白切鸡+烧鸡腿+生菜+2碗米饭+5g肌酸",
+        "proteinGPerKg": 1.75,
+        "carbEnergyFeel": "optimal",
+        "urineColorLevel": 2,
+        "waterIntakeMl": 3000,
+        "supplementsDetail": "2粒高品质鱼油（午间）+ 5g一水肌酸（晚间）",
+        "mealsDetail": "07:50：4蛋白+1蛋黄+鲜肉包(剩一半皮未吃)（~24.5g蛋白, ~18g碳水, ~11g脂肪, ~275kcal）；午(图二带皮+2鱼油)：食堂四格餐(鱼块/带皮鸡鸭肉/青椒肉/花菜南瓜番茄蛋)+大碗米饭（~62g蛋白, ~112g碳水, ~39g脂肪, ~1,050kcal）；14:50(篮球前加餐)：1根香蕉+1杯无糖加浓美式（~1g蛋白, ~25g碳水, ~100kcal，美式0kcal提神促燃脂）；晚(图一+加1碗饭共2碗+5g肌酸)：白切鸡+1根烧鸡腿+白灼生菜+2碗米饭（~78g蛋白, ~125g碳水, ~30g脂肪, ~1,080kcal）。全天核准汇总：~166g蛋白(1.75g/kg)、~280g碳水、~80g脂肪、总热量~2,505kcal，对比180分钟双球场TDEE(~3,350-3,550kcal)依然稳斩~850-1,050kcal高质量减脂缺口！"
+      },
+      "recovery": {
+        "bedTime": "23:30",
+        "wakeTime": "07:30",
+        "sleepDurationHours": 8,
+        "deepSleepPerception": "good",
+        "restingHeartRate": 58,
+        "morningReadinessScore": 8,
+        "cnsExcitement": "normal",
+        "sleepNotes": "3小时球场运动后碳水回补到位，注意睡前补水与下肢拉伸"
+      },
+      "diagnosis": {
+        "generatedAt": "2026-11-26T11:56:14.138Z",
+        "overallScore": 94,
+        "statusTag": "180m双场3小时高能 · 165g蛋白×1,100kcal净减脂",
+        "cnsAcwrEvaluation": "• 运动总量评估：上午6场15分制羽毛球对抗(100m) + 下午篮球对抗及投篮(80m)，全天累计180分钟场上跑动，总消耗高达~3,350-3,550kcal。",
+        "kineticChainTransfer": "• 糖原精准回补：晚间在3小时大运动量后吃足2碗米饭，恰好迅速填满下肢肌糖原，明天不会腿软掉力量。",
+        "prehabProtocol": "• 睡前强制松解：小腿腓肠肌/比目鱼肌拉伸、股四头肌拉伸各2分钟 + 补水600-800ml。",
+        "biochemNutritionPrescription": "核准午餐带皮(+65kcal)与14:50香蕉+无糖美式(+100kcal)后，全天总计~166g蛋白（1.75g/kg）、~280g碳水、~80g脂肪、总热量~2,505kcal。14:50这根香蕉+黑咖啡正好精准踩在16:00篮球前70分钟，既防低血糖又加速脂肪氧化，全天依然保有~850-1,050kcal极佳减脂缺口！注意黑咖啡控制在15点前喝完以免影响夜间深睡。",
+        "nextDayPrescription": "1. 【明日安排（周五11-27）】：今日下肢跑跳达3小时，明天建议休息或专注上肢力量，让膝踝充分休整备战周末。\n2. 【明日主食】：若明天休息记得把晚餐米饭收回到半碗~1碗。"
+      },
+      "createdAt": "2026-11-26T10:55:18.759Z",
+      "updatedAt": "2026-11-26T11:56:14.138Z"
+    },
+    "2026-11-27": {
+      "id": "ath-2026-11-27",
+      "date": "2026-11-27",
+      "basketball": {
+        "modules": [
+          "投篮专项"
+        ],
+        "durationMinutes": 0,
+        "rpe": 8,
+        "highIntensityJumps": 0,
+        "decelerations": "今日专注健身房上肢推力突破与后链核心17组，下肢继续休息消化昨日180m双场球赛负荷",
+        "contactIntensity": "low",
+        "notes": "卧推90kg×1达成2组 + 实力推40kg×8达成3组，投篮上肢推力底座再上台阶"
+      },
+      "strength": {
+        "phase": "最大力量",
+        "primaryLifts": "平板卧推(20/40/60×5, 80×4, 90×1×2, 80×4 + 零间歇递减70→65→60→55→50×5, 总2920kg) + 杠铃实力推(20×8, 30×8×2, 40×8×3, 总1600kg) + 哑铃坐姿飞鸟(各5×10×8) + 山羊挺身5×20×8 + 侧压15×8×4 + 反向挺身10×10×4 + 俄罗斯转体10×10×4",
+        "plyometricsVolume": "后链与旋转核心17组强化",
+        "durationMinutes": 115,
+        "notes": "卧推双90kg与实力推40kg×8×3组均刷新近期表现；注意今日缺少水平/垂直拉类动作(引体/划船)，下次需补回推拉平衡"
+      },
+      "biomechanics": {
+        "ankleFootFeel": "optimal",
+        "patellarTendonPain": 1,
+        "hipSpineMobility": "optimal",
+        "ankleFootNotes": "下肢今日完全避开跑跳，昨日3小时球场负荷得到良好休整",
+        "patellarTendonNotes": "髌腱状态恢复良好",
+        "hipSpineNotes": "今日推举容量极大且缺少背部拉类动作，注意胸大肌与肩前束拉伸防圆肩"
+      },
+      "nutrition": {
+        "periWorkoutSupplements": "早：4蛋白1蛋黄+纯瘦白吉馍 | 11:00：1根香蕉 | 午(图一)：半只白切鸡+生菜+大满碗米饭 + 2鱼油 + 5g肌酸 | 晚(图二)：双份嫩牛肉+西兰花白菜+1煎蛋+少量米饭",
+        "proteinGPerKg": 2.18,
+        "carbEnergyFeel": "optimal",
+        "urineColorLevel": 2,
+        "waterIntakeMl": 2800,
+        "supplementsDetail": "2粒高品质鱼油 + 5g一水肌酸（午间练后随半只白切鸡与米饭摄入）",
+        "mealsDetail": "早+11:00练前：4蛋白1蛋黄+纯瘦白吉馍+1根香蕉（~42g蛋白, ~72g碳水, ~14g脂肪, ~585kcal）；午(图一半只白切鸡+大满碗米饭+2鱼油+5g肌酸)：半只白切鸡(~78g蛋白,~36g脂肪)+生菜+大满碗米饭(~110g碳水)（~89g蛋白, ~115g碳水, ~38g脂肪, ~1,140kcal）；晚(图二牛肉餐升级!)：双份嫩牛肉(~62g蛋白)+西兰花+白菜+1颗煎蛋(~6.5g蛋白)+少量米饭(~38g碳水)（~75.5g蛋白, ~47g碳水, ~27g脂肪, ~755kcal）。全天汇总：~207g蛋白(2.18g/kg)、~234g碳水、~79g脂肪、总热量~2,480kcal，对比115m重装上肢日TDEE(~2,850-3,000kcal)形成~370-520kcal稳健增肌减脂窗口！"
+      },
+      "recovery": {
+        "bedTime": "23:30",
+        "wakeTime": "07:30",
+        "sleepDurationHours": 8,
+        "deepSleepPerception": "good",
+        "restingHeartRate": 58,
+        "morningReadinessScore": 8,
+        "cnsExcitement": "normal",
+        "sleepNotes": "明日周末若计划练下肢或打球，今晚睡足8小时修复上肢与核心"
+      },
+      "diagnosis": {
+        "generatedAt": "2026-11-27T12:41:32.298Z",
+        "overallScore": 94,
+        "statusTag": "双90kg卧推+40×8×3实力推 · 西兰花牛肉207g蛋白",
+        "cnsAcwrEvaluation": "• 两大绝对力量突破：卧推成功拿下【2组 90kg×1】且递减组收在50kg；杠铃实力推更是从上周的40×6×2暴涨至【40kg×8×3组(1,600kg)】，肩前束与核心刚性明显跃升！\n• ⚠️ 推拉失衡提示：今天全套做了大量卧推+实力推+飞鸟，但完全没有做高位下拉/引体/划船等背部拉类动作，建议下次补足拉类容量维持肩胛平衡。",
+        "kineticChainTransfer": "• 投篮推射底座强化：40kg×8×3站姿实力推将直接提升三分线外顶人干拔的出手稳定性。",
+        "prehabProtocol": "• 胸肩拉伸：今晚拉伸胸肌与三角肌前束2分钟；因做了山羊挺身+反向挺身共17组，若明天周六蹲腿注意热身激活核心。",
+        "biochemNutritionPrescription": "今晚饮食迎来重大升级！你果断采纳建议换上了【双份嫩牛肉 + 西兰花 + 白菜 + 煎蛋 + 少量米饭】（~75.5g蛋白、仅27g脂肪，高钾高纤维还彻底告别香肠油脂！），全天合计~207g蛋白（2.18g/kg）、~79g脂肪、~2,480kcal，在370-520kcal稳健缺口中高效长肉减脂！",
+        "nextDayPrescription": "1. 【明日安排（周六11-28）】：今天做了山羊挺身/反向挺身共17组，明天若练下肢深蹲注意控制下背疲劳度（可把高位下拉/划船补在明后天）。\n2. 【持续表扬】：11:00练前1根香蕉+晚餐西兰花牛肉模板完美！"
+      },
+      "createdAt": "2026-11-27T12:41:32.298Z",
+      "updatedAt": "2026-11-27T12:41:32.298Z"
     }
   },
   "deletedLogIds": [
